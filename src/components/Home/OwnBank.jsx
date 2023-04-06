@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from "@/styles/home/OwnBank.module.css"
-import Image from 'next/image'
 import Button from '../common/Button'
 
 const OwnBank = () => {
@@ -22,23 +21,23 @@ const OwnBank = () => {
         <>
             <div className={`${styles.mainDiv}`}>
                 <div className='row'>
-                <div className={`col-6 ${styles.leftDiv}`}>
-                    <div className={styles.heading}>
-                        Be Your<br /> Own Bank
+                    <div className={`col-6 ${styles.leftDiv}`}>
+                        <div className={styles.heading}>
+                            Be Your<br /> Own Bank
+                        </div>
+                        <img src={"/assets/images/home/curl.svg"} height={80} width={250} alt="curl" />
+                        <div className={styles.subHeading}>Introducing Plena 2.0,  Self-Custodial Smart Wallet with EIP-4337: Account Abstraction </div>
+                        <div className={styles.btnDiv}>
+                            <Button text={"Get the App"} />
+                            <div>
+                                <img src={"/assets/images/home/playBtn1.svg"} height={40} width={40} alt='playbtn' />
+                                Watch Intro</div>
+                        </div>
                     </div>
-                    <Image src={"/assets/images/home/curl.svg"} height={80} width={250} alt="curl" />
-                    <div className={styles.subHeading}>Introducing Plena 2.0,  Self-Custodial Smart Wallet with EIP-4337: Account Abstraction </div>
-                    <div className={styles.btnDiv}>
-                        <Button text={"Get the App"} />
-                        <div>
-                            <Image src={"/assets/images/home/playBtn1.svg"} height={40} width={40} alt='playbtn' />
-                            Watch Intro</div>
+                    <div className={`col-6 ${styles.rightDiv}`}>
+                        <img src={"/assets/images/home/phoneImg.svg"} width={1000} height={700} alt='phone' className={styles.phoneImg1} />
+                        <img src={"/assets/images/home/gradientBg.svg"} width={1200} height={1200} alt='gradientBg' className={styles.phoneImg2} />
                     </div>
-                </div>
-                <div className={`col-6 ${styles.rightDiv}`}>
-                    <Image src={"/assets/images/home/phoneImg.svg"} width={1000} height={700} alt='phone' className={styles.phoneImg1} />
-                    <Image src={"/assets/images/home/gradientBg.svg"} width={1200} height={1200} alt='gradientBg' className={styles.phoneImg2} />
-                </div>
                 </div>
             </div>
             <div className={` container ${styles.bankDataDiv}`}>
@@ -46,9 +45,8 @@ const OwnBank = () => {
                     return (
                         <div className='row'>
                             <div className='col-12'>
-
-                            <div className={styles.bankNumber}>{data.number}</div>
-                            <p>{data.text}</p>
+                                <div className={styles.bankNumber}>{data.number}</div>
+                                <p>{data.text}</p>
                             </div>
                         </div>
                     )

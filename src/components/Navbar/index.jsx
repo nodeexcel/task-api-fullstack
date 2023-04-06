@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -10,7 +9,7 @@ const NavBar = () => {
   return (
     <Navbar collapseOnSelect expand="lg" className={styles.navbarDiv}>
       <Container>
-        <Navbar.Brand href="#logo"><Image src={"/assets/images/home/logo.svg"} height={40} width={90} alt="logo"/></Navbar.Brand>
+        <Navbar.Brand href="#logo"><img src={"/assets/images/home/logo.svg"} height={40} width={90} alt="logo"/></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className={`me-auto ${styles.liBox}`} style={{}}>
