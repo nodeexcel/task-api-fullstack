@@ -9,11 +9,17 @@
   }
   .leftDiv{
     color: white;
-    width: 50%;
-    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
   }
   .rightDiv{
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .phoneImg1{
     position: relative;
