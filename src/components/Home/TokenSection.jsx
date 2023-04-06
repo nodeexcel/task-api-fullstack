@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import React from 'react'
 import styles from "@/styles/home/TokenSection.module.css"
 import Button from '../common/Button'
@@ -42,7 +41,7 @@ const TokenSection = () => {
                                 {data?.btn==true && <Button text={"Get the App"} />}
                             </div>
                             <div className={styles.rightDiv} style={data?.rightStyle}>
-                                <Image src={data.src} height={350} width={350} alt={data.alt} />
+                                <img src={data.src} height={350} width={350} alt={data.alt} />
                             </div>
                         </div>
                     </>

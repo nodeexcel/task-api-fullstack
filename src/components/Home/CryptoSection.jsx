@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import { StoreButton } from '../common/Button'
 import styles from "@/styles/home/CryptoSection.module.css"
 
@@ -21,7 +20,7 @@ const CryptoSection = () => {
                 </div>
             </div>
             <div className={styles.rightDiv}>
-                <Image src={"/assets/images/home/crypto.svg"} width={800} height={800} alt='crypto' />
+                <img src={"/assets/images/home/crypto.svg"} width={800} height={800} alt='crypto' />
             </div>
         </div>
     )

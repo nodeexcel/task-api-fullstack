@@ -1,7 +1,6 @@
-import React from "react";
-import styles from "@/styles/home/OwnBank.module.css";
-import Image from "next/image";
-import Button from "../common/Button";
+import React from 'react'
+import styles from "@/styles/home/OwnBank.module.css"
+import Button from '../common/Button'
 
 const OwnBank = () => {
   const bankData = [
@@ -35,7 +34,7 @@ const OwnBank = () => {
               Be Your
               <br /> Own Bank
             </div>
-            <Image
+            <img
               src={"/assets/images/home/curl.svg"}
               height={80}
               width={250}
@@ -48,7 +47,7 @@ const OwnBank = () => {
             <div className={styles.btnDiv}>
               <Button text={"Get the App"} />
               <div>
-                <Image
+                <img
                   src={"/assets/images/home/playBtn1.svg"}
                   height={40}
                   width={40}
@@ -59,7 +58,7 @@ const OwnBank = () => {
             </div>
           </div>
           <div className={`col-6 col-md-6 ${styles.rightDiv}`}>
-            <Image
+            <img
               src={"/assets/images/home/phoneImg.svg"}
               width={1000}
               height={700}
