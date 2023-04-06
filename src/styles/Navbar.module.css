@@ -1,0 +1,12 @@
+.liBox {
+    margin-left: 28%;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+.liText{
+    color:white
+}
+.navbarDiv{
+    background-color: black;
+}

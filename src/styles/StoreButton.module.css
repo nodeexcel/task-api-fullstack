@@ -1,0 +1,28 @@
+/* -------------store btn---------------- */
+
+.storeBtn{
+    display: flex;
+    justify-content: flex-start;
+    background-color: black;
+    color: white;
+    padding: 12px 34px;
+    width: fit-content;
+    border-radius: 20px;
+    margin: 10px;
+}
+.leftDiv{
+    margin-right: 6px;
+    margin-top: 5px;
+}
+.rightDiv{
+    margin-top: 5px;
+}
+.text{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 18px;
+}
+.subText{
+    font-weight: 600;
+    font-size: 22px;
+}

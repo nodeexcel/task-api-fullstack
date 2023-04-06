@@ -1,0 +1,23 @@
+/* ----------Video Section------------ */
+
+.videoDiv{
+    background-color: #7F4BC4;
+    text-align: center;
+    color: white;
+    padding: 80px;
+  }
+  .videoHeading{
+    font-size: 76px;
+    line-height: 100px;
+    font-weight: 700;
+  }
+  .videoSubHeading{
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  .playVideo{
+    position: relative;
+    left: -35%;
+  }

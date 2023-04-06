@@ -1,0 +1,33 @@
+/* --------------crypto section------------ */
+
+.cryptoDiv{
+    background-image: linear-gradient(226.73deg, #C196C8 1.98%, #4F618D 97.5%);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+
+}
+.leftDiv{
+    width: 50%;
+    padding: 80px;
+    margin-top: 150px;
+}
+.rightDiv{
+    width: 50%;
+}
+.btnDiv{
+    display: flex;
+    justify-content: flex-start;
+}
+.heading{
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 70px;
+}
+.subHeading{
+    font-size: 26px;
+    font-weight: 400;
+    margin: 20px 0px;
+
+}

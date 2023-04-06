@@ -1,0 +1,41 @@
+/* --------------transaction section---------- */
+
+.transactionDiv{
+    background-color: black;
+    padding:60px;
+}
+.phoneImg{
+    display: flex;
+    justify-content: center;
+    margin-left: -100px;
+    z-index: 5;
+}
+.img{
+    margin-top: 100px;
+}
+.textDiv{
+    position: relative;
+    top:0px;
+    display: flex;
+}
+.heading{
+    font-size: 115px;
+    font-weight: 700;
+    line-height: 100px;
+    color: white;
+    position: relative;
+    top: 100px;
+}
+.fasterText{
+    display: flex;
+}
+.transactionHeading{
+    font-size: 115px;
+    font-weight: 700;
+    line-height: 100px;
+    color: white;
+    position: relative;
+    top: -240px;
+    display: flex;
+    justify-content: flex-end;
+}

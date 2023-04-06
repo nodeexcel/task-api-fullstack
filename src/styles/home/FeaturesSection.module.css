@@ -1,0 +1,35 @@
+/* ---------------features section---------------- */
+
+.featureDiv{
+    padding: 100px;
+    background-color: black;
+    color: white;
+   
+}
+.table{
+    width: 90%;
+
+}
+.tableDiv{
+    display: flex;
+    justify-content: center;
+}
+.td{
+    padding: 50px;
+    background-color: #20202099;
+    border-radius: 32px;
+    color: white;
+    margin: 30px;
+}
+.heading{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: left;
+}
+.subHeading{
+    font-size: 22px;
+    font-weight: 300;
+}
+.poolDiv{
+
+}
