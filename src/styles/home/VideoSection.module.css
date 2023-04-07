@@ -31,7 +31,7 @@
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 300px) and (max-width: 764px) {
   .videoDiv {
     padding: 0px;
   }
@@ -44,7 +44,6 @@
   .videoSubHeading {
     font-style: normal;
     font-weight: 400;
-    font-size: 2rem;
     padding: 10px;
     line-height: 140%;
   }
