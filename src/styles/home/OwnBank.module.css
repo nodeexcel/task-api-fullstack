@@ -1,67 +1,104 @@
 /* --------Own Bank---------- */
 
-.mainDiv{
-    padding: 50px;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  .leftDiv{
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    text-align: left;
-  }
-  .rightDiv{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .phoneImg1{
-    position: relative;
-    left:-220px;
-    top:-100px;
-    z-index: 8;
-  }
-  .phoneImg2{
-    position: absolute;
-    z-index: 6;
-    top: 0px;
-    left: 200px;
-  }
-  .heading{
-    font-size: 100px;
-    font-weight: 700;
-    line-height: 100px;
-  }
-  .subHeading{
-    font-size: 26px;
-    line-height: 44px;
-    font-weight: 400;
-  }
-  .btnDiv{
-    display: flex;
-    justify-content: space-between;
-    width: 55%;
-    margin-top: 60px;
-  }
-  .bankDataDiv{
-    background-color: transparent;
-    position: relative;
-    top: -100px;
-    display:flex ;
-    justify-content: space-evenly;
-    color: white;
+.mainDiv {
+  padding: 50px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.leftDiv {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+}
+.curl {
+  padding-top: -100px;
+}
+
+.rightDiv {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phoneImg1 {
+  position: relative;
+  left: -220px;
+  top: -100px;
+  z-index: 8;
+}
+.phoneImg2 {
+  position: absolute;
+  z-index: 6;
+  top: 0px;
+  left: 200px;
+}
+.heading {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 100px;
+}
+.subHeading {
+  font-size: 26px;
+  line-height: 44px;
+  font-weight: 400;
+  /* text-align: left; */
+}
+
+.btnDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+  margin-top: 60px;
+}
+.bankDataDiv {
+  background-color: transparent;
+  position: relative;
+  top: -100px;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  text-align: center;
+}
+.bankNumber {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 300px) and (max-width: 764px) {
+  .leftDiv {
     text-align: center;
   }
-  .bankNumber{
-    font-size: 35px;
-    font-weight: 600;
+  .rightDiv {
+    margin: auto;
+  }
+  .heading{
+    font-size: 50px;
+    margin: auto;
+    line-height: 50px;
+  }
+  .subHeading{
+    line-height: 29px;
+    font-weight: 200;
+  }
+  .bankNumber {
+    font-size: 22px;
+    font-weight: 300;
+    margin: auto;
+  }
+  .userText{
+    font-size: 16px;
+    margin: auto;
+  }
+  .btnDiv {
+   display: none;
+  }
+  .curl {
+    margin: auto;
   }
   
-  
-  
+}

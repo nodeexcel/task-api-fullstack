@@ -1,33 +1,50 @@
 /* --------------crypto section------------ */
 
-.cryptoDiv{
-    background-image: linear-gradient(226.73deg, #C196C8 1.98%, #4F618D 97.5%);
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    color: white;
+.cryptoDiv {
+  background-image: linear-gradient(226.73deg, #c196c8 1.98%, #4f618d 97.5%);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: white;
+}
+.leftDiv {
+  width: 50%;
+  padding: 80px;
+  margin-top: 150px;
+}
+.rightDiv {
+  width: 50%;
+}
+.btnDiv {
+  display: flex;
+  justify-content: flex-start;
+}
+.heading {
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 70px;
+}
+.subHeading {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 20px 0px;
+}
 
-}
-.leftDiv{
-    width: 50%;
-    padding: 80px;
-    margin-top: 150px;
-}
-.rightDiv{
-    width: 50%;
-}
-.btnDiv{
+@media screen and (min-width: 300px) and (max-width: 764px) {
+  .cryptoDiv {
     display: flex;
-    justify-content: flex-start;
-}
-.heading{
-    font-size: 54px;
-    font-weight: 700;
-    line-height: 70px;
-}
-.subHeading{
-    font-size: 26px;
-    font-weight: 400;
-    margin: 20px 0px;
+    flex-direction: column;
+  }
 
+  .heading{
+    font-size: 37px;
+    width: max-content;
+  }
+
+  
+
+  .image{
+    width: 300px;
+    height: 300px;
+  }
 }

@@ -4,7 +4,7 @@ import styles from '@/styles/home/VideoSection.module.css'
 
 const VideoSection = () => {
   return (
-    <div className={styles.videoDiv}>
+    <div className={`py-5 ${styles.videoDiv}`}>
       <div className={styles.videoHeading}>Better than Banks</div>
       <div className={styles.videoSubHeading}>Watch our quick intro video to learn more</div>
       <img src={"/assets/images/home/videoImg.svg"} height={450} width={900} alt='video' className={styles.video} />

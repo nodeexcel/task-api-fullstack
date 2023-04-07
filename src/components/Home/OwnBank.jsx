@@ -29,7 +29,7 @@ const OwnBank = () => {
       >
         <div className="container">
         <div className="row">
-          <div className={`col-6 col-md-6 ${styles.leftDiv}`}>
+          <div className={`col-sm-6 ${styles.leftDiv}`}>
             <div className={styles.heading}>
               Be Your
               <br /> Own Bank
@@ -39,8 +39,9 @@ const OwnBank = () => {
               height={80}
               width={250}
               alt="curl"
+              className={styles.curl}
             />
-            <div className={styles.subHeading}>
+            <div className={` ${styles.subHeading}`}>
               Introducing Plena 2.0, Self-Custodial Smart Wallet with EIP-4337:
               Account Abstraction{" "}
             </div>
@@ -57,7 +58,7 @@ const OwnBank = () => {
               </div>
             </div>
           </div>
-          <div className={`col-6 col-md-6 ${styles.rightDiv}`}>
+          <div className={`col-sm-6 ${styles.rightDiv}`}>
             <img
               src={"/assets/images/home/phoneImg.svg"}
               width={1000}
@@ -70,9 +71,9 @@ const OwnBank = () => {
           <div className="d-flex justify-content-evenly align-item-center mb-5">
             {bankData?.map((data,i) => {
               return (
-                <div className="d-flex flex-column text-white" key={i}>
+                <div className="text-white" key={i}>
                   <div className={styles.bankNumber}>{data.number}</div>
-                  <p>{data.text}</p>
+                  <p className={styles.userText}> {data.text}</p>
                 </div>
               );
             })}
