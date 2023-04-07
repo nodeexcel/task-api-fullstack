@@ -40,7 +40,9 @@ const NewsSection = () => {
 
     ]
     return (
-        <div style={{ background: "black" }}>
+        <div style={{ background: "black", color:"white", padding:100 }}>
+            <div className="d-flex justify-content-center fs-1 my-4">Plena in the News</div>
+            <div>
             <motion.div
                 style={{ display: "inline-block", width: "100%", display: "flex", background: "black", padding: 20 }}
                 animate={{ x: ["100%", "-100%"] }}
@@ -59,6 +61,7 @@ const NewsSection = () => {
                     newsData.map((img, index) => <img src={img.src} width={img.width} height={img.height} />)
                 }
             </motion.div>
+            </div>
         </div>
 
     );

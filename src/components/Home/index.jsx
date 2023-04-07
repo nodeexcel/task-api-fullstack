@@ -13,9 +13,6 @@ import BackedSection from './BackedSection'
 const LandingPage = () => {
   return (
     <div>
-      <BackedSection/>
-      <NewsSection/>
-      <UserSaySection />
       <OwnBank />
       <VideoSection />
       <TokenSection />
@@ -23,6 +20,8 @@ const LandingPage = () => {
       <TransactionSection />
       <ChatPaySection />
       <FeaturesSection />
+      <UserSaySection />
+      <NewsSection/>
 
     </div>
   )
