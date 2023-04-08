@@ -5,7 +5,7 @@ const RightInner = () => <div className='row'>
   <div className='col-6'>
     <div className='d-flex flex-col-reverse'>
 
-    <img src={"/assets/images/home/lending.svg"} width={200} height={200} alt='lending' />
+      <img src={"/assets/images/home/lending.svg"} width={200} height={200} alt='lending' />
     </div>
     <div>
       <div className={styles.heading}>Lending Protocol</div>
@@ -51,12 +51,14 @@ const LeftSide = () => <div className='col justify-content-center align-items-ce
 
 const FeaturesSection = () => {
   return (
-    <div className='container'>
+    <div className=' bg-dark text-white ' style={{padding:100}}>
+      <div style={{fontSize:44, fontWeight:600}}>Features Like Never Seen Before
+      </div>
       <div className='row'>
         <LeftSide />
         <RightSide />
       </div>
     </div>
   )
-  }
+}
 export default FeaturesSection

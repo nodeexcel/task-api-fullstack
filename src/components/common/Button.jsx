@@ -2,9 +2,9 @@ import React from 'react'
 import styles from "@/styles/Button.module.css"
 import storeStyles from "@/styles/StoreButton.module.css"
 
-const Button = ({ text, buttonName }) => {
+const Button = ({ text, buttonName, style }) => {
   return (
-    <div className={buttonName === "black" ? styles.blackBtnStyle : styles.btnStyle}>
+    <div className={buttonName === "black" ? styles.blackBtnStyle : styles.btnStyle} style={style}>
       {text}
     </div>
   )

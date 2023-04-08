@@ -24,9 +24,14 @@ const UserSaySection = () => {
         }
     ]
     return (
-        <div style={{ background: "black" }}>
+        <div 
+        className="bg-dark p-5"
+        style={{
+            backgroundImage: "url(/assets/images/home/userBg.svg)", backgroundPosition: "center",
+            backgroundSize: "cover"
+        }}>
             <div className="text-light d-flex justify-content-center fs-1">What our users say 💬</div>
-            <div className="d-flex justify-content-center fs-5" style={{color:"#BABABA"}}>Protected by a multi-level security <br/>architecture and is regularly</div>
+            <div className="d-flex justify-content-center fs-5" style={{ color: "#BABABA" }}>Protected by a multi-level security <br />architecture and is regularly</div>
             <motion.div
                 style={{ display: "inline-block", width: "150%", display: "flex", color: "white" }}
                 animate={{ x: ["100%", "-100%"] }}
@@ -39,7 +44,7 @@ const UserSaySection = () => {
                                 <div className="row">{data?.text}</div>
                                 <div className="row d-flex justify-content-between w-full">
                                     <div className="col-6">
-                                        <img src="/assets/images/home/playStoreIcon.svg" height={30} width={30} alt="playstore" className="me-2"/>
+                                        <img src="/assets/images/home/playStoreIcon.svg" height={30} width={30} alt="playstore" className="me-2" />
                                         Logan
                                     </div>
                                     <div className="col-6 text-end">
@@ -58,17 +63,17 @@ const UserSaySection = () => {
                 animate={{ x: ["-100%", "100%"] }}
                 transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
             >
-               {userSayData.map((data) => {
+                {userSayData.map((data) => {
                     return (
                         <>
                             <div className="d-flex flex-column justify-content-between" style={{ border: "1px solid white", borderRadius: 20, width: "600px", padding: "30px", margin: "30px" }}>
                                 <div className="row">{data?.text}</div>
                                 <div className="row d-flex justify-content-between w-full">
                                     <div className="col-6">
-                                        <img src="/assets/images/home/playStoreIcon.svg" height={30} width={30} alt="playstore" className="me-2"/>
+                                        <img src="/assets/images/home/playStoreIcon.svg" height={30} width={30} alt="playstore" className="me-2" />
                                         Logan
                                     </div>
-                                   
+
                                 </div>
 
 
