@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "@/styles/home/TokenSection.module.css";
-import Button from "../common/Button";
 
 const TokenSection = () => {
   //   const tokenData = [
@@ -54,12 +53,6 @@ const TokenSection = () => {
             />
           </div>
         </div>
-
-
-
-
-
-
         <div className="row text-white py-3">
           <div className="col-sm-6">
             <img
@@ -81,12 +74,7 @@ const TokenSection = () => {
             </header>
           </div>
         </div>
-
-
-
-
-
-        <div className={`row text-white py-3 ${styles.secColumn}`}>
+        <div className={`{row d-flex  text-white py-3 ${styles.secColumn}`}>
           <div className="col-sm-6 ">
             <header className="container pt-5">
               <h1 className={`display-3 fw-bold ${styles.text3}`}>100K+ Tokens</h1>
