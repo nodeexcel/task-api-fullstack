@@ -26,6 +26,7 @@ const OwnBank = () => {
           backgroundSize: "cover",
           backgroundColor:"black"
         }}
+        className={styles.mainDiv}
       >
         <div className="container">
         <div className="row">

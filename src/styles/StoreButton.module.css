@@ -26,3 +26,24 @@
     font-weight: 600;
     font-size: 22px;
 }
+
+
+
+@media screen and (max-width:600px) {
+    .storeBtn{
+        padding: 4px 20px;
+    }
+    .text{
+        font-size: 10px;
+        font-weight: 300;
+        line-height: 12px;
+    }
+    .subText{
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .imgStyle{
+        height: 22px;
+        width: 22px;
+    }
+}

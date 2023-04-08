@@ -40,7 +40,7 @@ const TokenSection = () => {
               <h1 className={`display-3 fw-bold ${styles.text1}`}>
                 Take control of your assets
               </h1>
-              <p className={` ${styles.p1}`}>
+              <p className={` ${styles.paragrapgh}`}>
                 Unlike centralized exchanges, Plena ensures that only users have
                 full control over their crypto assets.
               </p>
@@ -73,7 +73,7 @@ const TokenSection = () => {
               <h1 className={`display-3 fw-bold ${styles.text2}`}>
                 Social Login & Easy recovery
               </h1>
-              <p className={` ${styles.p2}`}>
+              <p className={` ${styles.paragrapgh}`}>
                 Sign in quickly and effortlessly using social media accounts,
                 and retrieve your account even if your device is lost with MPC
                 (Multi-Party Computation) security.
@@ -86,11 +86,11 @@ const TokenSection = () => {
 
 
 
-        <div className={`{row text-white py-3 ${styles.secColumn}`}>
+        <div className={`row text-white py-3 ${styles.secColumn}`}>
           <div className="col-sm-6 ">
             <header className="container pt-5">
               <h1 className={`display-3 fw-bold ${styles.text3}`}>100K+ Tokens</h1>
-              <p className={` ${styles.p3}`}>
+              <p className={` ${styles.paragrapgh}`}>
                 Store, Send, Receive and Trade over 100,000 crypto across
                 Multiple Chains at Best Rates
               </p>

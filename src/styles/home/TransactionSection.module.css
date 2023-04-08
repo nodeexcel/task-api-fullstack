@@ -1,41 +1,87 @@
 /* --------------transaction section---------- */
 
-.transactionDiv{
-    background-color: black;
-    padding:60px;
+.transactionDiv {
+  background-color: rgb(30, 27, 27);
+  padding-top: 100px;
+  padding-left: 18%;
+  padding-right: 5%;
+  margin-top: -33px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
 }
-.phoneImg{
-    display: flex;
-    justify-content: center;
-    margin-left: -100px;
-    z-index: 5;
+.phoneImg {
+  display: flex;
+  justify-content: center;
+  margin-left: -80px;
+  z-index: 5;
 }
-.img{
-    margin-top: 100px;
+.img {
+  margin-top: 100px;
 }
-.textDiv{
-    position: relative;
-    top:0px;
-    display: flex;
+
+.mobile{
+  height: 600px;
+  align-items: center;
 }
-.heading{
-    font-size: 115px;
-    font-weight: 700;
-    line-height: 100px;
-    color: white;
-    position: relative;
-    top: 100px;
+.textDiv {
+  position: relative;
+  top: 0px;
+  display: flex;
 }
-.fasterText{
-    display: flex;
+.heading {
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 100px;
+  color: white;
+  position: relative;
+  top: 100px;
 }
-.transactionHeading{
-    font-size: 115px;
-    font-weight: 700;
-    line-height: 100px;
+.fasterText {
+  display: flex;
+}
+.transactionHeading {
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 100px;
+  /* margin-right: 13%; */
+  color: white;
+  position: relative;
+  top: -240px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (min-width: 300px) and (max-width: 764px) {
+    .heading{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .img{
+      height: 40px;
+      width: 50px;
+    }
+
+  .mobile{
+    width: 200px;
+    height: 350px;
+    align-items: center;
+  }
+  
+  .heading{
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: -30px;
+  }
+
+  .transactionHeading{
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 50px;
+    padding-top: -20%;
     color: white;
     position: relative;
     top: -240px;
     display: flex;
     justify-content: flex-end;
+  }
 }
