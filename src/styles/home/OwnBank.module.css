@@ -70,12 +70,11 @@
   font-weight: 600;
 }
 
-@media screen and (min-width: 300px) and (max-width: 764px) {
+@media screen and (max-width: 640px) {
   .leftDiv {
     text-align: center;
   }
-  .rightDiv {
-    margin: auto;
+  .rightDiv {margin-left: 20%;
   }
   .heading{
     font-size: 50px;
@@ -87,13 +86,15 @@
     font-weight: 200;
   }
   .bankNumber {
-    font-size: 22px;
-    font-weight: 300;
-    margin: auto;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    font: bold;
   }
   .userText{
-    font-size: 16px;
-    margin: auto;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
   }
   .btnDiv {
    display: none;

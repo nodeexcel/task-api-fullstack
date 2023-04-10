@@ -19,9 +19,9 @@ const CryptoSection = () => {
               Buy BTC, ETH, Matic, & 100,000+ crypto Assets across Multiple
               Chains with Ease
             </p>
-          <div >
-             <img src={"/assets/images/home/phoneImg.svg"} className={styles.Iphone} />
-             </div>
+             <img src={"/assets/images/home/Iphone.png"} 
+             className={styles.Iphone} />
+         
 
             <div className={`d-flex ${styles.Appstore}`}>
               <StoreButton subText={"App Store"} src={AppleIcon} imgStyle={styles.imgStyle}/>
@@ -31,7 +31,7 @@ const CryptoSection = () => {
           </div>
         </div>
         <div className="col-sm-12 col-md-6 p-3 d-flex justify-content-center align-items-center ">
-          <img className={styles.wallet} src={"/assets/images/home/crypto.svg"} />
+          <img className={styles.wallet} src={"/assets/images/home/wallet.png"} />
         </div>
       </div>
     </div>

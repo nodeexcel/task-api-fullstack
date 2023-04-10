@@ -19,12 +19,18 @@ const ChatPaySection = () => {
         <div className={styles.text}>
           The new culture of money is making headlines check out our latest blog
         </div>
+
+
+         <divm className={styles.btn}>
          <Button buttonName="black" text="Get the App" />
+         </divm>
+
+
       </div>
 
       <div className={`col-6 ${styles.rightDiv}`}>
         <img
-          src={"/assets/images/home/chatnPay.svg"}
+          src={"/assets/images/home/chatandPay.png"}
         //   width={600}
         //   height={600}
           alt="chatpay"

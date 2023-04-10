@@ -34,9 +34,12 @@
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 300px) and (max-width: 764px) {
+@media screen and (max-width: 640px) {
   .videoDiv {
     padding: 0px;
+  }
+  .btn{
+    display: none;
   }
   .videoHeading {
     padding-left: 10px;
@@ -59,6 +62,7 @@
   }
   .playVideo {
     margin-top: 35px;
+    margin-left: -5%;
     /* margin-right:10px ; */
   }
 }

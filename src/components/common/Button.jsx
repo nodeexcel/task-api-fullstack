@@ -4,17 +4,17 @@ import storeStyles from "@/styles/StoreButton.module.css"
 
 const Button = ({ text, buttonName, style }) => {
   return (
-    <div className={buttonName === "black" ? styles.blackBtnStyle : styles.btnStyle} style={style}>
+    <button className={buttonName === "black" ? styles.blackBtnStyle : styles.btnStyle} style={style}>
       {text}
-    </div>
+    </button>
   )
 }
 
-export const StoreButton = ({ src, subText,imgStyle}) => {
+export const StoreButton = ({ src, subText}) => {
   return (
     <div className={storeStyles.storeBtn}>
       <div className={storeStyles.leftDiv}>
-        <img src={src}  alt='icon' style={imgStyle}/>
+        <img src={src}  alt='icon'/>
       </div>
       <div className={storeStyles.rightDiv}>
         <div className={storeStyles.text}>Download on the</div>

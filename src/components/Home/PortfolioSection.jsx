@@ -27,7 +27,7 @@ const PortfolioSection = () => {
                 </div>
                 <div style={{ position: "absolute",  top: -55, left: 600 }}>
 
-                    <img src={"/assets/images/home/portfolio.svg"} height={800} width={1000} alt='' />
+                    <img src={"/assets/images/home/portfolio.png"} height={800} width={1000} alt='' />
                 </div>
             </div>
 

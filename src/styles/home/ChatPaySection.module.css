@@ -2,18 +2,20 @@
 
 .chatDiv {
   background: linear-gradient(91.6deg, #afe2ed 0.62%, #a26aff 99.17%);
-  margin-top: -35px;
-  padding: 5%;
+  padding-top: 100px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 3%;
+  margin-top: -33px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  /* margin-left: 1px; */
 }
 .leftDiv {
-  width: 50%;
+  /* width: 50%; */
   padding: 100px;
 }
 .rightDiv {
-  width: 50%;
+  /* width: 50%; */
 }
 .text {
   font-size: 28px;
@@ -35,11 +37,13 @@
 }
 
 
-@media screen and (min-width: 300px) and (max-width: 764px) {
+@media screen and (max-width: 640px) {
     .chatDiv{
         display: flex;
         flex-direction: column;
         padding: 70px 10px;
+        /* border-bottom-left-radius: 40px; */
+        /* border-bottom-right-radius: 40px; */
     }
     .leftDiv {
         /* width: 50%; */
@@ -50,6 +54,9 @@
     .heading{
         font-size: 25px;
         font-weight: 600;
+    }
+    .btn{
+      display: none;
     }
     .subHeading{
         font-size: 40px;

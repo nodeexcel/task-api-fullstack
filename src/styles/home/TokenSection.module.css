@@ -32,8 +32,11 @@
   font-weight: 300;
   margin-bottom: 50px;
 }
-
-@media screen and (min-width: 300px) and (max-width: 764px) {
+.firstcolumn{
+  display: flex;
+  flex-direction: inherit;
+ }
+@media screen and (max-width: 640px) {
 
  .mainDiv{
   /* margin-top: -70px; */

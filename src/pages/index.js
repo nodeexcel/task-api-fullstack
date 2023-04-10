@@ -1,5 +1,5 @@
-import NavBar from '@/components/Navbar'
-import LandingPage from '@/components/Home/index'
+import NavBar from "@/components/Navbar";
+import LandingPage from "@/components/Home/index";
 
 export default function Home() {
   return (
@@ -7,5 +7,5 @@ export default function Home() {
       <NavBar />
       <LandingPage />
     </>
-  )
+  );
 }

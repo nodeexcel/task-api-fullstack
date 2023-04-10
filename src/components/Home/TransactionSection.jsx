@@ -7,7 +7,7 @@ const TransactionSection = () => {
       <div className={styles.textDiv}>
         <div className={styles.fasterText}>
           <img
-            src="/assets/images/home/thunderImg.svg"
+            src="/assets/images/home/spark.png"
             height={100}
             width={125}
             alt="thunderImg"
@@ -17,7 +17,7 @@ const TransactionSection = () => {
         </div>
         <div className={styles.phoneImg}>
           <img
-            src="/assets/images/home/transactionPhone.svg"
+            src="/assets/images/home/phone.png"
             alt="phone"
             className={styles.mobile}
           />
