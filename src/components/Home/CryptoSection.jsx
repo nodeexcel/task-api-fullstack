@@ -31,7 +31,7 @@ const CryptoSection = () => {
           <ResponsiveImage
             desktopImage={"/assets/images/home/crypto.svg"}
             mobileImage={"/assets/images/home/phoneImg.svg"}
-            
+
           />
         </div>
       </div>

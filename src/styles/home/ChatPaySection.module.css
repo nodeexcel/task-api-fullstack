@@ -5,6 +5,7 @@
     display: flex;
     width: 100%;
     padding: 100px;
+    border-radius: 50px;
 }
 .leftDiv{
     width: 50%;

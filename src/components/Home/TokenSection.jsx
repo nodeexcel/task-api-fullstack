@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "@/styles/home/TokenSection.module.css";
-import Button from "../common/Button";
 
 const TokenSection = () => {
   //   const tokenData = [

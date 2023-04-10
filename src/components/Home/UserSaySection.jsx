@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import FeaturesSection from "./FeaturesSection";
 
 const UserSaySection = () => {
     const userSayData = [
@@ -25,11 +26,13 @@ const UserSaySection = () => {
     ]
     return (
         <div 
-        className="bg-dark p-5"
+        className="bg-dark"
         style={{
             backgroundImage: "url(/assets/images/home/userBg.svg)", backgroundPosition: "center",
             backgroundSize: "cover"
         }}>
+      <FeaturesSection />
+
             <div className="text-light d-flex justify-content-center fs-1">What our users say 💬</div>
             <div className="d-flex justify-content-center fs-5" style={{ color: "#BABABA" }}>Protected by a multi-level security <br />architecture and is regularly</div>
             <motion.div

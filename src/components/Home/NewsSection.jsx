@@ -40,11 +40,11 @@ const NewsSection = () => {
 
     ]
     return (
-        <div style={{ background: "black", color:"white", padding:100 }}>
+        <div style={{ background: "transparent", color:"white", padding:100 }}>
             <div className="d-flex justify-content-center fs-1 my-4">Plena in the News</div>
             <div>
             <motion.div
-                style={{ display: "inline-block", width: "100%", display: "flex", background: "black", padding: 20 }}
+                style={{ display: "inline-block", width: "100%", display: "flex", background: "transparent", padding: 20 }}
                 animate={{ x: ["100%", "-100%"] }}
                 transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
             >
@@ -53,7 +53,7 @@ const NewsSection = () => {
                 }
             </motion.div>
             <motion.div
-                style={{ display: "inline-block", width: "100%", display: "flex", background: "black", padding: 20 }}
+                style={{ display: "inline-block", width: "100%", display: "flex", background: "transparent", padding: 20 }}
                 animate={{ x: ["-100%", "100%"] }}
                 transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
             >

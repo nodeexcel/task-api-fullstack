@@ -4,13 +4,10 @@ import TokenSection from './TokenSection'
 import VideoSection from './VideoSection'
 import CryptoSection from './CryptoSection'
 import TransactionSection from './TransactionSection'
-import ChatPaySection from './ChatPaySection'
-import FeaturesSection from './FeaturesSection'
-import NewsSection from './NewsSection'
 import UserSaySection from './UserSaySection'
-import BackedSection from './BackedSection'
 import StoriesSection from './StoriesSection'
-import PortfolioSection from './PortfolioSection'
+import QuestionSection from './QuestionSection'
+import TeamSection from './TeamSection'
 
 const LandingPage = () => {
   return (
@@ -20,12 +17,10 @@ const LandingPage = () => {
       <TokenSection />
       <CryptoSection />
       <TransactionSection />
-      <ChatPaySection />
-      <FeaturesSection />
       <UserSaySection />
+      <TeamSection/>
       <StoriesSection/>
-      <NewsSection/>
-      <PortfolioSection/>
+      <QuestionSection/>
     </div>
   )
 }
