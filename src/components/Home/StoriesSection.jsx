@@ -42,12 +42,12 @@ const StoriesSection = () => {
         </div>
       </div>
       <div
-        className="row d-flex justify-content-center"
+        className="row"
         style={{ paddingBottom: 100, paddingLeft: 25, paddingRight: 25 }}
       >
         {storyData.map((data) => {
           return (
-            <Card text={data.text} src={data.src} subText={data.subText} />
+           <div className="col-md-4 col-sm-12"> <Card text={data.text} src={data.src} subText={data.subText} style={{margin:"1rem"}}/></div>
           );
         })}
       </div>

@@ -11,18 +11,18 @@ const BackedSection = () => {
                 </div>
                 <div className="col-6 d-flex">
                     <motion.div
-                        style={{ display: "flex",flexDirection:"column", display: "flex", background: "black", padding: 20 }}
+                        style={{ display: "flex", flexDirection: "column", display: "flex", background: "black", padding: 20 }}
                         animate={{ y: ["50%", "-50%"] }}
                         transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
                     >
-                        <img src="/assets/images/home/polygon.svg" width={200} height={40} alt="polygon"/>
+                        <img src="/assets/images/home/polygon.svg" width={200} height={40} alt="polygon" />
                     </motion.div>
                     <motion.div
-                        style={{ display: "flex",flexDirection:"column", display: "flex", background: "black", padding: 20 }}
+                        style={{ display: "flex", flexDirection: "column", display: "flex", background: "black", padding: 20 }}
                         animate={{ y: ["-50%", "50%"] }}
                         transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
                     >
-                        <img src="/assets/images/home/biconomy.svg" width={200} height={40} alt="polygon"/>
+                        <img src="/assets/images/home/biconomy.svg" width={200} height={40} alt="polygon" />
                     </motion.div>
                 </div>
             </div>

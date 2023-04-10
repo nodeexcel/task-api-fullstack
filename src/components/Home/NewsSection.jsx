@@ -45,7 +45,7 @@ const NewsSection = () => {
             <div className="d-flex justify-content-center fs-1 my-4 py-5">Plena in the News</div>
             <div>
             <motion.div
-                style={{ display: "inline-block", width: "100%", display: "flex", padding: 20 }}
+                style={{ display: "inline-block", width: "100%", display: "flex", background: "transparent", padding: 20 }}
                 animate={{ x: ["100%", "-100%"] }}
                 transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
             >
