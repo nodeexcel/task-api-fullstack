@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import styles from '../../styles/home/NewsSection.module.css';
 
 const newsData = [
     {

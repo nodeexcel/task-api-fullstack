@@ -1,4 +1,5 @@
 /* ------------ Token Section ------------ */
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 
 .mainDiv {
   padding: 100px;
@@ -31,11 +32,14 @@
   font-weight: 300;
   margin-bottom: 50px;
 }
-
-@media screen and (min-width: 300px) and (max-width: 764px) {
+.firstcolumn{
+  display: flex;
+  flex-direction: inherit;
+ }
+@media screen and (max-width: 640px) {
 
  .mainDiv{
-  margin-top: -70px;
+  /* margin-top: -70px; */
   align-items: center;
   padding: 0px;
  }
@@ -66,6 +70,9 @@
   width: max-content;
   margin: 0px;
   padding: 0px;
+ }
+ .paragrapgh{
+  font-family: 'Abel', sans-serif;
  }
 
  .image1{

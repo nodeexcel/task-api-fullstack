@@ -26,6 +26,8 @@ const OwnBank = () => {
           backgroundSize: "cover",
           backgroundColor:"black"
         }}
+        className={styles.mainDiv}
+        id="home"
       >
         <div className="container">
         <div className="row">
@@ -60,7 +62,7 @@ const OwnBank = () => {
           </div>
           <div className={`col-sm-6 ${styles.rightDiv}`}>
             <img
-              src={"/assets/images/home/phoneImg.svg"}
+              src={"/assets/images/home/Iphone.png"}
               width={1000}
               height={700}
               alt="phone"
@@ -68,12 +70,12 @@ const OwnBank = () => {
           </div>
         </div>
         <div className="row">
-          <div className="d-flex justify-content-evenly align-item-center mb-5">
+          <div className="d-flex justify-content-evenly align-item-center">
             {bankData?.map((data,i) => {
               return (
                 <div className="text-white" key={i}>
                   <div className={styles.bankNumber}>{data.number}</div>
-                  <p className={styles.userText}> {data.text}</p>
+                  <p className={`px-1 ${styles.userText}`}> {data.text}</p>
                 </div>
               );
             })}

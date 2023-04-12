@@ -26,3 +26,25 @@
     font-weight: 600;
     font-size: 22px;
 }
+
+
+
+@media screen and (max-width: 640px) {
+    .storeBtn{
+        /* padding-top: 4px;
+        padding-left: 5px; */
+        align-items: center;
+        width: 250px;
+        height: 80px
+    }
+    .text{
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 12px;
+    }
+    .subText{
+        font-weight: 600;
+        font-size: 16px;
+    }
+   
+}

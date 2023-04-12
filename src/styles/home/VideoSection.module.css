@@ -1,21 +1,24 @@
 /* ----------Video Section------------ */
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 
 .videoDiv {
   background-color: #7f4bc4;
   text-align: center;
+  position: relative;
   color: white;
   padding: 80px;
   margin-top: -20px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
-.video{
-  margin-right: -45%;
-}
-.playVideo{
+
+.playVideo {
   position: relative;
-  margin-bottom: -120%;
-  margin-left: 30%;
+  z-index: 10;
+  top: 100;
+  position: absolute;
+  top: 56%;
+  left: 48%;
 }
 
 .videoHeading {
@@ -31,29 +34,35 @@
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 300px) and (max-width: 764px) {
+@media screen and (max-width: 640px) {
   .videoDiv {
     padding: 0px;
   }
+  .btn{
+    display: none;
+  }
   .videoHeading {
-    font-family: "Clash Grotesk";
+    padding-left: 10px;
+    padding-right: 20px;
     font-style: normal;
-    font-weight: 600;
-    font-size: 55px;
+    font-weight: 500;
+    font-family: "Orbitron", sans-serif;
+    line-height: 50px;
+    font-size: 50px;
   }
   .videoSubHeading {
-    font-style: normal;
-    font-weight: 400;
-    padding: 10px;
-    line-height: 140%;
+    font-weight: 0;
+    padding: 30px;
+    font-family: "Abel", sans-serif;
+    line-height: 20px;
   }
   .video {
     margin-left: -240px;
     padding-bottom: -50px;
   }
-  .playVideo{
-    margin-top: -120%;
-    margin-left: 25%;
-    /* margin: auto; */
+  .playVideo {
+    margin-top: 35px;
+    margin-left: -5%;
+    /* margin-right:10px ; */
   }
 }

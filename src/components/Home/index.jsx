@@ -8,17 +8,19 @@ import UserSaySection from './UserSaySection'
 import StoriesSection from './StoriesSection'
 import QuestionSection from './QuestionSection'
 import TeamSection from './TeamSection'
-import Gallery from './Gallery'
+// import Gallery from './Gallery'
+import ChatPaySection from './ChatPaySection'
 
 const LandingPage = () => {
   return (
     <div>
-      <Gallery/>
+      {/* <Gallery/> */}
       <OwnBank />
       <VideoSection />
       <TokenSection />
       <CryptoSection />
       <TransactionSection />
+      <ChatPaySection/>
       <UserSaySection />
       <TeamSection/>
       <StoriesSection/>

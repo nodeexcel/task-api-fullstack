@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  position: relative;
 }
 .leftDiv {
   color: white;
@@ -69,12 +70,14 @@
   font-weight: 600;
 }
 
-@media screen and (min-width: 300px) and (max-width: 764px) {
+@media screen and (max-width: 640px) {
+  .mainDiv{
+    margin-top: 10%;
+  }
   .leftDiv {
     text-align: center;
   }
-  .rightDiv {
-    margin: auto;
+  .rightDiv {margin-left: 20%;
   }
   .heading{
     font-size: 50px;
@@ -86,13 +89,51 @@
     font-weight: 200;
   }
   .bankNumber {
-    font-size: 22px;
-    font-weight: 300;
-    margin: auto;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
   }
   .userText{
-    font-size: 16px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .btnDiv {
+   display: none;
+  }
+  .curl {
     margin: auto;
+  }
+  
+}
+
+@media screen and (min-width: 640px) and (max-width:1024px){
+  .mainDiv{
+    margin-top: 10%;
+  }
+  .leftDiv {
+    text-align: center;
+  }
+  .rightDiv {margin-left: 20%;
+  }
+  .heading{
+    font-size: 70px;
+    margin: auto;
+    line-height: 50px;
+  }
+  .subHeading{
+    line-height: 29px;
+    font-weight: 200;
+  }
+  .bankNumber {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .userText{
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
   }
   .btnDiv {
    display: none;
