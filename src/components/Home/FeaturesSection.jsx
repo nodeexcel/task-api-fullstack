@@ -52,14 +52,14 @@ const LeftSide = () => <div className={`col-4 align-items-center d-flex p-5 flex
 
 const FeaturesSection = () => {
   return (
-    <div className={` text-white ${styles.featureDiv}`} style={{padding:50}} id="feature">
+    <section className={` text-white ${styles.featureDiv}`} style={{padding:50}} id="feature">
       <div className={styles.featureHeading}>Features Like Never <br/> Seen Before
       </div>
       <div className='row'>
         <LeftSide />
         <RightSide />
       </div>
-    </div>
+    </section>
 
   )
 }

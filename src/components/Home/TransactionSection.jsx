@@ -3,7 +3,7 @@ import styles from "@/styles/home/TransactionSection.module.css";
 
 const TransactionSection = () => {
   return (
-    <div className={styles.transactionDiv}>
+    <section className={styles.transactionDiv}>
       <div className={styles.textDiv}>
         <div className={styles.fasterText}>
           <img
@@ -24,7 +24,7 @@ const TransactionSection = () => {
         </div>
       </div>
       <div className={styles.transactionHeading}>Transactions</div>
-    </div>
+    </section>
   );
 };
 

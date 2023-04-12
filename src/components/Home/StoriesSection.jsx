@@ -25,7 +25,7 @@ const StoriesSection = () => {
     },
   ];
   return (
-    <div className="bg-black text-white">
+    <section className="bg-black text-white">
       <div className="container my-5">
         <div className={`row ${styles.maindev}`}>
         {/* justify-content-center align-items-center */}
@@ -52,7 +52,7 @@ const StoriesSection = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 

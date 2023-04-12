@@ -30,4 +30,12 @@
     padding-left: 0px;
     /* padding-top: ; */
   }
+  .headpoint{
+    padding: 0px;
+  }
+  .Read{
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+  }
 }

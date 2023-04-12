@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const BackedSection = () => {
 
     return (
-        <div style={{ background: "black" }}>
+        <section style={{ background: "black" }}>
             <div className="row">
                 <div className="col-6 text-light d-flex justify-content-center flex-column align-items-start">
                     <div>Backed by the best</div>
@@ -26,7 +26,7 @@ const BackedSection = () => {
                     </motion.div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 export default BackedSection

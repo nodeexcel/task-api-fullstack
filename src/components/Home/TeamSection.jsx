@@ -26,7 +26,7 @@ const TeamSection = () => {
         }
     ]
     return (
-        <div className='bg-dark text-white p-5' id="teamSection">
+        <section className='bg-dark text-white p-5' id="teamSection">
             <div className='d-flex flex-column align-items-center justify-content-center'>
                 <div className='fs-1 fw-bolder'>
                     The Team
@@ -48,7 +48,7 @@ const TeamSection = () => {
                 </div>
                 <div className='d-flex'><img src="/assets/images/home/right.svg" alt='right'/></div>
             </div>
-        </div>
+        </section>
     )
 }
 

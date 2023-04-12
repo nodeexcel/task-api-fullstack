@@ -25,7 +25,7 @@ const UserSaySection = () => {
         }
     ]
     return (
-        <div 
+        <section 
         className="bg-dark"
         style={{
             backgroundImage: "url(/assets/images/home/userBg.svg)", backgroundPosition: "center",
@@ -84,7 +84,7 @@ const UserSaySection = () => {
                     )
                 })}
             </motion.div>
-        </div>
+        </section>
 
     );
 };

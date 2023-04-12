@@ -41,7 +41,7 @@ const NewsSection = () => {
 
     ]
     return (
-        <div className={styles.mainDiv}>
+        <section className={styles.mainDiv}>
             <div className="d-flex justify-content-center fs-1 my-4 py-5">Plena in the News</div>
             <div>
             <motion.div
@@ -63,7 +63,7 @@ const NewsSection = () => {
                 }
             </motion.div>
             </div>
-        </div>
+        </section>
 
     );
 };

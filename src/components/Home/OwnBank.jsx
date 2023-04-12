@@ -69,14 +69,14 @@ const OwnBank = () => {
               </div>
             </div>
             <div
-              className={`col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col d-sm-flex justify-content-sm-center ${styles.rightDiv}`}
+              className={`col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col d-sm-flex justify-content-sm-center align-item-center ${styles.rightDiv}`}
             >
               <img
                 src={"/assets/images/home/Iphone.png"}
                 width={1000}
                 height={700}
                 alt="phone"
-                className="d-sm-flex justify-content-sm-center"
+                className={styles.images}
               />
             </div>
           </div>
@@ -85,7 +85,7 @@ const OwnBank = () => {
               <div className="d-flex justify-content-evenly align-item-center">
                 {bankData?.map((data, i) => {
                   return (
-                    <div className="text-white" key={i}>
+                    <div className="text-white " key={i}>
                       <div className={styles.bankNumber}>{data.number}</div>
                       <p className={`px-1 ${styles.userText}`}> {data.text}</p>
                     </div>

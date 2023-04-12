@@ -4,7 +4,7 @@ import Button from "../common/Button";
 
 const ChatPaySection = () => {
   return (
-    <div className={`row ${styles.chatDiv}`}>
+    <section className={`row ${styles.chatDiv}`}>
       <div className={`col-6 ${styles.leftDiv}`}>
         <div className={styles.heading}>Worlds first crypto</div>
         <div className={styles.subHeading}>
@@ -37,7 +37,7 @@ const ChatPaySection = () => {
           className={styles.mobile}
         />
       </div>
-    </div>
+    </section>
   );
 };
 

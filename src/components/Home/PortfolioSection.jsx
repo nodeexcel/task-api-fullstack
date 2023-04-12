@@ -8,7 +8,7 @@ const PortfolioSection = () => {
 
     return (
         <>
-            <div className={`bg-transparent ${styles.mainDiv}`}>
+            <section className={`bg-transparent ${styles.mainDiv}`}>
                 <div className={`row text-white ${styles.title}`}>
                     <div className='col-6 d-flex align-items-center justify-content-center flex-column'>
                         <div className={`fs-1 fw-bolder ${styles.head}`}>
@@ -29,7 +29,7 @@ const PortfolioSection = () => {
 
                     <img src={"/assets/images/home/portfolio.png"} height={800} width={1000} alt='' />
                 </div>
-            </div>
+            </section>
 
         </>
     )

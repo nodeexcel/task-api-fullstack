@@ -8,7 +8,7 @@ import Footer from "../Footer";
 import styles from '../../styles/home/QuestionSection.module.css'
 
 const QuestionSection = () => (
-  <div
+  <section
     style={{
       backgroundImage: "url(/assets/images/home/userBg.svg)",
       backgroundPosition: "center",
@@ -20,7 +20,7 @@ const QuestionSection = () => (
         className={`text-white d-flex flex-column ${styles.mainDiv}`}
       >
         <div className={`d-flex justify-content-start align-items-center ${styles.heading}`}>
-          <div className={`pt-5 ${styles.subheading}`}>Have more questions? </div>
+          <h1 className={`${styles.subheading}`}>Have more questions? </h1>
           <img
             src="/assets/images/home/bouyIcon.webp"
             height="50"
@@ -30,13 +30,13 @@ const QuestionSection = () => (
           />
         </div>
 
-        <div className="fs-5">
+        <div className={styles.Read}>
           Read our <span className="text-primary">support document</span> to
           find out more
         </div>
       </div>
       <Accordion.Root
-        className="AccordionRoot"
+        className={`AccordionRoot ${styles.headpoint}`}
         type="single"
         defaultValue="item-1"
         collapsible
@@ -81,7 +81,7 @@ const QuestionSection = () => (
     <NewsSection />
     <PortfolioSection />
     <Footer />
-  </div>
+  </section>
 );
 
 const AccordionTrigger = React.forwardRef(

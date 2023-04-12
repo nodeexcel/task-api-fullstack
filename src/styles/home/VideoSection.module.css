@@ -37,6 +37,7 @@
 @media screen and (max-width: 640px) {
   .videoDiv {
     padding: 0px;
+    width: 100%;
   }
   .btn{
     display: none;
@@ -57,6 +58,7 @@
     line-height: 20px;
   }
   .video {
+    margin: auto;
     margin-left: -240px;
     padding-bottom: -50px;
   }
@@ -66,3 +68,37 @@
     /* margin-right:10px ; */
   }
 }
+@media screen and (max-width: 1024px) {
+  .videoDiv {
+    padding: 0px;
+    width: 100%;
+  }
+  .btn{
+    display: none;
+  }
+  .videoHeading {
+    padding-left: 10px;
+    padding-right: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-family: "Orbitron", sans-serif;
+    line-height: 50px;
+    font-size: 50px;
+  }
+  .videoSubHeading {
+    font-weight: 0;
+    padding: 30px;
+    font-family: "Abel", sans-serif;
+    line-height: 20px;
+  }
+  .video {
+    margin: auto;
+    padding-bottom: -50px;
+  }
+  .playVideo {
+    margin-top: 35px;
+    margin-left: -5%;
+    /* margin-right:10px ; */
+  }
+}
+
