@@ -12,7 +12,7 @@ import ChatPaySection from './ChatPaySection'
 
 const LandingPage = () => {
   return (
-    <div>
+    <>
       <OwnBank />
       <VideoSection />
       <TokenSection />
@@ -23,7 +23,7 @@ const LandingPage = () => {
       <TeamSection/>
       <StoriesSection/>
       <QuestionSection/>
-    </div>
+    </>
   )
 }
 

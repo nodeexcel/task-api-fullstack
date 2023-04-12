@@ -13,15 +13,15 @@ const NavBar = () => {
         <Navbar.Brand href="#home"><img src={"/assets/images/home/logo.svg"} height={40} width={90} alt="logo"/></Navbar.Brand>
         <Navbar.Toggle className={styles.logo}><FiMenu/></Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className={`me-auto color-white ${styles.liBox}`}>
+          <Nav className={`color-white text-sm-center ${styles.liBox}`}>
             <Nav.Link href="#feature" className={`text-white ${styles.liText}`}>Features</Nav.Link>
             <Nav.Link href="#partners" className={`text-white ${styles.liText}`}>Partners</Nav.Link>
             <Nav.Link href="#teamSection" className={`text-white ${styles.liText}`}>Team</Nav.Link>
             <Nav.Link href="#Review" className={`text-white ${styles.liText}`}>Reviews</Nav.Link>
             <Nav.Link href="#blog" className={`text-white ${styles.liText}`}>FAQs</Nav.Link>
             <Nav.Link href="#blog" className={`text-white ${styles.liText}`}>Blog</Nav.Link>
-            <button className={`text-white ${styles.NavBtn}`}><Navbar.Toggle>
-            <p className='text-white pt-3'>Close</p></Navbar.Toggle>
+            <button className={`text-white ${styles.NavBtn}`}>
+            Close
            </button>
            <button className={`my-3 ${styles.DownloadApp}`}>
             Download App
