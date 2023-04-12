@@ -12,15 +12,14 @@
 .phoneImg {
   display: flex;
   justify-content: center;
-  margin-left: -80px;
-  z-index: 5;
+  margin-left: -150px;
 }
 .img {
   margin-top: 100px;
 }
 
 .mobile {
-  height: 600px;
+  height: 700px;
   align-items: center;
 }
 .textDiv {
