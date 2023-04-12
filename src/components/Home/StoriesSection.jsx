@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from '../common/Card'
-import Button, { StoreButton } from '../common/Button'
+import Button from '../common/Button'
 
 const StoriesSection = () => {
     const storyData = [

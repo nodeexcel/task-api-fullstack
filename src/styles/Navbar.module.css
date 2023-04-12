@@ -10,3 +10,37 @@
 .navbarDiv{
     background-color: black;
 }
+/* .liText:hover{
+    color:red
+}
+.liText:active{
+    color:green
+}
+.liText:focus{
+    color:green
+} */
+
+/* .navbar .nav-link.active,
+.navbar .nav-link:focus {
+  color: red !important;
+} */
+
+@media screen and (max-width:640px) {
+   
+      
+}
+
+/* .navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: red !important;
+}
+
+.show > .nav-link,
+.nav-link.active {
+  color: red;
+} */
+
+
+.navbar-nav .nav-link.active {
+    color: red !important;
+  }

@@ -40,7 +40,7 @@ const TeamSection = () => {
                 {teamData.map((data) => {
                     return (
                         <>
-                            <Card src={data.src} text={data.text} subText={data.subText} style={{ width: "14rem", margin: 20 }} />
+                            <Card src={data.src} text={data.text} subText={data.subText} style={{ width: "14rem", margin: 20 }} type={"team"}/>
                         </>
                     )
                 })}

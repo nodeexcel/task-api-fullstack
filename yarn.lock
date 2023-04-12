@@ -430,6 +430,13 @@ prop-types@^15.6.2, prop-types@^15.8.1:
     object-assign "^4.1.1"
     react-is "^16.13.1"
 
+react-alice-carousel@^2.7.1:
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/react-alice-carousel/-/react-alice-carousel-2.7.1.tgz#0a92db78535d2d7e010633f39dd483f44dc8cfae"
+  integrity sha512-8ljKi5y+eqlsRkO4qRxEXIP0067w/4zvZvpJ66w+eAbeF0hIgC3iLeSmVtNc+F6ISzFsEJX0cOx7jIawXs0G8A==
+  dependencies:
+    vanilla-swipe "^2.4.1"
+
 react-bootstrap@^2.7.2:
   version "2.7.2"
   resolved "https://registry.yarnpkg.com/react-bootstrap/-/react-bootstrap-2.7.2.tgz#100069ea7b4807cccbc5fef1e33bc90283262602"
@@ -528,6 +535,11 @@ uncontrollable@^8.0.0:
   integrity sha512-a954G/0JyXoZdpt0YIzTfoQyWtRS1VvygOBsHttCtZL8jDTKd6vQlUo811y46XnWoXIqQ36QKi3cSEdPuFADkA==
   dependencies:
     "@types/react" ">=18.0.28"
+
+vanilla-swipe@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/vanilla-swipe/-/vanilla-swipe-2.4.1.tgz#697d58bde3729db3c80fd3de488a54a8eae05664"
+  integrity sha512-o6pfI0dipet88ZnPLV4Jx04Ia+U3xANh14vhROW2TOe/mrwk2JGG68+Z0BPoD1YUcQQEnK4SZBXkqFe+K1l7/w==
 
 warning@^4.0.0, warning@^4.0.3:
   version "4.0.3"

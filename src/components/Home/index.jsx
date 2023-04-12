@@ -8,10 +8,12 @@ import UserSaySection from './UserSaySection'
 import StoriesSection from './StoriesSection'
 import QuestionSection from './QuestionSection'
 import TeamSection from './TeamSection'
+import Gallery from './Gallery'
 
 const LandingPage = () => {
   return (
     <div>
+      <Gallery/>
       <OwnBank />
       <VideoSection />
       <TokenSection />

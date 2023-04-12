@@ -12,8 +12,8 @@ const NavBar = () => {
         <Navbar.Brand href="#logo"><img src={"/assets/images/home/logo.svg"} height={40} width={90} alt="logo"/></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className={`me-auto ${styles.liBox}`} style={{}}>
-            <Nav.Link href="#earn" className={styles.liText}>Earn</Nav.Link>
+          <Nav className={`me-auto ${styles.liBox}`} >
+            <Nav.Link to="#earn" className={styles.liText}>Earn</Nav.Link>
             <Nav.Link href="#defi" className={styles.liText}>DeFi</Nav.Link>
             <Nav.Link href="#features" className={styles.liText}>Features</Nav.Link>
             <Nav.Link href="#blog" className={styles.liText}>Blog</Nav.Link>
