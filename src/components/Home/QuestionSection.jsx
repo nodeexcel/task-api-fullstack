@@ -14,6 +14,7 @@ const QuestionSection = () => (
       backgroundPosition: "center",
       backgroundSize: "cover",
     }}
+    id="faq"
   >
     <div className="container pb-3">
       <div

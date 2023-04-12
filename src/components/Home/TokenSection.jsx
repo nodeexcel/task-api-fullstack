@@ -4,7 +4,7 @@ import styles from "@/styles/home/TokenSection.module.css";
 const TokenSection = () => {
 
   return (
-    <div className={styles.mainDiv}>
+    <section className={styles.mainDiv}>
       <div className="container">
         <div className={`row d-flex py-3 text-white  ${styles.firstcolumn}`}>
           <div className={`col-sm-6 ${styles.Column}`}>
@@ -66,7 +66,7 @@ const TokenSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

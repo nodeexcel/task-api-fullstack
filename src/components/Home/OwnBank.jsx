@@ -1,6 +1,6 @@
-import React from 'react'
-import styles from "@/styles/home/OwnBank.module.css"
-import Button from '../common/Button'
+import React from "react";
+import styles from "@/styles/home/OwnBank.module.css";
+import Button from "../common/Button";
 
 const OwnBank = () => {
   const bankData = [
@@ -19,70 +19,83 @@ const OwnBank = () => {
   ];
   return (
     <>
-      <div
+      <section
         style={{
           backgroundImage: "url(/assets/images/home/gradientBg.svg)",
           backgroundPosition: "center",
           backgroundSize: "cover",
-          backgroundColor:"black"
+          backgroundColor: "black",
         }}
         className={styles.mainDiv}
         id="home"
       >
         <div className="container">
-        <div className="row">
-          <div className={`col-sm-6 ${styles.leftDiv}`}>
-            <div className={styles.heading}>
-              Be Your
-              <br /> Own Bank
+          <div className="row">
+            <div
+              className={`col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col ${styles.leftDiv}`}
+            >
+              <div
+                className={`col-12 ${styles.heading}`}
+              >
+                <h1 className={`display-1 ${styles.heading}`}>
+                  {" "}
+                  Be Your
+                  <br /> Own Bank{" "}
+                </h1>
+              </div>
+              <img
+                src={"/assets/images/home/curl.svg"}
+                alt="curl"
+                className={` ${styles.curl}`}
+              />
+              <div className={` ${styles.subHeading}`}>
+                <p className="lead">
+                  {" "}
+                  Introducing Plena 2.0, Self-Custodial Smart Wallet with
+                  EIP-4337: Account Abstraction
+                </p>
+              </div>
+              <div className={styles.btnDiv}>
+                <Button text={"Get the App"} />
+                <div>
+                  <img
+                    src={"/assets/images/home/playBtn1.svg"}
+                    height={40}
+                    width={40}
+                    alt="playbtn"
+                  />
+                  Watch Intro
+                </div>
+              </div>
             </div>
-            <img
-              src={"/assets/images/home/curl.svg"}
-              height={80}
-              width={250}
-              alt="curl"
-              className={styles.curl}
-            />
-            <div className={` ${styles.subHeading}`}>
-              Introducing Plena 2.0, Self-Custodial Smart Wallet with EIP-4337:
-              Account Abstraction{" "}
+            <div
+              className={`col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col d-sm-flex justify-content-sm-center ${styles.rightDiv}`}
+            >
+              <img
+                src={"/assets/images/home/Iphone.png"}
+                width={1000}
+                height={700}
+                alt="phone"
+                className="d-sm-flex justify-content-sm-center"
+              />
             </div>
-            <div className={styles.btnDiv}>
-              <Button text={"Get the App"} />
-              <div>
-                <img
-                  src={"/assets/images/home/playBtn1.svg"}
-                  height={40}
-                  width={40}
-                  alt="playbtn"
-                />
-                Watch Intro
+          </div>
+          <div className="row">
+            <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div className="d-flex justify-content-evenly align-item-center">
+                {bankData?.map((data, i) => {
+                  return (
+                    <div className="text-white" key={i}>
+                      <div className={styles.bankNumber}>{data.number}</div>
+                      <p className={`px-1 ${styles.userText}`}> {data.text}</p>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
-          <div className={`col-sm-6 ${styles.rightDiv}`}>
-            <img
-              src={"/assets/images/home/Iphone.png"}
-              width={1000}
-              height={700}
-              alt="phone"
-            />
-          </div>
         </div>
-        <div className="row">
-          <div className="d-flex justify-content-evenly align-item-center">
-            {bankData?.map((data,i) => {
-              return (
-                <div className="text-white" key={i}>
-                  <div className={styles.bankNumber}>{data.number}</div>
-                  <p className={`px-1 ${styles.userText}`}> {data.text}</p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-        </div>
-      </div>
+      </section>
     </>
   );
 };

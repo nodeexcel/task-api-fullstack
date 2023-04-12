@@ -98,8 +98,10 @@ const UserSaySection = () => {
                 backgroundSize: "cover"
             }}>
             <FeaturesSection />
-            <BackedSection/>
-            <div className="text-light d-flex justify-content-center fs-1">What our users say 💬</div>
+            <BackedSection />
+            <div
+                id='review'
+                className="text-light d-flex justify-content-center fs-1">What our users say 💬</div>
             <div className="d-flex justify-content-center fs-5" style={{ color: "#BABABA" }}>Protected by a multi-level security <br />architecture and is regularly</div>
             <div className="d-flex">
                 <LeftScroll />

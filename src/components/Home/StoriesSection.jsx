@@ -25,7 +25,9 @@ const StoriesSection = () => {
     },
   ];
   return (
-    <div className="bg-black text-white">
+    <div className="bg-black text-white"
+    id="blog"
+    >
       <div className="container my-5">
         <div className={`row ${styles.maindev}`}>
         {/* justify-content-center align-items-center */}
