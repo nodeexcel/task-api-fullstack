@@ -1,40 +1,82 @@
 /* ---------------features section---------------- */
 
-.featureDiv{
-    padding: 100px;
-    background-color: black;
-    color: white;
-   
+.featureDiv {
+  padding: 100px;
+  /* background-color: black; */
+  color: white;
 }
-.table{
-    width: 90%;
+.table {
+  width: 90%;
 }
-.tableDiv{
-    display: flex;
-    justify-content: center;
+.tableDiv {
+  display: flex;
+  justify-content: center;
 }
-.td{
-    padding: 50px;
-    background-color: #20202099;
-    border-radius: 32px;
-    color: white;
-    margin: 30px;
+.td {
+  padding: 50px;
+  background-color: #20202099;
+  border-radius: 32px;
+  color: white;
+  margin: 30px;
 }
-.heading{
-    font-size: 40px;
-    font-weight: 600;
-    text-align: left;
+.Lending {
+  background: rgba(32, 32, 32, 0.6);
+  backdrop-filter: blur(37px);
+  border-radius: 32px;
 }
-.subHeading{
-    font-size: 22px;
-    font-weight: 300;
+.Rightheading {
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 600;
+  padding-top: 5%;
 }
-.poolDiv{
+.images{
+  padding-top: -50%;
+}
+.RightsubHeading {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 30px;
+  width: 80%;
+  padding: 5% 0% 0% 0%;
+  line-height: 130%;
+  color: #bababa;
+  word-wrap: break-word; 
+}
+.RightSideLending{
+  background: rgba(32, 32, 32, 0.6);
+  backdrop-filter: blur(37px);
+  border-radius: 32px;
+  padding: 10% 5% 5% 5%;
+}
+.featureHeading{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 100%;
+  padding-top: 5%;
+  padding-bottom: 8%;
+}
 
+.heading {
+  font-size: 50px;
+  font-weight: 600;
+  text-align: left;
+  line-height: 50px;
+  word-wrap: break-word; 
 }
 
-@media screen and (max-width:640px){
-    .featureDiv{
-        display: none;
-    }
+.subHeading {
+  font-size: 22px;
+  font-weight: 300;
+}
+.LeftImage{
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+@media screen and (max-width: 640px) {
+  .featureDiv {
+    display: none;
+  }
 }

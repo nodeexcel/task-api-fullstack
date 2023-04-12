@@ -1,5 +1,6 @@
-import React from 'react'
-import Card from '../common/Card'
+import React from 'react';
+import Card from '../common/Card';
+import styles from '../../styles/home/TeamSection.module.css'
 
 const TeamSection = () => {
     const teamData = [
@@ -25,12 +26,12 @@ const TeamSection = () => {
         }
     ]
     return (
-        <div className='bg-dark text-white p-5'>
+        <div className='bg-dark text-white p-5' id="teamSection">
             <div className='d-flex flex-column align-items-center justify-content-center'>
                 <div className='fs-1 fw-bolder'>
                     The Team
                 </div>
-                <div className='fs-4 text-center'>
+                <div className={styles.description}>
                     Protected by a multi-level security <br/>architecture and is regularly
                 </div>
             </div>

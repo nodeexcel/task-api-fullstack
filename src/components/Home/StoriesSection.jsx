@@ -28,8 +28,9 @@ const StoriesSection = () => {
     <div className="bg-black text-white">
       <div className="container my-5">
         <div className={`row ${styles.maindev}`}>
-          <div className=" d-flex justify-content-center align-items-center flex-column ">
-            <h1 className={`fs-2 fw-bold ${styles.StoriesSections}`}>
+        {/* justify-content-center align-items-center */}
+          <div className=" d-flex flex-column ">
+            <h1 className={`display-4 fw-bold ${styles.StoriesSections}`}>
               Our Stories
             </h1>
 
@@ -37,7 +38,7 @@ const StoriesSection = () => {
               The new culture of money is making headlines.Check out our latest
               blog posts to find out more.
             </p>
-            <Button text={"More stories"} style={{ color: "white" }} />
+            <Button text={"More stories"} style={{ color: "white", float:"right" }} />
           </div>
         </div>
       </div>

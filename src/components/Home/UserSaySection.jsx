@@ -32,11 +32,11 @@ const UserSaySection = () => {
             backgroundSize: "cover"
         }}>
       <FeaturesSection />
+            <div className="py-5">   
+            <div className="text-light d-flex pt-5 justify-content-center display-4 fw-bold">What our users say 💬</div>
+            <div className="d-flex justify-content-center text-center fs-4 fs-5" style={{ color: "#BABABA"}}>Protected by a multi-level security <br/>architecture and is regularly</div>
 
-            <div className="text-light d-flex justify-content-center fs-1">What our users say 💬</div>
-            <div className="d-flex justify-content-center fs-5" style={{ color: "#BABABA" }}>Protected by a multi-level security <br />architecture and is regularly</div>
-
-            
+            </div>
             <motion.div
                 style={{ display: "inline-block", width: "150%", display: "flex", color: "white" }}
                 animate={{ x: ["100%", "-100%"] }}

@@ -8,6 +8,7 @@ import UserSaySection from './UserSaySection'
 import StoriesSection from './StoriesSection'
 import QuestionSection from './QuestionSection'
 import TeamSection from './TeamSection'
+import ChatPaySection from './ChatPaySection'
 
 const LandingPage = () => {
   return (
@@ -17,6 +18,7 @@ const LandingPage = () => {
       <TokenSection />
       <CryptoSection />
       <TransactionSection />
+      <ChatPaySection/>
       <UserSaySection />
       <TeamSection/>
       <StoriesSection/>

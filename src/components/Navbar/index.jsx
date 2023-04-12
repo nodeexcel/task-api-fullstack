@@ -8,18 +8,24 @@ import styles from "@/styles/Navbar.module.css"
 
 const NavBar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" className={styles.navbarDiv}>
+    <Navbar collapseOnSelect expand="lg" className={`overflow-hidden py-3  ${styles.navbarDiv}`} fixed="top">
       <Container>
-        <Navbar.Brand href="#logo"><img src={"/assets/images/home/logo.svg"} height={40} width={90} alt="logo"/></Navbar.Brand>
+        <Navbar.Brand href="#home"><img src={"/assets/images/home/logo.svg"} height={40} width={90} alt="logo"/></Navbar.Brand>
         <Navbar.Toggle className={styles.logo}><FiMenu/></Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className={`me-auto ${styles.liBox}`}>
-            <Nav.Link href="#earn" className={styles.liText}>Features</Nav.Link>
-            <Nav.Link href="#defi" className={styles.liText}>Partners</Nav.Link>
-            <Nav.Link href="#features" className={styles.liText}>Team</Nav.Link>
-            <Nav.Link href="#blog" className={styles.liText}>Reviews</Nav.Link>
-            <Nav.Link href="#blog" className={styles.liText}>FAQs</Nav.Link>
-            <Nav.Link href="#blog" className={styles.liText}>Blog</Nav.Link>
+          <Nav className={`me-auto color-white ${styles.liBox}`}>
+            <Nav.Link href="#feature" className={`text-white ${styles.liText}`}>Features</Nav.Link>
+            <Nav.Link href="#partners" className={`text-white ${styles.liText}`}>Partners</Nav.Link>
+            <Nav.Link href="#teamSection" className={`text-white ${styles.liText}`}>Team</Nav.Link>
+            <Nav.Link href="#Review" className={`text-white ${styles.liText}`}>Reviews</Nav.Link>
+            <Nav.Link href="#blog" className={`text-white ${styles.liText}`}>FAQs</Nav.Link>
+            <Nav.Link href="#blog" className={`text-white ${styles.liText}`}>Blog</Nav.Link>
+            <button className={`text-white ${styles.NavBtn}`}><Navbar.Toggle>
+            <p className='text-white pt-3'>Close</p></Navbar.Toggle>
+           </button>
+           <button className={`my-3 ${styles.DownloadApp}`}>
+            Download App
+           </button>
           </Nav>
           <Nav>
             <Button text="Get the App"/>
