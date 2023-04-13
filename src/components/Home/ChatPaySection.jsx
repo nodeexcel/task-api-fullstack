@@ -5,7 +5,7 @@ import Button from "../common/Button";
 const ChatPaySection = () => {
   return (
     <section className={`row ${styles.chatDiv}`}>
-      <div className={`col-6 ${styles.leftDiv}`}>
+      <div className={`col-6 col-sm-6 ${styles.leftDiv}`}>
         <div className={styles.heading}>Worlds first crypto</div>
         <div className={styles.subHeading}>
           Chat’n’Pay
@@ -20,19 +20,16 @@ const ChatPaySection = () => {
           The new culture of money is making headlines check out our latest blog
         </div>
 
-
-         <divm className={styles.btn}>
-         <Button buttonName="black" text="Get the App" />
-         </divm>
-
-
+        <divm className={styles.btn}>
+          <Button buttonName="black" text="Get the App" />
+        </divm>
       </div>
 
-      <div className={`col-6 ${styles.rightDiv}`}>
+      <div className={`col-6 col-sm-6 ${styles.rightDiv}`}>
         <img
           src={"/assets/images/home/chatandPay.png"}
-        //   width={600}
-        //   height={600}
+          //   width={600}
+          //   height={600}
           alt="chatpay"
           className={styles.mobile}
         />

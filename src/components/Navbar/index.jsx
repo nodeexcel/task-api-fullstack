@@ -17,8 +17,8 @@ const NavBar = () => {
             <Nav.Link href="#feature" className={`text-white ${styles.liText}`}>Features</Nav.Link>
             <Nav.Link href="#partners" className={`text-white ${styles.liText}`}>Partners</Nav.Link>
             <Nav.Link href="#teamSection" className={`text-white ${styles.liText}`}>Team</Nav.Link>
-            <Nav.Link href="#Review" className={`text-white ${styles.liText}`}>Reviews</Nav.Link>
-            <Nav.Link href="#blog" className={`text-white ${styles.liText}`}>FAQs</Nav.Link>
+            <Nav.Link href="#review" className={`text-white ${styles.liText}`}>Reviews</Nav.Link>
+            <Nav.Link href="#faq" className={`text-white ${styles.liText}`}>FAQs</Nav.Link>
             <Nav.Link href="#blog" className={`text-white ${styles.liText}`}>Blog</Nav.Link>
             <button className={`text-white ${styles.NavBtn}`}>
             Close

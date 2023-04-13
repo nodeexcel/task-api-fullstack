@@ -336,3 +336,24 @@ h3 {
     height: 0;
   }
 }
+
+.Unset{
+  all:unset;
+  display:flex
+}
+
+.active{
+  color: white !important;
+}
+
+.nav-link:hover{
+  color: white !important;
+}
+
+.active:hover{
+  color: white !important;
+}
+
+#responsive-navbar-nav{
+  justify-content: space-between;
+}

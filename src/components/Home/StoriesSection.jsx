@@ -28,18 +28,18 @@ const StoriesSection = () => {
     <section className="bg-black text-white">
       <div className="container my-5">
         <div className={`row ${styles.maindev}`}>
-        {/* justify-content-center align-items-center */}
-          <div className=" d-flex flex-column ">
-            <h1 className={`display-4 fw-bold ${styles.StoriesSections}`}>
+          <div className="col-10 d-flex flex-column">
+            <h1 className={`display-4 fw-bold my-3 ${styles.StoriesSections}`}>
               Our Stories
             </h1>
-
             <p className={styles.description}>
               The new culture of money is making headlines.Check out our latest
               blog posts to find out more.
             </p>
-            <Button text={"More stories"} style={{ color: "white", float:"right" }} />
           </div>
+         <div className="col-2">
+         <Button text={"More stories"} className={styles.button} />
+         </div>
         </div>
       </div>
       <div
@@ -48,7 +48,15 @@ const StoriesSection = () => {
       >
         {storyData.map((data) => {
           return (
-           <div className="col-md-4 col-sm-12"> <Card text={data.text} src={data.src} subText={data.subText} style={{margin:"1rem"}}/></div>
+            <div className="col-md-4 col-sm-12">
+              {" "}
+              <Card
+                text={data.text}
+                src={data.src}
+                subText={data.subText}
+                style={{ margin: "1rem" }}
+              />
+            </div>
           );
         })}
       </div>
