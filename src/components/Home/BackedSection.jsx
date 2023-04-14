@@ -1,14 +1,7 @@
-import { motion, useCycle } from "framer-motion";
-
-import { AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import SlotMachine from "./SlotMachine";
 
-
-
-
 const BackedSection = () => {
-    console.log([new Array(5)], "jvghsbdkjnfksdbjbcsdj")
-
     // return      <SlotMachine/>;
     return (
         <div style={{ background: "transparent", padding: 100 }}>
@@ -20,17 +13,19 @@ const BackedSection = () => {
                 <div className="col-6 col-sm-12 d-flex">
                     <div className="d-flex flex-column" style={{ height: 500, overflowY: "hidden" }}>
 
-                        {[...new Array(5)].map((img) =>
+                        {[...new Array(5)].map((img, index) =>
                             <motion.div
                                 style={{ display: "flex", flexDirection: "column", display: "flex", background: "transparent", padding: 20 }}
+                                key={index}
                                 animate={{ y: ["0%", "-100%"] }}
                                 transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
                             >
                                 <img src="/assets/images/home/polygon.svg" width={200} height={40} alt="polygon" />
                             </motion.div>
                         )}
-                        {[...new Array(5)].map((img) =>
+                        {[...new Array(5)].map((img, index) =>
                             <motion.div
+                                key={index}
                                 style={{ display: "flex", flexDirection: "column", display: "flex", background: "transparent", padding: 20 }}
                                 animate={{ y: ["0%", "-100%"] }}
                                 transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
@@ -40,8 +35,9 @@ const BackedSection = () => {
                         )}
                     </div>
                     <div className="d-flex flex-column" style={{ height: 500, overflowY: "hidden" }}>
-                        {[...new Array(5)].map((img) =>
+                        {[...new Array(5)].map((img, index) =>
                             <motion.div
+                                key={index}
                                 style={{ display: "flex", flexDirection: "column", display: "flex", background: "transparent", padding: 20 }}
                                 animate={{ y: ["0%", "-100%"] }}
                                 transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
@@ -49,8 +45,9 @@ const BackedSection = () => {
                                 <img src="/assets/images/home/biconomy.svg" width={200} height={40} alt="polygon" />
                             </motion.div>
                         )}
-                        {[...new Array(5)].map((img) =>
+                        {[...new Array(5)].map((img, index) =>
                             <motion.div
+                                key={index}
                                 style={{ display: "flex", flexDirection: "column", display: "flex", background: "transparent", padding: 20 }}
                                 animate={{ y: ["0%", "-100%"] }}
                                 transition={{ duration: 10, repeat: Infinity, ease: "linear" }}

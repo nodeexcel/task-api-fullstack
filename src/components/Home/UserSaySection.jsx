@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import FeaturesSection from "./FeaturesSection";
 import BackedSection from "./BackedSection";
-
+import styles from "@/styles/home/UserSaySection.module.css"
 const userSayData = [
     {
         text: "Bonjour, Excellente application que j’ai depuis juin dernier ☺️ les gains se cumulent tous seuls à chaque achat",
@@ -28,23 +28,23 @@ const userSayData = [
 const LeftScroll = () => {
     return (
         <motion.div
-            style={{ display: "inline-block", width: "150%", display: "flex", color: "white" }}
-            animate={{ x: ["0%", "-100%"] }}
-            transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
+            className={styles.userDiv}
+        animate={{ x: ["0%", "-100%"] }}
+        transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
         >
             {userSayData.map((data, index) => {
                 return (
                     <>
-                        <div key={index} className="d-flex flex-column" style={{ border: "1px solid white", borderRadius: 20, width: "600px", padding: "30px", margin: "30px" }}>
+                        <div key={index} className="d-flex flex-column justify-content-between" style={{ border: "1px solid white", borderRadius: 20, width: "600px", padding: "30px", margin: "30px" }}>
                             <div className="row">{data?.text}</div>
-                            <div className="row d-flex justify-content-between w-full">
+                            <div className={` ${styles.starDiv} row d-flex justify-content-between w-full`}>
                                 <div className="col-6">
-                                    <img src="/assets/images/home/playStoreIcon.svg" height={30} width={30} alt="playstore" className="me-2" />
+                                    <img src="/assets/images/home/playStoreIcon.svg" height={30} width={30} alt="playstore" className={`me-2 ${styles.playstoreImg}`} />
                                     Logan
                                 </div>
                                 <div className="col-6 text-end">
                                     {new Array(data?.rating).fill(
-                                        <img src="/assets/images/home/star.svg" alt='star' width={20} height={20} />
+                                        <img src="/assets/images/home/star.svg" alt='star' className={`${styles.starImg}`}/>
                                     )}
                                 </div>
                             </div>
@@ -60,23 +60,23 @@ const LeftScroll = () => {
 const RightScroll = () => {
     return (
         <motion.div
-            style={{ display: "inline-block", width: "150%", display: "flex", color: "white" }}
-            animate={{ x: ["-100%", "0%"] }}
-            transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
+            className={styles.userDiv}
+        animate={{ x: ["-100%", "0%"] }}
+        transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
         >
             {userSayData.map((data, index) => {
                 return (
                     <>
-                        <div key={index} className="d-flex flex-column" style={{ border: "1px solid white", borderRadius: 20, width: "600px", padding: "30px", margin: "30px" }}>
+                        <div key={index} className="d-flex flex-column justify-content-between" style={{ border: "1px solid white", borderRadius: 20, width: "600px", padding: "30px", margin: "30px" }}>
                             <div className="row">{data?.text}</div>
-                            <div className="row d-flex justify-content-between w-full">
+                            <div className={`row d-flex  justify-content-between w-full ${styles.starDiv}`}>
                                 <div className="col-6">
-                                    <img src="/assets/images/home/playStoreIcon.svg" height={30} width={30} alt="playstore" className="me-2" />
+                                    <img src="/assets/images/home/playStoreIcon.svg"  alt="playstore" className={`me-2 ${styles.playstoreImg}`} />
                                     Logan
                                 </div>
                                 <div className="col-6 text-end">
                                     {new Array(data?.rating).fill(
-                                        <img src="/assets/images/home/star.svg" alt='star' width={20} height={20} />
+                                        <img src="/assets/images/home/star.svg" alt='star' className={` ${styles.starImg}`} />
                                     )}
                                 </div>
                             </div>
