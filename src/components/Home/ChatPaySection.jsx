@@ -27,9 +27,7 @@ const ChatPaySection = () => {
 
       <div className={`col-6 col-sm-6 ${styles.rightDiv}`}>
         <img
-          src={"/assets/images/home/chatandPay.png"}
-          //   width={600}
-          //   height={600}
+          src={"/assets/images/home/chat.png"}
           alt="chatpay"
           className={styles.mobile}
         />
