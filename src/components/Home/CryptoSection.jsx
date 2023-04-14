@@ -6,7 +6,7 @@ const CryptoSection = () => {
   const AppleIcon = "/assets/images/home/appleIcon.svg";
   const PlaystoreIcon = "/assets/images/home/playstoreIcon.svg";
   return (
-    <div className={"container-fluid " + styles.cryptoDiv}>
+    <section className={"container-fluid " + styles.cryptoDiv}>
       <div className={`row  `}>
         <div
           className={`col-sm-12 col-md-6  d-flex justify-content-center align-items-start flex-column `}
@@ -22,7 +22,6 @@ const CryptoSection = () => {
              <img src={"/assets/images/home/Iphone.png"} 
              className={styles.Iphone} />
          
-
             <div className={`d-flex ${styles.Appstore}`}>
               <StoreButton subText={"App Store"} src={AppleIcon} imgStyle={styles.imgStyle}/>
               
@@ -34,7 +33,7 @@ const CryptoSection = () => {
           <img className={styles.wallet} src={"/assets/images/home/wallet.png"} />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

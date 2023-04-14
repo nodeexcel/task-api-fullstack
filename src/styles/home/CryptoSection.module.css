@@ -31,21 +31,26 @@
   height: 100%;
   width: 100%;
 }
-.Iphone{
+.Iphone {
   display: none;
 }
-
 
 @media screen and (max-width: 640px) {
   .cryptoDiv {
     display: flex;
     flex-direction: column;
-    padding: 10px
+    align-items: center;
+    text-align: center;
+    word-wrap: break-word;
+    padding: 10px;
   }
 
   .paragrapgh {
     font-family: "Abel", sans-serif;
-    text-align: center;
+    display: flex;
+    width: 35%;
+    margin: auto;
+    word-wrap: break-word;
   }
 
   .heading {
@@ -63,15 +68,15 @@
     margin-top: -30%;
     /* height: 80px; */
   }
-  .Iphone{
+  .Iphone {
     margin-top: -40px;
-    padding: 0px;
+    /* padding: 0px;*/
     height: 700px;
     width: 700px;
-    margin-bottom: 30px;
-    margin-left: -200px;
+    margin-bottom: 20%;
+    /* margin-left: -100px; */
   }
- 
+
   .wallet {
     display: none;
   }
@@ -81,13 +86,32 @@
     height: 300px;
   }
 
-  .AppleIcon{
-   display: none;
+  .AppleIcon {
+    display: none;
   }
-  .Iphone{
+  .Iphone {
     display: block;
   }
-
-
 }
 
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  .Appstore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .heading {
+    padding-top: 40px;
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 80;
+    text-align: center;
+    font-style: normal;
+    align-items: center;
+    text-align: center;
+  }
+  .paragrapgh {
+    align-items: center;
+    text-align: center;
+  }
+}

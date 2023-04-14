@@ -39,61 +39,18 @@
 @media screen and (max-width: 640px) {
 
  .mainDiv{
-  /* margin-top: -70px; */
-  align-items: center;
-  padding: 0px;
+  display: none;
  }
 
- .tokenDiv{
-  width: 100%;
-  display: flex;
-  flex-direction: column-reverse;
-  padding: 0px;
- }
- .firstcolumn{
-  display: flex;
-  flex-direction: column-reverse;
-  color: white;
- }
- .secColumn{
-  display: flex;
-  flex-direction: column-reverse;
-  color: white;
+}
+@media screen and (max-width: 1024px) {
+  
+ .mainDiv{
+  display: none;
  }
 
  .button{
   display: none;
- }
-
- .text{
-  font-weight: none;
-  width: max-content;
-  margin: 0px;
-  padding: 0px;
- }
- .paragrapgh{
-  font-family: 'Abel', sans-serif;
- }
-
- .image1{
-  margin-top: 40px;
-  height: 100px;
-  width: 100px;
- }
- .text1{
-  margin: auto;
- }
- .image2{
-  height: 100px;
-  width: 100px;
- }
-  .image3{
-  height: 100px;
-  width: 100px;
- }
-
- .text{
-  font-size: 35px;
  }
 
 }

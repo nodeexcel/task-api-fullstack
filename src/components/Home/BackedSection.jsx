@@ -4,7 +4,7 @@ import SlotMachine from "./SlotMachine";
 const BackedSection = () => {
     // return      <SlotMachine/>;
     return (
-        <div style={{ background: "transparent", padding: 100 }}>
+        <section style={{ background: "black" }}>
             <div className="row">
                 <div className="col-6 col-sm-12 text-light d-flex justify-content-start flex-column align-items-start">
                     <div className="fs-1 fw-bolder my-3">Backed by the best</div>
@@ -58,7 +58,7 @@ const BackedSection = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 export default BackedSection

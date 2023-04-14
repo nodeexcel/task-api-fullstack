@@ -6,7 +6,7 @@ const VideoSection = () => {
     <section className={`pt-5 ${styles.videoDiv}`}>
       <div className={styles.videoHeading}>Better than Banks</div>
       <div className={styles.videoSubHeading}>Watch our quick intro video to learn more</div>
-      <img src={"/assets/images/home/video.png"} height={450} width={900} alt='video' className={styles.video} />
+      <img src={"/assets/images/home/video.png"}  alt='video' className={styles.video} />
       <img src={"/assets/images/home/playBtn2.svg"} height={60} width={60} alt='playBtn' className={styles.playVideo}/>
     </section>
   )

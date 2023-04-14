@@ -71,9 +71,9 @@ const RightScroll = () => {
 
 const NewsSection = () => {
     return (
-        <div style={{ background: "transparent", color: "white", padding: 100 }}>
-            <div className="d-flex justify-content-center fs-1 my-4">Plena in the News</div>
-            <div className="d-flex ">
+        <div className={styles.mainDiv}>
+            <h1 className={`d-flex justify-content-center fs-1 my-4 ${styles.heading}`}>Plena in the News</h1>
+            <div className="d-flex">
                 <LeftScroll />
                 <LeftScroll />
             </div>
