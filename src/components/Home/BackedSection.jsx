@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import SlotMachine from "./SlotMachine";
 
 const BackedSection = () => {
     // return      <SlotMachine/>;

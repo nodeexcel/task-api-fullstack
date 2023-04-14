@@ -73,7 +73,7 @@
   width: 100%;
 }
 
-@media only screen and (max-width: 0px) and (min-width: 320px) {
+@media only screen and (min-width: 0px) and (max-width: 320px) {
   .mainDiv {
     margin-top: 10%;
     align-items: center;
