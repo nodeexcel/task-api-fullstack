@@ -39,7 +39,7 @@
   left: 200px;
 }
 .heading {
-  font-size: 8vw; 
+  font-size: 8vw;
   font-weight: 1000;
   line-height: 10vw;
 }
@@ -47,7 +47,6 @@
   font-size: 26px;
   line-height: 44px;
   font-weight: 400;
-  /* text-align: left; */
 }
 
 .btnDiv {
@@ -69,8 +68,12 @@
   font-size: 35px;
   font-weight: 600;
 }
+.images{
+  height: 100%;
+  width: 100%;
+}
 
-@media only screen and (max-width: 0px) and (min-width:320px) {
+@media only screen and (max-width: 0px) and (min-width: 320px) {
   .mainDiv {
     margin-top: 10%;
     align-items: center;
@@ -80,82 +83,97 @@
     text-align: center;
     align-items: center;
   }
-  .rightDiv{
+  .rightDiv {
     text-align: center;
     align-items: center;
     justify-content: center;
   }
-  .btnDiv{
+  .btnDiv {
     display: none;
   }
-  .bankNumber{
+  .main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  .bankNumber {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  .userText {
     font-size: 10px;
   }
-  .userText{
-    font-size: 15px;
-    font-weight: 100;
-  }
-  .images{
+  .images {
     height: 600px;
     width: 400px;
-    margin-left: 20%;
+    margin-left: 5%;
   }
 }
 
-@media screen and (min-width:320px) and (max-width: 640px) {
+@media screen and (min-width: 320px) and (max-width: 640px) {
   .mainDiv {
     margin-top: 10%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
   }
   .leftDiv {
     text-align: center;
     align-items: center;
   }
-  .rightDiv{
+  .heading{
+    
+  }
+  .rightDiv {
     align-items: center;
     text-align: center;
     justify-content: center;
   }
-  .btnDiv{
+  .btnDiv {
     display: none;
   }
-  .bankNumber{
+  .bankNumber {
     font-size: 20px;
-    /* margin-right: 10px; */
   }
-  .userText{
+  .userText {
     font-size: 15px;
     font-weight: 100;
   }
-  .images{
+  .images {
     height: 500px;
     width: 700px;
-    margin-left: 100%;
   }
-  
-} 
-@media screen and (min-width:640px) and (max-width: 1024px) {
-   .leftDiv {
+  .main{
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  .leftDiv {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     align-items: center;
-    justify-content: center;
   }
-   .mainDiv {
+  .mainDiv {
+    width: 100%;
     margin-top: 10%;
     align-items: center;
   }
-  .rightDiv{
+  .rightDiv {
+    width: 100%;
     align-items: center;
-    justify-content: center;
+  }
+  .main{
+    align-items: center;
     text-align: center;
   }
-  .btnDiv{
+  .btnDiv {
     display: none;
   }
-  .images{
-    height: 500px;
-    width: 700px;
-    margin-left: 100%;
+  .images {
+    height: 100vh;
+    width: 100vh;
   }
 }

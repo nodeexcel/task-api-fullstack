@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import {TbMessageCircle} from 'react-icons/tb';
 import FeaturesSection from "./FeaturesSection";
 import BackedSection from "./BackedSection";
 
@@ -101,7 +102,8 @@ const UserSaySection = () => {
             <BackedSection />
             <div
                 id='review'
-                className="text-light d-flex justify-content-center fs-1 mt-5">What our users say 💬</div>
+                className="text-light d-flex justify-content-center fs-1 mt-5">What our users say <TbMessageCircle/>
+                </div>
             <div className="d-flex justify-content-center fs-5 mb-5" style={{ color: "#BABABA" }}>Protected by a multi-level security <br />architecture and is regularly</div>
             <div className="d-flex">
                 <LeftScroll />

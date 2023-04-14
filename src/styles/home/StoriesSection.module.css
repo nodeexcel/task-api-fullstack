@@ -3,7 +3,7 @@
   align-items: center;
   text-align: center;
 }
-.button{
+.button {
   height: 30px;
   width: 80px;
 }
@@ -36,10 +36,19 @@
     display: flex;
     font-weight: 150;
   }
-  .button{
+  .button {
     display: none;
   }
 }
 @media screen and (max-width: 1024px) {
-  
+  .button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .button {
+    height: 30px;
+    width: 80px;
+  }
 }

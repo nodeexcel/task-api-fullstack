@@ -22,7 +22,6 @@ const CryptoSection = () => {
              <img src={"/assets/images/home/Iphone.png"} 
              className={styles.Iphone} />
          
-
             <div className={`d-flex ${styles.Appstore}`}>
               <StoreButton subText={"App Store"} src={AppleIcon} imgStyle={styles.imgStyle}/>
               
