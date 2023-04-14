@@ -12,7 +12,7 @@ const Button = ({ text, buttonName, style }) => {
 
 export const StoreButton = ({ src, subText}) => {
   return (
-    <section className={storeStyles.storeBtn}>
+    <button className={storeStyles.storeBtn}>
       <div className={storeStyles.leftDiv}>
         <img src={src}  alt='icon'/>
       </div>
@@ -20,7 +20,7 @@ export const StoreButton = ({ src, subText}) => {
         <div className={storeStyles.text}>Download on the</div>
         <div className={storeStyles.subText}>{subText}</div>
       </div>
-    </section>
+    </button>
   )
 }
 
