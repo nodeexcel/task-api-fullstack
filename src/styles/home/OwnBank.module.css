@@ -44,9 +44,10 @@
   line-height: 8vw;
 }
 .subHeading {
-  width: 80%;
-  font-size: 15px;
-  line-height: 44px;
+  font-family: 'ClashGrotesk-Variable';
+  width: 70%;
+  font-size: 25px;
+  line-height: 40px;
   font-weight: 300;
 }
 
@@ -54,7 +55,7 @@
   display: flex;
   justify-content: space-between;
   width: 55%;
-  margin-top: px;
+  padding-top: 5%;
 }
 .bankDataDiv {
   background-color: transparent;
@@ -68,16 +69,19 @@
 .bankNumber {
   font-size: 35px;
   font-weight: 600;
+  text-align: center;
 }
-.images{
-  height: 110%;
+.userText {
+  text-align: center;
+}
+.images {
+  height: 100%;
   width: 113%;
 }
 
-
 @media screen and (max-width: 640px) {
   .mainDiv {
-    padding: 5%;
+    padding: 20px;
     margin-top: 20%;
     align-items: center;
     justify-content: space-around;
@@ -88,20 +92,24 @@
     text-align: center;
     align-items: center;
   }
-  .curl{
+  .curl {
     margin-top: 2%;
+    float: left;
     height: 20px;
     width: 150px;
   }
-  .heading{
+  .heading {
     font-size: 3.5rem;
     line-height: 3rem;
   }
-  .subHeading{
-    font-size: 1rem;
-    line-height: 1.8rem;
+  .subHeading p {
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 20px;
   }
   .rightDiv {
+    padding: 5%;
     width: 100%;
     align-items: center;
     text-align: center;
@@ -112,17 +120,22 @@
   }
   .bankNumber {
     font-size: 20px;
+    font-weight: bold;
     margin-left: 12px;
+    line-height: 27px;
   }
   .userText {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 400;
   }
   .images {
-    height: 500px;
-    width: 700px;
+    margin-top: -25%;
+    margin-left: -5%;
+    height: 523px;
+    width: auto;
   }
-  .main{
+  .main {
+    margin-top: -10%;
     align-items: center;
     text-align: center;
   }
@@ -130,7 +143,6 @@
 
 @media screen and (min-width: 640px) and (max-width: 1024px) {
   .mainDiv {
-    padding: 10px;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -138,40 +150,81 @@
     position: relative;
   }
   .leftDiv {
+    color: white;
     display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: flex-start;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
+  }
+  .curl {
+    padding-top: -100px;
+    height: 7%;
+  }
+
+  .rightDiv {
+    width: 50%;
+    display: flex;
+    justify-content: center;
     align-items: center;
   }
-  .heading{
-    font-size: 10vw;
+  .phoneImg1 {
+    position: relative;
+    left: -220px;
+    top: -100px;
+    z-index: 8;
+  }
+  .phoneImg2 {
+    position: absolute;
+    z-index: 6;
+    top: 0px;
+    left: 200px;
+  }
+  .heading {
+    font-size: 8vw;
     font-weight: 1000;
-    line-height: 9vw;
+    line-height: 8vw;
   }
   .subHeading {
-    font-size: 2rem;
+    width:70%;
+    font-size: 15px;
+    line-height: 1.5rem;
+    font-weight: 300;
   }
-  .mainDiv {
-    width: 100%;
-    margin-top: 10%;
-    align-items: center;
+
+  .btnDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
   }
-  .rightDiv {
-    width: 100%;
-    align-items: center;
+  .mainbtn{
+    border-style: solid !important;
+    border-image-source: linear-gradient(
+      91.6deg,
+      #afe2ed 0.62%,
+      #a26aff 99.17%
+    ) !important;
   }
-  .main{
-    padding-bottom: 10%;
-    align-items: center;
+  .bankDataDiv {
+    background-color: transparent;
+    position: relative;
+    top: -100px;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
     text-align: center;
   }
-  .btnDiv {
-    display: none;
+  .bankNumber {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .userText {
+    text-align: center;
   }
   .images {
-    margin-top: -10%;
-    height: 89vh;
-    width: 100vh;
-    margin-bottom: -10%;
+    height: 100%;
+    width: 150%;
   }
 }

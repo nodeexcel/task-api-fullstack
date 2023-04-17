@@ -1,9 +1,12 @@
 
 .liBox {
-  margin-left: 20%;
+  display: none;
+}
+
+.DesktopliBox{
   display: flex;
-  justify-content: space-between;
-  width: 400px;
+  width: 100%;
+  margin-left: 100%;
   color: white;
 }
 
@@ -59,14 +62,19 @@
 @media screen and (max-width: 640px) {
   .liBox {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: auto;
     padding-top: 5rem;
-    /* height: 100vh; */
     padding-bottom: 5rem;
   }
+
+  .DesktopliBox{
+    display: none;
+  }
+
   .liText {
-    /* margin: auto; */
+    display: block;
     font-size: 30px;
     color: white;
     justify-content: center;
@@ -77,8 +85,7 @@
 
   .NavBtn{
     display: flex;
-    /* margin: auto; */
-    margin-left: 25%;
+    margin-left: 15%;
     border-radius: 15px;
     align-items: center;
     text-align: center;
@@ -102,7 +109,6 @@
 
   .DownloadApp{
     display: flex;
-    margin-left: 13%;
     align-items: center;
     font-weight: 200;
     cursor: pointer;
@@ -116,8 +122,28 @@
     justify-content: center;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 640px) and (max-width: 1024px) {
   .logo{
+    color: white;
+  }
+
+  .liBox {
+    display: none;
+  }
+  
+  .DesktopliBox{
+    display: flex;
+    margin-left: 0%;
+    color: white;
+  }
+  
+  .liText {
+    color: white;
+    font-weight: 200;
+    margin-right: 10%;
+    transition: 0.2s;
+  }
+  .liText:hover{
     color: white;
   }
 }

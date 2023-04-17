@@ -14,7 +14,7 @@ export const StoreButton = ({ src, subText}) => {
   return (
     <button className={storeStyles.storeBtn}>
       <div className={storeStyles.leftDiv}>
-        <img src={src}  alt='icon'/>
+        <img src={src}  alt='icon' className={styles.apple}/>
       </div>
       <div className={storeStyles.rightDiv}>
         <div className={storeStyles.text}>Download on the</div>

@@ -14,6 +14,7 @@ const ChatPaySection = () => {
             width={60}
             height={60}
             alt="emoji"
+            className={styles.emoji}
           />
         </div>
         <div className={styles.text}>

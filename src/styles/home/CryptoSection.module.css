@@ -27,6 +27,10 @@
   justify-content: flex-start;
 }
 
+.Appstore{
+  margin-top: 10%;
+}
+
 .wallet {
   height: 100%;
   width: 100%;
@@ -48,16 +52,17 @@
   .paragrapgh {
     font-family: "Abel", sans-serif;
     display: flex;
-    width: 35%;
+    width: 39%;
     margin: auto;
     word-wrap: break-word;
   }
 
   .heading {
+    font-family: 'ClashGrotesk-Semibold', 'Courier New',Courier, monospace;
     padding-top: 40px;
     font-size: 30px;
     line-height: 38px;
-    font-weight: 80;
+    font-weight: 500;
     text-align: center;
     font-style: normal;
   }
@@ -66,7 +71,6 @@
     flex-direction: column;
     align-items: center;
     margin-top: -30%;
-    /* height: 80px; */
   }
   .Iphone {
     display: block;

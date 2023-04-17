@@ -8,11 +8,11 @@ const BackedSection = () => {
         <section style={{background: "black"}}>
             <div className="row text-white"
             >
-                <div className="col-6 d-flex flex-column" style={{ padding: 100 }}>
+                <div className="col-lg-6 col-md-12 d-flex flex-column" style={{ padding: 100 }}>
                     <div className="fs-1 fw-bolder my-3">Backed by the best</div>
                     <div className="fs-4">Protected by a multi-level security architecture and is regularly audited to ensure that all of our users are safe.</div>
                 </div>
-                <div className="col-6 d-flex justify-content-start p-5 position-relative"
+                <div className="col-lg-6 col-md-12 align-items-md-center justify-content-md-center pt-md-0 d-flex justify-content-start p-5 position-relative"
                 >
                     <div className="d-flex flex-column py-5" style={{ height: 500, overflowY: "hidden" }}>
                         {[...new Array(5)].map((img, index) =>
