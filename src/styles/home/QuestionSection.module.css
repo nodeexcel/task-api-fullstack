@@ -12,6 +12,9 @@
 }
 
 @media screen and (max-width: 640px) {
+  .mainDiv{
+    padding: 5%;
+  }
   .heading {
     margin: auto;
     align-items: center;
@@ -19,24 +22,26 @@
     color: white;
   }
   .subheading {
-    font-style: normal;
-    font-weight: 300;
+    font-family: 'ClashGrotesk-Medium';
+    font-weight: 600;
     font-size: 36px;
     line-height: 120%;
     text-align: center;
     color: white;
+    opacity: 1;
   }
   .image {
-    padding-left: 0px;
-    /* padding-top: ; */
+    width: 35px;
+    height: 35px;
   }
   .headpoint{
     padding: 0px;
   }
   .Read{
-    align-items: center;
+    margin: auto;
     text-align: center;
-    font-size: 20px;
+    font-size: 17px;
+    width: 70%;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1024px){

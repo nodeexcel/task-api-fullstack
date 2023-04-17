@@ -34,9 +34,7 @@ const OwnBank = () => {
             <div
               className={`col-sm-12 col-md-12 col-lg-12 col-xl-6 col ${styles.leftDiv}`}
             >
-              <div
-                className={`col-12 ${styles.heading}`}
-              >
+              <div className={`col-12 ${styles.heading}`}>
                 <h1 className={`display-1 ${styles.heading}`}>
                   {" "}
                   Be Your
@@ -50,13 +48,12 @@ const OwnBank = () => {
               />
               <div className={` ${styles.subHeading}`}>
                 <p>
-                  {" "}
                   Introducing Plena 2.0, Self-Custodial Smart Wallet with
                   EIP-4337: Account Abstraction
                 </p>
               </div>
               <div className={styles.btnDiv}>
-                <Button text={"Get the App"} />
+                <Button text={"Get the App"} className={styles["mainbtn"]} />
                 <div>
                   <img
                     src={"/assets/images/home/playBtn1.svg"}

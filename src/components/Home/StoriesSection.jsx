@@ -48,7 +48,7 @@ const StoriesSection = () => {
       >
         {storyData.map((data) => {
           return (
-            <div className="col-md-4 col-sm-12">
+            <div className="col-md-4 col-sm-12 ">
               {" "}
               <Card
                 text={data.text}

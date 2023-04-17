@@ -8,12 +8,13 @@ import styles from "@/styles/Navbar.module.css"
 
 const NavBar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" className={`overflow-hidden py-3  ${styles.navbarDiv}`} fixed="top">
+    <Navbar collapseOnSelect expand="sm" className={`overflow-hidden py-3  ${styles.navbarDiv}`} fixed="top">
       <Container>
         <Navbar.Brand href="#home"><img src={"/assets/images/home/logo.svg"} height={40} width={90} alt="logo"/></Navbar.Brand>
         <Navbar.Toggle className={styles.logo}><FiMenu/></Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className={`color-white text-sm-center ${styles.liBox}`}>
+          <Nav className={`color-white text-sm-center`}>
+            <div className={styles.liBox}>
             <Nav.Link href="#feature" className={`text-white ${styles.liText}`}>Features</Nav.Link>
             <Nav.Link href="#partners" className={`text-white ${styles.liText}`}>Partners</Nav.Link>
             <Nav.Link href="#teamSection" className={`text-white ${styles.liText}`}>Team</Nav.Link>
@@ -26,6 +27,19 @@ const NavBar = () => {
            <button className={`my-3 ${styles.DownloadApp}`}>
             Download App
            </button>
+           </div>
+           <div className={`color-white text-sm-center ${styles.DesktopliBox}`}>
+            <Nav.Link href="#feature" className={`text-white  px-3 ${styles.liText}`}>Earn</Nav.Link>
+            <Nav.Link href="#partners" className={`  text-white ${styles.liText}`}>DeFi</Nav.Link>
+            <Nav.Link href="#teamSection" className={`text-white px-3 ${styles.liText}`}>Features</Nav.Link>
+            <Nav.Link href="#review" className={`text-white px-3 ${styles.liText}`}>Blog</Nav.Link>
+            <button className={`text-white ${styles.NavBtn}`}>
+            Close
+           </button>
+           <button className={`my-3 ${styles.DownloadApp}`}>
+            Download App
+           </button>
+          </div>
           </Nav>
           <Nav>
             <Button text="Get the App"/>
