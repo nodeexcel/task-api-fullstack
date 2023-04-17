@@ -28,7 +28,7 @@ const StoriesSection = () => {
     <section className="bg-black text-white">
       <div className="container my-5">
         <div className={`row ${styles.maindev}`}>
-          <div className="col-10 d-flex flex-column">
+          <div className="col-lg-10 col-md-8 d-flex flex-column">
             <h1 className={`display-4 fw-bold my-3 ${styles.StoriesSections}`}>
               Our Stories
             </h1>
@@ -37,7 +37,7 @@ const StoriesSection = () => {
               blog posts to find out more.
             </p>
           </div>
-         <div className="col-2">
+         <div className="col-lg-2 col-md-4 d-md-flex justify-content-md-center align-items-md-center">
          <Button text={"More stories"} className={styles.button} />
          </div>
         </div>
@@ -48,8 +48,7 @@ const StoriesSection = () => {
       >
         {storyData.map((data) => {
           return (
-            <div className="col-md-4 col-sm-12">
-              {" "}
+            <div className="col-lg-4 col-md-4">
               <Card
                 text={data.text}
                 src={data.src}
@@ -59,7 +58,7 @@ const StoriesSection = () => {
             </div>
           );
         })}
-      </div>
+        </div>
     </section>
   );
 };

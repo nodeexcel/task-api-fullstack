@@ -3,6 +3,7 @@
 .mainDiv {
   padding: 70px 130px 70px 130px;
   position: relative;
+  margin: 60px;
 }
 .title {
   padding: 60px 80px;

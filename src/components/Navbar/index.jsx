@@ -30,7 +30,7 @@ const NavBar = () => {
           <Nav>
             <Button text="Get the App"/>
           </Nav>
-        </Navbar.Collapse>
+        </Navbar.Collapse>  
       </Container>
     </Navbar>
   )

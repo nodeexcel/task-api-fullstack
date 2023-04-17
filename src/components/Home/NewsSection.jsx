@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { TbSquareRoundedChevronDownFilled} from 'react-icons/tb';
+import { TbSquareRoundedChevronDownFilled } from 'react-icons/tb';
 import styles from '../../styles/home/NewsSection.module.css';
 
 const newsData = [
@@ -45,7 +45,7 @@ const newsData = [
 const LeftScroll = () => {
     return (
         <motion.div
-        className={styles.newsDiv}
+            className={styles.newsDiv}
             animate={{ x: ["0%", "-100%"] }}
             transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
         >
@@ -59,7 +59,7 @@ const LeftScroll = () => {
 const RightScroll = () => {
     return (
         <motion.div
-        className={styles.newsDiv}
+            className={styles.newsDiv}
             animate={{ x: ["-100%", "0%"] }}
             transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
         >
@@ -83,8 +83,11 @@ const NewsSection = () => {
                 <RightScroll />
             </div>
             <div className={styles.arrow}>
-                <p className={styles.text}>See more</p>
-                <TbSquareRoundedChevronDownFilled/>
+                <p className={styles.text}>See more<br />
+                    <div className="d-flex justify-content-center mb-4">
+                        <img src="/assets/images/home/downIcon.png" />
+                    </div>
+                </p>
             </div>
         </div>
     );
