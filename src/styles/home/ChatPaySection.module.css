@@ -13,7 +13,6 @@
 .leftDiv {
   padding: 100px;
 }
-
 .text {
   font-size: 28px;
   line-height: 36px;
@@ -90,46 +89,71 @@
   }
 }
 
-@media screen and (min-width:640px) and (max-width:1024px){
+@media screen and (min-width: 640px) and (max-width: 770px) {
   .chatDiv {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+    background: linear-gradient(91.6deg, #afe2ed 0.62%, #a26aff 99.17%);
+    padding-top: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+    margin-top: -33px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
   }
   .leftDiv {
-    width: 100%; 
-    text-align: center;
-    padding: 30px;
-  }
-  .heading {
-    font-size: 8vw; 
-    font-weight: 1000;
-    line-height: 10vw;
-  }
-  .btn {
-    display: none;
-  }
-  .subHeading {
-    font-size: 6vw;
-    font-weight: 600;
-    text-align: center;
-    line-height: 20px;
-    margin: auto;
+    padding: 29px;
   }
   .text {
-    font-family: "Abel", sans-serif;
-    line-height: 30px;
-    font-weight: 200;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-bottom: 60px;
   }
-
-  .btn {
-    display: none;
-  }
-
   .mobile {
-    height: 400px;
-    width: 350px;
+    width: 40vh;
+    height: auto;
+  }
+  .subHeading {
+    font-family: 'ClashGrotesk-Semibold';
+    font-size: 2.9rem;
+    line-height: 3rem;
+    margin-bottom: 20px;
+  }
+  .heading {
+    font-family: 'ClashGrotesk-Semibold';
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width:770px) and (max-width:1024px){
+  .chatDiv {
+    background: linear-gradient(91.6deg, #afe2ed 0.62%, #a26aff 99.17%);
+    padding-top: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+    margin-top: -33px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+  }
+  .leftDiv {
+    padding: 29px;
+  }
+  .text {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 60px;
+  }
+  .mobile {
+    width: 500px;
+  }
+  .subHeading {
+    font-size: 3rem;
+    font-family: 'ClashGrotesk-Medium';
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
+  .heading {
+    font-size: 2rem;
+    font-weight: 600;
   }
 }

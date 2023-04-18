@@ -1,7 +1,6 @@
 /* --------Own Bank---------- */
 
 .mainDiv {
-  padding: 50px;
   background-color: black;
   display: flex;
   justify-content: center;
@@ -39,16 +38,21 @@
   left: 200px;
 }
 .heading {
-  font-size: 8vw;
-  font-weight: 1000;
+  font-family: 'ClashGrotesk-Medium';
+  padding-top: 5%;
+  font-size: 7vw;
   line-height: 8vw;
 }
-.subHeading {
-  font-family: 'ClashGrotesk-Variable';
+.subHeading p {
+  padding-top: 5%;
+  font-family: "ClashGrotesk-Light";
   width: 70%;
-  font-size: 25px;
-  line-height: 40px;
+  font-size: 1.3rem;
   font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+}
+.strong {
+  font-family: "ClashGrotesk-Regular";
 }
 
 .btnDiv {
@@ -57,6 +61,7 @@
   width: 55%;
   padding-top: 5%;
 }
+
 .bankDataDiv {
   background-color: transparent;
   position: relative;
@@ -67,46 +72,42 @@
   text-align: center;
 }
 .bankNumber {
+  font-family: 'ClashGrotesk-Medium';
+  padding-top: 3rem;
   font-size: 35px;
   font-weight: 600;
   text-align: center;
 }
 .userText {
+  font-family: 'ClashGrotesk-Extralight';
+  font-size: 1.5rem;
   text-align: center;
+  padding-bottom: 25%;
 }
 .images {
   height: 100%;
   width: 113%;
 }
+.DownloadApp{
+  display: none;
+}
+.btntext{
+  display: none;
+}
 
 @media screen and (max-width: 640px) {
   .mainDiv {
-    padding: 20px;
-    margin-top: 20%;
+    padding: 10px;
+    margin-top: 10%;
     align-items: center;
     justify-content: space-around;
   }
   .leftDiv {
+    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-  }
-  .curl {
-    margin-top: 2%;
-    float: left;
-    height: 20px;
-    width: 150px;
-  }
-  .heading {
-    font-size: 3.5rem;
-    line-height: 3rem;
-  }
-  .subHeading p {
-    font-size: 12px;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    line-height: 20px;
   }
   .rightDiv {
     padding: 5%;
@@ -114,6 +115,27 @@
     align-items: center;
     text-align: center;
     justify-content: center;
+  }
+  .curl {
+    margin-left: -35%;
+    margin-top: 2%;
+    height: 20px;
+    width: 100px;
+  }
+  .heading {
+    font-size: 3.5rem;
+    line-height: 3rem;
+  }
+  .subHeading p {
+    font-family: 'ClashGrotesk-Extralight';
+    padding-top: 5%;
+    padding-bottom: 5%;
+     margin: auto;
+     width: 90%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 20px;
   }
   .btnDiv {
     display: none;
@@ -135,13 +157,37 @@
     width: auto;
   }
   .main {
-    margin-top: -10%;
+    margin-top: -20%;
     align-items: center;
     text-align: center;
   }
+
+  .DownloadApp{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: 200;
+    margin: auto;
+    cursor: pointer;
+    height: 50px;
+    width: 250px;
+    color: #000000;
+    font-size: 1.5em;
+    background: linear-gradient(91.6deg, #AFE2ED 0.62%, #A26AFF 99.17%);
+    border-radius: 16.2667px;
+    justify-content: center;
+  }
+  .btntext{
+    font-family: 'ClashGrotesk-Extralight';
+    font-size: 0.8rem;
+    margin-top: -1rem;
+    text-align: center;
+    color: white;
+  }
+
 }
 
-@media screen and (min-width: 640px) and (max-width: 1024px) {
+@media screen and (min-width: 640px) and (max-width: 770px) {
   .mainDiv {
     background-color: black;
     display: flex;
@@ -149,10 +195,17 @@
     width: 100%;
     position: relative;
   }
+  .DownloadApp{
+    display: none;
+  }
+  .btntext{
+    display: none;
+  }
   .leftDiv {
+    padding-top: 5%;
     color: white;
     display: flex;
-    width: 50%;
+    width: 60%;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
@@ -160,11 +213,11 @@
   }
   .curl {
     padding-top: -100px;
-    height: 7%;
+    width: 30%;
+    height: auto;
   }
-
   .rightDiv {
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,23 +235,26 @@
     left: 200px;
   }
   .heading {
-    font-size: 8vw;
+    font-family: 'ClashGrotesk-Semibold';
+    font-size: 6vw;
+    padding-top: 10%;
     font-weight: 1000;
-    line-height: 8vw;
+    line-height: 6vw;
   }
-  .subHeading {
-    width:70%;
-    font-size: 15px;
-    line-height: 1.5rem;
-    font-weight: 300;
+  .subHeading p {
+    margin-top: 5%;
+    font-family: 'ClashGrotesk-Light';
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.2rem;
   }
 
   .btnDiv {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 80%;
   }
-  .mainbtn{
+  .mainbtn {
     border-style: solid !important;
     border-image-source: linear-gradient(
       91.6deg,
@@ -216,15 +272,125 @@
     text-align: center;
   }
   .bankNumber {
-    font-size: 35px;
+    font-size: 1.7rem;
     font-weight: 600;
     text-align: center;
   }
   .userText {
+    font-family: 'ClashGrotesk-Extralight';
     text-align: center;
+    font-size: 1rem;
   }
   .images {
+    padding-top: 10%;
     height: 100%;
     width: 150%;
+  }
+  .main{
+    margin-top: 5%;
+  }
+}
+
+
+@media screen and (min-width:770px) and (max-width: 1024px) {
+  .mainDiv {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+  }
+  .leftDiv {
+    padding-top: 5%;
+    color: white;
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+  }
+  .DownloadApp{
+    display: none;
+  }
+  .btntext{
+    display: none;
+  }
+  .curl {
+    padding-top: -100px;
+    width: 30%;
+    height: auto;
+  }
+  .rightDiv {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .phoneImg1 {
+    position: relative;
+    left: -220px;
+    top: -100px;
+    z-index: 8;
+  }
+  .phoneImg2 {
+    position: absolute;
+    z-index: 6;
+    top: 0px;
+    left: 200px;
+  }
+  .heading {
+    font-family: 'ClashGrotesk-Semibold';
+    font-size: 6vw;
+    font-weight: 1000;
+    line-height: 6vw;
+  }
+  .subHeading p {
+    font-family: 'ClashGrotesk-Light';
+    width: 70%;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+
+  .btnDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+  }
+  .mainbtn {
+    border-style: solid !important;
+    border-image-source: linear-gradient(
+      91.6deg,
+      #afe2ed 0.62%,
+      #a26aff 99.17%
+    ) !important;
+  }
+  .bankDataDiv {
+    background-color: transparent;
+    position: relative;
+    top: -100px;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    text-align: center;
+  }
+  .bankNumber {
+    padding-top: 0px;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  .userText {
+    font-family: 'ClashGrotesk-Extralight';
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  .images {
+    padding-top: 10%;
+    height: 100%;
+    width: 150%;
+  }
+  .main{
+    margin-top: 5%;
   }
 }

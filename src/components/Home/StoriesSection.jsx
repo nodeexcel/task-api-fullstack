@@ -28,7 +28,8 @@ const StoriesSection = () => {
     <section className="bg-black text-white">
       <div className="container my-5">
         <div className={`row ${styles.maindev}`}>
-          <div className="col-10 d-flex flex-column">
+          <div className="container">  
+          <div className={`col-6 d-flex flex-column ${styles.LeftDiv}`}>
             <h1 className={`display-4 fw-bold my-3 ${styles.StoriesSections}`}>
               Our Stories
             </h1>
@@ -37,8 +38,9 @@ const StoriesSection = () => {
               blog posts to find out more.
             </p>
           </div>
-         <div className="col-2">
+         <div className={`col-6 ${styles.RightDiv}`}>
          <Button text={"More stories"} className={styles.button} />
+         </div>
          </div>
         </div>
       </div>

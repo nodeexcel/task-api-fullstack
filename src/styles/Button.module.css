@@ -1,34 +1,70 @@
 .btnStyle {
-    background-color: transparent;
-    border: 2px solid white;
-    padding: 8px 32px;
-    width: fit-content;
-    border-radius: 10px;
-    font-weight: 600;
-    background: -webkit-linear-gradient(91.6deg, #AFE2ED 0.62%, #A26AFF 99.17%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 8px 40px;
+  width: fit-content;
+  border-radius: 10px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(91.6deg, #afe2ed 0.62%, #a26aff 99.17%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btnStyle:hover {
+  border-color: rgba(175, 226, 237, 1) rgba(162, 106, 255, 1);
+  border-width: 1px 4px 5px 1px;
 }
 
 .blackBtnStyle {
+  background-color: transparent;
+  border: 2px solid black;
+  padding: 8px 32px 8px 32px;
+  width: 25%;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.blackBtnStyle:hover {
+    border-color: black !important;
+    border-width: 1px 4px 5px 1px !important;
+  }
+
+
+@media screen and (max-width: 640px) {
+  .text {
+    font-size: 50px;
+  }
+  .btnStyle {
+    display: none;
+  }
+  .blackBtnStyle {
+    display: none;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 770px) {
+  .btnStyle {
     background-color: transparent;
-    border: 2px solid black;
-    padding: 8px 32px;
-    width: fit-content;
+    border: 1px solid white;
+    padding: 4px 20px;
     border-radius: 10px;
-    font-weight: 600;
+    font-weight: 300;
+    background: -webkit-linear-gradient(91.6deg, #afe2ed 0.62%, #a26aff 99.17%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .btnStyle:hover {
+    border-color: rgba(175, 226, 237, 1) rgba(162, 106, 255, 1);
+    border-width: 1px 4px 5px 1px;
+  }
+  .blackBtnStyle {
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 4px 20px;
+    width: 30%;
+    border-radius: 10px;
+    font-weight: 300;
+  }
+  .blackBtnStyle:hover {
+    border-color: black;
+    border-width: 1px 4px 5px 1px;
+  }
 }
-
-@media screen and (max-width: 640px){
-    .text{
-        font-size: 50px;
-    }
-    .btnStyle{
-        display: none;
-    }
-    .blackBtnStyle{
-        display: none;
-    }
-}
-
-

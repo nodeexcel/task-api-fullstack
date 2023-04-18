@@ -26,7 +26,7 @@ const OwnBank = () => {
           backgroundSize: "cover",
           backgroundColor: "black",
         }}
-        className={styles.mainDiv}
+        className={`container ${styles.mainDiv}`}
         id="home"
       >
         <div className="container">
@@ -46,10 +46,13 @@ const OwnBank = () => {
                 alt="curl"
                 className={` ${styles.curl}`}
               />
-              <div className={` ${styles.subHeading}`}>
+              <div className={styles.subHeading}>
                 <p>
-                  Introducing Plena 2.0, Self-Custodial Smart Wallet with
-                  EIP-4337: Account Abstraction
+                  Introducing <span className={styles.strong}>Plena 2.0</span>,
+                  Self-Custodial Smart Wallet with{" "}
+                  <span className={styles.strong}>
+                    EIP-4337: Account Abstraction
+                  </span>
                 </p>
               </div>
               <div className={styles.btnDiv}>
@@ -60,6 +63,7 @@ const OwnBank = () => {
                     height={40}
                     width={40}
                     alt="playbtn"
+                    className="mx-2"
                   />
                   Watch Intro
                 </div>
@@ -87,6 +91,10 @@ const OwnBank = () => {
                   );
                 })}
               </div>
+              <button className={`my-3 ${styles.DownloadApp}`}>
+                Download App
+              </button>
+              <p className={styles.btntext}>Availiable for iOS & Android</p>
             </div>
           </div>
         </div>

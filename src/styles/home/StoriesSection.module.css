@@ -3,9 +3,18 @@
   align-items: center;
   text-align: center;
 }
+
 .button {
   height: 30px;
   width: 80px;
+}
+.description{
+font-family: 'ClashGrotesk-Light';
+font-style: normal;
+font-weight: 400;
+font-size: 1.5rem;
+line-height: 140%;
+color: #FFFFFF;
 }
 
 @media screen and (max-width: 640px) {
@@ -16,37 +25,38 @@
     text-align: center;
     align-items: center;
   }
+  .LeftDiv{
+    width: 100%;
+  }
+  .RightDiv{
+    width: 100%;
+  }
   .storiesbtn {
     display: none;
   }
   .StoriesSection {
-    padding: 10px;
+    width: 100%;
     align-items: center;
     text-align: center;
     margin: auto;
-    display: flex;
-    font-weight: 800;
   }
-
-  .description {
-    width: 260px;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    display: flex;
-    font-weight: 150;
-  }
+  .description{
+    font-family: 'ClashGrotesk-Light';
+    font-size: 1.5rem;
+    line-height: 140%;
+    color: #FFFFFF;
+    }
   .button {
     display: none;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width:640px) and (max-width: 1024px) {
   .button {
     display: none;
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
   .button {
     height: 30px;
     width: 80px;
