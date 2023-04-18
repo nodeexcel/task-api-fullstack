@@ -7,8 +7,8 @@ const RightInner = () => (
       <div className="d-flex flex-col-reverse">
         <img
           src={"/assets/images/home/lending.png"}
-          width={100}
-          height={100}
+          width={200}
+          height={200}
           alt="lending"
           className={styles.images}
         />
@@ -23,8 +23,8 @@ const RightInner = () => (
     <div className={`col-5 p-5 ${styles.Lending}`}>
       <img
         src={"/assets/images/home/graph.png"}
-        width={100}
-        height={100}
+        width={200}
+        height={200}
         alt="stake"
       />
       <div className={styles.Rightheading}>Stake your assets</div>
@@ -70,8 +70,8 @@ const LeftSide = () => (
     <div>
       <img
         src={"/assets/images/home/arrow.png"}
-        width={400}
-        height={400}
+        width={300}
+        height={300}
         alt="swap"
         className={styles.LeftImage}
       />
@@ -88,7 +88,6 @@ const FeaturesSection = () => {
   return (
     <section
       className={`text-white ${styles.featureDiv}`}
-      style={{ padding: 50 }}
       id="feature"
     >
       <div className={styles.featureHeading}>

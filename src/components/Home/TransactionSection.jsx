@@ -30,7 +30,7 @@ const TransactionSection = () => {
         <div style={{ position: "absolute", top: 70, left: "50%" }}>
           <div className={styles.phoneImg}>
             <img
-              src="/assets/images/home/phone.png"
+              src="/assets/images/home/createWallet.gif"
               alt="phone"
               className={styles.mobile}
             />

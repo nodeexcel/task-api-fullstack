@@ -47,7 +47,7 @@ const LeftScroll = () => {
         <motion.div
             className={styles.newsDiv}
             animate={{ x: ["0%", "-100%"] }}
-            transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 70, repeat: Infinity, ease: "linear" }}
         >
             {
                 newsData.map((img, index) => <img src={img.src} width={img.width} height={img.height} />)
@@ -61,7 +61,7 @@ const RightScroll = () => {
         <motion.div
             className={styles.newsDiv}
             animate={{ x: ["-100%", "0%"] }}
-            transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 70, repeat: Infinity, ease: "linear" }}
         >
             {
                 newsData.map((img, index) => <img src={img.src} width={img.width} height={img.height} />)

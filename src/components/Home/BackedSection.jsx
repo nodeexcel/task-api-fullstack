@@ -5,10 +5,10 @@ const BackedSection = () => {
     // <div style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));">
 
     return (
-        <section style={{background: "black"}}>
+        <section style={{background: "black",padding:100}}>
             <div className="row text-white"
             >
-                <div className="col-lg-6 col-md-12 d-flex flex-column" style={{ padding: 100 }}>
+                <div className="col-lg-6 col-md-12 d-flex flex-column" style={{ padding: 80 }}>
                     <div className="fs-1 fw-bolder my-3">Backed by the best</div>
                     <div className="fs-4">Protected by a multi-level security architecture and is regularly audited to ensure that all of our users are safe.</div>
                 </div>

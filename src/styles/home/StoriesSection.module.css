@@ -7,7 +7,9 @@
   height: 30px;
   width: 80px;
 }
-
+.cardSection{
+  padding: 30px 151px 80px;
+}
 @media screen and (max-width: 640px) {
   .maindev {
     padding-top: 15%;

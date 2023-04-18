@@ -14,7 +14,7 @@ const Card = ({ src, text, style, subText, type, imgText }) => {
 
       <div className="card-body">
         <div className="fs-4 card-title py-2">{text}</div>
-        <div className="fs-5 fw-lighter card-text py-">{subText}</div>
+        <div className="fs-6 fw-lighter card-text" style={{color:"#BABABA"}}>{subText}</div>
       </div>
 
       {type === "team" && (

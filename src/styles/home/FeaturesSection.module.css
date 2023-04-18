@@ -1,7 +1,7 @@
 /* ---------------features section---------------- */
 
 .featureDiv {
-  padding: 100px;
+  padding: 60px 160px;
   /* background-color: black; */
   color: white;
 }
@@ -25,7 +25,7 @@
   border-radius: 32px;
 }
 .Rightheading {
-  font-size: 50px;
+  font-size: 40px;
   line-height: 50px;
   font-weight: 600;
   padding-top: 5%;
@@ -36,7 +36,7 @@
 .RightsubHeading {
   font-style: normal;
   font-weight: 200;
-  font-size: 30px;
+  font-size: 22px;
   width: 80%;
   padding: 5% 0% 0% 0%;
   line-height: 130%;
@@ -52,14 +52,14 @@
 .featureHeading {
   font-style: normal;
   font-weight: 600;
-  font-size: 64px;
+  font-size: 60px;
   line-height: 100%;
   padding-top: 5%;
   padding-bottom: 8%;
 }
 
 .heading {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 600;
   text-align: left;
   line-height: 50px;

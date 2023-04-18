@@ -14,7 +14,7 @@ const PortfolioSection = () => {
             <h1 className={`fw-bolder py-2 ${styles.head}`}>
               Start building your portfolio with just $1
             </h1>
-            <p className={`fw-normal py-3 ${styles.subhead}`}>
+            <p className={`fw-normal lh-base py-3 ${styles.subhead}`}>
               Over 100,000+ Crypto to choose from, Download the app now!
             </p>
             <p className={`py-3 ${styles.MobileParagraph}`}>

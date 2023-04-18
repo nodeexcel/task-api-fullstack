@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import {TbMessageCircle} from 'react-icons/tb';
+import { TbMessageCircle } from 'react-icons/tb';
 import FeaturesSection from "./FeaturesSection";
 import BackedSection from "./BackedSection";
 import styles from "@/styles/home/UserSaySection.module.css"
@@ -30,14 +30,14 @@ const LeftScroll = () => {
     return (
         <motion.div
             className={styles.userDiv}
-        animate={{ x: ["0%", "-100%"] }}
-        transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
+            animate={{ x: ["0%", "-100%"] }}
+            transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
         >
             {userSayData.map((data, index) => {
                 return (
                     <>
                         <div key={index} className="d-flex flex-column justify-content-between" style={{ border: "1px solid white", borderRadius: 20, width: "600px", padding: "30px", margin: "30px" }}>
-                            <div className="row">{data?.text}</div>
+                            <div className="row mb-5">{data?.text}</div>
                             <div className={` ${styles.starDiv} row d-flex justify-content-between w-full`}>
                                 <div className="col-6">
                                     <img src="/assets/images/home/playStoreIcon.svg" height={30} width={30} alt="playstore" className={`me-2 ${styles.playstoreImg}`} />
@@ -45,7 +45,7 @@ const LeftScroll = () => {
                                 </div>
                                 <div className="col-6 text-end">
                                     {new Array(data?.rating).fill(
-                                        <img src="/assets/images/home/star.svg" alt='star' className={`${styles.starImg}`}/>
+                                        <img src="/assets/images/home/star.svg" alt='star' className={`${styles.starImg}`} />
                                     )}
                                 </div>
                             </div>
@@ -62,17 +62,17 @@ const RightScroll = () => {
     return (
         <motion.div
             className={styles.userDiv}
-        animate={{ x: ["-100%", "0%"] }}
-        transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
+            animate={{ x: ["-100%", "0%"] }}
+            transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
         >
             {userSayData.map((data, index) => {
                 return (
                     <>
                         <div key={index} className="d-flex flex-column justify-content-between" style={{ border: "1px solid white", borderRadius: 20, width: "600px", padding: "30px", margin: "30px" }}>
-                            <div className="row">{data?.text}</div>
+                            <div className="row mb-5">{data?.text}</div>
                             <div className={`row d-flex  justify-content-between w-full ${styles.starDiv}`}>
                                 <div className="col-6">
-                                    <img src="/assets/images/home/playStoreIcon.svg"  alt="playstore" className={`me-2 ${styles.playstoreImg}`} />
+                                    <img src="/assets/images/home/playStoreIcon.svg" alt="playstore" className={`me-2 ${styles.playstoreImg}`} />
                                     Logan
                                 </div>
                                 <div className="col-6 text-end">
@@ -102,9 +102,9 @@ const UserSaySection = () => {
             <BackedSection />
             <div
                 id='review'
-                className="text-light d-flex justify-content-center fs-1 mt-5">What our users say <TbMessageCircle/>
-                </div>
-            <div className="d-flex justify-content-center fs-5 mb-5" style={{ color: "#BABABA" }}>Protected by a multi-level security <br />architecture and is regularly</div>
+                className="text-light d-flex justify-content-center fs-1 mt-5">What our users say <TbMessageCircle />
+            </div>
+            <div className="d-flex justify-content-center fs-5 mb-5" style={{ color: "#BABABA", textAlign: "center" }}>Protected by a multi-level security <br />architecture and is regularly</div>
             <div className="d-flex">
                 <LeftScroll />
                 <LeftScroll />

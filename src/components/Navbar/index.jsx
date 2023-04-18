@@ -8,6 +8,7 @@ import styles from "@/styles/Navbar.module.css"
 
 const NavBar = () => {
   return (
+    <>
     <Navbar collapseOnSelect expand="sm" className={`overflow-hidden py-3  ${styles.navbarDiv}`} fixed="top">
       <Container>
         <Navbar.Brand href="#home"><img src={"/assets/images/home/logo.svg"} height={40} width={90} alt="logo"/></Navbar.Brand>
@@ -47,6 +48,7 @@ const NavBar = () => {
         </Navbar.Collapse>  
       </Container>
     </Navbar>
+    </>
   )
 }
 

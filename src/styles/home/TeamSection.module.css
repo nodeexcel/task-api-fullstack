@@ -1,5 +1,16 @@
 .description{
   font-size: 20px;
+  color: #BABABA;
+  text-align: center;
+}
+
+.bbbb{
+  background-color: red;
+  color: red;
+}
+.bbbb:disabled{
+  background-color: green;
+  color: green;
 }
 
 @media  screen and (max-width: 640px) {

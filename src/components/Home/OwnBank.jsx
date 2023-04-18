@@ -54,13 +54,15 @@ const OwnBank = () => {
               </div>
               <div className={styles.btnDiv}>
                 <Button text={"Get the App"} className={styles["mainbtn"]} />
-                <div>
+                <div className="d-flex align-items-center">
+                  <div className="ripple">
                   <img
                     src={"/assets/images/home/playBtn1.svg"}
                     height={40}
                     width={40}
                     alt="playbtn"
                   />
+                  </div>
                   Watch Intro
                 </div>
               </div>

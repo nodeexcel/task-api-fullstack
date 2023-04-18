@@ -43,19 +43,16 @@ const StoriesSection = () => {
         </div>
       </div>
       <div
-        className="row"
-        style={{ paddingBottom: 100, paddingLeft: 25, paddingRight: 25 }}
+        className={` ${styles.cardSection} d-flex justify-content-center align-items-center overflow-scroll`}
       >
         {storyData.map((data) => {
           return (
-            <div className="col-lg-4 col-md-4">
               <Card
                 text={data.text}
                 src={data.src}
                 subText={data.subText}
                 style={{ margin: "1rem" }}
               />
-            </div>
           );
         })}
         </div>
