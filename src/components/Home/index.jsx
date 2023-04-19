@@ -15,6 +15,7 @@ const LandingPage = () => {
     <>
       <OwnBank />
       <VideoSection />
+      {/* <Gallery/> */}
       <TokenSection />
       <CryptoSection />
       <TransactionSection />

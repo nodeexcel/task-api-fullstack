@@ -1,16 +1,15 @@
 import React from "react";
 import styles from "@/styles/home/TransactionSection.module.css";
-import { motion } from "framer-motion";
+import { useScroll, useTransform, motion } from "framer-motion";
 
 const TransactionSection = () => {
+  const { scrollYProgress } = useScroll();
+  const x = useTransform(scrollYProgress, [0, 1], [0, 4000]);
+
   return (
     <>
-      <div style={{ position: "relative" }}>
-        <motion.div
-          style={{ display: "inline-block", width: "100%", display: "flex", background: "transparent", marginBottom: 20 }}
-          animate={{ x: ["0%", "100%"] }}
-          transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-        >
+      <div style={{ position: "relative", height: "60rem" }}>
+        <motion.h1 className={styles.heading} style={{ x }}>
           <img
             src="/assets/images/home/spark.png"
             height={100}
@@ -18,28 +17,19 @@ const TransactionSection = () => {
             alt="thunderImg"
             className={styles.img}
           />
-          <div className={styles.heading}>Faster</div>
-        </motion.div>
-        <motion.div
-          style={{ display: "inline-block", width: "100%", display: "flex", background: "transparent", marginTop: "35rem" }}
-          animate={{ x: ["100%", "-100%"] }}
-          transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-        >
-          <div className={styles.transactionHeading}>Transactions</div>
-        </motion.div>
+          Faster</motion.h1>
         <div style={{ position: "absolute", top: 70, left: "50%" }}>
           <div className={styles.phoneImg}>
             <img
-              src="/assets/images/home/phone.png"
+              src="/assets/images/home/createWallet.gif"
               alt="phone"
               className={styles.mobile}
             />
           </div>
         </div>
+        <motion.h1 className={styles.transactionHeading} style={{ x }}>Transactions</motion.h1>
       </div>
-
     </>
-
   )
 };
 

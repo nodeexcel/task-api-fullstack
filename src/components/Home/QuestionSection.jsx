@@ -18,9 +18,9 @@ const QuestionSection = () => (
   >
     <div className="container py-5">
       <div
-        className={`text-white d-flex flex-column p-5 ${styles.mainDiv}`}
+        className={`text-white d-flex flex-column ${styles.mainDiv}`}
       >
-        <div className={`d-flex justify-content-start align-items-center ${styles.mainDiv}`}>
+        <div className={`d-flex justify-content-start align-items-center mt-5 ${styles.heading}`}>
           <h1 className={`${styles.subheading}`}>Have more questions? </h1>
           <img
             src="/assets/images/home/bouyIcon.webp"
@@ -68,7 +68,7 @@ const QuestionSection = () => (
           <AccordionTrigger className={styles.header}>
             Where can I download the Plena wallet App?
           </AccordionTrigger>
-          <Accordion.Content className="AccordionContent">
+          <Accordion.Content className={` ${styles.SubHeader}`}>
             <div className="AccordionContentText">
               Plena App can be downloaded on the{" "}
               <span className="text-primary">App Store</span> on{" "}

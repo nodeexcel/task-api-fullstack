@@ -15,7 +15,7 @@
   margin-left: -150px;
 }
 .img {
-  margin-top: 100px;
+  margin-top: 0px;
 }
 
 .mobile {
@@ -29,25 +29,24 @@
 }
 .heading {
   font-size: 90px;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 100px;
   color: white;
   position: relative;
   top: 100px;
+  left: -70%;
 }
 .fasterText {
   display: flex;
 }
 .transactionHeading {
   font-size: 90px;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 100px;
-  /* margin-right: 13%; */
   color: white;
   position: relative;
-  top: -240px;
-  display: flex;
-  justify-content: flex-end;
+  top: 550px;
+  left: -30%;
 }
 
 @media screen and (max-width: 640px) {
@@ -82,7 +81,7 @@
 
   .heading {
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 900;
     line-height: 25px;
     /* margin-top: -180px; */
     margin-left: -30%;
@@ -94,7 +93,7 @@
     top: -590px;
     left: -20%;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 900;
     line-height: 50px;
     color: white;
     justify-content: flex-end;
@@ -120,7 +119,7 @@
 
   .heading {
     font-size: 5rem;
-    font-weight: 600;
+    font-weight: 900;
     line-height: 50px;
     margin-left: -30%;
     padding-left: 30%;
@@ -131,7 +130,7 @@
     top: -580px;
     left: -20%;
     font-size: 5rem;
-    font-weight: 600;
+    font-weight: 900;
     line-height: 50px;
     color: white;
     justify-content: flex-end;

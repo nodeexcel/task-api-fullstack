@@ -5,12 +5,14 @@
   height: fit-content;
   color: white;
   width: 100%;
-  padding: 3% 0% 5% 0%;
+  padding-top: 1px;
 }
-.heading{
-    font-size: 20px;
-    font-weight: 600;
+
+.heading {
+  font-size: 20px;
+  font-weight: 600;
 }
+
 .newsDiv {
   display: "inline-block";
   width: "100%";
@@ -19,20 +21,31 @@
   padding: 20px
 }
 
-.arrow{
-display: none;
+.arrow {
+  display: none;
 }
+
+.mobileIcons {
+  display: none;
+}
+
 @media screen and (max-width: 640px) {
   .mainDiv {
     background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(47px);
     border-radius: 32px;
-    height: 300px;
   }
-  
-.arrow{
-  display: flex;
-  justify-content: center;
-}
-}
 
+  .mobileIcons {
+    display: block;
+  }
+
+  .arrow {
+    display: flex;
+    justify-content: center;
+  }
+
+  .desktopIcons {
+    display: none;
+  }
+}

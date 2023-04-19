@@ -21,10 +21,11 @@
   color: #ffffff;
 }
 .headpoint{
-  margin-top: -5%;
+  padding: 100px 0px;
+
 }
 .SubHeader{
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-family: 'ClashGrotesk-Light';
   color: #ffffff;
 }
@@ -46,13 +47,11 @@
     font-size: 1rem;
     font-family: 'ClashGrotesk-Medium';
     color: #ffffff;
-    opacity: 1;
   }
   .SubHeader{
     font-size: 1rem;
     font-family: 'ClashGrotesk-Light';
     color: #ffffff;
-    opacity: 0.36;
   }
   .heading {
     margin: auto;
@@ -63,15 +62,11 @@
   .subheading {
     font-family: 'ClashGrotesk-Medium';
     font-weight: 600;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 120%;
     margin: auto;
     text-align: center;
     color: white;
-    opacity: 1;
-  }
-  .mainDiv{
-    
   }
   .image {
     position: absolute;
@@ -88,7 +83,6 @@
     font-size: 17px;
     width: 70%;
     color: white;
-    opacity: 1;
   }
 }
 
@@ -154,7 +148,7 @@
     margin-left: 10px;
   }
   .headpoint{
-    padding: 0px;
+    padding: 100px 0px;
   }
   .Read{
     font-family: 'ClashGrotesk-Extralight';

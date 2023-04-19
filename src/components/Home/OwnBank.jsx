@@ -1,22 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "@/styles/home/OwnBank.module.css";
 import Button from "../common/Button";
 
+const bankData = [
+  {
+    number: "140K+",
+    text: "Users",
+  },
+  {
+    number: "200K+",
+    text: "Strong Community",
+  },
+  {
+    number: "20M+",
+    text: "Transactions",
+  },
+];
+
 const OwnBank = () => {
-  const bankData = [
-    {
-      number: "140K+",
-      text: "Users",
-    },
-    {
-      number: "200K+",
-      text: "Strong Community",
-    },
-    {
-      number: "20M+",
-      text: "Transactions",
-    },
-  ];
   return (
     <>
       <section
@@ -57,14 +58,15 @@ const OwnBank = () => {
               </div>
               <div className={styles.btnDiv}>
                 <Button text={"Get the App"} className={styles["mainbtn"]} />
-                <div>
-                  <img
-                    src={"/assets/images/home/playBtn1.svg"}
-                    height={40}
-                    width={40}
-                    alt="playbtn"
-                    className="mx-2"
-                  />
+                <div className="d-flex align-items-center">
+                  <div className="btn_ripple">
+                    <img
+                      src={"/assets/images/home/playBtn1.svg"}
+                      height={40}
+                      width={40}
+                      alt="playbtn"
+                    />
+                  </div>
                   Watch Intro
                 </div>
               </div>

@@ -83,8 +83,7 @@ const LeftSide = () => (
 const FeaturesSection = () => {
   return (
     <section
-      className={`text-white container ${styles.featureDiv}`}
-      style={{ padding: 50 }}
+      className={`text-white ${styles.featureDiv}`}
       id="feature"
     >
       <div className={styles.featureHeading}>
