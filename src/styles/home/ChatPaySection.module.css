@@ -14,8 +14,9 @@
   padding: 100px;
 }
 .text {
-  font-size: 28px;
-  line-height: 36px;
+  font-family: 'ClashGrotesk-Light';
+  font-size: 1.7rem;
+  line-height: 2rem;
   margin-bottom: 60px;
 }
 .mobile {

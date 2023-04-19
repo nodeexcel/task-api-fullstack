@@ -2,15 +2,14 @@ import React from "react";
 import styles from "@/styles/home/FeaturesSection.module.css";
 
 const RightInner = () => (
-  <div className="row justify-content-evenly">
-    <div className={`col-5 p-5 ${styles.Lending}`}>
+  <div className="row ms-2 justify-content-evenly">
+    <div className={`col-5 ${styles.Lending}`}>
       <div className="d-flex flex-col-reverse">
         <img
           src={"/assets/images/home/lending.png"}
-          width={100}
-          height={100}
+          height="auto"
           alt="lending"
-          className={styles.images}
+          className={styles.lending}
         />
       </div>
       <div>
@@ -20,12 +19,12 @@ const RightInner = () => (
         </div>
       </div>
     </div>
-    <div className={`col-5 p-5 ${styles.Lending}`}>
+    <div className={`col-5 ms-3 ${styles.Lending}`}>
       <img
         src={"/assets/images/home/graph.png"}
-        width={100}
-        height={100}
+        height="auto"
         alt="stake"
+        className={styles.stake}
       />
       <div className={styles.Rightheading}>Stake your assets</div>
       <div className={styles.RightsubHeading}>
@@ -46,7 +45,7 @@ const RightSide = () => (
       <div className="col"></div>
       <div className={`col-11 d-flex ${styles.RightSideLending}`}>
         <div>
-          <div className={styles.Rightheading}>Liquidity Pools</div>
+          <div className={styles.Liquidity}>Liquidity Pools</div>
           <div className={styles.RightsubHeading}>
             Enjoy the best exchange rates across all decentralized exchanges in
             one place!
@@ -54,9 +53,8 @@ const RightSide = () => (
         </div>
         <img
           src={"/assets/images/home/troly.png"}
-          width={250}
-          height={250}
           alt="pools"
+          className={styles.pools}
         />
       </div>
     </div>
@@ -70,10 +68,8 @@ const LeftSide = () => (
     <div>
       <img
         src={"/assets/images/home/arrow.png"}
-        width={400}
-        height={400}
-        alt="swap"
-        className={styles.LeftImage}
+        alt="arrow"
+        className={styles.arrow}
       />
       <div className={styles.heading}>Swap Crypto with ease</div>
       <div className={styles.RightsubHeading}>
@@ -87,7 +83,7 @@ const LeftSide = () => (
 const FeaturesSection = () => {
   return (
     <section
-      className={`text-white ${styles.featureDiv}`}
+      className={`text-white container ${styles.featureDiv}`}
       style={{ padding: 50 }}
       id="feature"
     >

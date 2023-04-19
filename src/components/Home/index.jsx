@@ -8,13 +8,11 @@ import UserSaySection from './UserSaySection'
 import StoriesSection from './StoriesSection'
 import QuestionSection from './QuestionSection'
 import TeamSection from './TeamSection'
-// import Gallery from './Gallery'
 import ChatPaySection from './ChatPaySection'
 
 const LandingPage = () => {
   return (
     <>
-      {/* <Gallery/> */}
       <OwnBank />
       <VideoSection />
       <TokenSection />
@@ -25,6 +23,7 @@ const LandingPage = () => {
       <TeamSection/>
       <StoriesSection/>
       <QuestionSection/>
+      
     </>
   )
 }

@@ -36,12 +36,6 @@ const NavBar = () => {
             <Nav.Link href="#partners" className={`  text-white ${styles.liText}`}>DeFi</Nav.Link>
             <Nav.Link href="#teamSection" className={`text-white px-3 ${styles.liText}`}>Features</Nav.Link>
             <Nav.Link href="#review" className={`text-white px-3 ${styles.liText}`}>Blog</Nav.Link>
-            <button className={`text-white ${styles.NavBtn}`}>
-            Close
-           </button>
-           <button className={`my-2 ${styles.DownloadApp}`}>
-            Download App
-           </button>
           </div>
           </Nav>
           <Nav>

@@ -91,10 +91,6 @@ const OwnBank = () => {
                   );
                 })}
               </div>
-              <button className={`my-3 ${styles.DownloadApp}`}>
-                Download App
-              </button>
-              <p className={styles.btntext}>Availiable for iOS & Android</p>
             </div>
           </div>
         </div>

@@ -16,8 +16,8 @@
   width: 50%;
 }
 .heading {
-  font-weight: 600;
-  font-size: 50px;
+  font-family: "ClashGrotesk-Semibold";
+  font-size: 3rem;
 }
 
 .btnDiv {
@@ -25,8 +25,12 @@
   justify-content: flex-start;
 }
 
-.Appstore{
+.Appstore {
   margin-top: 10%;
+}
+.paragrapgh {
+  font-family: "ClashGrotesk-Extralight";
+  font-size: 1.5rem;
 }
 
 .wallet {
@@ -48,7 +52,8 @@
   }
 
   .paragrapgh {
-    font-family: "Abel", sans-serif;
+    font-family: "ClashGrotesk-Extralight";
+    font-size: 1rem;
     display: flex;
     width: 39%;
     margin: auto;
@@ -56,7 +61,7 @@
   }
 
   .heading {
-    font-family: 'ClashGrotesk-Semibold', 'Courier New',Courier, monospace;
+    font-family: "ClashGrotesk-Semibold", "Courier New", Courier, monospace;
     padding-top: 40px;
     font-size: 30px;
     line-height: 38px;
@@ -93,24 +98,52 @@
   }
 }
 
-@media screen and (min-width: 640px) and (max-width: 1024px) {
+@media screen and (min-width:640px) and (max-width: 770px){
   .Appstore {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .heading {
+    font-family: "ClashGrotesk-Semibold", "Courier New", Courier, monospace;
     padding-top: 40px;
     font-size: 30px;
     line-height: 38px;
-    font-weight: 80;
+    font-weight: 500;
     text-align: center;
     font-style: normal;
-    align-items: center;
   }
   .paragrapgh {
-    align-items: center;
-    text-align: center;
+    font-family: "ClashGrotesk-Extralight";
+    font-size: 1rem;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    word-wrap: break-word;
   }
 }
 
+@media screen and (min-width: 770px) and (max-width: 1024px) {
+  .Appstore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .heading {
+    font-family: "ClashGrotesk-Semibold", "Courier New", Courier, monospace;
+    padding-top: 40px;
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 500;
+    text-align: center;
+    font-style: normal;
+  }
+  .paragrapgh {
+    font-family: "ClashGrotesk-Extralight";
+    font-size: 1.5rem;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    word-wrap: break-word;
+  }
+}
