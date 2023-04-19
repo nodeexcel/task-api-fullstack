@@ -16,7 +16,7 @@ const QuestionSection = () => (
     }}
     id="faq"
   >
-    <div className="container pb-3">
+    <div className="container py-5">
       <div
         className={`text-white d-flex flex-column ${styles.mainDiv}`}
       >
@@ -42,9 +42,9 @@ const QuestionSection = () => (
         defaultValue="item-1"
         collapsible
       >
-        <Accordion.Item className={`AccordionItem ${styles.textDiv}`} value="item-1">
-          <AccordionTrigger>What is Plena crypto wallet?</AccordionTrigger>
-          <AccordionContent>
+        <Accordion.Item className="AccordionItem" value="item-1">
+          <AccordionTrigger className={styles.header}>What is Plena crypto wallet?</AccordionTrigger>
+          <AccordionContent className={styles.SubHeader}>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Consectetur iusto quos voluptatibus modi ad, vel molestiae veritatis
             aperiam assumenda nobis facilis dolore aut, animi provident quaerat
@@ -53,10 +53,10 @@ const QuestionSection = () => (
         </Accordion.Item>
 
         <Accordion.Item className="AccordionItem" value="item-2">
-          <AccordionTrigger>
+          <AccordionTrigger className={styles.header}>
             What makes Plena wallet the most secured among others?
           </AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent className={styles.SubHeader}>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse sit
             veritatis, accusamus perferendis id perspiciatis dolore sequi qui
             corrupti dignissimos voluptatum adipisci non, at autem nemo earum
@@ -65,10 +65,10 @@ const QuestionSection = () => (
         </Accordion.Item>
 
         <Accordion.Item className="AccordionItem" value="item-3">
-          <AccordionTrigger>
+          <AccordionTrigger className={styles.header}>
             Where can I download the Plena wallet App?
           </AccordionTrigger>
-          <Accordion.Content className="AccordionContent">
+          <Accordion.Content className={` ${styles.SubHeader}`}>
             <div className="AccordionContentText">
               Plena App can be downloaded on the{" "}
               <span className="text-primary">App Store</span> on{" "}

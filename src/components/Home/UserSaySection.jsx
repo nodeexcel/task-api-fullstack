@@ -104,7 +104,7 @@ const UserSaySection = () => {
                 id='review'
                 className="text-light d-flex justify-content-center fs-1 mt-5">What our users say <TbMessageCircle />
             </div>
-            <div className="d-flex justify-content-center fs-5 mb-5" style={{ color: "#BABABA", textAlign: "center" }}>Protected by a multi-level security <br />architecture and is regularly</div>
+            <div className="d-flex justify-content-center fs-md-4 fs-sm-6 mb-5" style={{ color: "#BABABA", textAlign: "center" }}>Protected by a multi-level security <br />architecture and is regularly</div>
             <div className="d-flex">
                 <LeftScroll />
                 <LeftScroll />

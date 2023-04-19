@@ -4,20 +4,29 @@
   text-align: center;
 }
 
-.bbbb{
-  background-color: red;
-  color: red;
+.phoneArrow{
+  display: none;
 }
-.bbbb:disabled{
-  background-color: green;
-  color: green;
+.cardStyle{
+  width: 14rem;
+   margin: 20px
 }
-
 @media  screen and (max-width: 640px) {
   .description{
     font-size:15px;
     font-weight: 100;
     line-height: 20px;
     text-align: center;
+  }
+  .leftBtnDiv,.rightBtnDiv{
+    display: none;
+  }
+  .phoneArrow{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .cardStyle{
+    width: 10rem;
+     margin: 20px
   }
 }

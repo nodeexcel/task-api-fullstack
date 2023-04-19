@@ -70,7 +70,7 @@ const TeamSection = () => {
                 </div>
             </div>
             <div className='d-flex flex-row justify-content-center'>
-                <button className='d-flex' onClick={() => {
+                <button className={`d-flex ${styles.leftBtnDiv}`} onClick={() => {
                     setStartIndex(startIndex - 1)
                     setEndIndex(endIndex - 1)
 
@@ -87,11 +87,39 @@ const TeamSection = () => {
                     {data?.map((data) => {
                         return (
                             <>
-                                <Card src={data.src} text={data.text} imgText={data.imgText} subText={data.subText} style={{ width: "14rem", margin: 20 }} type={"team"} />
+                                <Card src={data.src} text={data.text} imgText={data.imgText} subText={data.subText}  type={"team"} className={styles.cardStyle} />
                             </>
                         )
                     })}
                 </div>
+                <button className={`d-flex ${styles.rightBtnDiv}`} disabled={endIndex == teamData.length - 1} onClick={() => {
+                    if (endIndex !== teamData.length - 1) {
+                        setStartIndex(startIndex + 1)
+                        setEndIndex(endIndex + 1)
+                    }
+                }}>
+                    {
+                        endIndex == teamData.length - 1 ?
+                            <img src="/assets/images/home/rightGray.svg" alt='right' />
+                            :
+                            <img src="/assets/images/home/right.svg" alt='right' />
+                    }
+                </button>
+            </div>
+            <div className={`${styles.phoneArrow}`} >
+                <button className={`d-flex`} onClick={() => {
+                    setStartIndex(startIndex - 1)
+                    setEndIndex(endIndex - 1)
+
+                }}
+                    disabled={startIndex == 0}
+                >
+                    {startIndex === 0 ?
+                        <img src="/assets/images/home/leftGray.svg" alt='left' />
+                        :
+                        <img src="/assets/images/home/left.svg" alt='left' />
+                    }
+                </button>
                 <button className={`d-flex`} disabled={endIndex == teamData.length - 1} onClick={() => {
                     if (endIndex !== teamData.length - 1) {
                         setStartIndex(startIndex + 1)
@@ -99,10 +127,10 @@ const TeamSection = () => {
                     }
                 }}>
                     {
-                        endIndex==teamData.length-1?
-                        <img src="/assets/images/home/rightGray.svg" alt='right'/>
-                        :
-                        <img src="/assets/images/home/right.svg" alt='right'/>
+                        endIndex == teamData.length - 1 ?
+                            <img src="/assets/images/home/rightGray.svg" alt='right' />
+                            :
+                            <img src="/assets/images/home/right.svg" alt='right' />
                     }
                 </button>
             </div>

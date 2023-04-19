@@ -24,4 +24,13 @@
     height: 70%;
     padding: 20px;
   }
+
+  .cardStory{
+    margin-left: 0px;
+  }
   
+  @media screen and (max-width: 640px) {
+    .cardStory{
+      margin-left: 400px;
+    }
+  }

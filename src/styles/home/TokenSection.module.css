@@ -51,6 +51,18 @@
   font-family: "ClashGrotesk-Light";
   font-size: 30px;
 }
+/* .image1 {
+  width: 350px;
+  height: 30px;
+}
+.image2 {
+  width: 390px;
+  height: 390px;
+}
+.image2 {
+  width: 390px;
+  height: 390px;
+} */
 
 @media screen and (max-width: 640px) {
   .mainDiv {

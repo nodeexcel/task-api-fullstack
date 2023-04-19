@@ -1,0 +1,24 @@
+.mainDiv{
+    background: black;
+    padding:100px
+}
+.logoImg{
+    width: 200px;
+    height: 40px;
+}
+.leftDiv{
+    padding: 80px;
+}
+@media screen and (max-width:640px) {
+    .mainDiv{
+        background: black;
+        padding:0px
+    }
+    .logoImg{
+        width: 150px;
+        height: 30px;
+    }
+    .leftDiv{
+        padding: 20px 60px 0px;
+    }
+}

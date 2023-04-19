@@ -14,9 +14,9 @@ import ChatPaySection from './ChatPaySection'
 const LandingPage = () => {
   return (
     <>
-      {/* <Gallery/> */}
       <OwnBank />
       <VideoSection />
+      {/* <Gallery/> */}
       <TokenSection />
       <CryptoSection />
       <TransactionSection />

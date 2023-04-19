@@ -8,10 +8,11 @@ import styles from "@/styles/Navbar.module.css"
 
 const NavBar = () => {
   return (
-    <>
-    <Navbar collapseOnSelect expand="sm" className={`overflow-hidden py-3  ${styles.navbarDiv}`} fixed="top">
+    <Navbar collapseOnSelect expand="sm" className={`overflow-hidden py-2  ${styles.navbarDiv}`} fixed="top">
       <Container>
-        <Navbar.Brand href="#home"><img src={"/assets/images/home/logo.svg"} height={40} width={90} alt="logo"/></Navbar.Brand>
+        <Navbar.Brand href="#home"><img src={"/assets/images/home/logo.svg"} height={50} width={120} alt="logo"
+          className={styles.image}
+        /></Navbar.Brand>
         <Navbar.Toggle className={styles.logo}><FiMenu/></Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className={`color-white text-sm-center`}>
@@ -22,12 +23,13 @@ const NavBar = () => {
             <Nav.Link href="#review" className={`text-white ${styles.liText}`}>Reviews</Nav.Link>
             <Nav.Link href="#faq" className={`text-white ${styles.liText}`}>FAQs</Nav.Link>
             <Nav.Link href="#blog" className={`text-white ${styles.liText}`}>Blog</Nav.Link>
-            <button className={`text-white ${styles.NavBtn}`}>
+            <button className={`text-white my-5 ${styles.NavBtn}`}>
             Close
            </button>
            <button className={`my-3 ${styles.DownloadApp}`}>
             Download App
            </button>
+           <p className={styles.btntext}>Availiable for iOS & Android</p>
            </div>
            <div className={`color-white text-sm-center ${styles.DesktopliBox}`}>
             <Nav.Link href="#feature" className={`text-white  px-3 ${styles.liText}`}>Earn</Nav.Link>
@@ -37,7 +39,7 @@ const NavBar = () => {
             <button className={`text-white ${styles.NavBtn}`}>
             Close
            </button>
-           <button className={`my-3 ${styles.DownloadApp}`}>
+           <button className={`my-2 ${styles.DownloadApp}`}>
             Download App
            </button>
           </div>
@@ -48,7 +50,6 @@ const NavBar = () => {
         </Navbar.Collapse>  
       </Container>
     </Navbar>
-    </>
   )
 }
 

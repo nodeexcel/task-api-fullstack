@@ -17,7 +17,7 @@
   border-radius: 50px;
 }
 .head {
-  font-family: 'ClashGrotesk-Semibold';
+  font-family: "ClashGrotesk-Semibold";
   font-weight: 200;
   background: linear-gradient(91.6deg, #afe2ed 0.62%, #a26aff 99.17%);
   -webkit-background-clip: text;
@@ -25,7 +25,7 @@
   background-clip: text;
 }
 .subhead {
-  font-family: 'ClashGrotesk-Extralight';
+  font-family: "ClashGrotesk-Extralight";
   font-style: normal;
   font-weight: 100;
   font-size: 24px;
@@ -49,7 +49,7 @@
   flex-direction: row;
   width: 121%;
 }
-.MobileParagraph{
+.MobileParagraph {
   display: none;
 }
 
@@ -57,9 +57,11 @@
   .mainDiv {
     padding: 2%;
     position: relative;
+    display: flex;
+    flex-direction: column;
   }
   .title {
-    /* padding: 5% 10%; */
+    padding: 5% 10%;
     display: flex;
     flex-direction: column;
     background: linear-gradient(
@@ -79,6 +81,12 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+  .leftDiv {
+    width: 100%;
+  }
+  .rightDiv {
+    width: 100%;
+  }
   .subhead {
     display: none;
     text-align: center;
@@ -87,9 +95,9 @@
     color: #ffffff;
     opacity: 0.8;
   }
-  .MobileParagraph{
+  .MobileParagraph {
     display: block;
-    font-family: 'ClashGrotesk-Extralight', '';
+    font-family: "ClashGrotesk-Extralight", "";
     width: 85%;
     margin: auto;
     text-align: center;
@@ -102,37 +110,40 @@
     display: none;
   }
   .topImage {
+    display: flex;
+    flex-direction: column;
     display: block;
     margin-top: -27%;
     margin-bottom: -19%;
     height: 89vh;
-    margin-left: -77%;
+    margin-left: -45%;
     width: 95vh;
   }
   .storebuttons {
-    margin-top: 5%;
+    margin-left: 5%;
+    margin: auto;
     padding: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 0%;
+    width: 100%;
   }
-  .lastDiv{
+  .lastDiv {
     width: 100%;
   }
 }
 
-@media screen and (min-width: 640px) and (max-width: 1024px){
+@media screen and (min-width: 640px) and (max-width: 1024px) {
   .mainDiv {
     padding: 35px 65px 35px 65px;
     position: relative;
     margin: 10px;
   }
-  .leftDiv{
+  .leftDiv {
     width: 50%;
   }
-  .rightDiv{
-    width: 50%
+  .rightDiv {
+    width: 50%;
   }
   .title {
     padding: 30px 40px;
@@ -146,7 +157,7 @@
     border-radius: 50px;
   }
   .head {
-    font-family: 'ClashGrotesk-Semibold';
+    font-family: "ClashGrotesk-Semibold";
     font-weight: 200;
     font-size: 1.5rem;
     background: linear-gradient(91.6deg, #afe2ed 0.62%, #a26aff 99.17%);
@@ -155,7 +166,7 @@
     background-clip: text;
   }
   .subhead {
-    font-family: 'ClashGrotesk-Extralight';
+    font-family: "ClashGrotesk-Extralight";
     font-style: normal;
     font-weight: 100;
     font-size: 1rem;
@@ -177,9 +188,9 @@
     padding: 0px;
     display: flex;
     flex-direction: column;
-    margin-left:1%;
+    margin-left: 1%;
   }
-  .MobileParagraph{
+  .MobileParagraph {
     display: none;
   }
 }

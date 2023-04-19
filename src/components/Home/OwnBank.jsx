@@ -1,22 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "@/styles/home/OwnBank.module.css";
 import Button from "../common/Button";
 
+const bankData = [
+  {
+    number: "140K+",
+    text: "Users",
+  },
+  {
+    number: "200K+",
+    text: "Strong Community",
+  },
+  {
+    number: "20M+",
+    text: "Transactions",
+  },
+];
+
 const OwnBank = () => {
-  const bankData = [
-    {
-      number: "140K+",
-      text: "Users",
-    },
-    {
-      number: "200K+",
-      text: "Strong Community",
-    },
-    {
-      number: "20M+",
-      text: "Transactions",
-    },
-  ];
   return (
     <>
       <section
@@ -26,7 +27,7 @@ const OwnBank = () => {
           backgroundSize: "cover",
           backgroundColor: "black",
         }}
-        className={styles.mainDiv}
+        className={`container ${styles.mainDiv}`}
         id="home"
       >
         <div className="container">
@@ -46,22 +47,25 @@ const OwnBank = () => {
                 alt="curl"
                 className={` ${styles.curl}`}
               />
-              <div className={` ${styles.subHeading}`}>
+              <div className={styles.subHeading}>
                 <p>
-                  Introducing Plena 2.0, Self-Custodial Smart Wallet with
-                  EIP-4337: Account Abstraction
+                  Introducing <span className={styles.strong}>Plena 2.0</span>,
+                  Self-Custodial Smart Wallet with{" "}
+                  <span className={styles.strong}>
+                    EIP-4337: Account Abstraction
+                  </span>
                 </p>
               </div>
               <div className={styles.btnDiv}>
                 <Button text={"Get the App"} className={styles["mainbtn"]} />
                 <div className="d-flex align-items-center">
-                  <div className="ripple">
-                  <img
-                    src={"/assets/images/home/playBtn1.svg"}
-                    height={40}
-                    width={40}
-                    alt="playbtn"
-                  />
+                  <div className="btn_ripple">
+                    <img
+                      src={"/assets/images/home/playBtn1.svg"}
+                      height={40}
+                      width={40}
+                      alt="playbtn"
+                    />
                   </div>
                   Watch Intro
                 </div>
@@ -89,6 +93,10 @@ const OwnBank = () => {
                   );
                 })}
               </div>
+              <button className={`my-3 ${styles.DownloadApp}`}>
+                Download App
+              </button>
+              <p className={styles.btntext}>Availiable for iOS & Android</p>
             </div>
           </div>
         </div>

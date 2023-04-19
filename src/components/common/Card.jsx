@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "@/styles/Card.module.css"
 
-const Card = ({ src, text, style, subText, type, imgText }) => {
+const Card = ({ src, text, style, subText, type, imgText ,className }) => {
   return (
-    <section className="" style={style}>
+    <section className={`${className}`} style={style}>
       <div className={styles.imageContainer}>
         <img className="card-img-top" src={src} alt="Card image cap" />
         {type==="team" && 

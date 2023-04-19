@@ -15,7 +15,7 @@
   margin-left: -150px;
 }
 .img {
-  margin-top: 100px;
+  margin-top: 0px;
 }
 
 .mobile {
@@ -34,6 +34,7 @@
   color: white;
   position: relative;
   top: 100px;
+  left: -70%;
 }
 .fasterText {
   display: flex;
@@ -42,12 +43,10 @@
   font-size: 90px;
   font-weight: 900;
   line-height: 100px;
-  /* margin-right: 13%; */
   color: white;
   position: relative;
-  top: -240px;
-  display: flex;
-  justify-content: flex-end;
+  top: 550px;
+  left: -30%;
 }
 
 @media screen and (max-width: 640px) {

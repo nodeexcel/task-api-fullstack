@@ -40,18 +40,21 @@ const StoriesSection = () => {
          <div className="col-lg-2 col-md-4 d-md-flex justify-content-md-center align-items-md-center">
          <Button text={"More stories"} className={styles.button} />
          </div>
+         </div>
         </div>
-      </div>
       <div
-        className={` ${styles.cardSection} d-flex justify-content-center align-items-center overflow-scroll`}
+      id={styles.bbb}
+        className={` ${styles.cardSection} d-flex justify-content-center align-items-center overflow-scroll w-full ${styles.cardStory}`}
+        style={{minWidth:'100%'}}
       >
-        {storyData.map((data) => {
+        {storyData.map((data , index) => {
           return (
               <Card
                 text={data.text}
                 src={data.src}
                 subText={data.subText}
-                style={{ margin: "1rem" }}
+                className={index == 0 && styles.cardStory}
+                style={{ margin: "1rem", minWidth:'200px' }}
               />
           );
         })}

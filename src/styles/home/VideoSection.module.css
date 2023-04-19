@@ -27,16 +27,18 @@
 }
 
 .videoHeading {
+  font-family: 'ClashGrotesk-Medium';
   font-size: 76px;
   line-height: 100px;
-  font-weight: 700;
 }
 
 .videoSubHeading {
+  font-family: 'ClashGrotesk-Extralight';
   font-size: 24px;
   line-height: 40px;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-top: -0.5rem;
+  padding-bottom: 2rem;
 }
 
 @media screen and (max-width: 640px) {
@@ -71,7 +73,7 @@
 }
 @media screen and (min-width: 640px) and (max-width: 1024px) {
   .videoDiv {
-    padding: 0px;
+    padding: 3rem;
     width: 100%;
   }
   .btn{
@@ -82,22 +84,25 @@
     padding-right: 20px;
     font-style: normal;
     font-weight: 500;
-    font-family: "Orbitron", sans-serif;
+    font-family: 'ClashGrotesk-Medium';
     line-height: 50px;
     font-size: 50px;
   }
   .videoSubHeading {
     font-weight: 0;
-    padding: 30px;
-    font-family: "Abel", sans-serif;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-family: 'ClashGrotesk-Extralight';
     line-height: 20px;
   }
   .video {
-    height: 540px;
-    width: 764px;
+    height: 400px;
+    width: 670px;
   }
   .playVideo {
-    margin-top: 35px;
+    margin-top: 1rem;
+    height: 2.5rem;
+    width: 2.5rem;
   }
 }
 
