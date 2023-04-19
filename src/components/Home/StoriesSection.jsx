@@ -3,27 +3,29 @@ import Card from "../common/Card";
 import Button from "../common/Button";
 import styles from "../../styles/home/StoriesSection.module.css";
 
+const storyData = [
+  {
+    text: "Celsius will compensate consumers with a new token",
+    subText:
+      "Celsius, a defunct crypto lending company, will likely release a new token aimed at reimbursing creditors...",
+    src: "/assets/images/home/StoriesImg1.png",
+  },
+  {
+    text: "Celsius will compensate consumers with a new token",
+    subText:
+      "Celsius, a defunct crypto lending company, will likely release a new token aimed at reimbursing creditors...",
+    src: "/assets/images/home/StoriesImg2.png",
+  },
+  {
+    text: "Celsius will compensate consumers with a new token",
+    subText:
+      "Celsius, a defunct crypto lending company, will likely release a new token aimed at reimbursing creditors...",
+    src: "/assets/images/home/StoriesImg3.png",
+  },
+];
+
 const StoriesSection = () => {
-  const storyData = [
-    {
-      text: "Celsius will compensate consumers with a new token",
-      subText:
-        "Celsius, a defunct crypto lending company, will likely release a new token aimed at reimbursing creditors...",
-      src: "/assets/images/home/StoriesImg1.png",
-    },
-    {
-      text: "Celsius will compensate consumers with a new token",
-      subText:
-        "Celsius, a defunct crypto lending company, will likely release a new token aimed at reimbursing creditors...",
-      src: "/assets/images/home/StoriesImg2.png",
-    },
-    {
-      text: "Celsius will compensate consumers with a new token",
-      subText:
-        "Celsius, a defunct crypto lending company, will likely release a new token aimed at reimbursing creditors...",
-      src: "/assets/images/home/StoriesImg3.png",
-    },
-  ];
+
   return (
     <section className="bg-black text-white">
       <div className="container my-5">
