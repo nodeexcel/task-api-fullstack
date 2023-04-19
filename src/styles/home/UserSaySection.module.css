@@ -1,0 +1,45 @@
+.userDiv {
+    display: "inline-block";
+    width: 150%;
+    height: fit-content;
+    display: flex;
+    color: white
+}
+.playstoreImg{
+    width: 30px;
+    height: 30px;
+}
+.starImg{
+    height: 20px;
+    width: 20px;
+}
+.starDiv{
+    padding-top: 6px;
+}
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .userDiv{
+        width: 200%;
+    }
+}
+
+@media screen and (min-width:640px) and (max-width:768px) {
+    .userDiv{
+        width: 250%;
+    }
+}
+@media screen and (max-width:640px) {
+    .userDiv{
+        width: 500%;
+    }
+    .playstoreImg{
+        width: 20px;
+        height: 20px;
+    }
+    .starImg{
+        height: 16px;
+        width: 16px;
+    }
+    .starDiv{
+        padding-top: 20px;
+    }
+}

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { TbSquareRoundedChevronDownFilled} from 'react-icons/tb';
+import { TbSquareRoundedChevronDownFilled } from 'react-icons/tb';
 import styles from '../../styles/home/NewsSection.module.css';
 
 const newsData = [
@@ -45,12 +45,12 @@ const newsData = [
 const LeftScroll = () => {
     return (
         <motion.div
-            style={{ display: "inline-block", display: "flex", background: "transparent", padding: 20 }}
+            className={styles.newsDiv}
             animate={{ x: ["0%", "-100%"] }}
             transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
         >
             {
-                newsData.map((img, index) => <img src={img.src} width={img.width} height={img.height} />)
+                newsData.map((img, i) => <img key={i} src={img.src} width={img.width} height={img.height} />)
             }
         </motion.div>
     )
@@ -59,12 +59,12 @@ const LeftScroll = () => {
 const RightScroll = () => {
     return (
         <motion.div
-            style={{ display: "inline-block", display: "flex", background: "transparent", padding: 20 }}
+            className={styles.newsDiv}
             animate={{ x: ["-100%", "0%"] }}
             transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
         >
             {
-                newsData.map((img, index) => <img src={img.src} width={img.width} height={img.height} />)
+                newsData.map((img, index) => <img key={index} src={img.src} width={img.width} height={img.height} />)
             }
         </motion.div>
     )
@@ -83,8 +83,11 @@ const NewsSection = () => {
                 <RightScroll />
             </div>
             <div className={styles.arrow}>
-                <p className={styles.text}>See more</p>
-                <TbSquareRoundedChevronDownFilled/>
+                <div className={styles.text}>See more<br />
+                    <div className="d-flex justify-content-center mb-4">
+                        <img src="/assets/images/home/downIcon.png" />
+                    </div>
+                </div>
             </div>
         </div>
     );

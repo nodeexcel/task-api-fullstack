@@ -20,7 +20,6 @@
   align-items: center;
 }
 .rightDiv {
-  width: 50%;
   text-align: center;
 }
 .leftDiv2 {
@@ -102,7 +101,6 @@
     width: 100%;
   }
   .rightDiv {
-    width: 100%;
     text-align: start;
   }
   .leftDiv2 {
@@ -181,9 +179,10 @@
     width: 100%;
     padding: 100px 0px;
   }
-  .firstcolumn {
+  .firstcolumn, .secondColumn, .ThirdColumn {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
   .leftDiv {
     width: 60%;
@@ -202,10 +201,9 @@
   .rightDiv2 {
     width: 60%;
   }
-  .image1{
-    width: 200px;
-    height: auto;
-    margin: auto;
+  .image1,.image2, .image3 {
+    width: 70%;
+    height: 60%;
   }
   .secondColumn {
     display: flex;
@@ -339,9 +337,8 @@
     line-height: 85px;
     font-weight: 700;
   }
-  .subText {
-    font-size: 22px;
-    font-weight: 300;
-    margin-bottom: 50px;
+  .paragraph {
+    font-size: 24px;
+    line-height: 35px;
   }
 }

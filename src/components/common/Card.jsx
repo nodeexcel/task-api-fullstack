@@ -1,9 +1,17 @@
 import React from "react";
+import styles from "@/styles/Card.module.css"
 
-const Card = ({ src, text, style, subText, type }) => {
+const Card = ({ src, text, style, subText, type, imgText }) => {
   return (
     <section className="" style={style}>
-      <img className="card-img-top" src={src} alt="Card image cap" />
+      <div className={styles.imageContainer}>
+        <img className="card-img-top" src={src} alt="Card image cap" />
+        {type==="team" && 
+        <div class={styles.textOverlay}>
+          <p>{imgText}</p>
+        </div>}
+      </div>
+
       <div className="card-body">
         <div className="fs-4 card-title py-2">{text}</div>
         <div className="fs-5 fw-lighter card-text py-">{subText}</div>

@@ -18,7 +18,7 @@ const QuestionSection = () => (
   >
     <div className="container py-5">
       <div
-        className={`text-white d-flex flex-column ${styles.mainDiv}`}
+        className={`text-white d-flex flex-column p-5 ${styles.mainDiv}`}
       >
         <div className={`d-flex justify-content-start align-items-center ${styles.mainDiv}`}>
           <h1 className={`${styles.subheading}`}>Have more questions? </h1>
@@ -79,9 +79,11 @@ const QuestionSection = () => (
         </Accordion.Item>
       </Accordion.Root>
     </div>
-    <NewsSection />
+   <div>
+   <NewsSection />
     <PortfolioSection />
     <Footer />
+   </div>
   </section>
 );
 

@@ -7,22 +7,26 @@ const TeamSection = () => {
         {
             src: "/assets/images/home/team1.svg",
             text: "Jared E. Wallace",
-            subText: "CEO & Co-Founder"
+            subText: "CEO & Co-Founder",
+            imgText:"Protected by a multi-level security architecture and is regularly Protected by a multi-level security architecture and is regularly"
         },
         {
             src: "/assets/images/home/team2.svg",
             text: "Jessica Johnson",
-            subText: "Co-Founder"
+            subText: "Co-Founder",
+            imgText:"Protected by a multi-level security architecture and is regularly Protected by a multi-level security architecture and is regularly"
         },
         {
             src: "/assets/images/home/team3.svg",
             text: "Trevor Noah",
-            subText: "Tech Lead"
+            subText: "Tech Lead",
+            imgText:"Protected by a multi-level security architecture and is regularly Protected by a multi-level security architecture and is regularly"
         },
         {
             src: "/assets/images/home/team4.svg",
             text: "Kate Winslet",
-            subText: "Marketing Lead"
+            subText: "Marketing Lead",
+            imgText:"Protected by a multi-level security architecture and is regularly Protected by a multi-level security architecture and is regularly"
         }
     ]
     return (
@@ -38,10 +42,10 @@ const TeamSection = () => {
             <div className='d-flex flex-row justify-content-center'>
                 <div className='d-flex'><img src="/assets/images/home/left.svg" alt='left'/></div>
                 <div className='d-flex justify-content-center'>
-                {teamData.map((data) => {
+                {teamData.map((data, i) => {
                     return (
                         <>
-                            <Card src={data.src} text={data.text} subText={data.subText} style={{ width: "14rem", margin: 20 }} type={"team"}/>
+                            <Card key={i} src={data.src} text={data.text} imgText={data.imgText} subText={data.subText} style={{ width: "14rem", margin: 20 }} type={"team"}/>
                         </>
                     )
                 })}

@@ -21,9 +21,9 @@ const ChatPaySection = () => {
           The new culture of money is making headlines check out our latest blog
         </div>
 
-        <divm className={styles.btn}>
+        <div className={styles.btn}>
           <Button buttonName="black" text="Get the App" />
-        </divm>
+        </div>
       </div>
 
       <div className={`col-6 col-sm-6 ${styles.rightDiv}`}>

@@ -1,6 +1,7 @@
 .mainDiv {
   width: 100%;
   margin: auto;
+  position: relative;
 }
 .subheading {
   font-family: 'ClashGrotesk-Semibold';
@@ -31,15 +32,15 @@
   width: 30px;
   height: 30px;
   margin-left: 10px;
+  opacity: 0.7;
 }
 
-
-
-
-
 @media screen and (max-width: 640px) {
-  .mainDiv{
+  .mainDiv {
     padding: 5%;
+    width: 100%;
+    margin: auto;
+    position: relative;
   }
   .header{
     font-size: 1rem;
@@ -70,11 +71,11 @@
     opacity: 1;
   }
   .mainDiv{
-    position: relative;
+    
   }
   .image {
     position: absolute;
-    left: 75%;
+    left: 80%;
     top: 55%;
   }
   .headpoint{
@@ -96,20 +97,20 @@
     padding: 0%;
     width: 100%;
     margin: auto;
+    position: relative;
   }
   .subheading {
     font-family: 'ClashGrotesk-Semibold';
     line-height: 3rem;
-    margin-left: 5%;
+    margin-left: -2%;
     margin-top: 0%;
     color: #ffffff;
   }
   .Read{
     font-family: 'ClashGrotesk-Extralight';
-    font-size: 1rem;
-    margin-left: 5%;
+    font-size: 1.5rem;
+    margin-left: -2%;
     color: #ffffff;
-    padding-bottom: 5%;
   }
   .header{
     font-size: 1rem;
@@ -124,10 +125,10 @@
     font-family: 'ClashGrotesk-Extralight';
     color: #ffffff;
   }
-  .image{
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
+  .image {
+    position: absolute;
+    left: 55%;
+    top: 22%;
   }
 }
 
@@ -137,14 +138,17 @@
     color: white;
   }
   .subheading {
-    margin-left: 5%;
-    font-family: 'ClashGrotesk-Semibold';
+    margin-top: -7%;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    margin-left: -2%;
     line-height: 120%;
-    margin-top: -20%;
-    color: #ffffff;
+    text-align: center;
+    color: white;
   }
   .image{
-    margin-top: -20%;
+    margin-top: -7%;
     width: 30px;
     height: 30px;
     margin-left: 10px;
@@ -153,16 +157,14 @@
     padding: 0px;
   }
   .Read{
-    padding-bottom: 10%;
-    margin: auto;
-    text-align: center;
-    font-size: 17px;
-    width: 70%;
-    color: white;
-    opacity: 1;
+    font-family: 'ClashGrotesk-Extralight';
+    font-size: 1.5rem;
+    margin-left: -2%;
+    color: #ffffff;
+    padding-bottom: 5%;
   }
 }
-
+/* 
 @media  screen and (min-width: 1024px) and (max-width:1280px) {
   .heading {
     margin: auto;
@@ -191,4 +193,4 @@
     text-align: center;
     font-size: 20px;
   }
-}
+} */

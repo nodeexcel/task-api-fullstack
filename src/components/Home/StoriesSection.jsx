@@ -50,8 +50,7 @@ const StoriesSection = () => {
       >
         {storyData.map((data) => {
           return (
-            <div className="col-md-4 col-sm-12 ">
-              {" "}
+            <div className="col-lg-4 col-md-4">
               <Card
                 text={data.text}
                 src={data.src}
@@ -61,7 +60,7 @@ const StoriesSection = () => {
             </div>
           );
         })}
-      </div>
+        </div>
     </section>
   );
 };
