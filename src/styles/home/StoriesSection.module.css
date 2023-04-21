@@ -1,66 +1,179 @@
-.StoriesSection {
-  padding: 100px;
-  align-items: center;
-  text-align: center;
+.flex {
+  display: flex;
+  flex-direction: row;
 }
 
+.StoriesSections {
+  font-family: "ClashGrotesk-Medium", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif !important;
+  align-items: center;
+  text-align: start;
+  margin-left: 10%;
+}
+
+.RightDiv {
+  position: relative;
+}
 .button {
+  position: absolute;
+  right: 100%;
   height: 30px;
   width: 80px;
 }
-.cardSection{
-  padding: 30px 151px 80px;
+.cardSection {
+  padding: 30px 151px 30px 151px;
 }
-.description{
-font-family: 'ClashGrotesk-Light';
-font-style: normal;
-font-weight: 400;
-font-size: 1.3rem;
-line-height: 140%;
-color: #FFFFFF;
+.description {
+  font-family: "ClashGrotesk-Light", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif !important;
+  font-size: 1.5rem;
+  margin-left: 10%;
+  line-height: 140%;
+  color: #ffffff;
+}
+.cardSize {
+  margin: 1rem;
+  min-width: 200px;
 }
 
 @media screen and (max-width: 640px) {
   .maindev {
-    padding-top: 15%;
+    padding-top: 5%;
     display: flex;
     flex-direction: column-reverse;
     text-align: center;
     align-items: center;
   }
-  .LeftDiv{
+  .LeftDiv {
     width: 100%;
   }
-  .RightDiv{
+  .RightDiv {
     width: 100%;
   }
   .storiesbtn {
     display: none;
   }
-  .StoriesSection {
+  .StoriesSections {
+    font-family: "ClashGrotesk-Semibold";
     width: 100%;
+    font-size: 2.5rem;
     align-items: center;
     text-align: center;
     margin: auto;
   }
-  .description{
-    font-family: 'ClashGrotesk-Light';
+  .description {
+    font-family: "ClashGrotesk-Light", system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+      "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 1rem;
+    margin: auto;
+    width: 80%;
     line-height: 140%;
-    color: #FFFFFF;
-    }
+    color: #ffffff;
+  }
   .button {
     display: none;
   }
-  .cardSection{
+  .cardSection {
     padding: 0px;
+    min-width: 100%;
+  }
+  .cardSize {
+    margin: 1rem;
+    min-width: 85%;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 770px) {
+  .flex {
+    display: flex;
+    flex-direction: row;
   }
 
-  
-}
-@media screen and (min-width:640px) and (max-width: 1024px) {
+  .StoriesSections {
+    font-family: "ClashGrotesk-Medium", system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+      "Open Sans", "Helvetica Neue", sans-serif !important;
+    align-items: center;
+    text-align: start;
+    font-size: 2rem;
+    margin-left: 10%;
+  }
+
+  .RightDiv {
+    position: relative;
+  }
+
   .button {
-    display: none;
+    position: absolute;
+    right: 100%;
+    height: 30px;
+    width: 80px;
+  }
+
+  .cardSection {
+    padding: 5%;
+  }
+
+  .description {
+    font-family: "ClashGrotesk-Light", system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+      "Open Sans", "Helvetica Neue", sans-serif !important;
+    font-size: 1rem;
+    margin-left: 10%;
+    line-height: 140%;
+    color: #ffffff;
+  }
+
+  .cardSize {
+    margin: 1rem;
+    min-width: 200px;
+  }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1024px) {
+
+  .flex {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .StoriesSections {
+    font-family: "ClashGrotesk-Medium", system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+      "Open Sans", "Helvetica Neue", sans-serif !important;
+    align-items: center;
+    text-align: start;
+    font-size: 2rem;
+    margin-left: 10%;
+  }
+
+  .RightDiv {
+    position: relative;
+  }
+  .button {
+    position: absolute;
+    right: 100%;
+    height: 30px;
+    width: 80px;
+  }
+  .cardSection {
+    padding: 5%;
+  }
+  .description {
+    font-family: "ClashGrotesk-Light", system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+      "Open Sans", "Helvetica Neue", sans-serif !important;
+    font-size: 1rem;
+    margin-left: 10%;
+    line-height: 140%;
+    color: #ffffff;
+  }
+  .cardSize {
+    margin: 1rem;
+    min-width: 200px;
   }
 }
 

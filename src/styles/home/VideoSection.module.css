@@ -1,6 +1,3 @@
-/* ----------Video Section------------ */
-@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
-
 .videoDiv {
   background-color: #7f4bc4;
   text-align: center;
@@ -27,13 +24,13 @@
 }
 
 .videoHeading {
-  font-family: 'ClashGrotesk-Medium';
+  font-family: 'ClashGrotesk-Medium',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 76px;
   line-height: 100px;
 }
 
 .videoSubHeading {
-  font-family: 'ClashGrotesk-Extralight';
+  font-family: 'ClashGrotesk-Extralight',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 24px;
   line-height: 40px;
   font-weight: 400;
@@ -52,16 +49,16 @@
     padding-left: 10px;
     padding-right: 20px;
     font-style: normal;
-    font-weight: 500;
-    font-family: "Orbitron", sans-serif;
+    font-family: 'ClashGrotesk-Semibold',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 50px;
     font-size: 50px;
   }
   .videoSubHeading {
     font-weight: 0;
     padding: 30px;
-    font-family: "Abel", sans-serif;
-    line-height: 20px;
+    font-family: 'ClashGrotesk-Extralight',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
   .video {
     margin-left: -232px;
@@ -83,8 +80,7 @@
     padding-left: 10px;
     padding-right: 20px;
     font-style: normal;
-    font-weight: 500;
-    font-family: 'ClashGrotesk-Medium';
+    font-family: 'ClashGrotesk-Semibold',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 50px;
     font-size: 50px;
   }
@@ -92,7 +88,7 @@
     font-weight: 0;
     padding-top: 1rem;
     padding-bottom: 2rem;
-    font-family: 'ClashGrotesk-Extralight';
+    font-family: 'ClashGrotesk-Extralight',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 20px;
   }
   .video {

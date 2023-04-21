@@ -16,7 +16,7 @@
 }
 @media screen and (max-width: 640px) {
   .mainDiv {
-    padding: 0px;
+    padding: 25px !important;
   }
   .head {
     padding: 0px;

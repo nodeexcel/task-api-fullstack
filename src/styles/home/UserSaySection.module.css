@@ -16,17 +16,7 @@
 .starDiv{
     padding-top: 6px;
 }
-@media screen and (min-width:769px) and (max-width:1024px) {
-    .userDiv{
-        width: 200%;
-    }
-}
 
-@media screen and (min-width:640px) and (max-width:768px) {
-    .userDiv{
-        width: 250%;
-    }
-}
 @media screen and (max-width:640px) {
     .userDiv{
         width: 500%;
@@ -41,5 +31,20 @@
     }
     .starDiv{
         padding-top: 20px;
+    }
+    .RightScroll{
+        display: none;
+    }
+}
+
+@media screen and (min-width:640px) and (max-width:768px) {
+    .userDiv{
+        width: 250%;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .userDiv{
+        width: 200%;
     }
 }

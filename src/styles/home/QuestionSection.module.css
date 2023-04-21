@@ -4,29 +4,30 @@
   position: relative;
 }
 .subheading {
-  font-family: 'ClashGrotesk-Semibold';
+  font-family: 'ClashGrotesk-Semibold', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 120%;
   margin-left: 10%;
+  padding-bottom: 1%;
   color: #ffffff;
 }
 .Read{
-  font-family: 'ClashGrotesk-Extralight';
+  font-family: 'ClashGrotesk-Extralight', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.5rem;
   margin-left: 10%;
+  padding-bottom: 2%;
   color: #ffffff;
 }
 .header{
   font-size: 1.5rem;
-  font-family: 'ClashGrotesk-Medium';
+  font-family: 'ClashGrotesk-Medium', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #ffffff;
 }
 .headpoint{
-  padding: 100px 0px;
-
+  padding: 0% 10%;
 }
 .SubHeader{
   font-size: 1rem;
-  font-family: 'ClashGrotesk-Light';
+  font-family: 'ClashGrotesk-Light', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #ffffff;
 }
 .image{
@@ -34,6 +35,14 @@
   height: 30px;
   margin-left: 10px;
   opacity: 0.7;
+}
+
+@media screen and (max-width:320px) {
+  .image{
+    position: absolute;
+    left: 79%;
+    top: 47%;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -45,12 +54,12 @@
   }
   .header{
     font-size: 1rem;
-    font-family: 'ClashGrotesk-Medium';
+    font-family: 'ClashGrotesk-Medium', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #ffffff;
   }
   .SubHeader{
     font-size: 1rem;
-    font-family: 'ClashGrotesk-Light';
+    font-family: 'ClashGrotesk-Light', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #ffffff;
   }
   .heading {
@@ -60,9 +69,9 @@
     color: white;
   }
   .subheading {
-    font-family: 'ClashGrotesk-Medium';
+    font-family: 'ClashGrotesk-Medium', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 37px;
     line-height: 120%;
     margin: auto;
     text-align: center;
@@ -70,8 +79,8 @@
   }
   .image {
     position: absolute;
-    left: 80%;
-    top: 55%;
+    left: 73%;
+    top: 44%;
   }
   .headpoint{
     padding: 0px;
@@ -94,35 +103,37 @@
     position: relative;
   }
   .subheading {
-    font-family: 'ClashGrotesk-Semibold';
+    font-family: 'ClashGrotesk-Semibold', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 3rem;
-    margin-left: -2%;
+    margin-left: 8%;
     margin-top: 0%;
     color: #ffffff;
   }
   .Read{
-    font-family: 'ClashGrotesk-Extralight';
+    font-family: 'ClashGrotesk-Extralight', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.5rem;
-    margin-left: -2%;
+    margin-left: 8%;
+    padding-bottom: 10%;
     color: #ffffff;
   }
   .header{
     font-size: 1rem;
-    font-family: 'ClashGrotesk-Regular';
+    font-family: 'ClashGrotesk-Regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #ffffff;
   }
   .headpoint{
     margin-top: -5%;
+    padding: 0% 5%;
   }
   .SubHeader{
     font-size: 1rem;
-    font-family: 'ClashGrotesk-Extralight';
+    font-family: 'ClashGrotesk-Extralight',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #ffffff;
   }
   .image {
     position: absolute;
-    left: 55%;
-    top: 22%;
+    left: 58%;
+    top: 25%;
   }
 }
 
@@ -136,7 +147,7 @@
     font-style: normal;
     font-weight: 300;
     font-size: 36px;
-    margin-left: -2%;
+    margin-left: 16%;
     line-height: 120%;
     text-align: center;
     color: white;
@@ -148,43 +159,14 @@
     margin-left: 10px;
   }
   .headpoint{
-    padding: 100px 0px;
+    padding: 0% 5%;
   }
   .Read{
-    font-family: 'ClashGrotesk-Extralight';
+    font-family: 'ClashGrotesk-Extralight', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.5rem;
-    margin-left: -2%;
+    margin-left: 7%;
     color: #ffffff;
     padding-bottom: 5%;
   }
 }
-/* 
-@media  screen and (min-width: 1024px) and (max-width:1280px) {
-  .heading {
-    margin: auto;
-    align-items: center;
-    text-align: center;
-    color: white;
-  }
-  .subheading {
-    margin-top: -7%;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 36px;
-    line-height: 120%;
-    text-align: center;
-    color: white;
-  }
-  .image {
-    padding-left: 0px;
-    margin-top: -7%;
-  }
-  .headpoint{
-    padding: 0px;
-  }
-  .Read{
-    margin-left: -11%;
-    text-align: center;
-    font-size: 20px;
-  }
-} */
+

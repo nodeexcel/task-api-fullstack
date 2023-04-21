@@ -1,36 +1,94 @@
 .imageContainer {
-    position: relative;
-    width: 100%;
-    max-width: 500px;
-  }
-  
-  .textOverlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    overflow: hidden;
-    display: flex;
-    border-radius: 14px 14px 0px 0px;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    transition: height 0.5s ease;
-  }
-  
-  .imageContainer:hover .textOverlay {
-    height: 70%;
-    padding: 20px;
-  }
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
 
-  .cardStory{
-    margin-left: 0px;
+.Linkedin {
+  color: white;
+}
+
+.Linkedin:hover {
+  color: #984df6;
+}
+
+.twitter {
+  color: white;
+}
+
+.twitter:hover {
+  color: #cd7644;
+}
+
+.textOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  border-radius: 14px 14px 0px 0px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  transition: height 0.5s ease;
+}
+
+.imageContainer:hover .textOverlay {
+  height: 70%;
+  padding: 20px;
+}
+
+.cardStory {
+  margin-left: 0px;
+}
+
+.text {
+  margin-top: 5%;
+  font-family: 'ClashGrotesk-Light';
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+.subText {
+  font-family: 'ClashGrotesk-Extralight';
+  color: #bababa;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 640px) {
+  .cardStory {
+    margin-left: 400px;
   }
-  
-  @media screen and (max-width: 640px) {
-    .cardStory{
-      margin-left: 400px;
-    }
+  .text {
+    margin-top: 5%;
+    font-family: 'ClashGrotesk-Light';
+    font-size: 1.7rem;
+    line-height: 1.8rem;
   }
+  .subText {
+    margin-top: 3%;
+    font-family: 'ClashGrotesk-Extralight';
+    color: #bababa;
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 770px) {
+  .cardStory {
+    margin-left: 400px;
+  }
+  .text {
+    margin-top: 5%;
+    font-family: 'ClashGrotesk-Light';
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+  .subText {
+    margin-top: 3%;
+    font-family: 'ClashGrotesk-Extralight';
+    color: #bababa;
+    font-size: 1rem;
+  }
+}

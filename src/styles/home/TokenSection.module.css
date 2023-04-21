@@ -30,17 +30,17 @@
   width: 50%;
 }
 .text1 {
-  font-family: 'ClashGrotesk-Semibold';
+  font-family: 'ClashGrotesk-Semibold',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 3.5rem;
   line-height: 4rem;
 }
 .text2 {
-  font-family: 'ClashGrotesk-Semibold';
+  font-family: 'ClashGrotesk-Semibold',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 3.5rem;
   line-height: 4rem;
 }
 .text3 {
-  font-family: 'ClashGrotesk-Semibold';
+  font-family: 'ClashGrotesk-Semibold',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
   font-size: 3.5rem;
   line-height: 4rem;
 }
@@ -69,7 +69,7 @@
 }
 
 .paragraph {
-  font-family: 'ClashGrotesk-Extralight';
+  font-family: 'ClashGrotesk-Extralight',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   padding-top: 5%;
   width: 60%;
   padding-bottom: 5%;
@@ -131,22 +131,22 @@
     height: 110%;
   }
   .text1 {
-    font-family: 'ClashGrotesk-Semibold';
+    font-family: 'ClashGrotesk-Semibold',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 36px;
     line-height: 120%;
   }
   .text2 {
-    font-family: 'ClashGrotesk-Semibold';
+    font-family: 'ClashGrotesk-Semibold',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 36px;
     line-height: 120%;
   }
   .text3 {
-    font-family: 'ClashGrotesk-Semibold';
+    font-family: 'ClashGrotesk-Semibold',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 36px;
     line-height: 120%;
   }
   .paragraph {
-    font-family: 'ClashGrotesk-Extralight';
+    font-family: 'ClashGrotesk-Extralight',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding-top: 5%;
     width: 90%;
     padding-bottom: 5%;

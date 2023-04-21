@@ -13,14 +13,14 @@ const Card = ({ src, text, style, subText, type, imgText ,className }) => {
       </div>
 
       <div className="card-body">
-        <div className="fs-4 card-title py-2">{text}</div>
-        <div className="fs-6 fw-lighter card-text" style={{color:"#BABABA"}}>{subText}</div>
+        <div className={`card-title py-2 ${styles.text}`}>{text}</div>
+        <div className={`card-text ${styles.subText}`}>{subText}</div>
       </div>
 
       {type === "team" && (
         <div>
           <hr style={{ width: 40, height: 2, background: "white" }} />
-          <div style={{ lineHeight: 0 }}>LinkedIN &nbsp; | &nbsp; Twitter</div>
+          <div style={{ lineHeight: 0 }}><span className={styles.Linkedin}>Linked IN </span>&nbsp; | &nbsp; <span className={styles.twitter}>Twitter</span></div>
         </div>
       )}
     </section>

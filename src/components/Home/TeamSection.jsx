@@ -58,7 +58,6 @@ const TeamSection = () => {
         setdata(d)
     }, [endIndex])
 
-
     return (
         <section className='bg-dark text-white p-5' id="teamSection">
             <div className='d-flex flex-column align-items-center justify-content-center'>
@@ -73,7 +72,6 @@ const TeamSection = () => {
                 <button className={`d-flex ${styles.leftBtnDiv}`} onClick={() => {
                     setStartIndex(startIndex - 1)
                     setEndIndex(endIndex - 1)
-
                 }}
                     disabled={startIndex == 0}
                 >

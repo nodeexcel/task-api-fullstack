@@ -25,44 +25,42 @@ const storyData = [
 ];
 
 const StoriesSection = () => {
-
   return (
     <section className="bg-black text-white">
-      <div className="container my-5">
+      <div className="container my-3">
         <div className={`row ${styles.maindev}`}>
-          <div className="container">  
-          <div className={`col-6 d-flex flex-column ${styles.LeftDiv}`}>
-            <h1 className={`display-4 fw-bold my-3 ${styles.StoriesSections}`}>
-              Our Stories
-            </h1>
-            <p className={styles.description}>
-              The new culture of money is making headlines.Check out our latest
-              blog posts to find out more.
-            </p>
+          <div className="container">
+            <div className={`col-12 col-sm-7 ${styles.LeftDiv}`}>
+              <h1 className={`display-4 my-3 ${styles.StoriesSections}`}>
+                Our Stories
+              </h1>
+              <p className={styles.description}>
+                The new culture of money is making headlines. Check out our
+                latest blog posts to find out more.
+              </p>
+            </div>
+            <div className={`col-12 col-sm-5 ${styles.RightDiv}`}>
+              <Button text={"More stories"} className={styles.button} />
+            </div>
           </div>
-         <div className={`col-6 ${styles.RightDiv}`}>
-         <Button text={"More stories"} className={styles.button} />
-         </div>
-         </div>
         </div>
-        </div>
+      </div>
       <div
-      id={styles.bbb}
+        id={styles.bbb}
         className={` ${styles.cardSection} d-flex justify-content-center align-items-center overflow-scroll w-full ${styles.cardStory}`}
-        style={{minWidth:'100%'}}
       >
-        {storyData.map((data , index) => {
+        {storyData.map((data, i) => {
           return (
-              <Card
-                text={data.text}
-                src={data.src}
-                subText={data.subText}
-                className={index == 0 && styles.cardStory}
-                style={{ margin: "1rem", minWidth:'200px' }}
-              />
+            <Card
+              key={i}
+              src={data.src}
+              text={data.text}
+              subText={data.subText}
+              className={i == -1 ? styles.cardStory : styles.cardSize}
+            />
           );
         })}
-        </div>
+      </div>
     </section>
   );
 };
