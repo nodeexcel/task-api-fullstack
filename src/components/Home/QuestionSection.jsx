@@ -68,7 +68,7 @@ const QuestionSection = () => (
           <AccordionTrigger className={styles.header}>
             Where can I download the Plena wallet App?
           </AccordionTrigger>
-          <Accordion.Content className={` ${styles.SubHeader}`}>
+          <Accordion.Content className={styles.SubHeader}>
             <div className="AccordionContentText">
               Plena App can be downloaded on the{" "}
               <span className="text-primary">App Store</span> on{" "}

@@ -148,9 +148,13 @@ const NewsSection = () => {
         <p className={styles.text}>
           {less - 1 === newsData.length ? "See less" : "See more"}
         </p>
-        <br />
         <div className="d-flex justify-content-center mb-4">
-          <img src="/assets/images/home/downIcon.png" />
+          {less-1 === newsData.length ?
+          <img src="/assets/images/home/upIcon.png" />
+        :
+        <img src="/assets/images/home/downIcon.png" />
+
+        }
         </div>
       </div>
     </div>

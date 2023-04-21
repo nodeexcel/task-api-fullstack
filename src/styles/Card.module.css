@@ -6,18 +6,20 @@
 
 .Linkedin {
   color: white;
+  cursor: pointer;
 }
 
 .Linkedin:hover {
-  color: #984df6;
+  color: #984DF6;
 }
 
 .twitter {
   color: white;
+  cursor: pointer;
 }
 
 .twitter:hover {
-  color: #cd7644;
+  color: #CD7644;
 }
 
 .textOverlay {
@@ -67,6 +69,27 @@
     font-size: 1.7rem;
     line-height: 1.8rem;
   }
+  .imgContainerStyle{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .textOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    border-radius: 14px 14px 0px 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    transition: height 0.5s ease;
+  }
   .subText {
     margin-top: 3%;
     font-family: 'ClashGrotesk-Extralight';
@@ -92,3 +115,23 @@
     font-size: 1rem;
   }
 }
+  .imgContainerStyle:hover .textOverlay {
+    height: 70%;
+    padding: 20px;
+  }
+
+
+
+  .cardStory{
+    margin-left: 0px;
+
+  }
+  
+  @media screen and (max-width: 640px) {
+    .cardStory{
+      margin-left: 400px;
+    }
+    .imgContainerStyle{
+      width: 300px;
+    }
+  }

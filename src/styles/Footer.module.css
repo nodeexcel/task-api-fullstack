@@ -14,28 +14,51 @@
 .head {
   padding: 2%;
 }
+.subHead{
+  font-size: 14px;
+}
+.rightData{
+  color: white !important;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.rightData:hover{
+  color: white !important;
+  opacity: 1;
+}
 @media screen and (max-width: 640px) {
   .mainDiv {
-    padding: 25px !important;
+    padding: 14px !important;
   }
   .head {
-    padding: 0px;
+    padding: 0px ;
   }
   .subHead {
     text-align: center;
+    font-size: 10px;
   }
   .SocialMedia {
     margin-left: 0px;
-    font-size: 20px;
+    font-size: 16px;
     padding-top: 5%;
     float: left;
   }
+.rightSectionData{
+  display: flex;
+  flex-direction: column-reverse;
+}
 }
 @media screen and (min-width:640px) and (max-width:1024px) {
   .SocialMedia {
     margin-left: 0px;
-    font-size: 20px;
+    font-size: 18px;
     padding-top: 5%;
     float: left;
+  }
+  .mainDiv {
+    padding: 30px !important;
+  }
+  .subHead{
+    font-size: 12px;
   }
 }

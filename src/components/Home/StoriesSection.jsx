@@ -29,7 +29,7 @@ const StoriesSection = () => {
     <section className="bg-black text-white">
       <div className="container my-3">
         <div className={`row ${styles.maindev}`}>
-          <div className="container">
+          <div className="row d-flex justify-content-between align-items-center">
             <div className={`col-12 col-sm-7 ${styles.LeftDiv}`}>
               <h1 className={`display-4 my-3 ${styles.StoriesSections}`}>
                 Our Stories
@@ -39,25 +39,24 @@ const StoriesSection = () => {
                 latest blog posts to find out more.
               </p>
             </div>
-            <div className={`col-12 col-sm-5 ${styles.RightDiv}`}>
+            <div className={`col-12 col-sm-5 d-flex justify-content-end ${styles.RightDiv}`}>
               <Button text={"More stories"} className={styles.button} />
             </div>
           </div>
         </div>
       </div>
       <div
-        id={styles.bbb}
-        className={` ${styles.cardSection} d-flex justify-content-center align-items-center overflow-scroll w-full ${styles.cardStory}`}
+        className={`${styles.cardSection}`}
       >
         {storyData.map((data, i) => {
           return (
-            <Card
-              key={i}
-              src={data.src}
-              text={data.text}
-              subText={data.subText}
-              className={i == -1 ? styles.cardStory : styles.cardSize}
-            />
+              <Card
+                text={data.text}
+                src={data.src}
+                subText={data.subText}
+                className={styles.cardStory}
+                imgContainerStyle
+              />
           );
         })}
       </div>

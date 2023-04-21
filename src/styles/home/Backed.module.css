@@ -3,8 +3,17 @@
     padding:100px
 }
 .logoImg{
-    width: 200px;
+    width: 150px;
     height: 40px;
+    filter: invert(80%);
+
+}
+.imgStyle{
+    /* width: 170px; */
+    /* height: 45px; */
+    width: 150px;
+    height: 40px;
+    filter: invert(0%);
 }
 .leftDiv{
     padding: 80px;

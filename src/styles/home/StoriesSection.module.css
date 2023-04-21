@@ -21,8 +21,16 @@
   height: 30px;
   width: 80px;
 }
-.cardSection {
-  padding: 30px 151px 30px 151px;
+.cardSection{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 151px 80px;
+
+}
+.cardStory{
+  margin: 20px;
+  width: 300px;
 }
 .description {
   font-family: "ClashGrotesk-Light", system-ui, -apple-system,
@@ -76,61 +84,21 @@
   .button {
     display: none;
   }
-  .cardSection {
-    padding: 0px;
-    min-width: 100%;
-  }
-  .cardSize {
-    margin: 1rem;
-    min-width: 85%;
-  }
-}
-
-@media screen and (min-width: 640px) and (max-width: 770px) {
-  .flex {
+  .cardSection{
+    /* padding: 0px;
+    width: 100% !important;
+    flex-shrink: 0;
+    overflow-x: scroll !important; */
     display: flex;
-    flex-direction: row;
-  }
-
-  .StoriesSections {
-    font-family: "ClashGrotesk-Medium", system-ui, -apple-system,
-      BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-      "Open Sans", "Helvetica Neue", sans-serif !important;
+    justify-content: space-between;
     align-items: center;
-    text-align: start;
-    font-size: 2rem;
-    margin-left: 10%;
+    padding: 10px;
+    overflow: scroll;
   }
-
-  .RightDiv {
-    position: relative;
+  .cardStory{
+    margin: 10px;
   }
-
-  .button {
-    position: absolute;
-    right: 100%;
-    height: 30px;
-    width: 80px;
-  }
-
-  .cardSection {
-    padding: 5%;
-  }
-
-  .description {
-    font-family: "ClashGrotesk-Light", system-ui, -apple-system,
-      BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-      "Open Sans", "Helvetica Neue", sans-serif !important;
-    font-size: 1rem;
-    margin-left: 10%;
-    line-height: 140%;
-    color: #ffffff;
-  }
-
-  .cardSize {
-    margin: 1rem;
-    min-width: 200px;
-  }
+  
 }
 
 @media screen and (min-width: 770px) and (max-width: 1024px) {
@@ -174,6 +142,15 @@
   .cardSize {
     margin: 1rem;
     min-width: 200px;
+  }
+}
+
+@media screen and (min-width:640px) and (max-width: 768px) {
+  .cardSection{
+    padding: 0px;
+    width: 100% !important;
+    flex-shrink: 0;
+    overflow-x: scroll !important;
   }
 }
 
