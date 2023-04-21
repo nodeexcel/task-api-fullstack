@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "@/styles/home/OwnBank.module.css";
 import Button from "../common/Button";
 
@@ -81,6 +81,14 @@ const OwnBank = () => {
               />
             </div>
           </div>
+          <div className={styles.QrCode}>  
+          <img
+                src={"/assets/images/home/QR.png"}
+                alt="curl"
+                className={styles.qrCode}
+              />
+          </div>
+
           <div className="row">
             <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
               <div className="d-flex justify-content-evenly align-item-center">
