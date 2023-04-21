@@ -9,8 +9,15 @@
   width: 80px;
 }
 .cardSection{
-  border:2px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 30px 151px 80px;
+
+}
+.cardStory{
+  margin: 20px;
+  width: 300px;
 }
 .description{
 font-family: 'ClashGrotesk-Light';
@@ -54,14 +61,33 @@ color: #FFFFFF;
     display: none;
   }
   .cardSection{
-    padding: 0px;
+    /* padding: 0px;
+    width: 100% !important;
+    flex-shrink: 0;
+    overflow-x: scroll !important; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    overflow: scroll;
   }
-
+  .cardStory{
+    margin: 10px;
+  }
   
 }
 @media screen and (min-width:640px) and (max-width: 1024px) {
   .button {
     display: none;
+  }
+}
+
+@media screen and (min-width:640px) and (max-width: 768px) {
+  .cardSection{
+    padding: 0px;
+    width: 100% !important;
+    flex-shrink: 0;
+    overflow-x: scroll !important;
   }
 }
 

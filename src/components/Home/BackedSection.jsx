@@ -1,60 +1,43 @@
 import { motion } from "framer-motion";
 import styles from "@/styles/home/Backed.module.css"
+import SlotMachine from "./SlotMachine";
+
 const BackedSection = () => {
     // return      <SlotMachine/>;
     // <div style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));">
 
     return (
         <section className={` ${styles.mainDiv} bg-black`}>
-            <div className="row text-white"
-            >
+            <div className="row text-white">
                 <div className={`${styles.leftDiv} col-lg-6 col-md-12 d-flex flex-column`}>
                     <div className="fs-1 fw-bolder my-3">Backed by the best</div>
-                    <div className="fs-4">Protected by a multi-level security architecture and is regularly audited to ensure that all of our users are safe.</div>
+                    <div className="fs-5 w-75 fw-lighter" style={{ color: "#BABABA" }}>Protected by a multi-level security architecture and is regularly audited to ensure that all of our users are safe.</div>
                 </div>
-                <div className="col-lg-6 col-md-12 align-items-md-center justify-content-md-center pt-md-0 d-flex justify-content-start p-5 p-sm-0 position-relative"
-                >
+                <div className="col-lg-6 col-md-12 align-items-md-center justify-content-md-center pt-md-0 d-flex justify-content-start p-5 p-sm-0 position-relative">
+                    <div className="position-absolute" style={{
+                        content: '',
+                        display: 'block',
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        right: 0,
+                        bottom: 0,
+                        height: 160,
+                        background: 'linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))',
+                        zIndex: 3
+
+                    }}></div>
                     <div className="d-flex flex-column py-5" style={{ height: 500, overflowY: "hidden" }}>
-                        {[...new Array(5)].map((img, index) =>
+                        {[...new Array(10)].map((img, index) =>
                             <motion.div
-                                style={{ display: "flex", flexDirection: "column", display: "flex", background: "transparent", padding: 20 }}
+                                style={{ display: "flex", flexDirection: "row", justifyContent: "center", background: "transparent", padding: 14 }}
                                 key={index}
                                 animate={{ y: ["0%", "-100%"] }}
-                                transition={{ duration: 7, repeat: Infinity, ease: "linear" }}
+                                transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
                             >
-                                <img src="/assets/images/home/polygon.svg" className={styles.logoImg} alt="polygon" />
-                            </motion.div>
-                        )}
-                        {[...new Array(5)].map((img, index) =>
-                            <motion.div
-                                key={index}
-                                style={{ display: "flex", flexDirection: "column", display: "flex", background: "transparent", padding: 20 }}
-                                animate={{ y: ["0%", "-100%"] }}
-                                transition={{ duration: 7, repeat: Infinity, ease: "linear" }}
-                            >
-                                <img src="/assets/images/home/polygon.svg" className={styles.logoImg} alt="polygon" />
-                            </motion.div>
-                        )}
-                    </div>
-                    <div className="d-flex flex-column py-5" style={{ height: 500, overflowY: "hidden" }}>
-                        {[...new Array(5)].map((img, index) =>
-                            <motion.div
-                                key={index}
-                                style={{ display: "flex", flexDirection: "column", display: "flex", background: "transparent", padding: 20 }}
-                                animate={{ y: ["0%", "-100%"] }}
-                                transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
-                            >
-                                <img src="/assets/images/home/biconomy.svg" className={styles.logoImg} alt="polygon" />
-                            </motion.div>
-                        )}
-                        {[...new Array(5)].map((img, index) =>
-                            <motion.div
-                                key={index}
-                                style={{ display: "flex", flexDirection: "column", display: "flex", background: "transparent", padding: 20 }}
-                                animate={{ y: ["0%", "-100%"] }}
-                                transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
-                            >
-                                <img src="/assets/images/home/biconomy.svg"  className={styles.logoImg} alt="polygon" />
+                                <img src="/assets/images/home/polygon.png" className={index===1 ? styles.imgStyle : styles.logoImg} alt="polygon" />
+                                <img src="/assets/images/home/biconomy.png" className={index===1 ? styles.imgStyle : styles.logoImg} alt="biconomy" />
+
                             </motion.div>
                         )}
                     </div>
@@ -75,4 +58,5 @@ const BackedSection = () => {
         </section>
     );
 };
+// 
 export default BackedSection

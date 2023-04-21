@@ -36,7 +36,7 @@ const LeftScroll = () => {
             {userSayData.map((data, index) => {
                 return (
                     <>
-                        <div key={index} className="d-flex flex-column justify-content-between" style={{ border: "1px solid white", borderRadius: 20, width: "600px", padding: "30px", margin: "30px" }}>
+                        <div key={index} className={`${styles.userSayCard} d-flex flex-column justify-content-between`}>
                             <div className="row mb-5">{data?.text}</div>
                             <div className={` ${styles.starDiv} row d-flex justify-content-between w-full`}>
                                 <div className="col-6">
@@ -68,7 +68,7 @@ const RightScroll = () => {
             {userSayData.map((data, index) => {
                 return (
                     <>
-                        <div key={index} className="d-flex flex-column justify-content-between" style={{ border: "1px solid white", borderRadius: 20, width: "600px", padding: "30px", margin: "30px" }}>
+                        <div key={index} className={` ${styles.userSayCard} d-flex flex-column justify-content-between`}>
                             <div className="row mb-5">{data?.text}</div>
                             <div className={`row d-flex  justify-content-between w-full ${styles.starDiv}`}>
                                 <div className="col-6">
@@ -93,11 +93,12 @@ const RightScroll = () => {
 const UserSaySection = () => {
     return (
         <div
-            className="bg-dark"
+            // className="bg-dark"
             style={{
                 backgroundImage: "url(/assets/images/home/userBg.svg)", backgroundPosition: "center",
                 backgroundSize: "cover"
-            }}>
+            }}
+            >
             <FeaturesSection />
             <BackedSection />
             <div
@@ -105,13 +106,42 @@ const UserSaySection = () => {
                 className="text-light d-flex justify-content-center fs-1 mt-5">What our users say <TbMessageCircle />
             </div>
             <div className="d-flex justify-content-center fs-md-4 fs-sm-6 mb-5" style={{ color: "#BABABA", textAlign: "center" }}>Protected by a multi-level security <br />architecture and is regularly</div>
-            <div className="d-flex">
-                <LeftScroll />
-                <LeftScroll />
+            <div className={styles.desktopData}>
+                <div className="d-flex">
+                    <LeftScroll />
+                    <LeftScroll />
+                </div>
+                <div className="d-flex">
+                    <RightScroll />
+                    <RightScroll />
+                </div>
             </div>
-            <div className="d-flex">
-                <RightScroll />
-                <RightScroll />
+            
+            <div 
+            
+            className={styles.mobileData}
+            
+           >  
+                {userSayData.map((data, index) => {
+                    return (
+                        <>
+                            <div key={index} className={`d-flex flex-column justify-content-between ${styles.userSayCard}`} style={{flexShrink:0}}>
+                                <div className="row text-white mb-3">{data?.text}</div>
+                                <div className={`row d-flex  justify-content-between w-full ${styles.starDiv}`}>
+                                    <div className="col-6">
+                                        <img src="/assets/images/home/playStoreIcon.svg" alt="playstore" className={`me-2 ${styles.playstoreImg}`} />
+                                        Logan
+                                    </div>
+                                    <div className="col-6 text-end">
+                                        {new Array(data?.rating).fill(
+                                            <img src="/assets/images/home/star.svg" alt='star' className={` ${styles.starImg}`} />
+                                        )}
+                                    </div>
+                                </div>
+                            </div>
+                        </>
+                    )
+                })}
             </div>
         </div>
     );

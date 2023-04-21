@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "@/styles/Card.module.css"
 
-const Card = ({ src, text, style, subText, type, imgText ,className }) => {
+const Card = ({ src, text, style, subText, type, imgText ,className, imgContainerStyle }) => {
   return (
-    <section className={`${className}`} style={style}>
-      <div className={styles.imageContainer}>
+    <div className={`${className}`} style={style}>
+      <div className={imgContainerStyle ? styles.imgContainerStyle :styles.imageContainer}>
         <img className="card-img-top" src={src} alt="Card image cap" />
         {type==="team" && 
-        <div class={styles.textOverlay}>
+        <div className={styles.textOverlay}>
           <p>{imgText}</p>
         </div>}
       </div>
@@ -23,7 +23,7 @@ const Card = ({ src, text, style, subText, type, imgText ,className }) => {
           <div style={{ lineHeight: 0 }}>LinkedIN &nbsp; | &nbsp; Twitter</div>
         </div>
       )}
-    </section>
+    </div>
   );
 };
 

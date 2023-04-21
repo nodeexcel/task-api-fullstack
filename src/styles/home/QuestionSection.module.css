@@ -27,6 +27,7 @@
   font-size: 1rem;
   font-family: 'ClashGrotesk-Light';
   color: #ffffff;
+  background-color: rgba(21, 21, 21, 0.8);
 }
 
 @media screen and (max-width: 640px) {
@@ -120,7 +121,6 @@
   }
   .image {
     padding-left: 0px;
-    /* padding-top: ; */
   }
   .headpoint{
     padding: 0px;

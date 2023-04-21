@@ -45,9 +45,7 @@ const StoriesSection = () => {
          </div>
         </div>
       <div
-      id={styles.bbb}
-        className={` ${styles.cardSection} d-flex justify-content-center align-items-center overflow-scroll w-full ${styles.cardStory}`}
-        style={{minWidth:'100%'}}
+        className={`${styles.cardSection}`}
       >
         {storyData.map((data , index) => {
           return (
@@ -55,8 +53,8 @@ const StoriesSection = () => {
                 text={data.text}
                 src={data.src}
                 subText={data.subText}
-                className={index == 0 && styles.cardStory}
-                style={{ margin: "1rem", minWidth:'200px' }}
+                className={styles.cardStory}
+                imgContainerStyle
               />
           );
         })}

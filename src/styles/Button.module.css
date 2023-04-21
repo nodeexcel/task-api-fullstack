@@ -8,20 +8,25 @@
   background: -webkit-linear-gradient(91.6deg, #afe2ed 0.62%, #a26aff 99.17%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: border-width 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
+
 .btnStyle:hover {
   border-color: rgba(175, 226, 237, 1) rgba(162, 106, 255, 1);
   border-width: 1px 4px 5px 1px;
 }
 
+
 .blackBtnStyle {
   background-color: transparent;
-  border: 2px solid black;
+  border: 1px solid black;
   padding: 8px 32px 8px 32px;
   width: 25%;
   text-align: center;
   border-radius: 10px;
   font-weight: 600;
+  transition: border-width 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
 }
 .blackBtnStyle:hover {
     border-color: black !important;

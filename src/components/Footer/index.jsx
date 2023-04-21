@@ -9,7 +9,7 @@ const Footer = () => {
   }
   return (
     <section className={`text-white p-3 ${styles.mainDiv}`}>
-      <div className='row p-5'>
+      <div className='row p-5 p-sm-3'>
         <div className='col-md-8 col-sm-12 d-flex flex-wrap flex-column'>
           <div className='d-flex justify-content-md-start justify-content-center'>
             <img src='/assets/images/home/footerLogo.svg' height={80} width={80} alt='logo' />
@@ -26,18 +26,18 @@ const Footer = () => {
           </div>
         </div>
         <div className='col-md-4 col-sm-12'>
-          <div className='row text-white opacity-50'>
+          <div className={`row  d-flex flex-md-row flex-sm-column-reverse`}>
             <div className='col-md-6 col-sm-12  text-md-start text-center'>
               {rightSection.first.map((data) => {
                 return (
-                  <div className='fs-5 mt-3'>{data}</div>
+                  <div className={` ${styles.rightData} fs-md-5 fs-sm-6 mt-3`}>{data}</div>
                 )
               })}
             </div>
             <div className='col-md-6 col-sm-12 text-md-start text-center'>
               {rightSection.second.map((data) => {
                 return (
-                  <div className='fs-5 mt-3'>{data}</div>
+                  <div className={`${styles.rightData} fs-md-5 fs-sm-6 mt-3`}>{data}</div>
                 )
               })}
             </div>

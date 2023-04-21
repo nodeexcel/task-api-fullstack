@@ -3,6 +3,12 @@
     width: 100%;
     max-width: 500px;
   }
+
+  .imgContainerStyle{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+  }
   
   .textOverlay {
     position: absolute;
@@ -24,13 +30,23 @@
     height: 70%;
     padding: 20px;
   }
+  .imgContainerStyle:hover .textOverlay {
+    height: 70%;
+    padding: 20px;
+  }
+
+
 
   .cardStory{
     margin-left: 0px;
+
   }
   
   @media screen and (max-width: 640px) {
     .cardStory{
       margin-left: 400px;
+    }
+    .imgContainerStyle{
+      width: 300px;
     }
   }

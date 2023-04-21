@@ -5,10 +5,13 @@ import { FiMenu} from 'react-icons/fi';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from '../common/Button';
 import styles from "@/styles/Navbar.module.css"
+import AnnoucementSection from '../Home/AnnoucementSection';
 
 const NavBar = () => {
   return (
-    <Navbar collapseOnSelect expand="sm" className={`overflow-hidden py-2  ${styles.navbarDiv}`} fixed="top">
+    <>
+    <AnnoucementSection/>
+    <Navbar collapseOnSelect expand="sm" className={`overflow-hidden py-2 ${styles.navbarDiv}`} fixed="top">
       <Container>
         <Navbar.Brand href="#home"><img src={"/assets/images/home/logo.svg"} height={50} width={120} alt="logo"
           className={styles.image}
@@ -50,6 +53,8 @@ const NavBar = () => {
         </Navbar.Collapse>  
       </Container>
     </Navbar>
+    </>
+
   )
 }
 

@@ -380,6 +380,9 @@ h6 {
   font-size: 18px;
   cursor: pointer;
   margin-right: 10px;
+  animation-name: ripple;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
 }
 
 .btn_ripple2 {
@@ -395,10 +398,6 @@ h6 {
   font-size: 18px;
   cursor: pointer;
   margin-right: 10px;
-}
-
-.btn_ripple:hover,
-.btn_ripple2:hover {
   animation-name: ripple;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
@@ -430,4 +429,10 @@ h6 {
   white-space: nowrap;
   margin-top: auto;
   transition: all 2s ease-in-out;
+}
+/* ---------------------------------------------------- */
+@media screen and (max-width:640px) {
+  .topSection{
+    display: none;
+  }
 }
