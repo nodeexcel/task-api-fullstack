@@ -1,13 +1,20 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
-import { FiMenu} from 'react-icons/fi';
+import { VscMenu} from 'react-icons/vsc';
+import {RxCross1} from 'react-icons/rx';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from '../common/Button';
 import styles from "@/styles/Navbar.module.css"
 import AnnoucementSection from '../Home/AnnoucementSection';
 
 const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
     <AnnoucementSection/>
@@ -22,8 +29,8 @@ const NavBar = () => {
             className={styles.image}
           />
         </Navbar.Brand>
-        <Navbar.Toggle className={styles.logo}>
-          <FiMenu />
+        <Navbar.Toggle className={styles.logo} onClick={toggleNavbar}>
+        {isOpen ? <RxCross1 /> : <VscMenu />}
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="color-white text-sm-center">

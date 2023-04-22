@@ -6,10 +6,10 @@ const TokenSection = () => {
 
   return (
     <section className={styles.mainDiv}>
-      <div className="container">
+     
         <div className={`row d-flex py-3 text-white  ${styles.firstcolumn}`}>
           <div className={`col-sm-6 ${styles.leftDiv}`}>
-            <header className="container pt-5">
+            <header className=" pt-5">
               <h1 className={styles.text1}>
                 Take control of your assets
               </h1>
@@ -37,10 +37,10 @@ const TokenSection = () => {
           </div>
           <div className={`col-sm-6 ${styles.rightDiv2}`}>
             <header className="container pt-5">
-              <h1 className={`display-3 fw-bold ${styles.text1}`}>
+              <h1 className={`display-3 fw-bold ${styles.text2}`}>
                 Social Login & Easy recovery
               </h1>
-              <p className={styles.paragraph}>
+              <p className={styles.paragraph2}>
                 Sign in quickly and effortlessly using social media accounts,
                 and retrieve your account even if your device is lost with MPC
                 (Multi-Party Computation) security.
@@ -48,7 +48,7 @@ const TokenSection = () => {
             </header>
           </div>
         </div>
-        <div className={`{row d-flex text-white py-3 ${styles.ThirdColumn}`}>
+        <div className={`{row d-flex text-white py-3 ${styles.firstcolumn}`}>
         <div className={`col-sm-6 ${styles.leftDiv}`}>
             <header className="container pt-5">
               <h1 className={`display-3 fw-bold ${styles.text1}`}>100K+ Tokens</h1>
@@ -67,7 +67,7 @@ const TokenSection = () => {
             />
           </div>
         </div>
-      </div>
+      
     </section>
   );
 };

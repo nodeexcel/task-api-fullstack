@@ -15,9 +15,9 @@ const Footer = () => {
             <img src='/assets/images/home/footerLogo.svg' height={80} width={80} alt='logo' />
           </div>
           <div className='d-flex flex-wrap justify-content-md-start justify-content-center pt-sm-1'>
-            {socialData.map((data) => {
+            {socialData.map((data, i) => {
               return (
-                <div className={styles.SocialMedia}>
+                <div className={styles.SocialMedia} key={i}>
                   {data}
                   <img src='/assets/images/home/arrow.svg' width={22} height={22} />
                 </div>
@@ -28,16 +28,16 @@ const Footer = () => {
         <div className='col-md-4 col-sm-12'>
           <div className={`row  d-flex flex-md-row flex-sm-column-reverse ${styles.rightSectionData}`}>
             <div className='col-md-6 col-sm-12  text-md-start text-center'>
-              {rightSection.first.map((data) => {
+              {rightSection.first.map((data, i) => {
                 return (
-                  <div className={` ${styles.rightData} fs-md-5 fs-sm-6 mt-3`}>{data}</div>
+                  <div className={` ${styles.rightData} fs-md-5 fs-sm-6 mt-3`} key={i}>{data}</div>
                 )
               })}
             </div>
             <div className='col-md-6 col-sm-12 text-md-start text-center'>
-              {rightSection.second.map((data) => {
+              {rightSection.second.map((data, i) => {
                 return (
-                  <div className={`${styles.rightData} fs-md-5 fs-sm-6 mt-3`}>{data}</div>
+                  <div className={`${styles.rightData} fs-md-5 fs-sm-6 mt-3`} key={i}>{data}</div>
                 )
               })}
             </div>

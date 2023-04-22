@@ -1,7 +1,7 @@
 /* ------------ Token Section ------------ */
 
 .mainDiv {
-  padding: 100px;
+  padding: 120px;
   background-color: #2d2d2d;
   margin-top: -20px;
   border-top-left-radius: 25px;
@@ -15,6 +15,14 @@
   width: 100%;
   padding: 100px 0px;
 }
+.firstcolumn {
+  display: flex;
+  flex-direction: inherit;
+}
+.secondColumn {
+  display: flex;
+  flex-direction: inherit;
+}
 .leftDiv {
   width: 50%;
   align-items: center;
@@ -23,27 +31,41 @@
   text-align: center;
 }
 .leftDiv2 {
-  width: 50%;
+  width: 55%;
   text-align: center;
 }
 .rightDiv2 {
-  width: 50%;
+  width: 45%;
 }
 .text1 {
-  font-family: 'ClashGrotesk-Semibold',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 3.5rem;
-  line-height: 4rem;
+  font-family: 'ClashGrotesk-Medium',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 80%;
+  font-size: 4rem;
+  line-height: 3.5rem;
 }
 .text2 {
-  font-family: 'ClashGrotesk-Semibold',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 3.5rem;
-  line-height: 4rem;
+  font-family: 'ClashGrotesk-Medium',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  font-size: 4rem;
+  line-height: 3.5rem;
 }
-.text3 {
-  font-family: 'ClashGrotesk-Semibold',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-  font-size: 3.5rem;
-  line-height: 4rem;
+
+.paragraph {
+  font-family: 'ClashGrotesk-Extralight',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-top: 5%;
+  width: 75%;
+  padding-bottom: 5%;
+  font-size: 1.3rem;
 }
+
+.paragraph2 {
+  font-family: 'ClashGrotesk-Extralight',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-top: 5%;
+  width: 100%;
+  padding-bottom: 5%;
+  font-size: 1.3rem;
+}
+
 .subText {
   font-size: 22px;
   font-weight: 300;
@@ -52,7 +74,7 @@
 .image1{
   width: 300px;
   height: auto;
-  margin: auto;
+  margin-left: -36%;
 }
 .image2{
   width: 300px;
@@ -62,18 +84,6 @@
   align-items: center;
   width: 280px;
   height: auto;
-}
-.firstcolumn {
-  display: flex;
-  flex-direction: inherit;
-}
-
-.paragraph {
-  font-family: 'ClashGrotesk-Extralight',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  padding-top: 5%;
-  width: 60%;
-  padding-bottom: 5%;
-  font-size: 1.1rem;
 }
 
 @media screen and (max-width: 640px) {
@@ -93,9 +103,12 @@
     padding: 100px 0px;
   }
   .firstcolumn {
-    margin-top: 10%;
     display: flex;
     flex-direction: column-reverse;
+  }
+  .secondColumn {
+    display: flex;
+    flex-direction: column;
   }
   .leftDiv {
     width: 100%;
@@ -113,20 +126,9 @@
   .image1 {
     width: 41%;
     height: 110%;
-  }
-  .secondColumn {
-    display: flex;
-    flex-direction: column;
+    margin-left: 0%;
   }
   .image2 {
-    width: 41%;
-    height: 110%;
-  }
-  .ThirdColumn {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .image3 {
     width: 41%;
     height: 110%;
   }
@@ -134,8 +136,10 @@
     font-family: 'ClashGrotesk-Semibold',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 36px;
     line-height: 120%;
+    width: fit-content;
   }
   .text2 {
+    width: fit-content;
     font-family: 'ClashGrotesk-Semibold',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 36px;
     line-height: 120%;
@@ -152,16 +156,14 @@
     padding-bottom: 5%;
     font-size: 1.1rem;
   }
+  .paragraph2 {
+    font-family: 'ClashGrotesk-Extralight',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 5%;
+    width: 90%;
+    padding-bottom: 5%;
+    font-size: 1.1rem;
+  }
 }
-
-
-
-
-
-
-
-
-
 
 @media screen and (min-width: 640px) and (max-width: 770px) {
   .mainDiv {

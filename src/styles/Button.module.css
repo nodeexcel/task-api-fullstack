@@ -86,34 +86,77 @@
 
 @media screen and (min-width: 770px) and (max-width: 1024px) {
   .btnStyle {
-    background-color: transparent;
-    border: 1px solid white;
-    padding: 2px 15px;
-    text-align: center;
-    border-radius: 10px;
-    font-weight: 300;
-    cursor: pointer;
-    background: -webkit-linear-gradient(91.6deg, #afe2ed 0.62%, #a26aff 99.17%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 8px 40px;
+  width: fit-content;
+  border-radius: 10px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(91.6deg, #afe2ed 0.62%, #a26aff 99.17%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: border-width 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.btnStyle:hover {
+  border-color: rgba(175, 226, 237, 1) rgba(162, 106, 255, 1);
+  border-width: 1px 4px 5px 1px;
+}
+
+
+.blackBtnStyle {
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 8px 32px 8px 32px;
+  width: 25%;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: border-width 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+}
+.blackBtnStyle:hover {
+    border-color: black !important;
+    border-width: 1px 4px 5px 1px !important;
   }
-  .btnStyle:hover {
-    border-color: rgba(175, 226, 237, 1) rgba(162, 106, 255, 1);
-    border-width: 1px 4px 5px 1px;
+}
+@media screen and (min-width: 1024px) and (max-width: 1240px) {
+  .btnStyle {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 8px 40px;
+  width: fit-content;
+  border-radius: 10px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(91.6deg, #afe2ed 0.62%, #a26aff 99.17%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: border-width 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.btnStyle:hover {
+  border-color: rgba(175, 226, 237, 1) rgba(162, 106, 255, 1);
+  border-width: 1px 4px 5px 1px;
+}
+
+
+.blackBtnStyle {
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 8px 32px 8px 32px;
+  width: 25%;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: border-width 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+}
+.blackBtnStyle:hover {
+    border-color: black !important;
+    border-width: 1px 4px 5px 1px !important;
   }
-  
-  .blackBtnStyle {
-    background-color: transparent;
-    border: 2px solid black;
-    padding: 8px 32px 8px 32px;
-    width: 26%;
-    cursor: pointer;
-    text-align: center;
-    border-radius: 10px;
-    font-weight: 600;
-  }
-  .blackBtnStyle:hover {
-      border-color: black !important;
-      border-width: 1px 4px 5px 1px !important;
-    }
 }
