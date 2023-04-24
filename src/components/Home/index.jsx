@@ -1,25 +1,27 @@
-import React from 'react'
-import OwnBank from './OwnBank'
-import TokenSection from './TokenSection'
-import VideoSection from './VideoSection'
+import ChatPaySection from './ChatPaySection'
 import CryptoSection from './CryptoSection'
+import FirstFold from './FirstFold'
+import OwnBank from './OwnBank'
+import QuestionSection from './QuestionSection'
+import SecondFold from './SecondFold'
+import StoriesSection from './StoriesSection'
+import TeamSection from './TeamSection'
 import TransactionSection from './TransactionSection'
 import UserSaySection from './UserSaySection'
-import StoriesSection from './StoriesSection'
-import QuestionSection from './QuestionSection'
-import TeamSection from './TeamSection'
-import ChatPaySection from './ChatPaySection'
 
 const LandingPage = () => {
   return (
     <>
       <OwnBank />
-      <VideoSection />
+      {/* <VideoSection /> */}
       {/* <Gallery/> */}
-      <TokenSection />
+      {/* <TokenSection /> */}
+      <FirstFold/>
+      {/* <Section1/> */}
       <CryptoSection />
-      <TransactionSection />
-      <ChatPaySection/>
+      {/* <TransactionSection />
+      <ChatPaySection/> */}
+      <SecondFold/>
       <UserSaySection />
       <TeamSection/>
       <StoriesSection/>

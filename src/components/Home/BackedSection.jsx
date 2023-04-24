@@ -1,6 +1,5 @@
+import styles from "@/styles/home/Backed.module.css";
 import { motion } from "framer-motion";
-import styles from "@/styles/home/Backed.module.css"
-import SlotMachine from "./SlotMachine";
 
 const BackedSection = () => {
 
@@ -32,6 +31,7 @@ const BackedSection = () => {
                                 key={index}
                                 animate={{ y: ["0%", "-100%"] }}
                                 transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+                                whileHover={{y:0}}
                             >
                                 <img src="/assets/images/home/polygon.png" className={index===1 ? styles.imgStyle : styles.logoImg} alt="polygon" />
                                 <img src="/assets/images/home/biconomy.png" className={index===1 ? styles.imgStyle : styles.logoImg} alt="biconomy" />
