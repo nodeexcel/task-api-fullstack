@@ -1,33 +1,59 @@
-.mainDiv{
+.mainDiv {
     background: black;
-    padding:100px
+    padding: 100px
 }
-.logoImg{
-    width: 150px;
-    height: 40px;
-    filter: invert(80%);
 
-}
-.imgStyle{
-    /* width: 170px; */
-    /* height: 45px; */
+.logoImg {
     width: 150px;
     height: 40px;
-    filter: invert(0%);
+    /* filter: invert(80%); */
 }
-.leftDiv{
+
+.imgStyle {
+    width: 150px;
+    height: 40px;
+    /* filter: invert(0%); */
+}
+
+.leftDiv {
     padding: 80px;
+    text-align: left;
 }
+
+.verticalScroll {
+    height: 500px;
+    overflow-y: hidden
+}
+
 @media screen and (max-width:640px) {
-    .mainDiv{
+    .mainDiv {
         background: black;
-        padding:0px
+        padding: 0px
     }
-    .logoImg{
+
+    .logoImg {
         width: 150px;
         height: 30px;
     }
-    .leftDiv{
+
+    .leftDiv {
         padding: 20px 60px 0px;
+        text-align: center;
+    }
+    .verticalScroll {
+        height: 300px;
+        overflow-y: hidden;
+        margin: auto;
+    }
+    .logoImg {
+        width: 130px;
+        height: 30px;
+        filter: invert(80%);
+    }
+    
+    .imgStyle {
+        width: 130px;
+        height: 30px;
+        filter: invert(0%);
     }
 }

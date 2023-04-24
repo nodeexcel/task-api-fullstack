@@ -7,11 +7,11 @@ const CryptoSection = () => {
   const PlaystoreIcon = "/assets/images/home/playstoreIcon.svg";
   return (
     <section className={"container-fluid " + styles.cryptoDiv}>
-      <div className={`row  `}>
+      <div className={`row ${styles.cryptoInnerDiv} `}>
         <div
-          className={`col-sm-12 col-md-6  d-flex justify-content-center align-items-start flex-column `}
+          className={`col-sm-12 col-md-5 ms-5 d-flex justify-content-center align-items-start flex-column `}
         >
-          <div className="container p-3">
+          <div className="p-3">
             <h1 className={`fw-bold pb-3 ${styles.heading}`}>
               Invest in Crypto, <br /> Starting with Just $1
             </h1>

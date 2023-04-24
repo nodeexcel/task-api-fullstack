@@ -66,7 +66,7 @@
   .text {
     margin-top: 5%;
     font-family: 'ClashGrotesk-Light';
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     line-height: 1.8rem;
   }
   .imgContainerStyle{
@@ -94,7 +94,19 @@
     margin-top: 3%;
     font-family: 'ClashGrotesk-Extralight';
     color: #bababa;
-    font-size: 1.3rem;
+    font-size: 1rem;
+  }
+  .Linkedin {
+    color: white;
+    cursor: pointer;
+    font-size:14px
+  }
+  
+  .twitter {
+    color: white;
+    cursor: pointer;
+    font-size:14px
+
   }
 }
 

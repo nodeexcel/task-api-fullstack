@@ -37,9 +37,8 @@ const OwnBank = () => {
             >
               <div className="col-12">
                 <h1 className={`display-1 ${styles.heading}`}>
-                  {" "}
                   Be Your
-                  <br /> Own Bank{" "}
+                  <br /> Own Bank
                 </h1>
               </div>
               <img
@@ -50,7 +49,7 @@ const OwnBank = () => {
               <div className={styles.subHeading}>
                 <p>
                   Introducing <span className={styles.strong}>Plena 2.0</span>,
-                  Self-Custodial Smart Wallet with{" "}
+                  Self-Custodial Smart Wallet with
                   <span className={styles.strong}>
                     EIP-4337: Account Abstraction
                   </span>
@@ -89,8 +88,8 @@ const OwnBank = () => {
               />
           </div>
 
-          <div className="row">
-            <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <div className={`row ${styles.bottomSection}`}>
+            <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
               <div className="d-flex justify-content-evenly align-item-center">
                 {bankData?.map((data, i) => {
                   return (

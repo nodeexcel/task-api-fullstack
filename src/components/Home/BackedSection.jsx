@@ -9,7 +9,7 @@ const BackedSection = () => {
             <div className="row text-white">
                 <div className={`${styles.leftDiv} col-lg-6 col-md-12 d-flex flex-column`}>
                     <div className="fs-1 fw-bolder my-3">Backed by the best</div>
-                    <div className="fs-5 w-75 fw-lighter" style={{ color: "#BABABA" }}>Protected by a multi-level security architecture and is regularly audited to ensure that all of our users are safe.</div>
+                    <div className="fs-5 w-md-75 w-sm-100 fw-lighter" style={{ color: "#BABABA" }}>Protected by a multi-level security architecture and is regularly audited to ensure that all of our users are safe.</div>
                 </div>
                 <div className="col-lg-6 col-md-12 align-items-md-center justify-content-md-center pt-md-0 d-flex justify-content-start p-5 p-sm-0 position-relative">
                     <div className="position-absolute" style={{
@@ -25,7 +25,7 @@ const BackedSection = () => {
                         zIndex: 3
 
                     }}></div>
-                    <div className="d-flex flex-column py-5" style={{ height: 500, overflowY: "hidden" }}>
+                    <div className={`${styles.verticalScroll} d-flex flex-column py-5`}>
                         {[...new Array(10)].map((img, index) =>
                             <motion.div
                                 style={{ display: "flex", flexDirection: "row", justifyContent: "center", background: "transparent", padding: 14 }}

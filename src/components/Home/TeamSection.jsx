@@ -113,9 +113,9 @@ const TeamSection = () => {
                     disabled={startIndex == 0}
                 >
                     {startIndex === 0 ?
-                        <img src="/assets/images/home/leftGray.svg" alt='left' />
+                        <img src="/assets/images/home/leftGray.svg" className={styles.phoneArrowImg} alt='left' />
                         :
-                        <img src="/assets/images/home/left.svg" alt='left' />
+                        <img src="/assets/images/home/left.svg"  className={styles.phoneArrowImg} alt='left' />
                     }
                 </button>
                 <button className={`d-flex`} disabled={endIndex == teamData.length - 1} onClick={() => {
@@ -126,9 +126,9 @@ const TeamSection = () => {
                 }}>
                     {
                         endIndex == teamData.length - 1 ?
-                            <img src="/assets/images/home/rightGray.svg" alt='right' />
+                            <img src="/assets/images/home/rightGray.svg"  className={styles.phoneArrowImg} alt='right' />
                             :
-                            <img src="/assets/images/home/right.svg" alt='right' />
+                            <img src="/assets/images/home/right.svg"  className={styles.phoneArrowImg} alt='right' />
                     }
                 </button>
             </div>
