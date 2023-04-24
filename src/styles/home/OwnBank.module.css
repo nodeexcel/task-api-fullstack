@@ -57,7 +57,7 @@
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif !important;
   padding-top: 5%;
-  font-size: 7vw;
+  font-size: 5vw;
   line-height: 8vw;
 }
 .subHeading p {
@@ -788,7 +788,7 @@
       "Open Sans", "Helvetica Neue", sans-serif !important;
     font-size: 6vw;
     font-weight: 1000;
-    line-height: 6vw;
+    line-height: 5vw;
   }
   .subHeading p {
     font-family: "ClashGrotesk-Light", system-ui, -apple-system,
@@ -907,8 +907,8 @@
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
       "Open Sans", "Helvetica Neue", sans-serif !important;
     padding-top: 5%;
-    font-size: 7vw;
-    line-height: 8vw;
+    font-size: 6vw;
+    line-height: 6vw;
   }
   .subHeading p {
     padding-top: 5%;
@@ -1036,8 +1036,8 @@
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
       "Open Sans", "Helvetica Neue", sans-serif !important;
     padding-top: 5%;
-    font-size: 7vw;
-    line-height: 8vw;
+    font-size: 6vw;
+    line-height: 6vw;
   }
   .subHeading p {
     padding-top: 5%;
@@ -1161,8 +1161,8 @@
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
       "Open Sans", "Helvetica Neue", sans-serif !important;
     padding-top: 5%;
-    font-size: 7vw;
-    line-height: 8vw;
+    font-size: 6vw;
+    line-height: 6vw;
   }
   .subHeading p {
     padding-top: 5%;

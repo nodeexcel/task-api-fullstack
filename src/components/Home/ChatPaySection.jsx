@@ -4,7 +4,8 @@ import Button from "../common/Button";
 
 const ChatPaySection = () => {
   return (
-    <section className={`row ${styles.chatDiv}`}>
+    <div className={` ${styles.chatDiv}`}>
+    <section className={`row container mx-auto`}>
       <div className={`col-6 col-sm-6 ${styles.leftDiv}`}>
         <div className={styles.heading}>Worlds first crypto</div>
         <div className={styles.subHeading}>
@@ -25,7 +26,6 @@ const ChatPaySection = () => {
           <Button buttonName="black" text="Get the App" />
         </div>
       </div>
-
       <div className={`col-6 col-sm-6 ${styles.rightDiv}`}>
         <img
           src={"/assets/images/home/chat.png"}
@@ -34,6 +34,7 @@ const ChatPaySection = () => {
         />
       </div>
     </section>
+    </div>
   );
 };
 

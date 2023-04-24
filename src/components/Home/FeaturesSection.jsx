@@ -3,7 +3,7 @@ import styles from "@/styles/home/FeaturesSection.module.css";
 
 const RightInner = () => (
   <div className="row ms-2 justify-content-evenly">
-    <div className={`col-5 ${styles.Lending}`}>
+    <div className={`col-5 mx-4 ${styles.Lending}`}>
       <div className="d-flex flex-col-reverse">
         <img
           src={"/assets/images/home/lending.png"}
@@ -43,7 +43,7 @@ const RightSide = () => (
         </div>
       </div>
       <div className="col"></div>
-      <div className={`col-11 d-flex ${styles.RightSideLending}`}>
+      <div className={`col-11 mx-2 d-flex ${styles.RightSideLending}`}>
         <div>
           <div className={styles.Liquidity}>Liquidity Pools</div>
           <div className={styles.RightsubHeading}>
@@ -86,12 +86,14 @@ const FeaturesSection = () => {
       className={`text-white ${styles.featureDiv}`}
       id="feature"
     >
+      <div className="container p-5">
       <div className={styles.featureHeading}>
         Features Like Never <br /> Seen Before
       </div>
       <div className="row">
         <LeftSide />
         <RightSide />
+      </div>
       </div>
     </section>
   );

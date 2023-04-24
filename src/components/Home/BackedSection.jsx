@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 const BackedSection = () => {
 
     return (
-        <section className={` ${styles.mainDiv} bg-black`}>
-            <div className="row text-white">
+        <section className={` ${styles.mainDiv}  bg-black`}>
+            <div className="row text-white container mx-auto">
                 <div className={`${styles.leftDiv} col-lg-6 col-md-12 d-flex flex-column`}>
                     <div className="fs-1 fw-bolder my-3">Backed by the best</div>
                     <div className="fs-5 w-md-75 w-sm-100 fw-lighter" style={{ color: "#BABABA" }}>Protected by a multi-level security architecture and is regularly audited to ensure that all of our users are safe.</div>

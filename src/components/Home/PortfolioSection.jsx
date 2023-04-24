@@ -9,7 +9,7 @@ const PortfolioSection = () => {
   return (
     <>
       <section className={`bg-transparent ${styles.mainDiv}`}>
-        <div className={`row text-white d-flex ${styles.title}`}>
+        <div className={`row text-white container mx-auto d-flex ${styles.title}`}>
           <div
             className={`col-sm-12 col-md-12 col-lg-6 align-items-center justify-content-center" ${styles.leftDiv}`}
           >

@@ -46,7 +46,7 @@ const StoriesSection = () => {
         </div>
       </div>
       <div
-        className={`${styles.cardSection}`}
+        className={`${styles.cardSection} container mx-auto`}
       >
         {storyData.map((data, i) => {
           return (

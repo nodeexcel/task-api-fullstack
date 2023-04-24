@@ -3,40 +3,74 @@ import { motion } from "framer-motion";
 import { TbMessageCircle } from "react-icons/tb";
 import BackedSection from "./BackedSection";
 import FeaturesSection from "./FeaturesSection";
+import { useState } from "react";
 const userSayData = [
-  {
-    text: "Bonjour, Excellente application que j’ai depuis juin dernier ☺️ les gains se cumulent tous seuls à chaque achat",
-    rating: 4,
-  },
-  {
-    text: "’étais sceptique au début .. mais application géniale ! Elle permet de gagner du cashback à chaque passage en caisse dans nos enseignes préférées ! Je recommande à 100%",
-    rating: 5,
-  },
-  {
-    text: "Bonjour, Excellente application que j’ai depuis juin dernier ☺️ les gains se cumulent tous seuls à chaque achat",
-    rating: 4,
-  },
-  {
-    text: "J'étais sceptique au début je dois le reconnaître mais vous pouvez y aller sans crainte !",
-    rating: 3,
-  },
-  {
-    text: "J'étais sceptique au début je dois le reconnaître mais vous pouvez y aller sans crainte !",
-    rating: 4,
-  },
+    {
+        text: "Bonjour, Excellente application que j’ai depuis juin dernier ☺️ les gains se cumulent tous seuls à chaque achat",
+        rating: 4,
+    },
+    {
+        text: "’étais sceptique au début .. mais application géniale ! Elle permet de gagner du cashback à chaque passage en caisse dans nos enseignes préférées ! Je recommande à 100%",
+        rating: 5,
+    },
+    {
+        text: "Bonjour, Excellente application que j’ai depuis juin dernier ☺️ les gains se cumulent tous seuls à chaque achat",
+        rating: 4,
+    },
+    {
+        text: "J'étais sceptique au début je dois le reconnaître mais vous pouvez y aller sans crainte !",
+        rating: 3,
+    },
+    {
+        text: "J'étais sceptique au début je dois le reconnaître mais vous pouvez y aller sans crainte !",
+        rating: 4,
+    },
 ];
+
+const marqueeVariants = {
+    animate: {
+      x: [0, -1035],
+      transition: {
+        x: {
+          repeat: Infinity,
+          repeatType: "loop",
+          duration: 5,
+          ease: "linear",
+        },
+      },
+    },
+  };
+
+  const marqueeVariantY = {
+    animate: {
+      x: [-1035, 0],
+      transition: {
+        x: {
+          repeat: Infinity,
+          repeatType: "loop",
+          duration: 5,
+          ease: "linear",
+        },
+      },
+    },
+  };
+
 
 const LeftScroll = () => {
     return (
         <motion.div
             className={styles.userDiv}
-            animate={{ x: ["0%", "-100%"] }}
-            transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
+            // animate={{ x: ["0%", "100%"] }}
+            // transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
+            // whileHover={{ x:"0%" }}
+            variants={marqueeVariants}
+          animate="animate"
+
         >
             {userSayData.map((data, index) => {
                 return (
                     <>
-                        <div key={index} className={`${styles.userSayCard} d-flex flex-column justify-content-between`}>
+                        <div key={index}  className={`${styles.userSayCard} d-flex flex-column justify-content-between`}>
                             <div className="row mb-5">{data?.text}</div>
                             <div className={` ${styles.starDiv} row d-flex justify-content-between w-full`}>
                                 <div className="col-6">
@@ -62,8 +96,8 @@ const RightScroll = () => {
     return (
         <motion.div
             className={styles.userDiv}
-            animate={{ x: ["-100%", "0%"] }}
-            transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
+            variants={marqueeVariantY}
+            animate="animate"
         >
             {userSayData.map((data, index) => {
                 return (
@@ -98,7 +132,7 @@ const UserSaySection = () => {
                 backgroundImage: "url(/assets/images/home/userBg.svg)", backgroundPosition: "center",
                 backgroundSize: "cover"
             }}
-            >
+        >
             <FeaturesSection />
             <BackedSection />
             <div
@@ -107,21 +141,21 @@ const UserSaySection = () => {
             </div>
             <div className="d-flex justify-content-center fs-md-4 fs-sm-6 mb-5" style={{ color: "#BABABA", textAlign: "center" }}>Protected by a multi-level security <br />architecture and is regularly</div>
             <div className={styles.desktopData}>
-                <div className="d-flex">
+                <div className="d-flex " style={{overflow:'hidden'}}>
                     <LeftScroll />
-                    <LeftScroll />
+                    {/* <LeftScroll /> */}
                 </div>
-                <div className="d-flex">
+                <div className="d-flex ">
                     <RightScroll />
-                    <RightScroll />
+                    {/* <RightScroll /> */}
                 </div>
             </div>
-            
-            <div className={styles.mobileData}>  
+
+            <div className={styles.mobileData}>
                 {userSayData.map((data, index) => {
                     return (
                         <>
-                            <div key={index} className={`d-flex flex-column justify-content-between ${styles.userSayCard}`} style={{flexShrink:0}}>
+                            <div key={index} className={`d-flex flex-column justify-content-between ${styles.userSayCard}`} style={{ flexShrink: 0 }}>
                                 <div className="row text-white mb-3">{data?.text}</div>
                                 <div className={`row d-flex  justify-content-between w-full ${styles.starDiv}`}>
                                     <div className="col-6">
@@ -139,8 +173,8 @@ const UserSaySection = () => {
                     )
                 })}
             </div>
-       </div>
-  );
+        </div>
+    );
 };
 
 export default UserSaySection;
