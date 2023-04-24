@@ -6,6 +6,7 @@
   margin-top: -20px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  position: relative;
 }
 .tokenDiv {
   display: flex;

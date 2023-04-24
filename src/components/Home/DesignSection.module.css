@@ -1,0 +1,79 @@
+/* styles.module.css */
+
+.section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #2d2d2d;
+  overflow: hidden;
+  position: relative;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  margin-top: -20px;
+}
+
+.textContainer {
+  width: 100%;
+  height: 50vh;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.textContainer h1, .textContainer2 {
+  font-size: 90px;
+  font-weight: 900;
+  line-height: 100px;
+  color: white;
+}
+
+.textContainer span {
+  font-size: var(--fontBig);
+  width: 90%;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.textContainer2 {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  color: #fff;
+}
+
+.textContainer2 span {
+  font-size: var(--fontxxxl);
+  width: 80%;
+  font-weight: 600;
+  text-transform: capitalize;
+  align-self: flex-end;
+  text-align: right;
+}
+
+@media screen and (max-width: 70em) {
+  .textContainer span,
+  .textContainer2 span {
+    font-size: var(--fontxxl);
+  }
+}
+
+@media screen and (max-width: 64em) {
+  .textContainer span,
+  .textContainer2 span {
+    font-size: var(--fontxl);
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .textContainer span,
+  .textContainer2 span {
+    font-size: var(--fontlg);
+  }
+}

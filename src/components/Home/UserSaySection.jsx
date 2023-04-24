@@ -1,8 +1,8 @@
+import styles from "@/styles/home/UserSaySection.module.css";
 import { motion } from "framer-motion";
 import { TbMessageCircle } from "react-icons/tb";
-import FeaturesSection from "./FeaturesSection";
 import BackedSection from "./BackedSection";
-import styles from "@/styles/home/UserSaySection.module.css";
+import FeaturesSection from "./FeaturesSection";
 const userSayData = [
   {
     text: "Bonjour, Excellente application que j’ai depuis juin dernier ☺️ les gains se cumulent tous seuls à chaque achat",
