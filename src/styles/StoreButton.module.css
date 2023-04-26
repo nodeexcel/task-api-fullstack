@@ -57,7 +57,34 @@
   }
 
 }
-@media screen and (min-width: 640px) and (max-width: 1024px) {
+@media screen and (min-width: 640px) and (max-width:768px) {
+  .storeBtn {
+      display: flex;
+      justify-content: flex-start;
+      background-color: black;
+      color: white;
+      padding: 6px 8px;
+      width: fit-content;
+      border-radius: 10px;
+      margin-left: 0px;
+      margin-bottom: 3%;
+      margin-right: 10px;
+    }
+.text {
+  font-family: "ClashGrotesk-Variable", "Courier New"Courier, monospace, Courier, monospace;
+  text-align: start;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 12px;
+}
+.subText {
+  text-align: start;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .storeBtn {
     width: 50%;
     height: auto;

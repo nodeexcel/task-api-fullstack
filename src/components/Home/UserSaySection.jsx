@@ -143,11 +143,11 @@ const UserSaySection = () => {
             <div className={styles.desktopData}>
                 <div className="d-flex " style={{overflow:'hidden'}}>
                     <LeftScroll />
-                    {/* <LeftScroll /> */}
+                    <LeftScroll />
                 </div>
                 <div className="d-flex ">
                     <RightScroll />
-                    {/* <RightScroll /> */}
+                    <RightScroll />
                 </div>
             </div>
 

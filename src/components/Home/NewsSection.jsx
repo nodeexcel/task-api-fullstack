@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { TbSquareRoundedChevronDownFilled } from "react-icons/tb";
 import styles from "../../styles/home/NewsSection.module.css";
 import React, { useState } from "react";
 
@@ -76,7 +75,7 @@ const RightScroll = () => {
 
 const LeftPanal = ({ less }) => {
   return (
-    <div className="d-flex  flex-column">
+    <div className="d-flex flex-column ">
       {newsData
         .filter((img, index) => index < less)
         .map((img, index) => (
@@ -96,7 +95,7 @@ const RightPanal = ({ less }) => {
     <div className="d-flex justify-content-between flex-column">
       {newsData
         .filter((img, index) => index < less)
-        .reverse()
+        // .reverse()
         .map((img, index) => (
           <img
             src={img.src}
@@ -138,7 +137,9 @@ const NewsSection = () => {
         </div>
       </div>
       <div className={styles.mobileIcons}>
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center"
+        style={{height:"auto", transition:"height 0.5s ease"}}
+        >
           <LeftPanal less={less} />
           <RightPanal less={less} />
         </div>

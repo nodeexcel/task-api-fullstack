@@ -9,7 +9,7 @@ const Footer = () => {
   }
   return (
     <section className={`text-white p-3 ${styles.mainDiv}`}>
-      <div className='container'>
+      <div className='container p-md-5 p-sm-1'>
       <div className='row p-5 p-sm-3'>
         <div className='col-md-8 col-sm-12 d-flex flex-wrap flex-column'>
           <div className='d-flex justify-content-md-start justify-content-center'>

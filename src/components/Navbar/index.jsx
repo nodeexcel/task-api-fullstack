@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import { FiMenu } from "react-icons/fi";
@@ -8,6 +8,7 @@ import styles from "@/styles/Navbar.module.css";
 import AnnoucementSection from "../Home/AnnoucementSection";
 
 const NavBar = () => {
+  const [showNav, setShowNav] = useState(false)
   return (
     <div id="nav">
       <AnnoucementSection />
@@ -66,7 +67,10 @@ const NavBar = () => {
                 >
                   Blog
                 </Nav.Link>
+                <Navbar.Toggle>
+
                 <button className={`text-white ${styles.NavBtn}`}>Close</button>
+                </Navbar.Toggle>
                 <button className={`my-3 ${styles.DownloadApp}`}>
                   Download App
                 </button>
@@ -92,7 +96,7 @@ const NavBar = () => {
                   Features
                 </Nav.Link>
                 <Nav.Link
-                  href="#review"
+                  href="/blog"
                   className={`text-white px-3 ${styles.liText}`}
                 >
                   Blog

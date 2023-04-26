@@ -6,7 +6,7 @@ const TokenSection = () => {
 
   return (
     <section className={styles.mainDiv}>
-      <div className="container" style={{paddingLeft:40}}>
+      <div className="container" style={{paddingLeft:50}}>
         <div className={`row d-flex py-3 text-white  ${styles.firstcolumn}`}>
           <div className={`col-sm-6 ${styles.leftDiv}`}>
             <header className="container pt-5">

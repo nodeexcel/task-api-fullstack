@@ -98,9 +98,9 @@ export default function DesignSection() {
           style={{
             position: "absolute",
             zIndex: 1,
-            top: 200
+            top: 60
           }}
-          width={"100"}
+          width={"230"}
           className={styles.mobile}
         />
         <h1 ref={textTwo} className={TextContainer2}>

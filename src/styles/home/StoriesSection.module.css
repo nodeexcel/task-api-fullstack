@@ -25,12 +25,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 151px 80px;
+  padding: 30px 60px 80px;
 
 }
 .cardStory{
   margin: 20px;
-  width: 300px;
+  width: 350px;
 }
 .description {
   font-family: "ClashGrotesk-Light", system-ui, -apple-system,
@@ -69,7 +69,7 @@
     font-size: 2.5rem;
     align-items: center;
     text-align: center;
-    margin: auto;
+    margin: 0;
   }
   .description {
     font-family: "ClashGrotesk-Light", system-ui, -apple-system,
@@ -78,6 +78,7 @@
     font-size: 1rem;
     margin: auto;
     width: 80%;
+    text-align: center;
     line-height: 140%;
     color: #ffffff;
   }
@@ -85,10 +86,6 @@
     display: none;
   }
   .cardSection{
-    /* padding: 0px;
-    width: 100% !important;
-    flex-shrink: 0;
-    overflow-x: scroll !important; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -101,6 +98,27 @@
   
 }
 
+@media screen and (min-width:640px) and (max-width:770px) {
+  .StoriesSections {
+    font-family: "ClashGrotesk-Semibold";
+    width: 100%;
+    font-size: 2.5rem;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+  .description {
+    font-family: "ClashGrotesk-Light", system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+      "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 1rem;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    line-height: 140%;
+    color: #ffffff;
+  }
+}
 @media screen and (min-width: 770px) and (max-width: 1024px) {
 
   .flex {

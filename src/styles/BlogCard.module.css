@@ -1,0 +1,27 @@
+.blogCardDiv{
+    width: 22.5rem;
+    padding:10px;
+    background-color: #242535;
+    margin: 20px;
+    border-radius: 10px;
+}
+.badge{
+    background-color: #4B6BFB0D;
+    color: #4B6BFB;
+    width: fit-content;
+    margin: 10px;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+.heading{
+   color: #FFFFFF;
+   padding: 3px 10px;
+   font-size: 26px;
+}
+.cardImg{
+    width: 21rem;
+}
+.date{
+    color: #97989F;
+    padding: 3px 10px;
+}

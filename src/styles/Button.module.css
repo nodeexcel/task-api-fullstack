@@ -1,15 +1,15 @@
 .btnStyle {
-  background-color: transparent;
-  border: 1px solid white;
-  padding: 8px 40px;
-  width: fit-content;
-  border-radius: 10px;
-  font-weight: 600;
-  background: -webkit-linear-gradient(91.6deg, #afe2ed 0.62%, #a26aff 99.17%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  cursor: pointer;
-  transition: border-width 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  background-color: transparent !important;
+  border: 1px solid white !important;
+  padding: 8px 40px !important;
+  width: fit-content !important;
+  border-radius: 10px !important;
+  font-weight: 600 !important;
+  background: -webkit-linear-gradient(91.6deg, #afe2ed 0.62%, #a26aff 99.17%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  cursor: pointer !important;
+  transition: border-width 0.3s ease-in-out, border-color 0.3s ease-in-out !important;
 }
 
 .btnStyle:hover {
@@ -19,15 +19,15 @@
 
 
 .blackBtnStyle {
-  background-color: transparent;
-  border: 1px solid black;
-  padding: 8px 32px 8px 32px;
-  width: 25%;
-  cursor: pointer;
-  text-align: center;
-  border-radius: 10px;
-  font-weight: 600;
-  transition: border-width 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  background-color: transparent !important;
+  border: 1px solid black !important;
+  padding: 8px 32px 8px 32px !important;
+  width: 25% !important;
+  cursor: pointer !important;
+  text-align: center !important;
+  border-radius: 10px !important;
+  font-weight: 600 !important;
+  transition: border-width 0.3s ease-in-out, border-color 0.3s ease-in-out !important;
 
 }
 .blackBtnStyle:hover {

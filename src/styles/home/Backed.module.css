@@ -6,17 +6,15 @@
 .logoImg {
     width: 150px;
     height: 40px;
-    /* filter: invert(80%); */
 }
 
 .imgStyle {
     width: 150px;
     height: 40px;
-    /* filter: invert(0%); */
 }
 
 .leftDiv {
-    padding: 80px;
+    padding: 80px 30px;
     text-align: left;
 }
 
@@ -47,13 +45,11 @@
     }
     .logoImg {
         width: 130px;
-        height: 30px;
-        filter: invert(80%);
+        height: 35px;
     }
     
     .imgStyle {
         width: 130px;
-        height: 30px;
-        filter: invert(0%);
+        height: 35px;
     }
 }

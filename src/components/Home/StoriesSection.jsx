@@ -30,7 +30,7 @@ const StoriesSection = () => {
       <div className="container my-3">
         <div className={`row ${styles.maindev}`}>
           <div className="row d-flex justify-content-between align-items-center">
-            <div className={`col-12 col-sm-7 ${styles.LeftDiv}`}>
+            <div className={`col-12 col-sm-12 ${styles.LeftDiv}`}>
               <h1 className={`display-4 my-3 ${styles.StoriesSections}`}>
                 Our Stories
               </h1>
@@ -39,7 +39,7 @@ const StoriesSection = () => {
                 latest blog posts to find out more.
               </p>
             </div>
-            <div className={`col-12 col-sm-5 d-flex justify-content-end ${styles.RightDiv}`}>
+            <div className={`col-12 col-sm-0 d-flex justify-content-end ${styles.RightDiv}`}>
               <Button text={"More stories"} className={styles.button} />
             </div>
           </div>

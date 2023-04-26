@@ -1,5 +1,4 @@
 import NavBar from "@/components/Navbar";
-// import LandingPage from "@/components/Home/index";
 import dynamic from "next/dynamic";
 
 // Import components dynamically
