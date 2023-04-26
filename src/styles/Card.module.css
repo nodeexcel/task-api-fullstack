@@ -49,12 +49,13 @@
 
 .text {
   margin-top: 5%;
-  font-family: 'ClashGrotesk-Light';
+  font-family: 'ClashGrotesk-Medium' !important;
   font-size: 1.5rem;
   line-height: 1.8rem;
 }
+
 .subText {
-  font-family: 'ClashGrotesk-Extralight';
+  font-family: 'ClashGrotesk-Regular' !important;
   color: #bababa;
   font-size: 1.2rem;
 }
@@ -63,18 +64,21 @@
   .cardStory {
     margin-left: 400px;
   }
+
   .text {
     margin-top: 5%;
-    font-family: 'ClashGrotesk-Light';
     font-size: 1.2rem;
     line-height: 1.8rem;
+    font-family: 'ClashGrotesk-Medium' !important;
+
   }
-  .imgContainerStyle{
+
+  .imgContainerStyle {
     position: relative;
     width: 100%;
     max-width: 500px;
   }
-  
+
   .textOverlay {
     position: absolute;
     bottom: 0;
@@ -90,23 +94,25 @@
     color: white;
     transition: height 0.5s ease;
   }
+
   .subText {
     margin-top: 3%;
-    font-family: 'ClashGrotesk-Extralight';
     color: #bababa;
     font-size: 1rem;
+    font-family: 'ClashGrotesk-Regular' !important;
+
   }
+
   .Linkedin {
     color: white;
     cursor: pointer;
-    font-size:14px
+    font-size: 14px
   }
-  
+
   .twitter {
     color: white;
     cursor: pointer;
-    font-size:14px
-
+    font-size: 14px
   }
 }
 
@@ -114,36 +120,42 @@
   .cardStory {
     margin-left: 400px;
   }
+
   .text {
     margin-top: 5%;
-    font-family: 'ClashGrotesk-Light';
     font-size: 1rem;
     line-height: 1.3rem;
+    font-family: 'ClashGrotesk-Medium' !important;
+
   }
+
   .subText {
     margin-top: 3%;
-    font-family: 'ClashGrotesk-Extralight';
     color: #bababa;
     font-size: 1rem;
+    font-family: 'ClashGrotesk-Regular' !important;
+
   }
 }
-  .imgContainerStyle:hover .textOverlay {
-    height: 70%;
-    padding: 20px;
+
+.imgContainerStyle:hover .textOverlay {
+  height: 70%;
+  padding: 20px;
+}
+
+
+
+.cardStory {
+  margin-left: 0px;
+
+}
+
+@media screen and (max-width: 640px) {
+  .cardStory {
+    margin-left: 400px;
   }
 
-
-
-  .cardStory{
-    margin-left: 0px;
-
+  .imgContainerStyle {
+    width: 300px;
   }
-  
-  @media screen and (max-width: 640px) {
-    .cardStory{
-      margin-left: 400px;
-    }
-    .imgContainerStyle{
-      width: 300px;
-    }
-  }
+}

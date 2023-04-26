@@ -80,12 +80,21 @@ const OwnBank = () => {
               />
             </div>
           </div>
-          <div className={styles.QrCode}>  
-          <img
-                src={"/assets/images/home/QR.png"}
-                alt="curl"
-                className={styles.qrCode}
-              />
+          <div className={styles.QrCode}>
+            <img
+              src={"/assets/images/home/QR.png"}
+              alt="curl"
+              className={styles.qrCode}
+            />
+          </div>
+
+          <div className={styles.mobilebtn}>
+            <div style={{ background: "rgba(38, 38, 38, 0.4)",marginLeft:"-20px",backdropFilter: "blur(37px)", height: 100, width: "120%" }}>
+            </div>
+            <div style={{position:"absolute", top:-30, margin:"auto", width:"100%"}}><button className={`my-3 ${styles.DownloadApp}`}>
+              Download App
+            </button>
+            <p className={styles.btntext}> *Availiable for iOS & Android</p></div>
           </div>
 
           <div className={`row ${styles.bottomSection}`}>

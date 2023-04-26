@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import { FiMenu } from "react-icons/fi";
@@ -6,9 +6,11 @@ import Navbar from "react-bootstrap/Navbar";
 import Button from "../common/Button";
 import styles from "@/styles/Navbar.module.css";
 import AnnoucementSection from "../Home/AnnoucementSection";
+import { useRouter } from 'next/router'
 
 const NavBar = () => {
-  const [showNav, setShowNav] = useState(false)
+  const route = useRouter();
+  
   return (
     <div id="nav">
       <AnnoucementSection />
@@ -68,13 +70,12 @@ const NavBar = () => {
                   Blog
                 </Nav.Link>
                 <Navbar.Toggle>
-
-                <button className={`text-white ${styles.NavBtn}`}>Close</button>
+                  <button className={`text-white ${styles.NavBtn}`} style={{border:"none"}}>Close</button>
                 </Navbar.Toggle>
                 <button className={`my-3 ${styles.DownloadApp}`}>
                   Download App
                 </button>
-                <p className={styles.btntext}>Availiable for iOS & Android</p>
+                <p className={styles.btntext}>*Availiable for iOS & Android</p>
               </div>
               <div className={`color-white ${styles.DesktopliBox}`}>
                 <Nav.Link
@@ -103,9 +104,15 @@ const NavBar = () => {
                 </Nav.Link>
               </div>
             </Nav>
-            <Nav>
-              <Button text="Get the App" />
-            </Nav>
+            {route.pathname === "/blog" ?
+              <Nav>
+                <Button text="Download App" />
+              </Nav> :
+              <Nav>
+                <Button text="Get the App" />
+              </Nav>
+            }
+
           </Navbar.Collapse>
         </Container>
       </Navbar>
