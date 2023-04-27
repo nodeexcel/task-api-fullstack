@@ -8,13 +8,13 @@ const CryptoSection = () => {
 
   return (
     <div className={styles.cryptoDiv}>
-      <div className={"container"}>
+      <div className={""}>
         <div className="d-flex">
           <div className={` ${styles.cryptoInnerDiv} `}>
             <div
-              className={`${styles.leftDiv} col-sm-12 col-md-6 ms-md-3 ms-sm-0  d-flex justify-content-center align-items-start flex-column `}
+              className={`${styles.leftDiv} col-sm-12  col-md-6 ms-md-3 ms-sm-0  d-flex justify-content-center align-items-start flex-column `}
             >
-              <div className="">
+              <div>
                 <h1 className={`fw-bold pb-3 ${styles.heading}`}>
                   Invest in Crypto, <br /> Starting with Just $1
                 </h1>

@@ -2,19 +2,14 @@
 
 .mainDiv {
   padding: 100px;
-  background-color: #2d2d2d;
-  margin-top: -20px;
+  background: #202022;
+    margin-top: -20px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   position: relative;
 }
-.tokenDiv {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  color: white;
-  width: 100%;
-  padding: 100px 0px;
+.tokenDiv{
+  padding:50px
 }
 .leftDiv {
   width: 50%;
@@ -85,13 +80,8 @@
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
   }
-  .tokenDiv {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    color: white;
-    width: 100%;
-    padding: 100px 0px;
+  .tokenDiv{
+    padding:10px
   }
   .firstcolumn {
     margin-top: 10%;
@@ -163,14 +153,7 @@
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
   }
-  .tokenDiv {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    color: white;
-    width: 100%;
-    padding: 100px 0px;
-  }
+
   .firstcolumn, .secondColumn, .ThirdColumn {
     display: flex;
     flex-direction: row;
@@ -272,14 +255,7 @@
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
   }
-  .tokenDiv {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    color: white;
-    width: 100%;
-    padding: 100px 0px;
-  }
+
   .firstcolumn {
     display: flex;
     flex-direction: row;

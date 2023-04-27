@@ -40,12 +40,18 @@
     display: block;
   }
 
+  .mobileIconsBox {
+    height: auto;
+    transition: height 0.5s linear !important
+  }
+
   .arrow {
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
-  .text{
+
+  .text {
     display: flex;
     justify-content: center;
     margin-bottom: 2px;

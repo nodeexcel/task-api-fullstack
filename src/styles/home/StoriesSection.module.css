@@ -15,23 +15,27 @@
 .RightDiv {
   position: relative;
 }
+
 .button {
   position: absolute;
   right: 100%;
   height: 30px;
   width: 80px;
 }
-.cardSection{
+
+.cardSection {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 60px 80px;
 
 }
-.cardStory{
+
+.cardStory {
   margin: 20px;
   width: 350px;
 }
+
 .description {
   font-family: "ClashGrotesk-Light", system-ui, -apple-system,
     BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -41,12 +45,33 @@
   line-height: 140%;
   color: #ffffff;
 }
+
 .cardSize {
   margin: 1rem;
   min-width: 200px;
 }
 
+.moreStoriesText {
+  display: none;
+}
+
 @media screen and (max-width: 640px) {
+  .moreStoriesText {
+    display: block;
+    cursor: pointer;
+    background: linear-gradient(91.6deg, #AFE2ED 0.62%, #A26AFF 99.17%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 22px;
+    /* text-fill-color: transparent; */
+  }
+  .storiesLine{
+    margin: 0px !important;
+    background-image: linear-gradient(to right, #AFE2ED 0.62%, #A26AFF 99.17%) !important;
+    height: 1px;
+    border: none;
+  }
   .maindev {
     padding-top: 5%;
     display: flex;
@@ -54,15 +79,19 @@
     text-align: center;
     align-items: center;
   }
+
   .LeftDiv {
     width: 100%;
   }
+
   .RightDiv {
     width: 100%;
   }
+
   .storiesbtn {
     display: none;
   }
+
   .StoriesSections {
     font-family: "ClashGrotesk-Semibold";
     width: 100%;
@@ -71,6 +100,7 @@
     text-align: center;
     margin: 0;
   }
+
   .description {
     font-family: "ClashGrotesk-Light", system-ui, -apple-system,
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -82,20 +112,23 @@
     line-height: 140%;
     color: #ffffff;
   }
+
   .button {
     display: none;
   }
-  .cardSection{
+
+  .cardSection {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     overflow: scroll;
   }
-  .cardStory{
+
+  .cardStory {
     margin: 10px;
   }
-  
+
 }
 
 @media screen and (min-width:640px) and (max-width:770px) {
@@ -107,6 +140,7 @@
     text-align: center;
     margin: 0;
   }
+
   .description {
     font-family: "ClashGrotesk-Light", system-ui, -apple-system,
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -119,6 +153,7 @@
     color: #ffffff;
   }
 }
+
 @media screen and (min-width: 770px) and (max-width: 1024px) {
 
   .flex {
@@ -139,15 +174,18 @@
   .RightDiv {
     position: relative;
   }
+
   .button {
     position: absolute;
     right: 100%;
     height: 30px;
     width: 80px;
   }
+
   .cardSection {
     padding: 5%;
   }
+
   .description {
     font-family: "ClashGrotesk-Light", system-ui, -apple-system,
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -157,6 +195,7 @@
     line-height: 140%;
     color: #ffffff;
   }
+
   .cardSize {
     margin: 1rem;
     min-width: 200px;
@@ -164,7 +203,7 @@
 }
 
 @media screen and (min-width:640px) and (max-width: 768px) {
-  .cardSection{
+  .cardSection {
     padding: 0px;
     width: 100% !important;
     flex-shrink: 0;

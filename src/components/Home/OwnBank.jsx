@@ -89,7 +89,7 @@ const OwnBank = () => {
           </div>
 
           <div className={styles.mobilebtn}>
-            <div style={{ background: "rgba(38, 38, 38, 0.4)",marginLeft:"-20px",backdropFilter: "blur(37px)", height: 100, width: "120%" }}>
+            <div style={{ background: "transparent",marginLeft:"-20px",backdropFilter: "blur(37px)", height: 100, width: "120%" }}>
             </div>
             <div style={{position:"absolute", top:-30, margin:"auto", width:"100%"}}><button className={`my-3 ${styles.DownloadApp}`}>
               Download App

@@ -13,8 +13,8 @@
 }
 
 .btnStyle:hover {
-  border-color: rgba(175, 226, 237, 1) rgba(162, 106, 255, 1);
-  border-width: 1px 4px 5px 1px;
+  border-color: rgba(175, 226, 237, 1) rgba(162, 106, 255, 1) !important;
+  border-width: 1px 4px 5px 1px !important;
 }
 
 

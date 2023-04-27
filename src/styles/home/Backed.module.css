@@ -23,6 +23,14 @@
     overflow-y: hidden
 }
 
+.heading{
+    font-family: "ClashGrotesk-Semibold";
+    font-size: 62px;
+}
+.subHeading{
+    font-family: "ClashGrotesk-Regular";
+    font-size: 22px;
+}
 @media screen and (max-width:640px) {
     .mainDiv {
         background: black;
@@ -51,5 +59,33 @@
     .imgStyle {
         width: 130px;
         height: 35px;
+    }
+    .heading{
+        font-family: "ClashGrotesk-Semibold";
+        font-size: 36px;
+    }
+    .subHeading{
+        font-family: "ClashGrotesk-Regular";
+        font-size: 16px;
+    }
+}
+@media screen and (min-width:640px) and (max-width:768px) {
+    .heading{
+        font-family: "ClashGrotesk-Semibold";
+        font-size: 42px;
+    }
+    .subHeading{
+        font-family: "ClashGrotesk-Regular";
+        font-size: 18px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .heading{
+        font-family: "ClashGrotesk-Semibold";
+        font-size: 46px;
+    }
+    .subHeading{
+        font-family: "ClashGrotesk-Regular";
+        font-size: 20px;
     }
 }

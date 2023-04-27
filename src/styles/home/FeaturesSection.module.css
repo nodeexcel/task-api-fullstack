@@ -35,8 +35,8 @@
   padding: 5%;
 }
 .pools {
-  width: 250px;
-  height: 250px;
+  width: 230px;
+  height: 230px;
 }
 
 .Rightheading {
@@ -67,7 +67,7 @@
 .RightsubHeading {
   font-family: "ClashGrotesk-Extralight", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   width: 80%;
   padding: 5% 0% 0% 0%;
   line-height: 130%;
@@ -86,7 +86,7 @@
 
 .heading {
   font-family: "ClashGrotesk-Semibold", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: left;
   line-height: 50px;
   word-wrap: break-word;
@@ -97,8 +97,8 @@
   font-weight: 300;
 }
 .arrow {
-  width: 250px;
-  height: 250px;
+  width: 230px;
+  height: 230px;
 }
 
 @media screen and (max-width: 640px) {
@@ -110,9 +110,10 @@
   .featureDiv {
     display: none;
   }
+
 }
 
-@media screen and (min-width: 770px) and (max-width: 1024px) {
+@media screen and (min-width: 770px) and (max-width: 850px) {
   .featureDiv {
     color: white;
   }
@@ -145,27 +146,35 @@
     backdrop-filter: blur(37px);
     border-radius: 32px;
     padding: 5%;
+    /* width: 49% !important; */
   }
-
+  .pools {
+    width: 150px;
+    height: 150px;
+  }
   .lending {
     width: 100px;
     position: absolute;
-    top: -18%;
-    left: 45%;
+    top: -25%;
+    left: 52%;
     padding-top: -50%;
   }
-
+  .Liquidity{
+    font-family: "ClashGrotesk-Semibold", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+  }
   .Rightheading {
     font-family: "ClashGrotesk-Semibold", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.5rem;
-    line-height: 2rem;
+    line-height: 1.7rem;
     padding-top: 5%;
   }
   .stake {
     position: absolute;
-    top: -22%;
+    top: -30%;
     width: 100px;
-    left: 45%;
+    left: 52%;
     padding-top: -50%;
   }
   .image2 {
@@ -177,7 +186,7 @@
   .RightsubHeading {
     font-family: "ClashGrotesk-Extralight", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
-    font-size: 1rem;
+    font-size: 0.8rem;
     width: 80%;
     padding: 5% 0% 0% 0%;
     line-height: 130%;
@@ -196,7 +205,7 @@
 
   .heading {
     font-family: "ClashGrotesk-Semibold", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     text-align: left;
     line-height: 2rem;
     word-wrap: break-word;
@@ -207,8 +216,114 @@
     font-weight: 300;
   }
   .arrow {
-    margin-bottom: 20%;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+  }
+}
+@media screen and (min-width: 850px) and (max-width: 1024px) {
+  .featureDiv {
+    color: white;
+  }
+  .featureHeading {
+    font-family: "ClashGrotesk-Semibold", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 100%;
+    padding-top: 5%;
+    padding-bottom: 8%;
+  }
+  .table {
+    width: 90%;
+  }
+  .tableDiv {
+    display: flex;
+    justify-content: center;
+  }
+  .td {
+    padding: 50px;
+    background-color: #20202099;
+    border-radius: 32px;
+    color: white;
+    margin: 30px;
+  }
+  .Lending {
+    position: relative;
+    background: rgba(32, 32, 32, 0.6);
+    backdrop-filter: blur(37px);
+    border-radius: 32px;
+    padding: 5%;
+    /* width: 49% !important; */
+  }
+  .pools {
+    width: 150px;
+    height: 150px;
+  }
+  .lending {
+    width: 100px;
+    position: absolute;
+    top: -25%;
+    left: 52%;
+    padding-top: -50%;
+  }
+  .Liquidity{
+    font-family: "ClashGrotesk-Semibold", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+  }
+  .Rightheading {
+    font-family: "ClashGrotesk-Semibold", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    padding-top: 5%;
+  }
+  .stake {
+    position: absolute;
+    top: -30%;
+    width: 100px;
+    left: 52%;
+    padding-top: -50%;
+  }
+  .image2 {
+    position: absolute;
+    top: -22%;
+    left: 45%;
+    padding-top: -50%;
+  }
+  .RightsubHeading {
+    font-family: "ClashGrotesk-Extralight", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-size: 0.8rem;
+    width: 80%;
+    padding: 5% 0% 0% 0%;
+    line-height: 130%;
+    color: #bababa;
+    word-wrap: break-word;
+  }
+  .RightSideLending {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(32, 32, 32, 0.6);
+    backdrop-filter: blur(37px);
+    border-radius: 32px;
+    padding: 5% 5% 5% 5%;
+  }
+
+  .heading {
+    font-family: "ClashGrotesk-Semibold", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.4rem;
+    text-align: left;
+    line-height: 2rem;
+    word-wrap: break-word;
+  }
+
+  .subHeading {
+    font-size: 22px;
+    font-weight: 300;
+  }
+  .arrow {
+    width: 150px;
+    height: 150px;
   }
 }

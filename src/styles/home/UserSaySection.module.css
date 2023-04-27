@@ -5,7 +5,14 @@
     display: flex;
     color: white
 }
-
+.heading{
+    font-family: "ClashGrotesk-Semibold";
+    font-size: 60px;
+}
+.subHeading{
+    font-family: "ClashGrotesk-Regular";
+    font-size: 22px;
+}
 .playstoreImg {
     width: 30px;
     height: 30px;
@@ -36,12 +43,22 @@
     border-color: rgba(175, 226, 237, 1) rgba(162, 106, 255, 1);
     border-width: 1px 4px 5px 1px;
 }
+.desktopData{
+    padding-bottom: 50px;
+}
 
 @media screen and (min-width:769px) and (max-width:1024px) {
     .userDiv {
         width: 200%;
     }
- 
+    .heading{
+        font-family: "ClashGrotesk-Semibold";
+        font-size: 44px;
+    }
+    .subHeading{
+        font-family: "ClashGrotesk-Regular";
+        font-size: 20px;
+    }
 }
 
 @media screen and (min-width:640px) and (max-width:768px) {
@@ -49,11 +66,26 @@
         width: 250%;
     }
 
+    .heading{
+        font-family: "ClashGrotesk-Semibold";
+        font-size: 42px;
+    }
+    .subHeading{
+        font-family: "ClashGrotesk-Regular";
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width:640px) {
      
-
+    .heading{
+        font-family: "ClashGrotesk-Semibold";
+        font-size: 36px;
+    }
+    .subHeading{
+        font-family: "ClashGrotesk-Regular";
+        font-size: 16px;
+    }
     .userDiv {
         width: 500%;
     }

@@ -59,9 +59,9 @@ const TeamSection = () => {
     }, [endIndex])
 
     return (
-        <section className='bg-dark text-white p-5' id="teamSection">
+        <section className='bg-black text-white p-5' id="teamSection">
             <div className='d-flex flex-column align-items-center justify-content-center'>
-                <div className='fs-1 fw-bolder'>
+                <div className={`${styles.heading}`}>
                     The Team
                 </div>
                 <div className={styles.description}>

@@ -26,11 +26,11 @@ const storyData = [
 
 const StoriesSection = () => {
   return (
-    <section className="bg-black text-white">
+    <section className="bg-black text-white" style={{paddingTop:40}}>
       <div className="container my-3">
         <div className={`row ${styles.maindev}`}>
           <div className="row d-flex justify-content-between align-items-center">
-            <div className={`col-12 col-sm-12 ${styles.LeftDiv}`}>
+            <div className={`col-md-8 col-sm-12 ${styles.LeftDiv}`}>
               <h1 className={`display-4 my-3 ${styles.StoriesSections}`}>
                 Our Stories
               </h1>
@@ -39,7 +39,7 @@ const StoriesSection = () => {
                 latest blog posts to find out more.
               </p>
             </div>
-            <div className={`col-12 col-sm-0 d-flex justify-content-end ${styles.RightDiv}`}>
+            <div className={`col-md-4 col-sm-0 d-flex justify-content-end ${styles.RightDiv}`}>
               <Button text={"More stories"} className={styles.button} />
             </div>
           </div>
@@ -59,6 +59,12 @@ const StoriesSection = () => {
               />
           );
         })}
+      </div>
+      <div className={`d-flex justify-content-center align-items-center `}>
+        <div className={`${styles.moreStoriesText}`}>
+          More Stories
+          <hr className={styles.storiesLine} />
+        </div>
       </div>
     </section>
   );

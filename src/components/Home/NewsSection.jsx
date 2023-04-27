@@ -44,6 +44,33 @@ const newsData = [
     width: 200,
   },
 ];
+const newsMobileData = [
+  {
+    src: "/assets/images/home/googleIcon.svg",
+    height: 35,
+    width: 200,
+  },
+  {
+    src: "/assets/images/home/linkedInIcon.svg",
+    height: 30,
+    width: 200,
+  },
+  {
+    src: "/assets/images/home/redditIcon.svg",
+    height: 35,
+    width: 200,
+  },
+  {
+    src: "/assets/images/home/facebookIcon.svg",
+    height: 25,
+    width: 200,
+  },
+  {
+    src: "/assets/images/home/googleIcon.svg",
+    height: 35,
+    width: 200,
+  },
+];
 
 const LeftScroll = () => {
   return (
@@ -76,7 +103,7 @@ const RightScroll = () => {
 const LeftPanal = ({ less }) => {
   return (
     <div className="d-flex flex-column ">
-      {newsData
+      {newsMobileData
         .filter((img, index) => index < less)
         .map((img, index) => (
           <img
@@ -93,9 +120,9 @@ const LeftPanal = ({ less }) => {
 const RightPanal = ({ less }) => {
   return (
     <div className="d-flex justify-content-between flex-column">
-      {newsData
+      {newsMobileData
         .filter((img, index) => index < less)
-        // .reverse()
+        .reverse()
         .map((img, index) => (
           <img
             src={img.src}
@@ -113,10 +140,11 @@ const NewsSection = () => {
 
   const loadMore = () => {
     console.log("hello");
-    if (less - 1 === newsData.length) {
-      setLess(3);
-    } else {
-      setLess(less + 2);
+    if (less < newsMobileData.length) {
+      setLess(less+2);
+    } 
+    else{
+      setLess(3)
     }
   };
   return (
@@ -137,8 +165,8 @@ const NewsSection = () => {
         </div>
       </div>
       <div className={styles.mobileIcons}>
-        <div className="d-flex justify-content-center"
-        style={{height:"auto", transition:"height 0.5s ease"}}
+        <div className={`${styles.mobileIconsBox} d-flex justify-content-center`}
+        // style={{height:"auto", transition:"height 0.5s ease !important"}}
         >
           <LeftPanal less={less} />
           <RightPanal less={less} />
@@ -147,10 +175,10 @@ const NewsSection = () => {
 
       <div className={styles.arrow} onClick={() => loadMore()}>
         <p className={styles.text}>
-          {less - 1 === newsData.length ? "See less" : "See more"}
+          {less!==3? "See less" : "See more"}
         </p>
         <div className="d-flex justify-content-center mb-4">
-          {less-1 === newsData.length ?
+          {less!==3 ?
           <img src="/assets/images/home/upIcon.png" />
         :
         <img src="/assets/images/home/downIcon.png" />

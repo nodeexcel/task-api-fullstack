@@ -34,7 +34,7 @@ const marqueeVariants = {
         x: {
           repeat: Infinity,
           repeatType: "loop",
-          duration: 5,
+          duration: 30,
           ease: "linear",
         },
       },
@@ -48,7 +48,7 @@ const marqueeVariants = {
         x: {
           repeat: Infinity,
           repeatType: "loop",
-          duration: 5,
+          duration: 30,
           ease: "linear",
         },
       },
@@ -137,9 +137,9 @@ const UserSaySection = () => {
             <BackedSection />
             <div
                 id='review'
-                className="text-light d-flex justify-content-center fs-1 mt-5">What our users say <TbMessageCircle />
+                className={`${styles.heading} text-light d-flex justify-content-center mt-5`}>What our users say <TbMessageCircle />
             </div>
-            <div className="d-flex justify-content-center fs-md-4 fs-sm-6 mb-5" style={{ color: "#BABABA", textAlign: "center" }}>Protected by a multi-level security <br />architecture and is regularly</div>
+            <div className={`${styles.subHeading} d-flex justify-content-center mb-5`} style={{ color: "#BABABA", textAlign: "center" }}>Protected by a multi-level security <br />architecture and is regularly</div>
             <div className={styles.desktopData}>
                 <div className="d-flex " style={{overflow:'hidden'}}>
                     <LeftScroll />

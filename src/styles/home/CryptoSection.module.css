@@ -45,10 +45,10 @@
 .Iphone {
   display: none;
 }
-.leftDiv{
-  margin:0
-}
-@media screen and (max-width: 320px) {
+/* .leftDiv{
+  margin:0px
+} */
+@media screen and (max-width: 375px) {
   .cryptoDiv {
     display: flex;
     flex-direction: column;
@@ -108,12 +108,11 @@
     display: none;
   }
   .leftDiv{
-    margin-left: -110px !important;
-    
+    margin-left: 3%;
   }
 }
 
-@media screen and (min-width:320px) and (max-width: 640px) {
+@media screen and (min-width:375px) and (max-width: 640px) {
   .cryptoDiv {
     display: flex;
     flex-direction: column;
@@ -123,7 +122,7 @@
     padding: 10px;
   }
   .leftDiv{
-    margin-left: -110px !important;
+    margin-left: 3%;
   }
   .paragrapgh {
     font-family: "ClashGrotesk-Extralight", system-ui, -apple-system, BlinkMacSystemFont,
