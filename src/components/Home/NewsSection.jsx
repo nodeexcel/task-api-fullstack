@@ -172,7 +172,6 @@ const NewsSection = () => {
           <RightPanal less={less} />
         </div>
       </div>
-
       <div className={styles.arrow} onClick={() => loadMore()}>
         <p className={styles.text}>
           {less!==3? "See less" : "See more"}

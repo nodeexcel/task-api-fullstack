@@ -43,6 +43,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Section = styles.section;
 const TextContainer = styles.textContainer;
 const TextContainer2 = styles.textContainer2;
+const FasterText = styles.fasterText;
 
 export default function DesignSection() {
   const container = useRef(null);
@@ -89,26 +90,25 @@ export default function DesignSection() {
               alt="thunderImg"
               className={styles.img}
             />
-            <h1>Faster</h1>
+            <h1 className={FasterText}>Faster</h1>
           </div>
         </div>
+        <h1 ref={textTwo} className={TextContainer2}>
+          Transactions
+        </h1>
         <img
           src="/assets/images/home/createWallet.gif"
           alt="phone"
           style={{
             position: "absolute",
             zIndex: 1,
-            top: 60
+            // top: 60
           }}
-          width={"230"}
           className={styles.mobile}
         />
-        <h1 ref={textTwo} className={TextContainer2}>
-          Transactions
-        </h1>
       </section>
       <div
-        style={{ height: "100vh", width: "100vw", background: "transparent", position:"relative" }}
+        style={{ height: "100vh", width: "100vw", background: "transparent", position: "relative" }}
         ref={sectionRef}
       />
     </>

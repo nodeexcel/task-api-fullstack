@@ -24,11 +24,13 @@
   position: relative;
 }
 .qrCode {
-  position: absolute;
+  position: fixed !important;
   background-color: white;
   padding: 10px;
   border-radius: 10px;
-  left: 98%;
+  top: 85vh !important;
+  left: 90vw !important;
+  z-index: 5;
   margin-top: -5%;
 }
 .main{
@@ -418,14 +420,14 @@
     position: relative;
   }
   .qrCode {
-    position: absolute;
+    position: fixed !important;
     background-color: white;
     padding: 10px;
     border-radius: 10px;
-    left: 95%;
-    width: 10%;
-    height: auto;
-    margin-top: 0%;
+    top: 85vh !important;
+    left: 90vw !important;
+    z-index: 5;
+    margin-top: -5%;
   }
   .rightDiv {
     width: 40%;
@@ -546,13 +548,14 @@
   }
   .qrCode {
     position: absolute;
+    position: fixed !important;
     background-color: white;
     padding: 10px;
     border-radius: 10px;
-    left: 95%;
-    width: 8%;
-    height: auto;
-    margin-top: -3%;
+    top: 85vh !important;
+    left: 90vw !important;
+    z-index: 5;
+    margin-top: -5%;
   }
   .rightDiv {
     width: 40%;
@@ -671,14 +674,14 @@
     position: relative;
   }
   .qrCode {
-    position: absolute;
+    position: fixed !important;
     background-color: white;
     padding: 10px;
     border-radius: 10px;
-    left: 95%;
-    width: 8%;
-    height: auto;
-    margin-top: -3%;
+    top: 85vh !important;
+    left: 90vw !important;
+    z-index: 5;
+    margin-top: -5%;
   }
   .rightDiv {
     width: 40%;
@@ -796,14 +799,14 @@
     position: relative;
   }
   .qrCode {
-    position: absolute;
+    position: fixed !important;
     background-color: white;
     padding: 10px;
     border-radius: 10px;
-    left: 95%;
-    width: 8%;
-    height: auto;
-    margin-top: -3%;
+    top: 90vh !important;
+    left: 90vw !important;
+    z-index: 5;
+    margin-top: -5%;
   }
   .rightDiv {
     width: 40%;
@@ -916,14 +919,14 @@
     position: relative;
   }
   .qrCode {
-    position: absolute;
+    position: fixed !important;
     background-color: white;
     padding: 10px;
     border-radius: 10px;
-    left: 95%;
-    width: 8%;
-    height: auto;
-    margin-top: -3%;
+    top: 90vh !important;
+    left: 90vw !important;
+    z-index: 5;
+    margin-top: -5%;
   }
   .rightDiv {
     width: 50%;
@@ -1045,14 +1048,14 @@
     position: relative;
   }
   .qrCode {
-    position: absolute;
+    position: fixed !important;
     background-color: white;
     padding: 10px;
     border-radius: 10px;
-    left: 95%;
-    width: 8%;
-    height: auto;
-    margin-top: -3%;
+    top: 90vh !important;
+    left: 90vw !important;
+    z-index: 5;
+    margin-top: -5%;
   }
   .rightDiv {
     width: 50%;
@@ -1170,14 +1173,14 @@
     position: relative;
   }
   .qrCode {
-    position: absolute;
+    position: fixed !important;
     background-color: white;
     padding: 10px;
     border-radius: 10px;
-    left: 95%;
-    width: 8%;
-    height: auto;
-    margin-top: -3%;
+    top: 90vh !important;
+    left: 90vw !important;
+    z-index: 5;
+    margin-top: -5%;
   }
   .rightDiv {
     width: 50%;

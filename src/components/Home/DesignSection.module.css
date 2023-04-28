@@ -40,7 +40,7 @@
 
 .textContainer2 {
   width: 100%;
-  height: 50vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,6 +55,12 @@
   text-transform: capitalize;
   align-self: flex-end;
   text-align: right;
+}
+
+.mobile{
+  width:230px;
+  height:430px;
+  top:60px;
 }
 
 @media screen and (max-width: 70em) {
@@ -76,4 +82,90 @@
   .textContainer2 span {
     font-size: var(--fontlg);
   }
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+  .textContainer h1,
+.textContainer2 {
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 80px;
+  color: white;
+}
+}
+@media screen and (min-width:640px) and (max-width:768px) {
+  .textContainer h1,
+.textContainer2 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+  color: white;
+}
+.mobile{
+  width:150px;
+  height:270px;
+}
+.textContainer {
+  width: 100%;
+  height: 14vh;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.textContainer2 {
+  width: 100%;
+  height: 0vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  color: #fff;
+}
+}
+@media screen and (max-width:640px) {
+  .textContainer h1,
+.textContainer2 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+  color: white;
+}
+.mobile{
+  width:150px;
+  height:270px;
+  top:190px;
+}
+.textContainer {
+  width: 100%;
+  height: 0vh;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.textContainer2 {
+  width: 100%;
+  height: 0vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  color: #fff;
+}
+.section {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-direction: column-reverse;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  margin-top: -20px;
+}
 }
