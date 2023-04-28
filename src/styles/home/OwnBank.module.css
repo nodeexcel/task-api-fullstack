@@ -20,18 +20,40 @@
 .curl {
   padding-top: -100px;
 }
-.QrCode {
-  position: relative;
-}
-.qrCode {
-  position: fixed !important;
-  background-color: white;
-  padding: 10px;
+.QrContainer {
+  display: flex;
+  width: fit-content;
+  background-color: #252525E5;
   border-radius: 10px;
-  top: 85vh !important;
-  left: 90vw !important;
+  position: fixed;
+  top:83vh;
+  left:90vw;
   z-index: 5;
-  margin-top: -5%;
+  transition: transform 700ms;
+  transition-timing-function: linear;
+}
+.qrImg {
+  height: 100px;
+  width: 100px;
+}
+.qrData{
+  transition: transform 700ms;
+  padding: 10px 20px;
+  display: none;
+}
+.QrContainer:hover  .qrData{
+  display: block;
+}
+.QrContainer:hover {
+  transform: translateX(-30px);
+  left:80vw;
+}
+.downloadText{
+  background: -webkit-linear-gradient(91.6deg, #afe2ed 0.62%, #a26aff 99.17%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  font-weight: 900;
+  font-size: 20px;
 }
 .main{
   margin-top: -15%;
@@ -154,12 +176,15 @@
     width: 100px;
   }
   .QrCode{
-    display: none;
+  display: none;
   }
   .heading {
     margin-top: 6%;
     font-size: 3rem;
     line-height: 3rem;
+  }
+  .QrContainer{
+    display: none;
   }
   .subHeading p {
     font-family: "ClashGrotesk-Extralight", system-ui, -apple-system,
@@ -235,10 +260,11 @@
   }
   .mobilebtn{
     display: block;
-    position: absolute;
-    top: 570px !important;
+    position: fixed;
     margin: auto;
     width: 90%;
+    z-index: 4;
+    bottom: 0px;
   }
 }
 
@@ -257,6 +283,9 @@
     border-radius: 16.2667px;
     justify-content: center;
   }
+  .QrContainer{
+    display: none;
+  }
   .btntext{
     font-family: 'ClashGrotesk-Extralight',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 0.8rem;
@@ -269,10 +298,11 @@
   }
   .mobilebtn{
     display: block;
-    position: absolute;
-    top: 550px;
+    position: fixed;
     margin: auto;
     width: 90%;
+    z-index: 4;
+    bottom: 0px;
   }
   .mainDiv {
     padding: 10px;
@@ -301,7 +331,7 @@
     width: 100px;
   }
   .QrCode{
-    display: none;
+ display: none;
   }
   .heading {
     margin-top: 6%;
@@ -415,19 +445,6 @@
     padding-top: -100px;
     width: 30%;
     height: auto;
-  }
-  .QrCode {
-    position: relative;
-  }
-  .qrCode {
-    position: fixed !important;
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
-    top: 85vh !important;
-    left: 90vw !important;
-    z-index: 5;
-    margin-top: -5%;
   }
   .rightDiv {
     width: 40%;
@@ -543,20 +560,6 @@
     width: 30%;
     height: auto;
   }
-  .QrCode {
-    position: relative;
-  }
-  .qrCode {
-    position: absolute;
-    position: fixed !important;
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
-    top: 85vh !important;
-    left: 90vw !important;
-    z-index: 5;
-    margin-top: -5%;
-  }
   .rightDiv {
     width: 40%;
     display: flex;
@@ -670,19 +673,6 @@
     width: 30%;
     height: auto;
   }
-  .QrCode {
-    position: relative;
-  }
-  .qrCode {
-    position: fixed !important;
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
-    top: 85vh !important;
-    left: 90vw !important;
-    z-index: 5;
-    margin-top: -5%;
-  }
   .rightDiv {
     width: 40%;
     display: flex;
@@ -795,19 +785,6 @@
     width: 30%;
     height: auto;
   }
-  .QrCode {
-    position: relative;
-  }
-  .qrCode {
-    position: fixed !important;
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
-    top: 90vh !important;
-    left: 90vw !important;
-    z-index: 5;
-    margin-top: -5%;
-  }
   .rightDiv {
     width: 40%;
     display: flex;
@@ -914,19 +891,6 @@
   }
   .curl {
     padding-top: -100px;
-  }
-  .QrCode {
-    position: relative;
-  }
-  .qrCode {
-    position: fixed !important;
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
-    top: 90vh !important;
-    left: 90vw !important;
-    z-index: 5;
-    margin-top: -5%;
   }
   .rightDiv {
     width: 50%;
@@ -1044,19 +1008,6 @@
   .curl {
     padding-top: -100px;
   }
-  .QrCode {
-    position: relative;
-  }
-  .qrCode {
-    position: fixed !important;
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
-    top: 90vh !important;
-    left: 90vw !important;
-    z-index: 5;
-    margin-top: -5%;
-  }
   .rightDiv {
     width: 50%;
     display: flex;
@@ -1169,19 +1120,7 @@
   .curl {
     padding-top: -100px;
   }
-  .QrCode {
-    position: relative;
-  }
-  .qrCode {
-    position: fixed !important;
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
-    top: 90vh !important;
-    left: 90vw !important;
-    z-index: 5;
-    margin-top: -5%;
-  }
+
   .rightDiv {
     width: 50%;
     display: flex;

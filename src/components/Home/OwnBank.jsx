@@ -80,18 +80,25 @@ const OwnBank = () => {
               />
             </div>
           </div>
-          <div className={styles.QrCode}>
+          <div className={styles.QrContainer}>
+            <div className={`${styles.qrData} text-white`}>
+              <img src="/assets/images/home/crossIcon.svg" height={14} width={14} style={{marginBottom:10,marginTop:4}}/>
+              <div>Scan QR Code to<br/><span className={styles.downloadText}>Download</span> App</div>
+            </div>
+            <div>
             <img
               src={"/assets/images/home/QR.png"}
               alt="curl"
-              className={styles.qrCode}
+              className={styles.qrImg}
             />
+            </div>
           </div>
 
           <div className={styles.mobilebtn}>
-            <div style={{ background: "transparent",marginLeft:"-20px",backdropFilter: "blur(37px)", height: 100, width: "120%" }}>
+            <div style={{ background: "transparent",marginLeft:"-25px",backdropFilter: "blur(37px)", height: 100, width: "120%" }}>
             </div>
-            <div style={{position:"absolute", top:-30, margin:"auto", width:"100%"}}><button className={`my-3 ${styles.DownloadApp}`}>
+            <div style={{position:"absolute", top:-30, margin:"auto", width:"100%"}}>
+              <button className={`my-3 ${styles.DownloadApp}`}>
               Download App
             </button>
             <p className={styles.btntext}> *Availiable for iOS & Android</p></div>

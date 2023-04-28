@@ -13,6 +13,9 @@
 }
 
 .btnStyle:hover {
+  /* border: 1px solid transparent !important; */
+  /* border-image-slice: 1 !important; */
+  /* border-image: linear-gradient(to right, #743ad5, #d53a9d) !important; */
   border-color: rgba(175, 226, 237, 1) rgba(162, 106, 255, 1) !important;
   border-width: 1px 4px 5px 1px !important;
 }
