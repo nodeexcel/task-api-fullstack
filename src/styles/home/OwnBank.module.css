@@ -27,7 +27,8 @@
   border-radius: 10px;
   position: fixed;
   top:83vh;
-  left:90vw;
+  right:2%;
+  /* left:90vw; */
   z-index: 5;
   transition: transform 700ms;
   transition-timing-function: linear;
@@ -46,7 +47,8 @@
 }
 .QrContainer:hover {
   transform: translateX(-30px);
-  left:80vw;
+  /* left:80vw; */
+  right:2%
 }
 .downloadText{
   background: -webkit-linear-gradient(91.6deg, #afe2ed 0.62%, #a26aff 99.17%) !important;
@@ -264,7 +266,7 @@
     margin: auto;
     width: 90%;
     z-index: 4;
-    bottom: 0px;
+    bottom: -150px;
   }
 }
 
@@ -302,7 +304,7 @@
     margin: auto;
     width: 90%;
     z-index: 4;
-    bottom: 0px;
+    bottom: -150px;
   }
   .mainDiv {
     padding: 10px;
@@ -482,7 +484,6 @@
     font-size: 1rem;
     line-height: 1.2rem;
   }
-
   .btnDiv {
     display: flex;
     justify-content: space-between;
@@ -597,8 +598,8 @@
 
   .btnDiv {
     display: flex;
-    justify-content: space-between;
-    width: 82% !important;
+    justify-content: flex-start;
+    width: 87% !important;
   }
   .mainbtn {
     border-style: solid !important;

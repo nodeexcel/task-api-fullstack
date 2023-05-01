@@ -102,7 +102,7 @@ const RightScroll = () => {
 
 const LeftPanal = ({ less }) => {
   return (
-    <div className="d-flex flex-column ">
+    <div className="d-flex flex-column " >
       {newsMobileData
         .filter((img, index) => index < less)
         .map((img, index) => (
@@ -166,7 +166,7 @@ const NewsSection = () => {
       </div>
       <div className={styles.mobileIcons}>
         <div className={`${styles.mobileIconsBox} d-flex justify-content-center`}
-        // style={{height:"auto", transition:"height 0.5s ease !important"}}
+        // style={{height:"auto", transition:"height 2s linear !important", transitionDelay:"1s"}}
         >
           <LeftPanal less={less} />
           <RightPanal less={less} />

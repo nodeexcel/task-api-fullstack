@@ -14,9 +14,9 @@
   justify-content: center;
   margin-left: -150px;
 }
-.img {
+/* .img {
   margin-top: 0px;
-}
+} */
 
 .mobile {
   height: 80vh;
@@ -60,12 +60,11 @@
     border-top-right-radius: 40px;
   }
 
-  .img {
+  /* .img {
     height: 15%;
     width: 15%;
-    /* margin-top: -; */
     padding-left: -100px;
-  }
+  } */
 
   .mobile {
     height: 80vh;

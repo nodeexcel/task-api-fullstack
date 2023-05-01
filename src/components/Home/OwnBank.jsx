@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "@/styles/home/OwnBank.module.css";
 import Button from "../common/Button";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { gsap } from "gsap";
+
+gsap.registerPlugin(ScrollTrigger)
 
 const bankData = [
   {
@@ -18,6 +22,24 @@ const bankData = [
 ];
 
 const OwnBank = () => {
+  const ref = useRef(null)
+
+  useEffect(() => {
+    const animation = gsap.from(ref.current, {
+      yPercent: -150,
+      paused: true,
+      duration: 0.2
+    }).progress(1);
+
+    ScrollTrigger.create({
+      start: "top top",
+      end: 99999,
+      onUpdate: (self) => {
+        self.direction === -1 ? animation.play() : animation.reverse()
+      }
+    });
+    () => animation.kill()
+  }, []);
   return (
     <>
       <section
@@ -56,7 +78,9 @@ const OwnBank = () => {
                 </p>
               </div>
               <div className={styles.btnDiv}>
-                <Button text={"Get the App"} className={styles["mainbtn"]} />
+                <div>
+                  <Button text={"Get the App"} className={styles["mainbtn"]} />
+                </div>
                 <div className={`d-flex align-items-center ${styles.watchIntro}`}>
                   <div className="btn_ripple">
                     <img
@@ -81,27 +105,27 @@ const OwnBank = () => {
             </div>
           </div>
           <div className={styles.QrContainer}>
-            <div className={`${styles.qrData} text-white`}>
-              <img src="/assets/images/home/crossIcon.svg" height={14} width={14} style={{marginBottom:10,marginTop:4}}/>
-              <div>Scan QR Code to<br/><span className={styles.downloadText}>Download</span> App</div>
+            <div className={`${styles.qrData} text-white`} style={{width:"160px"}}>
+              <img src="/assets/images/home/crossIcon.svg" height={14} width={14} style={{ marginBottom: 10, marginTop: 4 }} />
+              <div>Scan QR Code to<br /><span className={styles.downloadText}>Download</span> App</div>
             </div>
             <div>
-            <img
-              src={"/assets/images/home/QR.png"}
-              alt="curl"
-              className={styles.qrImg}
-            />
+              <img
+                src={"/assets/images/home/QR.png"}
+                alt="curl"
+                className={styles.qrImg}
+              />
             </div>
           </div>
 
-          <div className={styles.mobilebtn}>
-            <div style={{ background: "transparent",marginLeft:"-25px",backdropFilter: "blur(37px)", height: 100, width: "120%" }}>
+          <div className={styles.mobilebtn} ref={ref}>
+            <div style={{ background: "transparent", marginLeft: "-25px", backdropFilter: "blur(37px)", height: 100, width: "120%" }}>
             </div>
-            <div style={{position:"absolute", top:-30, margin:"auto", width:"100%"}}>
+            <div style={{ position: "absolute", top: -30, margin: "auto", width: "100%" }}>
               <button className={`my-3 ${styles.DownloadApp}`}>
-              Download App
-            </button>
-            <p className={styles.btntext}> *Availiable for iOS & Android</p></div>
+                Download App
+              </button>
+              <p className={styles.btntext}> *Availiable for iOS & Android</p></div>
           </div>
 
           <div className={`row ${styles.bottomSection}`}>

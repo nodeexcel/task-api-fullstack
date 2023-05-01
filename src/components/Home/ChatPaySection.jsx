@@ -4,7 +4,7 @@ import Button from "../common/Button";
 
 const ChatPaySection = () => {
   return (
-    <div className={` ${styles.chatDiv}`}>
+    <div className={`${styles.chatDiv}`}>
       <div className={`row container mx-auto`}>
         <div className={`col-6 col-sm-6 ${styles.leftDiv}`}>
           <div className={styles.heading}>Worlds first crypto</div>
@@ -21,7 +21,6 @@ const ChatPaySection = () => {
           <div className={styles.text}>
             The new culture of money is making headlines check out our latest blog
           </div>
-
           <div className={styles.btn}>
             <Button buttonName="black" text="Get the App" />
           </div>

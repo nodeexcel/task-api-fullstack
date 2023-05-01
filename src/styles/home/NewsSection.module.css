@@ -49,8 +49,13 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    animation-name: show;
+    animation-duration: 1s;
   }
-
+  @keyframes show {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
   .text {
     display: flex;
     justify-content: center;

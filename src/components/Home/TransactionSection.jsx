@@ -85,10 +85,8 @@ export default function DesignSection() {
           <div className="d-flex justify-content-center align-items-center">
             <img
               src="/assets/images/home/spark.png"
-              height={100}
-              width={125}
               alt="thunderImg"
-              className={styles.img}
+              className={styles.thunderImg}
             />
             <h1 className={FasterText}>Faster</h1>
           </div>
