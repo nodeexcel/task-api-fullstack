@@ -30,13 +30,15 @@
   text-align: center !important;
   border-radius: 10px !important;
   font-weight: 600 !important;
-  transition: border-width 0.3s ease-in-out, border-color 0.3s ease-in-out !important;
+  transition: box-shadow 0.4s ease-in-out, border-color 0.3s ease-in-out !important;
 
 }
 
 .blackBtnStyle:hover {
   border-color: black !important;
-  border-width: 1px 4px 5px 1px !important;
+
+  box-shadow: 3px 5px black;
+  /* border-width: 1px 3px 3px 1px !important; */
 }
 
 

@@ -41,7 +41,8 @@
 
 .userSayCard:hover {
     border-color: rgba(175, 226, 237, 1) rgba(162, 106, 255, 1);
-    border-width: 1px 4px 5px 1px;
+    box-shadow: 5px 5px  rgba(162, 106, 255);
+    /* border-width: 1px 4px 5px 1px; */
 }
 .desktopData{
     padding-bottom: 50px;
@@ -131,7 +132,7 @@
       
       .userSayCard:hover {
         border-color: rgba(175, 226, 237, 1) rgba(162, 106, 255, 1);
-        border-width: 1px 4px 5px 1px;
+        /* border-width: 1px 4px 5px 1px; */
       }
       
 }

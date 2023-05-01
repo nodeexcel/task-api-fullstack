@@ -25,7 +25,7 @@ const ChatPaySection = () => {
             <Button buttonName="black" text="Get the App" />
           </div>
         </div>
-        <div className={`col-6 col-sm-6 ${styles.rightDiv}`}>
+        <div className={`col-6 col-sm-6 ${styles.rightDiv}`} >
           <img
             src={"/assets/images/home/chat.png"}
             alt="chatpay"
