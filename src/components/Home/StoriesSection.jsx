@@ -27,8 +27,8 @@ const storyData = [
 const StoriesSection = () => {
   return (
     <section className="bg-black text-white" style={{ paddingTop: 40 }}>
-      <div className="container my-3 mx-auto">
-        <div className={`row ${styles.maindev}`}>
+      <div className="container my-3">
+        <div className={` ${styles.maindev}`}>
           <div className="row d-flex justify-content-between align-items-center">
             <div className={`col-md-8 col-sm-12 ${styles.LeftDiv}`}>
               <h1 className={`display-4 my-3 ${styles.StoriesSections}`}>
@@ -39,27 +39,30 @@ const StoriesSection = () => {
                 latest blog posts to find out more.
               </p>
             </div>
-            <div className={`col-md-4 col-sm-0 d-flex justify-content-end ${styles.RightDiv}`}>
+            <div className="col-md-1 col-sm-0"></div>
+            <div
+              className={`col-md-3 col-sm-0 d-flex justify-content-center ${styles.RightDiv}`}
+            >
               <Button text={"More stories"} className={styles.button} />
             </div>
+
           </div>
         </div>
-      </div>
-      <div
-        className={`${styles.cardSection} container mx-auto`}
-      >
 
+        <div className={`${styles.cardSection} container mx-auto`}>
           {storyData.map((data, i) => {
             return (
               <Card
+                key={i}
                 text={data.text}
                 src={data.src}
                 subText={data.subText}
                 className={styles.cardStory}
                 imgContainerStyle
               />
-            )
+            );
           })}
+        </div>
       </div>
       <div className={`d-flex justify-content-center align-items-center `}>
         <div className={`${styles.moreStoriesText}`}>

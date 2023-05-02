@@ -105,13 +105,12 @@ const OwnBank = () => {
             </div>
           </div>
           <div className={styles.QrContainer}>
-            <div className={`${styles.qrData} text-white`} style={{width:"160px"}}>
-              <img src="/assets/images/home/crossIcon.svg" height={14} width={14} style={{ marginBottom: 10, marginTop: 4 }} />
+            <div className={`${styles.qrData} text-white`}>
               <div>Scan QR Code to<br /><span className={styles.downloadText}>Download</span> App</div>
             </div>
             <div>
               <img
-                src={"/assets/images/home/QR.png"}
+                src={"/assets/images/home/QR.svg"}
                 alt="curl"
                 className={styles.qrImg}
               />
