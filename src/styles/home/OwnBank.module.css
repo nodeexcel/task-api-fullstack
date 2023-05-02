@@ -23,41 +23,58 @@
 .QrContainer {
   display: flex;
   width: fit-content;
-  background-color: #252525E5;
+  background-color: transparent;
   border-radius: 10px;
   position: fixed;
-  top:83vh;
-  right:2%;
+  top: 83vh;
+  right: 2%;
   /* left:90vw; */
   z-index: 5;
   transition: transform 700ms;
   transition-timing-function: linear;
+  cursor: pointer;
 }
 .qrImg {
   height: 100px;
   width: 100px;
 }
-.qrData{
-  transition: transform 700ms;
+.qrData {
+  transition: transform 2s;
   padding: 10px 20px;
   display: none;
+  background: rgba(37, 37, 37, 0.9);
+  backdrop-filter: blur(4px);
+  border-radius: 16px;
+
+  width: 180px;
+  position: relative;
+  left: 24px;
+  z-index: -1;
+  /* text-align: left; */
+
 }
-.QrContainer:hover  .qrData{
-  display: block;
+.QrContainer:hover .qrData {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 .QrContainer:hover {
-  transform: translateX(-30px);
+  /* transform: translateX(-30px); */
   /* left:80vw; */
-  right:2%
+  right: 2%;
 }
-.downloadText{
-  background: -webkit-linear-gradient(91.6deg, #afe2ed 0.62%, #a26aff 99.17%) !important;
+.downloadText {
+  background: -webkit-linear-gradient(
+    91.6deg,
+    #afe2ed 0.62%,
+    #a26aff 99.17%
+  ) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   font-weight: 900;
   font-size: 20px;
 }
-.main{
+.main {
   margin-top: -15%;
 }
 .rightDiv {
@@ -146,7 +163,7 @@
 .DownloadAppBtn {
   display: none;
 }
-.mobilebtn{
+.mobilebtn {
   display: none;
 }
 
@@ -177,15 +194,15 @@
     height: 20px;
     width: 100px;
   }
-  .QrCode{
-  display: none;
+  .QrCode {
+    display: none;
   }
   .heading {
     margin-top: 6%;
     font-size: 3rem;
     line-height: 3rem;
   }
-  .QrContainer{
+  .QrContainer {
     display: none;
   }
   .subHeading p {
@@ -260,7 +277,7 @@
     background: rgba(38, 38, 38, 0.4);
     backdrop-filter: blur(37px);
   }
-  .mobilebtn{
+  .mobilebtn {
     display: block;
     position: fixed;
     margin: auto;
@@ -270,8 +287,8 @@
   }
 }
 
-@media screen and (min-width:320px) and (max-width: 640px) {
-  .DownloadApp{
+@media screen and (min-width: 320px) and (max-width: 640px) {
+  .DownloadApp {
     display: flex;
     align-items: center;
     font-weight: 600;
@@ -281,15 +298,17 @@
     color: #000000;
     font-size: 1.5em;
     z-index: 89;
-    background: linear-gradient(91.6deg, #AFE2ED 0.62%, #A26AFF 99.17%);
+    background: linear-gradient(91.6deg, #afe2ed 0.62%, #a26aff 99.17%);
     border-radius: 16.2667px;
     justify-content: center;
   }
-  .QrContainer{
+  .QrContainer {
     display: none;
   }
-  .btntext{
-    font-family: 'ClashGrotesk-Extralight',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  .btntext {
+    font-family: "ClashGrotesk-Extralight", system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+      "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 0.8rem;
     margin-top: -1rem;
     text-align: center;
@@ -298,7 +317,7 @@
     justify-content: center;
     align-items: center;
   }
-  .mobilebtn{
+  .mobilebtn {
     display: block;
     position: fixed;
     margin: auto;
@@ -332,8 +351,8 @@
     height: 20px;
     width: 100px;
   }
-  .QrCode{
- display: none;
+  .QrCode {
+    display: none;
   }
   .heading {
     margin-top: 6%;
@@ -422,7 +441,6 @@
     width: 100%;
     padding-top: 8%;
     position: relative;
-
   }
   .DownloadApp {
     display: none;
@@ -876,7 +894,7 @@
     padding-top: 3%;
     position: relative;
   }
-  .bottomSection{
+  .bottomSection {
     margin-top: 10%;
   }
   .leftDiv {
@@ -993,7 +1011,7 @@
     width: 100%;
     position: relative;
   }
-  .bottomSection{
+  .bottomSection {
     margin-top: 20%;
   }
   .leftDiv {
@@ -1105,7 +1123,7 @@
     width: 100%;
     position: relative;
   }
-  .bottomSection{
+  .bottomSection {
     margin-top: 20%;
   }
   .leftDiv {
