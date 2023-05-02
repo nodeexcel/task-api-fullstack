@@ -2,15 +2,15 @@ import React from 'react'
 import TopSection from './TopSection';
 import BlogCardSection from './BlogCardSection';
 import SeemLessSection from './SeemLessSection';
-import BlogContent from './[blogId]';
+import BlogContent from './[slug]';
 
 const BlogPage = () => {
   return (
     <div className='bd-black'>
-      <BlogContent/>
-        {/* <TopSection/>
+      {/* <BlogContent/> */}
+        <TopSection/>
         <BlogCardSection/>
-        <SeemLessSection/> */}
+        <SeemLessSection/>
     </div>
   )
 }

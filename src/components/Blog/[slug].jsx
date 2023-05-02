@@ -22,11 +22,15 @@ const cardData = [
 const BlogContent = () => {
     const router = useRouter();
     console.log(router.query, "????????????????")
+    
     return (
         <div className='container bg-black'>
-            <div className='' style={{ padding: "200px 170px 0px 170px" }}>
+            <div className='' style={{ padding: "170px 170px 0px 170px" }}>
                 <div>
-                    <h1 className='text-white mb-3'>Plena Wallet and Onmeta Join forces to empower its users With Easy Access to Crypto</h1>
+                    <div>
+                    <div className={styles.badge}>Technology</div>
+                    </div>
+                    <h1 className={styles.topHeading}>Plena Wallet and Onmeta Join forces to empower its users With Easy Access to Crypto</h1>
                     <span style={{ color: "#696A75" }}>August 20, 2023</span>
                     <span style={{ color: "#696A75", marginLeft: 20 }}><img src="/assets/images/blog/clock.svg" />3 min</span>
                 </div>
@@ -50,7 +54,7 @@ const BlogContent = () => {
                         The program has turned referrals into a game, where you can earn rewards in the form of $Plena tokens for each referral you make & track the leaderboard. The program has turned referrals into a game, where you can earn rewards in the form of $Plena tokens for each referral you make & track the leaderboard.
                     </p>
                 </div>
-                <div style={{ color: "#E8E8EA", margin: "50px 0px 70px", padding: "40px 30px", fontSize: "24px", fontStyle: 'italic', background: "#242535", borderLeft: "4.39px solid #E8E8EA", borderRadius: "13.17px" }}>
+                <div className={styles.offer}>
                     ** Limited time offer** In addition to the exciting rewards for individual referrals, our referral program offers users the opportunity to win even bigger rewards.We are giving away rewards worth up to $100,000 in $Plena tokens to the Top 100 on the leaderboard.
                 </div>
                 <div className='' style={{ color: "#BABABF" }}>
@@ -78,8 +82,8 @@ const BlogContent = () => {
                     <div className='d-flex justify-content-between flex-wrap'>
                         {cardData.map((data, index) => {
                             return (
-                                <BlogCard data={data} style={{ width: "26rem" }} imgStyle={{
-                                    width: "25rem"
+                                <BlogCard data={data} imgStyle={{
+                                    width: "100%"
                                 }} />
                             )
                         })}
@@ -87,9 +91,6 @@ const BlogContent = () => {
                 </div>
             </div>
             <SeemLessSection style={{ padding: 50 }} />
-            <div>
-
-            </div>
         </div>
     )
 }

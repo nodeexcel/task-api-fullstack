@@ -1,11 +1,40 @@
-.para{
+.topHeading{
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 50px;
+    color: white;
+    margin-bottom: 20px !important;
+}
+.para {
     font-size: 21px;
     line-height: 35px;
     margin-bottom: 30px !important;
 }
-.heading{
+
+.heading {
     font-size: 25px;
     line-height: 35px;
     font-weight: 600;
     color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.badge {
+    background-color: #4B6BFB;
+    color: #ffffff;
+    width: fit-content;
+    margin: 20px 0px;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.offer {
+    color: #E8E8EA;
+    margin: 50px 0px 70px;
+    padding: 30px;
+    font-size: 22px;
+    font-style: italic;
+    background: #242535;
+    border-left: 4.39px solid #E8E8EA;
+    border-radius: 13px;
 }

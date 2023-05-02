@@ -1,6 +1,7 @@
 import React from 'react'
 import BlogCard from '../common/BlogCard'
 import styles from "@/styles/blog/BlogCardSection.module.css"
+import { useRouter } from 'next/router'
 
 const cardData = [
     {
@@ -60,7 +61,8 @@ const cardData = [
 ]
 
 const BlogCardSection = () => {
-
+    const router = useRouter()
+    console.log(router.query,">>>>>>>>>>")
     return (
         <div className='container'>
             <div className='container d-flex ms-4 justify-content-evenly'>
@@ -78,7 +80,9 @@ const BlogCardSection = () => {
                 <div className='d-flex w-100 flex-wrap '>
                     {cardData.map((data, index) => {
                         return (
-                            <BlogCard data={data} style={{width:"22.5rem"}}/>
+                            <div onClick={() => router.push(`/blog/${data.heading}`)} role="button">
+                                <BlogCard data={data} style={{ width: "22.5rem" }} imgStyle={{ width: "100%" }} />
+                            </div>
                         )
                     })}
                 </div>

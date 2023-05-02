@@ -1,23 +1,33 @@
-.mainDiv{
+.mainDiv {
     background-color: black;
     padding-top: 130px;
 }
 
-.heading{
+.heading {
     color: white;
     font-size: 80px;
     line-height: 80px;
-    text-align:center ;
+    text-align: center;
     font-family: 'ClashGrotesk-Semibold';
 }
 
-.search{
+.search {
     width: 30vw;
     margin: 50px auto;
 }
 
-.topImg{
+.topImg {
     height: auto;
     margin-left: 40px;
     width: 95%;
 }
+
+.input:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+.form-control:focus {
+    border: none !important; /* if you want to remove borders at all*/
+    outline: none !important;
+    box-shadow: none !important;
+  } 
