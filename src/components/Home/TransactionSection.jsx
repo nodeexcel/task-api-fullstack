@@ -82,7 +82,7 @@ export default function DesignSection() {
     <>
       <section ref={container} className={Section}>
         <div ref={textOne} className={TextContainer}>
-          <div className="d-flex justify-content-center align-items-center">
+          <div className={`d-flex justify-content-center align-items-center ${styles.fasterDiv}`}>
             <img
               src="/assets/images/home/spark.png"
               alt="thunderImg"
