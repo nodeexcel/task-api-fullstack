@@ -26,8 +26,8 @@ const storyData = [
 
 const StoriesSection = () => {
   return (
-    <section className="bg-black text-white" style={{paddingTop:40}}>
-      <div className="container my-3">
+    <section className="bg-black text-white" style={{ paddingTop: 40 }}>
+      <div className="container my-3 mx-auto">
         <div className={`row ${styles.maindev}`}>
           <div className="row d-flex justify-content-between align-items-center">
             <div className={`col-md-8 col-sm-12 ${styles.LeftDiv}`}>
@@ -48,8 +48,9 @@ const StoriesSection = () => {
       <div
         className={`${styles.cardSection} container mx-auto`}
       >
-        {storyData.map((data, i) => {
-          return (
+
+          {storyData.map((data, i) => {
+            return (
               <Card
                 text={data.text}
                 src={data.src}
@@ -57,8 +58,8 @@ const StoriesSection = () => {
                 className={styles.cardStory}
                 imgContainerStyle
               />
-          );
-        })}
+            )
+          })}
       </div>
       <div className={`d-flex justify-content-center align-items-center `}>
         <div className={`${styles.moreStoriesText}`}>
