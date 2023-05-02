@@ -60,12 +60,13 @@ const cardData = [
 ]
 
 const BlogCardSection = () => {
+
     return (
         <div className='container'>
             <div className='container d-flex ms-4 justify-content-evenly'>
                 <div className={`col-6 ${styles.latestPost}`}>Latest Post</div>
-                <div className={`text-white col-5`} style={{marginRight:20}}>
-                    <ul className='d-flex justify-content-evenly' style={{listStyleType:"none"}}>
+                <div className={`text-white col-5`} style={{ marginRight: 20 }}>
+                    <ul className='d-flex justify-content-evenly' style={{ listStyleType: "none" }}>
                         <li>All</li>
                         <li>Product updates</li>
                         <li>Announcements</li>
@@ -75,9 +76,9 @@ const BlogCardSection = () => {
             </div>
             <div className='px-5'>
                 <div className='d-flex w-100 flex-wrap '>
-                    {cardData.map((data) => {
+                    {cardData.map((data, index) => {
                         return (
-                            <BlogCard data={data} />
+                            <BlogCard data={data} style={{width:"22.5rem"}}/>
                         )
                     })}
                 </div>

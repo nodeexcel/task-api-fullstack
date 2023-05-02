@@ -2,13 +2,13 @@ import React from "react";
 import { StoreButton } from "../common/Button";
 import styles from "../../styles/blog/SeemLessSection.module.css";
 
-const SeemLessSection    = () => {
+const SeemLessSection    = ({style}) => {
   const AppleIcon = "/assets/images/home/appleIcon.svg";
   const PlaystoreIcon = "/assets/images/home/playstoreIcon.svg";
 
   return (
     <>
-      <section className={`bg-transparent ${styles.mainDiv}`}>
+      <section className={`bg-transparent ${styles.mainDiv}`} style={style}>
         <div className={`row text-white container mx-auto d-flex ${styles.title}`}>
           <div
             className={`col-sm-12 col-md-12 col-lg-6 align-items-center justify-content-center" ${styles.leftDiv}`}
