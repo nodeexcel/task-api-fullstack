@@ -1,11 +1,16 @@
 .blogCardDiv{
     padding:10px;
     background-color: #181A2A;
-    margin: 20px;
+    /* margin: 20px; */
     border-radius: 10px;
-    /* height: 60vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 450px;
     border: 1.09211px solid #242535 !important;
 }
+
+
 .badge{
     background-color: #4B6BFB0D;
     color: #4B6BFB;
@@ -28,5 +33,20 @@
     padding: 0px 10px;
 }
 .bottomText{
-    /* height: 48% !important; */
+    height: 45%;
+}
+
+@media screen and (max-width:1400px){
+    .bottomText{
+        height:50%;
+
+    }
+}
+@media screen and (max-width:640px) {
+    .heading{
+        color: #FFFFFF;
+        padding: 0px 10px;
+        font-size: 20px;
+        line-height: 24px;
+     }
 }

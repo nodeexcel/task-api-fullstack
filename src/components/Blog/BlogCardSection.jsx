@@ -62,31 +62,29 @@ const cardData = [
 
 const BlogCardSection = () => {
     const router = useRouter()
-    console.log(router.query,">>>>>>>>>>")
     return (
         <div className='container'>
-            <div className='container d-flex ms-4 justify-content-evenly'>
-                <div className={`col-6 ${styles.latestPost}`}>Latest Post</div>
-                <div className={`text-white col-5`} style={{ marginRight: 20 }}>
-                    <ul className='d-flex justify-content-evenly' style={{ listStyleType: "none" }}>
-                        <li>All</li>
-                        <li>Product updates</li>
-                        <li>Announcements</li>
-                        <li>Collaborations</li>
+            <div className={`container ${styles.cardTopSection}`} style={{ width:"100%", padding:"20px 30px"}}>
+                <div className={`${styles.latestPost}`} >Latest Post</div>
+                <div className={`text-white ${styles.rightNav}`} style={{}}>
+                    <ul className='d-flex justify-content-between flex-wrap' style={{ listStyleType: "none"}} >
+                        <li className='mx-2'>All</li>
+                        <li className='mx-2'>Product updates</li>
+                        <li className='mx-2'>Announcements</li>
+                        <li className='mx-2'>Collaborations</li>
                     </ul>
                 </div>
             </div>
-            <div className='px-5'>
-                <div className='d-flex w-100 flex-wrap '>
+            
+                <div className={styles.cardDiv}>
                     {cardData.map((data, index) => {
                         return (
-                            <div onClick={() => router.push(`/${index}`)} role="button">
-                                <BlogCard data={data} style={{ width: "22.5rem" }} imgStyle={{ width: "100%" }} />
+                            <div onClick={() => router.push(`/blog/${index}`)} role="button" className={styles.cardContainer} >
+                                <BlogCard data={data}  imgStyle={{ width: "100%" }} />
                             </div>
                         )
                     })}
                 </div>
-            </div>
         </div>
     )
 }

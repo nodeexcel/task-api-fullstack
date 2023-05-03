@@ -1,18 +1,16 @@
 import React from 'react'
-import TopSection from './TopSection';
-import BlogCardSection from './BlogCardSection';
-import SeemLessSection from './SeemLessSection';
-import BlogContent from './blogCard/[slug]';
+import TopSection from './TopSection'
+import BlogCardSection from './BlogCardSection'
+import SeemLessSection from './SeemLessSection'
 
-const BlogPage = () => {
+const BlogPages = () => {
   return (
-    <div className='bd-black'>
-      {/* <BlogContent/> */}
-        <TopSection/>
-        <BlogCardSection/>
-        <SeemLessSection/>
+    <div>
+      <TopSection/>
+      <BlogCardSection/>
+      <SeemLessSection/>
     </div>
   )
 }
 
-export default BlogPage;
+export default BlogPages
