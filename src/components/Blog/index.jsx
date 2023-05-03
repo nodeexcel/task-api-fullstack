@@ -2,7 +2,7 @@ import React from 'react'
 import TopSection from './TopSection';
 import BlogCardSection from './BlogCardSection';
 import SeemLessSection from './SeemLessSection';
-import BlogContent from './[slug]';
+import BlogContent from './blogCard/[slug]';
 
 const BlogPage = () => {
   return (

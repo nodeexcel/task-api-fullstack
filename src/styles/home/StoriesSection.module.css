@@ -86,6 +86,7 @@
 
   .RightDiv {
     width: 100%;
+    display: none !important;
   }
 
   .storiesbtn {

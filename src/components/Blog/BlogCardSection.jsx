@@ -80,7 +80,7 @@ const BlogCardSection = () => {
                 <div className='d-flex w-100 flex-wrap '>
                     {cardData.map((data, index) => {
                         return (
-                            <div onClick={() => router.push(`/blog/${index}`)} role="button">
+                            <div onClick={() => router.push(`/${index}`)} role="button">
                                 <BlogCard data={data} style={{ width: "22.5rem" }} imgStyle={{ width: "100%" }} />
                             </div>
                         )

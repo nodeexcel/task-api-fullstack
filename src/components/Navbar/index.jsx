@@ -9,19 +9,21 @@ import AnnoucementSection from "../Home/AnnoucementSection";
 import { useRouter } from 'next/router'
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { gsap } from "gsap";
+import { AiOutlineClose } from "react-icons/ai";
 
 gsap.registerPlugin(ScrollTrigger)
 const NavBar = () => {
+  const [show, setShow] = useState(false)
   const route = useRouter();
   const ref = useRef(null)
 
   useEffect(() => {
-   const animation =   gsap.from(ref.current, { 
+    const animation = gsap.from(ref.current, {
       yPercent: -100,
       paused: true,
       duration: 0.2
     }).progress(1);
-    
+
     ScrollTrigger.create({
       start: "top top",
       end: 99999,
@@ -29,7 +31,7 @@ const NavBar = () => {
         self.direction === -1 ? animation.play() : animation.reverse()
       }
     });
-    ()=>animation.kill()
+    () => animation.kill()
   }, []);
 
   return (
@@ -40,7 +42,7 @@ const NavBar = () => {
         expand="lg"
         className={`overflow-hidden py-2 ${styles.navbarDiv}`}
         fixed="top"
-        id="nav" 
+        id="nav"
         ref={ref}
       >
         <Container>
@@ -53,8 +55,11 @@ const NavBar = () => {
               className={styles.image}
             />
           </Navbar.Brand>
-          <Navbar.Toggle className={styles.logo}>
-            <FiMenu />
+          <Navbar.Toggle className={styles.logo} onClick={() => setShow(!show)} style={{ outline: 'none', border: 'none' }}>
+            {show === true ? <>
+              <AiOutlineClose />
+            </> :
+              <FiMenu />}
           </Navbar.Toggle>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="color-white text-sm-center">

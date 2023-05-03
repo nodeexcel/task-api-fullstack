@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import React from 'react'
-import SeemLessSection from './SeemLessSection';
-import BlogCard from '../common/BlogCard';
+import SeemLessSection from '../SeemLessSection';
+import BlogCard from '../../common/BlogCard';
 import styles from "@/styles/blog/BlogContent.module.css"
 
 const cardData = [

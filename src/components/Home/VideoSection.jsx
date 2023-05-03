@@ -1,4 +1,5 @@
 import styles from "@/styles/home/VideoSection.module.css";
+import { transform } from "framer-motion";
 
 const VideoSection = () => {
 
@@ -9,17 +10,18 @@ const VideoSection = () => {
         <div className={styles.videoSubHeading}>
           Watch our quick intro video to learn more
         </div>
+        <div style={{position:"relative"}}>
         <img
           src={"/assets/images/home/video.png"}
           alt="video"
           className={styles.video}
         />
-        <div className={` ${styles.playVideo} btn_ripple2`}>
-          <img
+        <img
             src={"/assets/images/home/playBtn2.svg"}
             height={60}
             width={60}
             alt="playBtn"
+            style={{position:"absolute",top:"50%", left:"50%", transform:"translate(-50%,-50%)"}}
           />
         </div>
       </section>

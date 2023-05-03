@@ -6,7 +6,13 @@ const TokenSection = () => {
 
   return (
     <section className={styles.mainDiv}>
-      <div className={`${styles.tokenDiv} container`}>
+      <div className={`${styles.tokenDiv} container`}
+        style={{
+          backgroundImage: "url(/assets/images/home/tokenBg.svg)" ,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}
+      >
         <div className={`row d-flex py-3 text-white  ${styles.firstcolumn}`}>
           <div className={`col-sm-6 ${styles.leftDiv}`}>
             <header className="container pt-5">

@@ -150,7 +150,7 @@ const NewsSection = () => {
   return (
     <div className={styles.mainDiv}>
       <h1
-        className={`d-flex justify-content-center my-4 pt-5 ${styles.heading}`}
+        className={`d-flex justify-content-center my-4 pt-5 pb-4 ${styles.heading}`}
       >
         Plena in the News
       </h1>
