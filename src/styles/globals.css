@@ -490,19 +490,20 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 
 
 .btn {
-	background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
-	border-radius: 40px;
+	background-image: linear-gradient(to right, #AFE2ED
+  0%, #A26AFF 100%) !important;
+	border-radius: 10px !important;
   box-sizing: border-box;
-	color: #00a84f;
+	color: #ffffff !important;
 	display: block;
-	height: 80px;
+	height: 50px;
 	letter-spacing: 1px;
 	margin: 0 auto;
-	padding: 4px;
+	padding: 2px !important;
 	position: relative;
   text-decoration: none;
-	text-transform: uppercase;
-	width: 264px;
+	width: 170px;
+  font-size: 16px !important;
 	z-index: 2;
 }
 
@@ -512,15 +513,16 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 
 .btn span {
 	align-items: center;
-	background: #e7e8e9;
-	border-radius: 40px;
+	background: #202022;
+	border-radius: 10px !important;
 	display: flex;
 	justify-content: center;
 	height: 100%;
-	transition: background .5s ease;
+	transition: background 1s ease;
 	width: 100%;
 }
 
 .btn:hover span {
 	background: transparent;
+  color: #000000;
 }

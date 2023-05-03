@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import styles from "@/styles/home/OwnBank.module.css";
-import Button from "../common/Button";
+import Button, { GradiantButton } from "../common/Button";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { gsap } from "gsap";
 
@@ -79,7 +79,7 @@ const OwnBank = () => {
               </div>
               <div className={styles.btnDiv}>
                 <div>
-                  <Button text={"Get the App"} className={styles["mainbtn"]} />
+                  <GradiantButton text={"Get the App"} className={styles["mainbtn"]} />
                 </div>
                 <div className={`d-flex align-items-center ${styles.watchIntro}`}>
                   <div className="btn_ripple">

@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../common/Card";
-import Button from "../common/Button";
+import Button, { GradiantButton } from "../common/Button";
 import styles from "../../styles/home/StoriesSection.module.css";
 
 const storyData = [
@@ -43,7 +43,7 @@ const StoriesSection = () => {
             <div
               className={`col-md-3 col-sm-0 d-flex justify-content-center ${styles.RightDiv}`}
             >
-              <Button text={"More stories"} className={styles.button} />
+              <GradiantButton text={"More stories"} className={styles.button} />
             </div>
 
           </div>

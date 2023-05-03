@@ -22,13 +22,13 @@ const cardData = [
 const BlogContent = () => {
     const router = useRouter();
     console.log(router.query, "????????????????")
-    
+
     return (
         <div className='container bg-black'>
             <div className='' style={{ padding: "170px 170px 0px 170px" }}>
                 <div>
                     <div>
-                    <div className={styles.badge}>Technology</div>
+                        <div className={styles.badge}>Technology</div>
                     </div>
                     <h1 className={styles.topHeading}>Plena Wallet and Onmeta Join forces to empower its users With Easy Access to Crypto</h1>
                     <span style={{ color: "#696A75" }}>August 20, 2023</span>

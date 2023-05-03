@@ -10,11 +10,11 @@ const Button = ({ text, buttonName, style }) => {
   )
 }
 
-export const StoreButton = ({ src, subText}) => {
+export const StoreButton = ({ src, subText }) => {
   return (
     <button className={storeStyles.storeBtn}>
       <div className={storeStyles.leftDiv}>
-        <img src={src}  alt='icon' className={styles.apple}/>
+        <img src={src} alt='icon' className={styles.apple} />
       </div>
       <div className={storeStyles.rightDiv}>
         <div className={storeStyles.text}>Download on the</div>
@@ -24,5 +24,11 @@ export const StoreButton = ({ src, subText}) => {
   )
 }
 
-
+export const GradiantButton = ({ text }) => {
+  return (
+    <div class="btn" href="#">
+      <span>{text}</span>
+    </div>
+  )
+}
 export default Button

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "@/styles/home/TokenSection.module.css";
-import Button from '../common/Button';
+import Button, { GradiantButton } from '../common/Button';
 
 const TokenSection = () => {
 
@@ -56,7 +56,7 @@ const TokenSection = () => {
                 Store, Send, Receive and Trade over 100,000 crypto across
                 Multiple Chains at Best Rates
               </p>
-              <Button text="Get the App"/>
+              <GradiantButton text="Get the App"/>
             </header>
           </div>
           <div className={`col-sm-6 ${styles.rightDiv}`}>

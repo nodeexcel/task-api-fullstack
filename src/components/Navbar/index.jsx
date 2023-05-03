@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import { FiMenu } from "react-icons/fi";
 import Navbar from "react-bootstrap/Navbar";
-import Button from "../common/Button";
+import Button, { GradiantButton } from "../common/Button";
 import styles from "@/styles/Navbar.module.css";
 import AnnoucementSection from "../Home/AnnoucementSection";
 import { useRouter } from 'next/router'
@@ -129,10 +129,10 @@ const NavBar = () => {
             </Nav>
             {route.pathname === "/blog" ?
               <Nav>
-                <Button text="Download App" />
+                <GradiantButton text="Download App" />
               </Nav> :
               <Nav>
-                <Button text="Get the App" />
+                <GradiantButton text="Get the App" />
               </Nav>
             }
 
