@@ -62,7 +62,7 @@ const NavBar = ({ show, setShow }) => {
           </Navbar.Toggle>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="color-white text-sm-center" >
-              <div className={styles.liBox} style={{ height: "100vh" }}>
+              <div className={styles.liBox} style={{ height: "auto" }}>
                 <Nav.Link
                   href="#feature"
                   className={`text-white ${styles.liText}`}
@@ -135,11 +135,10 @@ const NavBar = ({ show, setShow }) => {
               <Nav>
                 <GradiantButton text="Download App" />
               </Nav> :
-              <Nav>
+              <Nav className={styles.getButton}>
                 <GradiantButton text="Get the App" />
               </Nav>
             }
-
           </Navbar.Collapse>
         </Container>
       </Navbar>

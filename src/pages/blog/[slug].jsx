@@ -22,8 +22,6 @@ const cardData = [
 ]
 
 const BlogContent = () => {
-    const router = useRouter();
-
     return (
         <>
             <NavBar />
