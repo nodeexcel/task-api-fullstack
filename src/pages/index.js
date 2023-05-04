@@ -1,5 +1,6 @@
 import NavBar from "@/components/Navbar";
 import dynamic from "next/dynamic";
+import { useState } from "react";
 
 // Import components dynamically
 const LandingPage = dynamic(() => import("@/components/Home/index"), {
@@ -7,9 +8,11 @@ const LandingPage = dynamic(() => import("@/components/Home/index"), {
 });
 
 export default function Home() {
+  const [show, setShow] = useState(false);
+
   return (
     <>
-      <NavBar />
+      <NavBar setShow={setShow} show={show} />
       <LandingPage />
     </>
   );

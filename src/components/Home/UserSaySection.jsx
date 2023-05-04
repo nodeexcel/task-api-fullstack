@@ -4,6 +4,7 @@ import { TbMessageCircle } from "react-icons/tb";
 import BackedSection from "./BackedSection";
 import FeaturesSection from "./FeaturesSection";
 import { useState } from "react";
+
 const userSayData = [
   {
     text: "Bonjour, Excellente application que j’ai depuis juin dernier ☺️ les gains se cumulent tous seuls à chaque achat",
@@ -60,8 +61,6 @@ const LeftScroll = () => {
   return (
     <motion.div
       className={styles.userDiv}
-      // animate={{ x: ["0%", "100%"] }}
-      // transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
       whileHover={{ x }}
       variants={marqueeVariants}
       animate="animate"
@@ -73,7 +72,7 @@ const LeftScroll = () => {
             <div
               key={index}
               className={`${styles.userSayCard} d-flex flex-column justify-content-between`}
-              style={{cursor:"pointer"}}
+              style={{ cursor: "pointer" }}
             >
               <div className="row mb-5">{data?.text}</div>
               <div
@@ -116,7 +115,7 @@ const RightScroll = () => {
       animate="animate"
       whileHover={{ x }}
       onUpdate={(e) => setPos(() => e.x)}
-     
+
     >
       {userSayData.map((data, index) => {
         return (
@@ -124,7 +123,7 @@ const RightScroll = () => {
             <div
               key={index}
               className={` ${styles.userSayCard} d-flex flex-column justify-content-between`}
-              style={{cursor:"pointer"}}
+              style={{ cursor: "pointer" }}
             >
               <div className="row mb-5">{data?.text}</div>
               <div
@@ -159,7 +158,6 @@ const RightScroll = () => {
 const UserSaySection = () => {
   return (
     <div
-      // className="bg-dark"
       style={{
         backgroundImage: "url(/assets/images/home/userBg.svg)",
         backgroundPosition: "center",

@@ -6,9 +6,9 @@ import SeemLessSection from './SeemLessSection'
 const BlogPages = () => {
   return (
     <div>
-      <TopSection/>
-      <BlogCardSection/>
-      <SeemLessSection/>
+      <TopSection />
+      <BlogCardSection />
+      <SeemLessSection />
     </div>
   )
 }

@@ -3,6 +3,7 @@
   margin: auto;
   position: relative;
 }
+
 .subheading {
   font-family: 'ClashGrotesk-Semibold', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 120%;
@@ -10,28 +11,33 @@
   padding-bottom: 1%;
   color: #ffffff;
 }
-.Read{
+
+.Read {
   font-family: 'ClashGrotesk-Extralight', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.5rem;
   margin-left: 10%;
   padding-bottom: 2%;
   color: #ffffff;
 }
-.header{
+
+.header {
   font-size: 1.5rem;
   font-family: 'ClashGrotesk-Medium', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #ffffff;
 }
-.headpoint{
+
+.headpoint {
   padding: 0% 10%;
 }
-.SubHeader{
+
+.SubHeader {
   font-size: 1rem;
   font-family: 'ClashGrotesk-Light', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #ffffff;
   background-color: rgba(21, 21, 21, 0.8);
 }
-.image{
+
+.image {
   width: 30px;
   height: 30px;
   margin-left: 10px;
@@ -39,7 +45,7 @@
 }
 
 @media screen and (max-width:320px) {
-  .image{
+  .image {
     position: absolute;
     left: 79%;
     top: 47%;
@@ -53,22 +59,26 @@
     margin: auto;
     position: relative;
   }
-  .header{
+
+  .header {
     font-size: 1rem;
     font-family: 'ClashGrotesk-Medium', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #ffffff;
   }
-  .SubHeader{
+
+  .SubHeader {
     font-size: 1rem;
     font-family: 'ClashGrotesk-Light', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #ffffff;
   }
+
   .heading {
     margin: auto;
     align-items: center;
     text-align: center;
     color: white;
   }
+
   .subheading {
     font-family: 'ClashGrotesk-Medium', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
@@ -78,15 +88,18 @@
     text-align: center;
     color: white;
   }
+
   .image {
     position: absolute;
     left: 73%;
     top: 44%;
   }
-  .headpoint{
+
+  .headpoint {
     padding: 0px;
   }
-  .Read{
+
+  .Read {
     padding-bottom: 10%;
     margin: auto;
     text-align: center;
@@ -96,13 +109,14 @@
   }
 }
 
-@media screen and (min-width: 640px) and (max-width: 770px){
+@media screen and (min-width: 640px) and (max-width: 770px) {
   .mainDiv {
     padding: 0%;
     width: 100%;
     margin: auto;
     position: relative;
   }
+
   .subheading {
     font-family: 'ClashGrotesk-Semibold', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 3rem;
@@ -110,27 +124,32 @@
     margin-top: 0%;
     color: #ffffff;
   }
-  .Read{
+
+  .Read {
     font-family: 'ClashGrotesk-Extralight', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.5rem;
     margin-left: 8%;
     padding-bottom: 10%;
     color: #ffffff;
   }
-  .header{
+
+  .header {
     font-size: 1rem;
     font-family: 'ClashGrotesk-Regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #ffffff;
   }
-  .headpoint{
+
+  .headpoint {
     margin-top: -5%;
     padding: 0% 5%;
   }
-  .SubHeader{
+
+  .SubHeader {
     font-size: 1rem;
-    font-family: 'ClashGrotesk-Extralight',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'ClashGrotesk-Extralight', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #ffffff;
   }
+
   .image {
     position: absolute;
     left: 58%;
@@ -138,11 +157,12 @@
   }
 }
 
-@media screen and (min-width: 770px) and (max-width: 1024px){
+@media screen and (min-width: 770px) and (max-width: 1024px) {
   .heading {
     margin-left: -10%;
     color: white;
   }
+
   .subheading {
     margin-top: -7%;
     font-style: normal;
@@ -153,16 +173,19 @@
     text-align: center;
     color: white;
   }
-  .image{
+
+  .image {
     margin-top: -7%;
     width: 30px;
     height: 30px;
     margin-left: 10px;
   }
-  .headpoint{
+
+  .headpoint {
     padding: 0% 5%;
   }
-  .Read{
+
+  .Read {
     font-family: 'ClashGrotesk-Extralight', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.5rem;
     margin-left: 7%;
@@ -170,4 +193,3 @@
     padding-bottom: 5%;
   }
 }
-

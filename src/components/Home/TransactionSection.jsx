@@ -1,43 +1,8 @@
-import { motion, useScroll, useTransform } from "framer-motion";
-
-const TransactionSection = () => {
-  const { scrollYProgress } = useScroll();
-  const x = useTransform(scrollYProgress, [0, 1], [0, 4000]);
-
-  return (
-    <>
-      <div style={{ position: "relative", height: "60rem" }}>
-        <motion.h1 className={styles.heading} style={{ x }}>
-          <img
-            src="/assets/images/home/spark.png"
-            height={100}
-            width={125}
-            alt="thunderImg"
-            className={styles.img}
-          />
-          Faster
-        </motion.h1>
-        <div style={{ position: "absolute", top: 70, left: "50%" }}>
-          <div className={styles.phoneImg}>
-            <img
-              src="/assets/images/home/createWallet.gif"
-              alt="phone"
-              className={styles.mobile}
-            />
-          </div>
-        </div>
-        <motion.h1 className={styles.transactionHeading} style={{ x }}>
-          Transactions
-        </motion.h1>
-      </div>
-    </>
-  );
-};
-
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useLayoutEffect, useRef } from "react";
 import styles from "./DesignSection.module.css";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Section = styles.section;
@@ -100,7 +65,6 @@ export default function DesignSection() {
           style={{
             position: "absolute",
             zIndex: 1,
-            // top: 60
           }}
           className={styles.mobile}
         />

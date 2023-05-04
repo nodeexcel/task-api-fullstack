@@ -8,6 +8,7 @@
   position: relative;
   padding-top: 70px;
 }
+
 .leftDiv {
   color: white;
   display: flex;
@@ -17,9 +18,11 @@
   flex-direction: column;
   text-align: left;
 }
+
 .curl {
   padding-top: -100px;
 }
+
 .QrContainer {
   display: flex;
   width: fit-content;
@@ -28,73 +31,77 @@
   position: fixed;
   top: 83vh;
   right: 2%;
-  /* left:90vw; */
   z-index: 5;
   transition: transform 700ms;
   transition-timing-function: linear;
   cursor: pointer;
 }
+
 .qrImg {
   height: 100px;
   width: 100px;
 }
+
 .qrData {
   transition: transform 2s;
   padding: 10px 20px;
   display: none;
   background: rgba(37, 37, 37, 0.9);
+  -webkit-background: rgba(37, 37, 37, 0.9);
   backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   border-radius: 16px;
-
   width: 180px;
   position: relative;
   left: 24px;
   z-index: -1;
-  /* text-align: left; */
-
 }
+
 .QrContainer:hover .qrData {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
+
 .QrContainer:hover {
-  /* transform: translateX(-30px); */
-  /* left:80vw; */
   right: 2%;
 }
+
 .downloadText {
-  background: -webkit-linear-gradient(
-    91.6deg,
-    #afe2ed 0.62%,
-    #a26aff 99.17%
-  ) !important;
+  background: -webkit-linear-gradient(91.6deg,
+      #afe2ed 0.62%,
+      #a26aff 99.17%) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   font-weight: 900;
   font-size: 20px;
 }
+
 .main {
   margin-top: -15%;
 }
+
 .rightDiv {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .phoneImg1 {
   position: relative;
   left: -220px;
   top: -100px;
   z-index: 8;
 }
+
 .phoneImg2 {
   position: absolute;
   z-index: 6;
   top: 0px;
   left: 200px;
 }
+
 .heading {
   font-family: ClashGrotesk-Medium, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
@@ -103,6 +110,7 @@
   font-size: 5vw;
   line-height: 8vw;
 }
+
 .subHeading p {
   padding-top: 5%;
   font-family: "ClashGrotesk-Light", system-ui, -apple-system,
@@ -113,6 +121,7 @@
   font-weight: 300;
   color: rgba(255, 255, 255, 0.8);
 }
+
 .strong {
   font-family: "ClashGrotesk-Regular";
 }
@@ -133,6 +142,7 @@
   color: white;
   text-align: center;
 }
+
 .bankNumber {
   font-family: ClashGrotesk-Medium, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
@@ -142,6 +152,7 @@
   font-weight: 600;
   text-align: center;
 }
+
 .userText {
   font-family: "ClashGrotesk-Extralight", system-ui, -apple-system,
     BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -150,19 +161,24 @@
   text-align: center;
   padding-bottom: 25%;
 }
+
 .images {
   height: 100%;
   width: 113%;
 }
+
 .DownloadApp {
   display: none;
 }
+
 .btntext {
   display: none;
 }
+
 .DownloadAppBtn {
   display: none;
 }
+
 .mobilebtn {
   display: none;
 }
@@ -174,6 +190,7 @@
     align-items: center;
     justify-content: space-around;
   }
+
   .leftDiv {
     width: 100%;
     display: flex;
@@ -181,6 +198,7 @@
     text-align: center;
     align-items: center;
   }
+
   .rightDiv {
     padding: 5%;
     width: 100%;
@@ -188,23 +206,28 @@
     text-align: center;
     justify-content: center;
   }
+
   .curl {
     margin-left: -35%;
     margin-top: 2%;
     height: 20px;
     width: 100px;
   }
+
   .QrCode {
     display: none;
   }
+
   .heading {
     margin-top: 6%;
     font-size: 3rem;
     line-height: 3rem;
   }
+
   .QrContainer {
     display: none;
   }
+
   .subHeading p {
     font-family: "ClashGrotesk-Extralight", system-ui, -apple-system,
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -218,30 +241,36 @@
     font-weight: 200;
     line-height: 20px;
   }
+
   .btnDiv {
     display: none;
   }
+
   .bankNumber {
     font-size: 20px;
     font-weight: bold;
     margin-left: 12px;
     line-height: 27px;
   }
+
   .userText {
     font-size: 13px;
     font-weight: 400;
   }
+
   .images {
     margin-top: -25%;
     margin-left: -5%;
     height: 523px;
     width: auto;
   }
+
   .main {
     margin-top: -20%;
     align-items: center;
     text-align: center;
   }
+
   .DownloadApp {
     display: flex;
     align-items: center;
@@ -257,6 +286,7 @@
     border-radius: 16.2667px;
     justify-content: center;
   }
+
   .btntext {
     font-family: "ClashGrotesk-Extralight", system-ui, -apple-system,
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -266,6 +296,7 @@
     text-align: center;
     color: white;
   }
+
   .DownloadAppBtn {
     display: block;
     overflow: hidden;
@@ -277,6 +308,7 @@
     background: rgba(38, 38, 38, 0.4);
     backdrop-filter: blur(37px);
   }
+
   .mobilebtn {
     display: block;
     position: fixed;
@@ -302,9 +334,11 @@
     border-radius: 16.2667px;
     justify-content: center;
   }
+
   .QrContainer {
     display: none;
   }
+
   .btntext {
     font-family: "ClashGrotesk-Extralight", system-ui, -apple-system,
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -317,6 +351,7 @@
     justify-content: center;
     align-items: center;
   }
+
   .mobilebtn {
     display: block;
     position: fixed;
@@ -325,12 +360,14 @@
     z-index: 4;
     bottom: -150px;
   }
+
   .mainDiv {
     padding: 10px;
     margin-top: 10%;
     align-items: center;
     justify-content: space-around;
   }
+
   .leftDiv {
     width: 100%;
     display: flex;
@@ -338,6 +375,7 @@
     text-align: center;
     align-items: center;
   }
+
   .rightDiv {
     padding: 5%;
     width: 100%;
@@ -345,20 +383,24 @@
     text-align: center;
     justify-content: center;
   }
+
   .curl {
     margin-left: -35%;
     margin-top: 2%;
     height: 20px;
     width: 100px;
   }
+
   .QrCode {
     display: none;
   }
+
   .heading {
     margin-top: 6%;
     font-size: 3.5rem;
     line-height: 3rem;
   }
+
   .subHeading p {
     font-family: "ClashGrotesk-Extralight", system-ui, -apple-system,
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -372,30 +414,36 @@
     font-weight: 200;
     line-height: 20px;
   }
+
   .btnDiv {
     display: none;
   }
+
   .bankNumber {
     font-size: 20px;
     font-weight: bold;
     margin-left: 12px;
     line-height: 27px;
   }
+
   .userText {
     font-size: 13px;
     font-weight: 400;
   }
+
   .images {
     margin-top: -25%;
     margin-left: -5%;
     height: 523px;
     width: auto;
   }
+
   .main {
     margin-top: -20%;
     align-items: center;
     text-align: center;
   }
+
   .DownloadApp {
     display: flex;
     align-items: center;
@@ -411,6 +459,7 @@
     border-radius: 16.2667px;
     justify-content: center;
   }
+
   .btntext {
     font-family: "ClashGrotesk-Extralight", system-ui, -apple-system,
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -420,6 +469,7 @@
     text-align: center;
     color: white;
   }
+
   .DownloadAppBtn {
     display: block;
     overflow: hidden;
@@ -442,15 +492,19 @@
     padding-top: 8%;
     position: relative;
   }
+
   .DownloadApp {
     display: none;
   }
+
   .btntext {
     display: none;
   }
+
   .DownloadAppBtn {
     display: none;
   }
+
   .leftDiv {
     padding-top: 5%;
     color: white;
@@ -461,29 +515,34 @@
     flex-direction: column;
     text-align: left;
   }
+
   .curl {
     padding-top: -100px;
     width: 30%;
     height: auto;
   }
+
   .rightDiv {
     width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .phoneImg1 {
     position: relative;
     left: -220px;
     top: -100px;
     z-index: 8;
   }
+
   .phoneImg2 {
     position: absolute;
     z-index: 6;
     top: 0px;
     left: 200px;
   }
+
   .heading {
     font-family: "ClashGrotesk-Semibold", system-ui, -apple-system,
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -493,6 +552,7 @@
     font-weight: 1000;
     line-height: 6vw;
   }
+
   .subHeading p {
     margin-top: 5%;
     font-family: "ClashGrotesk-Light", system-ui, -apple-system,
@@ -502,19 +562,20 @@
     font-size: 1rem;
     line-height: 1.2rem;
   }
+
   .btnDiv {
     display: flex;
     justify-content: space-between;
     width: 55% !important;
   }
+
   .mainbtn {
     border-style: solid !important;
-    border-image-source: linear-gradient(
-      91.6deg,
-      #afe2ed 0.62%,
-      #a26aff 99.17%
-    ) !important;
+    border-image-source: linear-gradient(91.6deg,
+        #afe2ed 0.62%,
+        #a26aff 99.17%) !important;
   }
+
   .bankDataDiv {
     background-color: transparent;
     position: relative;
@@ -524,11 +585,13 @@
     color: white;
     text-align: center;
   }
+
   .bankNumber {
     font-size: 1.7rem;
     font-weight: 600;
     text-align: center;
   }
+
   .userText {
     font-family: "ClashGrotesk-Extralight", system-ui, -apple-system,
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -536,11 +599,13 @@
     text-align: center;
     font-size: 1rem;
   }
+
   .images {
     padding-top: 10%;
     height: 100%;
     width: 150%;
   }
+
   .main {
     margin-top: 5%;
   }
@@ -555,6 +620,7 @@
     padding-top: 10%;
     position: relative;
   }
+
   .leftDiv {
     padding-top: 3%;
     color: white;
@@ -565,38 +631,46 @@
     flex-direction: column;
     text-align: left;
   }
+
   .DownloadApp {
     display: none;
   }
+
   .btntext {
     display: none;
   }
+
   .DownloadAppBtn {
     display: none;
   }
+
   .curl {
     padding-top: -100px;
     width: 30%;
     height: auto;
   }
+
   .rightDiv {
     width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .phoneImg1 {
     position: relative;
     left: -220px;
     top: -100px;
     z-index: 8;
   }
+
   .phoneImg2 {
     position: absolute;
     z-index: 6;
     top: 0px;
     left: 200px;
   }
+
   .heading {
     font-family: "ClashGrotesk-Semibold", system-ui, -apple-system,
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -605,6 +679,7 @@
     font-weight: 1000;
     line-height: 6vw;
   }
+
   .subHeading p {
     font-family: "ClashGrotesk-Light", system-ui, -apple-system,
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -619,14 +694,14 @@
     justify-content: flex-start;
     width: 87% !important;
   }
+
   .mainbtn {
     border-style: solid !important;
-    border-image-source: linear-gradient(
-      91.6deg,
-      #afe2ed 0.62%,
-      #a26aff 99.17%
-    ) !important;
+    border-image-source: linear-gradient(91.6deg,
+        #afe2ed 0.62%,
+        #a26aff 99.17%) !important;
   }
+
   .bankDataDiv {
     background-color: transparent;
     position: relative;
@@ -636,12 +711,14 @@
     color: white;
     text-align: center;
   }
+
   .bankNumber {
     padding-top: 0px;
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
   }
+
   .userText {
     font-family: "ClashGrotesk-Extralight", system-ui, -apple-system,
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -649,11 +726,13 @@
     text-align: center;
     font-size: 1.3rem;
   }
+
   .images {
     padding-top: 10%;
     height: 100%;
     width: 150%;
   }
+
   .main {
     margin-top: 5%;
   }
@@ -668,6 +747,7 @@
     padding-top: 3%;
     position: relative;
   }
+
   .leftDiv {
     padding-top: 2%;
     color: white;
@@ -678,38 +758,46 @@
     flex-direction: column;
     text-align: left;
   }
+
   .DownloadApp {
     display: none;
   }
+
   .btntext {
     display: none;
   }
+
   .DownloadAppBtn {
     display: none;
   }
+
   .curl {
     padding-top: -100px;
     width: 30%;
     height: auto;
   }
+
   .rightDiv {
     width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .phoneImg1 {
     position: relative;
     left: -220px;
     top: -100px;
     z-index: 8;
   }
+
   .phoneImg2 {
     position: absolute;
     z-index: 6;
     top: 0px;
     left: 200px;
   }
+
   .heading {
     font-family: "ClashGrotesk-Semibold", system-ui, -apple-system,
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -718,6 +806,7 @@
     font-weight: 1000;
     line-height: 6vw;
   }
+
   .subHeading p {
     font-family: "ClashGrotesk-Light", system-ui, -apple-system,
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -732,14 +821,14 @@
     justify-content: space-between;
     width: 60% !important;
   }
+
   .mainbtn {
     border-style: solid !important;
-    border-image-source: linear-gradient(
-      91.6deg,
-      #afe2ed 0.62%,
-      #a26aff 99.17%
-    ) !important;
+    border-image-source: linear-gradient(91.6deg,
+        #afe2ed 0.62%,
+        #a26aff 99.17%) !important;
   }
+
   .bankDataDiv {
     background-color: transparent;
     position: relative;
@@ -749,12 +838,14 @@
     color: white;
     text-align: center;
   }
+
   .bankNumber {
     padding-top: 0px;
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
   }
+
   .userText {
     font-family: "ClashGrotesk-Extralight", system-ui, -apple-system,
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -762,11 +853,13 @@
     text-align: center;
     font-size: 1.3rem;
   }
+
   .images {
     padding-top: 10%;
     height: 100%;
     width: 150%;
   }
+
   .main {
     margin-top: 5%;
   }
@@ -780,6 +873,7 @@
     width: 100%;
     position: relative;
   }
+
   .leftDiv {
     padding-top: 0%;
     color: white;
@@ -790,38 +884,46 @@
     flex-direction: column;
     text-align: left;
   }
+
   .DownloadApp {
     display: none;
   }
+
   .btntext {
     display: none;
   }
+
   .DownloadAppBtn {
     display: none;
   }
+
   .curl {
     padding-top: -100px;
     width: 30%;
     height: auto;
   }
+
   .rightDiv {
     width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .phoneImg1 {
     position: relative;
     left: -220px;
     top: -100px;
     z-index: 8;
   }
+
   .phoneImg2 {
     position: absolute;
     z-index: 6;
     top: 0px;
     left: 200px;
   }
+
   .heading {
     font-family: "ClashGrotesk-Semibold", system-ui, -apple-system,
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -830,6 +932,7 @@
     font-weight: 1000;
     line-height: 5vw;
   }
+
   .subHeading p {
     font-family: "ClashGrotesk-Light", system-ui, -apple-system,
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -844,14 +947,14 @@
     justify-content: space-between;
     width: 60% !important;
   }
+
   .mainbtn {
     border-style: solid !important;
-    border-image-source: linear-gradient(
-      91.6deg,
-      #afe2ed 0.62%,
-      #a26aff 99.17%
-    ) !important;
+    border-image-source: linear-gradient(91.6deg,
+        #afe2ed 0.62%,
+        #a26aff 99.17%) !important;
   }
+
   .bankDataDiv {
     background-color: transparent;
     position: relative;
@@ -861,12 +964,14 @@
     color: white;
     text-align: center;
   }
+
   .bankNumber {
     padding-top: 0px;
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
   }
+
   .userText {
     font-family: "ClashGrotesk-Extralight", system-ui, -apple-system,
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -874,12 +979,14 @@
     text-align: center;
     font-size: 1.3rem;
   }
+
   .images {
     margin: 0% 30% 0% 0%;
     padding-top: 10%;
     height: 100%;
     width: 150%;
   }
+
   .main {
     margin-top: 0%;
   }
@@ -894,9 +1001,11 @@
     padding-top: 3%;
     position: relative;
   }
+
   .bottomSection {
     margin-top: 10%;
   }
+
   .leftDiv {
     width: 50%;
     color: white;
@@ -908,27 +1017,32 @@
     flex-direction: column;
     text-align: left;
   }
+
   .curl {
     padding-top: -100px;
   }
+
   .rightDiv {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .phoneImg1 {
     position: relative;
     left: -220px;
     top: -100px;
     z-index: 8;
   }
+
   .phoneImg2 {
     position: absolute;
     z-index: 6;
     top: 0px;
     left: 200px;
   }
+
   .heading {
     font-family: ClashGrotesk-Medium, system-ui, -apple-system,
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -937,6 +1051,7 @@
     font-size: 6vw;
     line-height: 6vw;
   }
+
   .subHeading p {
     padding-top: 5%;
     font-family: "ClashGrotesk-Light", system-ui, -apple-system,
@@ -947,6 +1062,7 @@
     font-weight: 300;
     color: rgba(255, 255, 255, 0.8);
   }
+
   .strong {
     font-family: "ClashGrotesk-Regular";
   }
@@ -967,6 +1083,7 @@
     color: white;
     text-align: center;
   }
+
   .bankNumber {
     font-family: ClashGrotesk-Medium, system-ui, -apple-system,
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -976,6 +1093,7 @@
     font-weight: 600;
     text-align: center;
   }
+
   .userText {
     font-family: "ClashGrotesk-Extralight", system-ui, -apple-system,
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -984,19 +1102,24 @@
     text-align: center;
     padding-bottom: 25%;
   }
+
   .images {
     height: 100%;
     width: 113%;
   }
+
   .DownloadApp {
     display: none;
   }
+
   .btntext {
     display: none;
   }
+
   .DownloadAppBtn {
     display: none;
   }
+
   .main {
     margin-top: 0%;
   }
@@ -1011,9 +1134,11 @@
     width: 100%;
     position: relative;
   }
+
   .bottomSection {
     margin-top: 20%;
   }
+
   .leftDiv {
     color: white;
     display: flex;
@@ -1024,27 +1149,32 @@
     flex-direction: column;
     text-align: left;
   }
+
   .curl {
     padding-top: -100px;
   }
+
   .rightDiv {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .phoneImg1 {
     position: relative;
     left: -220px;
     top: -100px;
     z-index: 8;
   }
+
   .phoneImg2 {
     position: absolute;
     z-index: 6;
     top: 0px;
     left: 200px;
   }
+
   .heading {
     font-family: ClashGrotesk-Medium, system-ui, -apple-system,
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -1053,6 +1183,7 @@
     font-size: 6vw;
     line-height: 6vw;
   }
+
   .subHeading p {
     padding-top: 5%;
     font-family: "ClashGrotesk-Light", system-ui, -apple-system,
@@ -1063,6 +1194,7 @@
     font-weight: 300;
     color: rgba(255, 255, 255, 0.8);
   }
+
   .strong {
     font-family: "ClashGrotesk-Regular";
   }
@@ -1083,6 +1215,7 @@
     color: white;
     text-align: center;
   }
+
   .bankNumber {
     font-family: ClashGrotesk-Medium, system-ui, -apple-system,
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -1092,6 +1225,7 @@
     font-weight: 600;
     text-align: center;
   }
+
   .userText {
     font-family: "ClashGrotesk-Extralight", system-ui, -apple-system,
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -1100,20 +1234,25 @@
     text-align: center;
     padding-bottom: 25%;
   }
+
   .images {
     height: 100%;
     width: 113%;
   }
+
   .DownloadApp {
     display: none;
   }
+
   .btntext {
     display: none;
   }
+
   .DownloadAppBtn {
     display: none;
   }
 }
+
 @media screen and (min-width: 2000px) and (max-width: 2560px) {
   .mainDiv {
     background-color: black;
@@ -1123,9 +1262,11 @@
     width: 100%;
     position: relative;
   }
+
   .bottomSection {
     margin-top: 20%;
   }
+
   .leftDiv {
     color: white;
     display: flex;
@@ -1136,6 +1277,7 @@
     flex-direction: column;
     text-align: left;
   }
+
   .curl {
     padding-top: -100px;
   }
@@ -1146,18 +1288,21 @@
     justify-content: center;
     align-items: center;
   }
+
   .phoneImg1 {
     position: relative;
     left: -220px;
     top: -100px;
     z-index: 8;
   }
+
   .phoneImg2 {
     position: absolute;
     z-index: 6;
     top: 0px;
     left: 200px;
   }
+
   .heading {
     font-family: ClashGrotesk-Medium, system-ui, -apple-system,
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -1166,6 +1311,7 @@
     font-size: 6vw;
     line-height: 6vw;
   }
+
   .subHeading p {
     padding-top: 5%;
     font-family: "ClashGrotesk-Light", system-ui, -apple-system,
@@ -1176,6 +1322,7 @@
     font-weight: 300;
     color: rgba(255, 255, 255, 0.8);
   }
+
   .strong {
     font-family: "ClashGrotesk-Regular";
   }
@@ -1196,6 +1343,7 @@
     color: white;
     text-align: center;
   }
+
   .bankNumber {
     font-family: ClashGrotesk-Medium, system-ui, -apple-system,
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -1205,6 +1353,7 @@
     font-weight: 600;
     text-align: center;
   }
+
   .userText {
     font-family: "ClashGrotesk-Extralight", system-ui, -apple-system,
       BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -1213,16 +1362,20 @@
     text-align: center;
     padding-bottom: 25%;
   }
+
   .images {
     height: 100%;
     width: 113%;
   }
+
   .DownloadApp {
     display: none;
   }
+
   .btntext {
     display: none;
   }
+
   .DownloadAppBtn {
     display: none;
   }

@@ -1,4 +1,4 @@
-.description{
+.description {
   font-size: 20px;
   color: #BABABA;
   text-align: center;
@@ -6,80 +6,95 @@
   font-family: "ClashGrotesk-Regular";
 }
 
-.phoneArrow{
+.phoneArrow {
   display: none;
 }
-.cardStyle{
+
+.cardStyle {
   width: 14rem;
-   margin: 20px
+  margin: 20px
 }
-.heading{
+
+.heading {
   font-family: "ClashGrotesk-Semibold";
   font-size: 60px;
 }
-@media  screen and (max-width: 640px) {
-  .description{
-    font-size:15px;
+
+@media screen and (max-width: 640px) {
+  .description {
+    font-size: 15px;
     font-weight: 100;
     line-height: 20px;
     text-align: center;
     font-family: "ClashGrotesk-Regular";
   }
-  .leftBtnDiv,.rightBtnDiv{
+
+  .leftBtnDiv,
+  .rightBtnDiv {
     display: none;
   }
-  .phoneArrow{
+
+  .phoneArrow {
     display: flex;
     justify-content: space-evenly;
     margin-top: 10px;
   }
-  .cardStyle{
+
+  .cardStyle {
     width: 10rem;
-     margin: 20px
+    margin: 20px
   }
-  .phoneArrowImg{
+
+  .phoneArrowImg {
     height: 40px;
     width: 60px;
   }
-  .heading{
+
+  .heading {
     font-family: "ClashGrotesk-Semibold";
     font-size: 40px;
   }
 }
 
 @media screen and (min-width:640px) and (max-width:768px) {
-  .cardStyle{
+  .cardStyle {
     width: 10rem;
-     margin: 10px
+    margin: 10px
   }
-  .phoneArrow{
+
+  .phoneArrow {
     display: flex;
     justify-content: space-evenly;
     margin-top: 10px;
   }
-  .heading{
+
+  .heading {
     font-family: "ClashGrotesk-Semibold";
     font-size: 46px;
   }
-  .description{
-    font-size:17px;
+
+  .description {
+    font-size: 17px;
     font-weight: 100;
     line-height: 20px;
     text-align: center;
     font-family: "ClashGrotesk-Regular";
   }
 }
-@media screen and (min-width:768px) and (max-width:1024px){
-  .cardStyle{
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+  .cardStyle {
     width: 12rem;
-     margin: 10px;
+    margin: 10px;
   }
-  .heading{
+
+  .heading {
     font-family: "ClashGrotesk-Semibold";
     font-size: 50px;
   }
-  .description{
-    font-size:17px;
+
+  .description {
+    font-size: 17px;
     font-weight: 100;
     line-height: 20px;
     text-align: center;

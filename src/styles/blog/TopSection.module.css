@@ -18,32 +18,31 @@
 
 .topImg {
     height: auto;
-    /* margin-left: 40px; */
     width: 100%;
-    /* padding:0px 20px */
 }
 
 .input:focus {
     box-shadow: none !important;
     outline: none !important;
 }
+
 .form-control:focus {
-    border: none !important; /* if you want to remove borders at all*/
+    border: none !important;
     outline: none !important;
     box-shadow: none !important;
-  } 
+}
 
-  @media screen and (max-width:640px) {
+@media screen and (max-width:640px) {
     .search {
         width: 60%;
         margin: auto;
     }
-    
-.heading {
-    color: white;
-    font-size: 40px;
-    line-height: 60px;
-    text-align: center;
-    font-family: 'ClashGrotesk-Semibold';
+
+    .heading {
+        color: white;
+        font-size: 40px;
+        line-height: 60px;
+        text-align: center;
+        font-family: 'ClashGrotesk-Semibold';
+    }
 }
-  }

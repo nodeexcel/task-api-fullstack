@@ -23,8 +23,6 @@ const SecondFold = () => {
     };
   }, []);
 
-//   return    <TransactionSection />
-
   return (
     <>
       <div

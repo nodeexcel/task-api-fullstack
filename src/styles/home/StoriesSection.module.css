@@ -64,14 +64,15 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     font-size: 22px;
-    /* text-fill-color: transparent; */
   }
-  .storiesLine{
-    margin: 0px !important;
+
+  .storiesLine {
+    margin: -3px !important;
     background-image: linear-gradient(to right, #AFE2ED 0.62%, #A26AFF 99.17%) !important;
-    height: 1px;
+    height: 2px;
     border: none;
   }
+
   .maindev {
     padding-top: 5%;
     display: flex;

@@ -1,5 +1,3 @@
-/* styles.module.css */
-
 .section {
   width: 100vw;
   height: 80vh;
@@ -70,7 +68,6 @@
 }
 
 @media screen and (max-width: 70em) {
-
   .textContainer span,
   .textContainer2 span {
     font-size: var(--fontxxl);
@@ -78,7 +75,6 @@
 }
 
 @media screen and (max-width: 64em) {
-
   .textContainer span,
   .textContainer2 span {
     font-size: var(--fontxl);
@@ -86,7 +82,6 @@
 }
 
 @media screen and (max-width: 48em) {
-
   .textContainer span,
   .textContainer2 span {
     font-size: var(--fontlg);
@@ -94,7 +89,6 @@
 }
 
 @media screen and (min-width:768px) and (max-width:1024px) {
-
   .textContainer h1,
   .textContainer2 {
     font-size: 70px;

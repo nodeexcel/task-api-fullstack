@@ -100,7 +100,6 @@
     color: #bababa;
     font-size: 1rem;
     font-family: 'ClashGrotesk-Regular' !important;
-
   }
 
   .Linkedin {
@@ -126,7 +125,6 @@
     font-size: 1rem;
     line-height: 1.3rem;
     font-family: 'ClashGrotesk-Medium' !important;
-
   }
 
   .subText {
@@ -134,7 +132,6 @@
     color: #bababa;
     font-size: 1rem;
     font-family: 'ClashGrotesk-Regular' !important;
-
   }
 }
 
@@ -143,11 +140,8 @@
   padding: 20px;
 }
 
-
-
 .cardStory {
   margin-left: 0px;
-
 }
 
 @media screen and (max-width: 640px) {

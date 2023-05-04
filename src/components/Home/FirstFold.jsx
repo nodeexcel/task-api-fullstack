@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useLayoutEffect } from "react";
@@ -8,9 +8,6 @@ import TokenSection from "./TokenSection";
 gsap.registerPlugin(ScrollTrigger);
 
 const FirstFold = () => {
-  const section1Ref = useRef(null);
-  const section2Ref = useRef(null);
-  const section3Ref = useRef(null);
   const sectionRef = useRef(null);
 
   useLayoutEffect(() => {
@@ -18,7 +15,7 @@ const FirstFold = () => {
 
     let trigger = ScrollTrigger.create({
       trigger: Elem,
-      start: "top top+=140px",
+      start: "top top+=30px",
       pin: true,
       pinSpacing: false,
     });
@@ -31,7 +28,6 @@ const FirstFold = () => {
   return (
     <>
       {/* Hero Section */}
-
       <div
         style={{
           width: "100vw",
@@ -39,11 +35,9 @@ const FirstFold = () => {
         }}
         ref={sectionRef}
       >
-        <VideoSection/>
+        <VideoSection />
       </div>
-      <TokenSection/>
-     
-     
+      <TokenSection />
     </>
   );
 };

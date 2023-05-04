@@ -64,10 +64,10 @@ const BlogCardSection = () => {
     const router = useRouter()
     return (
         <div className='container'>
-            <div className={`container ${styles.cardTopSection}`} style={{ width:"100%", padding:"20px 30px"}}>
+            <div className={`container ${styles.cardTopSection}`} style={{ width: "100%", padding: "20px 30px" }}>
                 <div className={`${styles.latestPost}`} >Latest Post</div>
                 <div className={`text-white ${styles.rightNav}`} style={{}}>
-                    <ul className='d-flex justify-content-between flex-wrap' style={{ listStyleType: "none"}} >
+                    <ul className='d-flex justify-content-between flex-wrap' style={{ listStyleType: "none" }} >
                         <li className='mx-2'>All</li>
                         <li className='mx-2'>Product updates</li>
                         <li className='mx-2'>Announcements</li>
@@ -75,16 +75,16 @@ const BlogCardSection = () => {
                     </ul>
                 </div>
             </div>
-            
-                <div className={styles.cardDiv}>
-                    {cardData.map((data, index) => {
-                        return (
-                            <div onClick={() => router.push(`/blog/${index}`)} role="button" className={styles.cardContainer} >
-                                <BlogCard data={data}  imgStyle={{ width: "100%" }} />
-                            </div>
-                        )
-                    })}
-                </div>
+
+            <div className={styles.cardDiv}>
+                {cardData.map((data, index) => {
+                    return (
+                        <div onClick={() => router.push(`/blog/${index}`)} role="button" className={styles.cardContainer} >
+                            <BlogCard data={data} imgStyle={{ width: "100%" }} />
+                        </div>
+                    )
+                })}
+            </div>
         </div>
     )
 }

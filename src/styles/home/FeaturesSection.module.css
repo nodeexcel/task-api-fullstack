@@ -4,6 +4,7 @@
   color: white;
   padding: 6%;
 }
+
 .featureHeading {
   font-family: "ClashGrotesk-Semibold", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-style: normal;
@@ -13,13 +14,16 @@
   padding-top: 5%;
   padding-bottom: 8%;
 }
+
 .table {
   width: 90%;
 }
+
 .tableDiv {
   display: flex;
   justify-content: center;
 }
+
 .td {
   padding: 50px;
   background-color: #20202099;
@@ -27,6 +31,7 @@
   color: white;
   margin: 30px;
 }
+
 .Lending {
   position: relative;
   background: rgba(32, 32, 32, 0.6);
@@ -34,6 +39,7 @@
   border-radius: 32px;
   padding: 5%;
 }
+
 .pools {
   width: 230px;
   height: 230px;
@@ -45,11 +51,13 @@
   line-height: 2rem;
   padding-top: 25%;
 }
-.Liquidity{
+
+.Liquidity {
   font-family: "ClashGrotesk-Semibold", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 2rem;
   line-height: 2rem;
 }
+
 .lending {
   width: 170px;
   position: absolute;
@@ -57,6 +65,7 @@
   left: 45%;
   padding-top: -50%;
 }
+
 .stake {
   position: absolute;
   top: -22%;
@@ -64,6 +73,7 @@
   left: 45%;
   padding-top: -50%;
 }
+
 .RightsubHeading {
   font-family: "ClashGrotesk-Extralight", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-style: normal;
@@ -74,6 +84,7 @@
   color: #bababa;
   word-wrap: break-word;
 }
+
 .RightSideLending {
   display: flex;
   justify-content: center;
@@ -96,6 +107,7 @@
   font-size: 22px;
   font-weight: 300;
 }
+
 .arrow {
   width: 230px;
   height: 230px;
@@ -106,6 +118,7 @@
     display: none;
   }
 }
+
 @media screen and (min-width: 640px) and (max-width: 770px) {
   .featureDiv {
     display: none;
@@ -117,6 +130,7 @@
   .featureDiv {
     color: white;
   }
+
   .featureHeading {
     font-family: "ClashGrotesk-Semibold", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
@@ -126,13 +140,16 @@
     padding-top: 5%;
     padding-bottom: 8%;
   }
+
   .table {
     width: 90%;
   }
+
   .tableDiv {
     display: flex;
     justify-content: center;
   }
+
   .td {
     padding: 50px;
     background-color: #20202099;
@@ -140,18 +157,20 @@
     color: white;
     margin: 30px;
   }
+
   .Lending {
     position: relative;
     background: rgba(32, 32, 32, 0.6);
     backdrop-filter: blur(37px);
     border-radius: 32px;
     padding: 5%;
-    /* width: 49% !important; */
   }
+
   .pools {
     width: 150px;
     height: 150px;
   }
+
   .lending {
     width: 100px;
     position: absolute;
@@ -159,17 +178,20 @@
     left: 52%;
     padding-top: -50%;
   }
-  .Liquidity{
+
+  .Liquidity {
     font-family: "ClashGrotesk-Semibold", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.5rem;
     line-height: 1.7rem;
   }
+
   .Rightheading {
     font-family: "ClashGrotesk-Semibold", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.5rem;
     line-height: 1.7rem;
     padding-top: 5%;
   }
+
   .stake {
     position: absolute;
     top: -30%;
@@ -177,12 +199,14 @@
     left: 52%;
     padding-top: -50%;
   }
+
   .image2 {
     position: absolute;
     top: -22%;
     left: 45%;
     padding-top: -50%;
   }
+
   .RightsubHeading {
     font-family: "ClashGrotesk-Extralight", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
@@ -193,6 +217,7 @@
     color: #bababa;
     word-wrap: break-word;
   }
+
   .RightSideLending {
     display: flex;
     justify-content: center;
@@ -215,15 +240,18 @@
     font-size: 22px;
     font-weight: 300;
   }
+
   .arrow {
     width: 150px;
     height: 150px;
   }
 }
+
 @media screen and (min-width: 850px) and (max-width: 1024px) {
   .featureDiv {
     color: white;
   }
+
   .featureHeading {
     font-family: "ClashGrotesk-Semibold", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
@@ -233,13 +261,16 @@
     padding-top: 5%;
     padding-bottom: 8%;
   }
+
   .table {
     width: 90%;
   }
+
   .tableDiv {
     display: flex;
     justify-content: center;
   }
+
   .td {
     padding: 50px;
     background-color: #20202099;
@@ -247,18 +278,20 @@
     color: white;
     margin: 30px;
   }
+
   .Lending {
     position: relative;
     background: rgba(32, 32, 32, 0.6);
     backdrop-filter: blur(37px);
     border-radius: 32px;
     padding: 5%;
-    /* width: 49% !important; */
   }
+
   .pools {
     width: 150px;
     height: 150px;
   }
+
   .lending {
     width: 100px;
     position: absolute;
@@ -266,17 +299,20 @@
     left: 52%;
     padding-top: -50%;
   }
-  .Liquidity{
+
+  .Liquidity {
     font-family: "ClashGrotesk-Semibold", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.5rem;
     line-height: 1.7rem;
   }
+
   .Rightheading {
     font-family: "ClashGrotesk-Semibold", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.5rem;
     line-height: 1.7rem;
     padding-top: 5%;
   }
+
   .stake {
     position: absolute;
     top: -30%;
@@ -284,12 +320,14 @@
     left: 52%;
     padding-top: -50%;
   }
+
   .image2 {
     position: absolute;
     top: -22%;
     left: 45%;
     padding-top: -50%;
   }
+
   .RightsubHeading {
     font-family: "ClashGrotesk-Extralight", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
@@ -300,6 +338,7 @@
     color: #bababa;
     word-wrap: break-word;
   }
+
   .RightSideLending {
     display: flex;
     justify-content: center;
@@ -322,6 +361,7 @@
     font-size: 22px;
     font-weight: 300;
   }
+
   .arrow {
     width: 150px;
     height: 150px;

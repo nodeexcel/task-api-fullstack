@@ -12,7 +12,7 @@ const CryptoSection = () => {
         <div className="d-flex">
           <div className={` ${styles.cryptoInnerDiv} `}>
             <div
-              className={`${styles.leftDiv} col-sm-12  col-md-6 ms-md-5 ms-sm-0  d-flex justify-content-center align-items-start flex-column `}
+              className={`${styles.leftDiv} col-sm-12  col-md-6 ms-md-5 ms-sm-1  d-flex justify-content-center align-items-start flex-column `}
             >
               <div>
                 <h1 className={`fw-bold pb-3 ${styles.heading}`}>

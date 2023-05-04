@@ -44,6 +44,7 @@ const newsData = [
     width: 200,
   },
 ];
+
 const newsMobileData = [
   {
     src: "/assets/images/home/googleIcon.svg",
@@ -141,9 +142,9 @@ const NewsSection = () => {
   const loadMore = () => {
     console.log("hello");
     if (less < newsMobileData.length) {
-      setLess(less+2);
-    } 
-    else{
+      setLess(less + 2);
+    }
+    else {
       setLess(3)
     }
   };
@@ -166,7 +167,6 @@ const NewsSection = () => {
       </div>
       <div className={styles.mobileIcons}>
         <div className={`${styles.mobileIconsBox} d-flex justify-content-center`}
-        // style={{height:"auto", transition:"height 2s linear !important", transitionDelay:"1s"}}
         >
           <LeftPanal less={less} />
           <RightPanal less={less} />
@@ -174,15 +174,14 @@ const NewsSection = () => {
       </div>
       <div className={styles.arrow} onClick={() => loadMore()}>
         <p className={styles.text}>
-          {less!==3? "See less" : "See more"}
+          {less !== 3 ? "See less" : "See more"}
         </p>
         <div className="d-flex justify-content-center mb-4">
-          {less!==3 ?
-          <img src="/assets/images/home/upIcon.png" />
-        :
-        <img src="/assets/images/home/downIcon.png" />
-
-        }
+          {less !== 3 ?
+            <img src="/assets/images/home/upIcon.png" />
+            :
+            <img src="/assets/images/home/downIcon.png" />
+          }
         </div>
       </div>
     </div>

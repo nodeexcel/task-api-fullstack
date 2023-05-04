@@ -1,15 +1,15 @@
 import React from "react";
 import styles from "@/styles/Card.module.css"
 
-const Card = ({ src, text, style, subText, type, imgText ,className, imgContainerStyle }) => {
+const Card = ({ src, text, style, subText, type, imgText, className, imgContainerStyle }) => {
   return (
     <div className={`${className}`} style={style}>
-      <div className={imgContainerStyle ? styles.imgContainerStyle :styles.imageContainer}>
+      <div className={imgContainerStyle ? styles.imgContainerStyle : styles.imageContainer}>
         <img className="card-img-top" src={src} alt="Card image cap" />
-        {type==="team" && 
-        <div className={styles.textOverlay}>
-          <p>{imgText}</p>
-        </div>}
+        {type === "team" &&
+          <div className={styles.textOverlay}>
+            <p>{imgText}</p>
+          </div>}
       </div>
 
       <div className="card-body">

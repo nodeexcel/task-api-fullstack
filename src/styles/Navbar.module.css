@@ -5,32 +5,33 @@
   width: 100%;
   height: 30px;
   display: block;
-  transition:  top 1s!important;
+  transition: top 1s !important;
   transition-timing-function: linear;
 }
+
 .liBox {
   display: none;
 }
 
-.DesktopliBox{
+.DesktopliBox {
   display: flex;
   color: white;
   margin-left: 130%;
 }
 
-.image{
+.image {
   margin-left: 30%;
   padding-top: 5%;
 }
 
 .liText {
   color: white;
-  font-family: 'ClashGrotesk-Extralight',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'ClashGrotesk-Extralight', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin-right: 10%;
   transition: 0.2s;
 }
 
-.liText:hover{
+.liText:hover {
   color: white;
 }
 
@@ -69,11 +70,11 @@
   display: none;
 }
 
-.NavBtn{
+.NavBtn {
   display: none;
 }
 
-.DownloadApp{
+.DownloadApp {
   display: none;
 }
 
@@ -86,11 +87,11 @@
     padding-bottom: 5rem;
   }
 
-  .DesktopliBox{
+  .DesktopliBox {
     display: none;
   }
 
-  .image{
+  .image {
     padding-top: 10%;
     margin-left: 10%;
   }
@@ -98,16 +99,16 @@
   .liText {
     display: block;
     font-size: 29px;
-    margin: auto;
+    margin: 5px auto;
     color: white;
     justify-content: center;
     text-align: center;
     font-weight: 600;
     transition: 0.2s;
-    font-family: 'ClashGrotesk',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'ClashGrotesk', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
-  .NavBtn{
+  .NavBtn {
     display: flex;
     margin: 20px auto;
     border-radius: 10px;
@@ -125,8 +126,8 @@
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6)
   }
 
-  .btntext{
-    font-family: 'ClashGrotesk-Extralight',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  .btntext {
+    font-family: 'ClashGrotesk-Extralight', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 0.8rem;
     margin-top: -1rem;
     text-align: center;
@@ -137,7 +138,7 @@
     color: rgb(246, 246, 246);
   }
 
-  .DownloadApp{
+  .DownloadApp {
     display: flex;
     align-items: center;
     font-weight: 600;
@@ -150,14 +151,16 @@
     border-radius: 16.2667px;
     justify-content: center;
   }
+
   .navbarDiv {
     background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(47px);
     margin-top: 0px;
   }
 }
+
 @media screen and (min-width: 640px) and (max-width: 770px) {
-  .logo{
+  .logo {
     color: white;
   }
 
@@ -170,18 +173,19 @@
     padding-bottom: 0rem;
   }
 
-  .DesktopliBox{
+  .DesktopliBox {
     display: none;
   }
-  .btntext{
-    font-family: 'ClashGrotesk-Extralight',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  .btntext {
+    font-family: 'ClashGrotesk-Extralight', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 0.7rem;
     margin-top: -1rem;
     text-align: center;
     color: white;
   }
 
-  .DownloadApp{
+  .DownloadApp {
     display: flex;
     align-items: center;
     font-weight: 200;
@@ -196,7 +200,7 @@
     justify-content: center;
   }
 
-  .NavBtn{
+  .NavBtn {
     display: flex;
     margin: 20%;
     border-radius: 10px;
@@ -213,7 +217,7 @@
     font-size: 0.8rem;
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6)
   }
-  
+
   .liText {
     color: white;
     font-size: 1.1rem;
@@ -221,16 +225,19 @@
     margin: auto;
     transition: 0.2s;
   }
-  .liText:hover{
+
+  .liText:hover {
     color: white;
   }
-  .image{
+
+  .image {
     height: 30px;
     width: 100px;
   }
 }
+
 @media screen and (min-width: 770px) and (max-width: 825px) {
-  .logo{
+  .logo {
     color: white;
   }
 
@@ -243,18 +250,19 @@
     padding-bottom: 5rem;
   }
 
-  .DesktopliBox{
+  .DesktopliBox {
     display: none;
   }
-  .btntext{
-    font-family: 'ClashGrotesk-Extralight',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  .btntext {
+    font-family: 'ClashGrotesk-Extralight', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 0.7rem;
     margin-top: -1rem;
     text-align: center;
     color: white;
   }
 
-  .DownloadApp{
+  .DownloadApp {
     display: flex;
     align-items: center;
     font-weight: 200;
@@ -267,7 +275,7 @@
     border-radius: 8.2667px;
     justify-content: center;
   }
-  
+
   .liText {
     color: white;
     font-size: 0.8rem;
@@ -275,119 +283,130 @@
     margin: auto;
     transition: 0.2s;
   }
-  .liText:hover{
+
+  .liText:hover {
     color: white;
   }
-  .image{
+
+  .image {
     height: 30px;
     width: 100px;
   }
 }
-@media screen and (min-width:825px) and (max-width:1024px) { 
-  
-.liBox {
-  display: none;
+
+@media screen and (min-width:825px) and (max-width:1024px) {
+  .liBox {
+    display: none;
+  }
+
+  .DesktopliBox {
+    display: flex;
+    width: 100%;
+    margin-left: 60%;
+    color: white;
+  }
+
+  .liText {
+    color: white;
+    font-family: 'ClashGrotesk-Extralight', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right: 10%;
+    transition: 0.2s;
+  }
+
+  .liText:hover {
+    color: white;
+  }
+
+  .navbarDiv {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(47px);
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .logo {
+    color: white;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .topnav a.active {
+    background-color: #04aa6d;
+    color: white;
+  }
+
+  .topnav .icon {
+    display: none;
+  }
+
+  .NavBtn {
+    display: none;
+  }
+
+  .DownloadApp {
+    display: none;
+  }
+
+  .image {
+    height: 30px;
+    width: 100px;
+  }
+
 }
 
-.DesktopliBox{
-  display: flex;
-  width: 100%;
-  margin-left: 60%;
-  color: white;
-}
-
-.liText {
-  color: white;
-  font-family: 'ClashGrotesk-Extralight',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin-right: 10%;
-  transition: 0.2s;
-}
-.liText:hover{
-  color: white;
-}
-.navbarDiv {
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(47px);
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-.logo{
-  color: white;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #04aa6d;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
-.NavBtn{
-  display: none;
-}
-.DownloadApp{
-  display: none;
-}
-
-.image{
-  height: 30px;
-  width: 100px;
-}
-
-}
-@media screen and (min-width:1024px) and (max-width:1200px){
-  .DesktopliBox{
+@media screen and (min-width:1024px) and (max-width:1200px) {
+  .DesktopliBox {
     display: flex;
     width: 100%;
     margin-left: 65%;
     color: white;
   }
-  .image{
+
+  .image {
     height: 30px;
     width: 100px;
   }
 }
 
 @media screen and (min-width:1200px) and (max-width:1400px) {
-  .DesktopliBox{
+  .DesktopliBox {
     display: flex;
     width: 100%;
     margin-left: 90%;
     color: white;
   }
-  .image{
+
+  .image {
     height: 30px;
     width: 100px;
   }
 }
 
 @media screen and (min-width:1400px) and (max-width:1600px) {
-  .DesktopliBox{
+  .DesktopliBox {
     display: flex;
     width: 100%;
     margin-left: 130%;
     color: white;
   }
-  .image{
+
+  .image {
     height: 30px;
     width: 100px;
   }

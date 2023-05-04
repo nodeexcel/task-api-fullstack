@@ -9,24 +9,24 @@
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
 }
+
 .phoneImg {
   display: flex;
   justify-content: center;
   margin-left: -150px;
 }
-/* .img {
-  margin-top: 0px;
-} */
 
 .mobile {
   height: 80vh;
   align-items: center;
 }
+
 .textDiv {
   position: relative;
   top: 0px;
   display: flex;
 }
+
 .heading {
   font-size: 90px;
   font-weight: 900;
@@ -36,9 +36,11 @@
   top: 100px;
   left: -70%;
 }
+
 .fasterText {
   display: flex;
 }
+
 .transactionHeading {
   font-size: 90px;
   font-weight: 900;
@@ -60,17 +62,12 @@
     border-top-right-radius: 40px;
   }
 
-  /* .img {
-    height: 15%;
-    width: 15%;
-    padding-left: -100px;
-  } */
-
   .mobile {
     height: 80vh;
     padding-top: 30%;
     justify-content: center;
   }
+
   .phoneImg {
     display: flex;
     justify-content: center;
@@ -82,7 +79,6 @@
     font-size: 2rem;
     font-weight: 900;
     line-height: 25px;
-    /* margin-top: -180px; */
     margin-left: -30%;
     padding-left: 30%;
   }
@@ -98,6 +94,7 @@
     justify-content: flex-end;
   }
 }
+
 @media screen and (min-width: 640px) and (max-width: 1024px) {
   .transactionDiv {
     background-color: rgb(30, 27, 27);

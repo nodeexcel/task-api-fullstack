@@ -2,36 +2,36 @@ import React from "react";
 import styles from "@/styles/home/FeaturesSection.module.css";
 
 const RightInner = () => (
-    <div className="d-flex justify-content-between ">
-      <div className={`${styles.Lending} me-4 w-50`}>
-        <div className="d-flex flex-col-reverse">
-          <img
-            src={"/assets/images/home/lending.png"}
-            height="auto"
-            alt="lending"
-            className={styles.lending}
-          />
-        </div>
-        <div>
-          <div className={styles.Rightheading}>Lending Protocol</div>
-          <div className={styles.RightsubHeading}>
-            Earn Interest with Top Protocols in the Industry with Just a Tap!
-          </div>
-        </div>
-      </div>
-      <div className={` ${styles.Lending} w-50`}>
+  <div className="d-flex justify-content-between ">
+    <div className={`${styles.Lending} me-4 w-50`}>
+      <div className="d-flex flex-col-reverse">
         <img
-          src={"/assets/images/home/graph.png"}
+          src={"/assets/images/home/lending.png"}
           height="auto"
-          alt="stake"
-          className={styles.stake}
+          alt="lending"
+          className={styles.lending}
         />
-        <div className={styles.Rightheading}>Stake your assets</div>
+      </div>
+      <div>
+        <div className={styles.Rightheading}>Lending Protocol</div>
         <div className={styles.RightsubHeading}>
           Earn Interest with Top Protocols in the Industry with Just a Tap!
         </div>
       </div>
     </div>
+    <div className={` ${styles.Lending} w-50`}>
+      <img
+        src={"/assets/images/home/graph.png"}
+        height="auto"
+        alt="stake"
+        className={styles.stake}
+      />
+      <div className={styles.Rightheading}>Stake your assets</div>
+      <div className={styles.RightsubHeading}>
+        Earn Interest with Top Protocols in the Industry with Just a Tap!
+      </div>
+    </div>
+  </div>
 
 );
 
@@ -39,7 +39,7 @@ const RightSide = () => (
   <div className="col-7 m-auto">
     <div className="">
       <div className=" col-12 mb-4">
-      <RightInner />
+        <RightInner />
       </div>
       <div className={`col-12 d-flex ${styles.RightSideLending}`}>
         <div>

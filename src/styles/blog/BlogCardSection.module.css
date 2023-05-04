@@ -1,24 +1,22 @@
-
-
 .cardContainer {
     width: 30%;
     margin-bottom: 40px;
 }
 
-.cardDiv{
+.cardDiv {
     display: flex;
     justify-content: space-between;
     width: 95%;
     margin: auto;
     flex-wrap: wrap;
-    /* d-flex justify-content-between w-100 flex-wrap */
 }
 
-.cardTopSection{
+.cardTopSection {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
+
 .latestPost {
     color: white;
     width: 30%;
@@ -26,69 +24,77 @@
     font-family: 'ClashGrotesk-Semibold';
 
 }
-.rightNav{
+
+.rightNav {
     width: 70%;
     display: flex;
-    justify-content: flex-end ;
+    justify-content: flex-end;
 
 }
+
 @media screen and (max-width:980px) {
     .cardContainer {
         width: 45%;
         margin-bottom: 40px;
     }
-    .cardDiv{
-        justify-content: space-around; 
+
+    .cardDiv {
+        justify-content: space-around;
     }
 }
+
 @media screen and (max-width:768px) {
     .cardContainer {
         width: 100%;
         margin-bottom: 40px;
     }
-    .cardDiv{
-        justify-content: space-around; 
+
+    .cardDiv {
+        justify-content: space-around;
     }
-    .cardTopSection{
+
+    .cardTopSection {
         display: block;
         width: 100%;
     }
+
     .latestPost {
         color: white;
         width: 100%;
         font-size: 24px;
         font-family: 'ClashGrotesk-Semibold';
-    
     }
-    .rightNav{
+
+    .rightNav {
         width: 100%;
-        justify-content: flex-end;  
+        justify-content: flex-end;
     }
 }
+
 @media screen and (max-width:400px) {
     .cardContainer {
         width: 95%;
         margin-bottom: 40px;
     }
-    .cardDiv{
-        justify-content: space-around; 
+
+    .cardDiv {
+        justify-content: space-around;
     }
-    .cardTopSection{
+
+    .cardTopSection {
         display: block;
         width: 100%;
     }
+
     .latestPost {
         color: white;
         width: 100%;
         font-size: 24px;
         font-family: 'ClashGrotesk-Semibold';
-    
     }
-    .rightNav{
+
+    .rightNav {
         width: 100%;
         justify-content: flex-end;
-    
     }
 }
-
-

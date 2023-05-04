@@ -1,9 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import { FiMenu } from "react-icons/fi";
 import Navbar from "react-bootstrap/Navbar";
-import Button, { GradiantButton } from "../common/Button";
+import { GradiantButton } from "../common/Button";
 import styles from "@/styles/Navbar.module.css";
 import AnnoucementSection from "../Home/AnnoucementSection";
 import { useRouter } from 'next/router'
@@ -12,8 +12,7 @@ import { gsap } from "gsap";
 import { AiOutlineClose } from "react-icons/ai";
 
 gsap.registerPlugin(ScrollTrigger)
-const NavBar = () => {
-  const [show, setShow] = useState(false)
+const NavBar = ({ show, setShow }) => {
   const route = useRouter();
   const ref = useRef(null)
 
@@ -57,13 +56,13 @@ const NavBar = () => {
           </Navbar.Brand>
           <Navbar.Toggle className={styles.logo} onClick={() => setShow(!show)} style={{ outline: 'none', border: 'none' }}>
             {show === true ? <>
-              <AiOutlineClose />
+              <AiOutlineClose size={26} />
             </> :
-              <FiMenu />}
+              <FiMenu size={26} />}
           </Navbar.Toggle>
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="color-white text-sm-center">
-              <div className={styles.liBox}>
+            <Nav className="color-white text-sm-center" >
+              <div className={styles.liBox} style={{ height: "100vh" }}>
                 <Nav.Link
                   href="#feature"
                   className={`text-white ${styles.liText}`}
@@ -97,7 +96,7 @@ const NavBar = () => {
                 >
                   Blog
                 </Nav.Link>
-                <Navbar.Toggle>
+                <Navbar.Toggle style={{ border: "none" }}>
                   <button className={`text-white ${styles.NavBtn}`} style={{ border: "none" }}>Close</button>
                 </Navbar.Toggle>
                 <button className={`my-3 ${styles.DownloadApp}`}>

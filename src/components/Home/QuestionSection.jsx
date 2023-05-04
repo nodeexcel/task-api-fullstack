@@ -79,11 +79,11 @@ const QuestionSection = () => (
         </Accordion.Item>
       </Accordion.Root>
     </div>
-   <div>
-   <NewsSection />
-    <PortfolioSection />
-    <Footer />
-   </div>
+    <div>
+      <NewsSection />
+      <PortfolioSection />
+      <Footer />
+    </div>
   </section>
 );
 

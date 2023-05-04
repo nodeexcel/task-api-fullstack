@@ -1,9 +1,7 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 
 .chatDiv {
   background: linear-gradient(91.6deg, #afe2ed 0.62%, #a26aff 99.17%);
-  /* padding: 100px 20%; */
   padding: 4%;
   margin-top: -33px;
   border-radius: 40px;
@@ -12,10 +10,7 @@
 }
 
 .leftDiv {
-  /* padding: 100px;  */
   width: 50%;
-  /* margin-left: 40px; */
-  /* margin:auto 0px; */
 }
 
 .rightDiv {
@@ -31,7 +26,6 @@
   font-size: 1.7rem;
   line-height: 2rem;
   margin-bottom: 40px;
-  font-weight: 400 !important;
   width: 70%;
 }
 
@@ -64,7 +58,6 @@
     display: flex;
     flex-direction: column;
     margin-top: 10%;
-    /* padding: 5% 5% 20%; */
     border-radius: 40px;
   }
 
@@ -112,7 +105,6 @@
     line-height: 20px;
     padding-top: 5%;
     width: 100%;
-    font-weight: 400 !important
   }
 
   .rightDiv {
@@ -130,24 +122,16 @@
     padding-left: 5%;
     padding-bottom: 20px;
     width: 90%;
-    height:auto
+    height: auto
   }
 }
 
 @media screen and (min-width: 640px) and (max-width: 770px) {
   .chatDiv {
     background: linear-gradient(91.6deg, #afe2ed 0.62%, #a26aff 99.17%);
-    /* padding-top: 100px;
-    padding-left: 10%;
-    padding-right: 5%;
-    padding-bottom: 3%; */
     margin-top: -33px;
     border-radius: 40px;
     padding: 100px 59px;
-  }
-
-  .leftDiv {
-    /* padding: 29px; */
   }
 
   .text {
@@ -157,7 +141,6 @@
     font-size: 1.2rem;
     line-height: 1.5rem;
     margin-bottom: 30px;
-    font-weight: 400 !important;
   }
 
   .mobile {
@@ -186,19 +169,16 @@
 @media screen and (min-width:770px) and (max-width:1024px) {
   .chatDiv {
     background: linear-gradient(91.6deg, #afe2ed 0.62%, #a26aff 99.17%);
-    /* padding: 100px; */
     margin-top: -33px;
     border-radius: 40px;
     position: relative;
     height: auto;
-    padding:100px 0px;
+    padding: 100px 0px;
   }
 
   .leftDiv {
     padding: 10px;
     width: 50%;
-    /* margin-left: 40px; */
-    /* margin:auto 0px; */
   }
 
   .text {
@@ -251,7 +231,6 @@
   .leftDiv {
     padding: 100px 50px;
     width: 50%;
-    /* margin:auto 0px; */
   }
 
   .rightDiv {

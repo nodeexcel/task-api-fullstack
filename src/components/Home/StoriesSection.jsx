@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../common/Card";
-import Button, { GradiantButton } from "../common/Button";
+import { GradiantButton } from "../common/Button";
 import styles from "../../styles/home/StoriesSection.module.css";
 
 const storyData = [
