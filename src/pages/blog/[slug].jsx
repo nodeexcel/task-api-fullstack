@@ -31,8 +31,12 @@ const BlogContent = () => {
                     <div>
                         <div className='d-flex justify-content-between'>
                             <div className={styles.badge}>Technology</div>
+                            <div className='mt-4' style={{
+                                transition: "ease 1s linear"
+                            }}>
                             {toggle ?
-                                <img src='/assets/images/blog/switch.svg' style={{ cursor: "pointer" }} onClick={() => setToggle(!toggle)} /> : <img src='/assets/images/blog/clock.svg' onClick={() => setToggle(!toggle)} style={{ cursor: "pointer" }} />}
+                                <img src='/assets/images/blog/switch.svg' style={{ cursor: "pointer",width:"80%" }} onClick={() => setToggle(!toggle)} /> : <img src='/assets/images/blog/switchOff.svg' onClick={() => setToggle(!toggle)} style={{ cursor: "pointer",width:"80%" }} />}
+                            </div>
                         </div>
                         <h1 className={styles.topHeading}>Plena Wallet and Onmeta Join forces to empower its users With Easy Access to Crypto</h1>
                         <span style={{ color: "#696A75" }}>August 20, 2023</span>

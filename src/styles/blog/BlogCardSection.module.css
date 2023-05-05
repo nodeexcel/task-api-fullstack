@@ -41,6 +41,23 @@
     color: rgb(163, 161, 161) !important;
 }
 
+.viewBtn {
+    color: #696A75;
+    font-size: 16px;
+    border: 1px solid #696A75;
+    padding: 10px 20px;
+    border-radius: 10px
+}
+.viewBtn:hover {
+    cursor: pointer;
+    background-color: #424242;
+    color: white;
+    font-size: 16px;
+    border: 1px solid #424242;
+    padding: 10px 20px;
+    border-radius: 10px
+}
+
 @media screen and (max-width:980px) {
     .cardContainer {
         width: 45%;

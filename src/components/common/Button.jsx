@@ -24,11 +24,11 @@ export const StoreButton = ({ src, subText }) => {
   )
 }
 
-export const GradiantButton = ({ text }) => {
+export const GradiantButton = ({ text, ...rest }) => {
   return (
-    <div class="btn">
+    <button class="btn" {...rest}>
       <span>{text}</span>
-    </div>
+    </button>
   )
 }
 export default Button

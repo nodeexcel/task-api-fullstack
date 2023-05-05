@@ -44,10 +44,11 @@ const StoriesSection = () => {
             </div>
             <div className="col-md-1 col-sm-0"></div>
             <div
-              onClick={() => router.push('/blog')}
               className={`col-md-3 col-sm-0 d-flex justify-content-center ${styles.RightDiv}`}
             >
-              <GradiantButton text={"More stories"} className={styles.button} />
+              <GradiantButton text={"More stories"} className="btn" onClick={() =>{
+                location.href="/blog"
+              }} />
             </div>
 
           </div>

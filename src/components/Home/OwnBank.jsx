@@ -79,7 +79,7 @@ const OwnBank = () => {
             </div>
             <div className={styles.btnDiv}>
               <div>
-                <GradiantButton text={"Get the App"} className={styles["mainbtn"]} />
+                <GradiantButton text={"Get the App"} className="btn" />
               </div>
               <div className={`d-flex align-items-center ${styles.watchIntro}`}>
                 <div className="btn_ripple">
