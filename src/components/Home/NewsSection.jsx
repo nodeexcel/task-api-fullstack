@@ -140,12 +140,11 @@ const NewsSection = () => {
   const [less, setLess] = useState(3);
 
   const loadMore = () => {
-    console.log("hello");
     if (less < newsMobileData.length) {
       setLess(less + 2);
     }
     else {
-      setLess(3)
+      setLess(3);
     }
   };
   return (

@@ -87,6 +87,13 @@
     }
 }
 
+
+@media screen and (max-width:700px) {
+    .cardData {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
 @media screen and (max-width:500px) {
     .cardDetails {
         padding: 90px 30px 0px 30px
@@ -126,10 +133,42 @@
     }
 
 }
+@media screen and (max-width:375px) {
+    .cardDetails {
+        padding: 90px 10px 0px 10px
+    }
 
-@media screen and (max-width:700px) {
-    .cardData {
-        width: 100%;
+    .topHeading {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 27px;
+        color: white;
+        margin-bottom: 20px !important;
+    }
+
+    .para {
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 30px !important;
+    }
+
+    .heading {
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 600;
+        color: #FFFFFF;
         margin-bottom: 20px;
     }
+
+    .offer {
+        color: #E8E8EA;
+        margin: 50px 0px 70px;
+        padding: 30px;
+        font-size: 16px;
+        font-style: italic;
+        background: #242535;
+        border-left: 4.39px solid #E8E8EA;
+        border-radius: 13px;
+    }
+
 }

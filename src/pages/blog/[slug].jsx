@@ -1,5 +1,4 @@
-import { useRouter } from 'next/router'
-import React from 'react'
+import React, { useState } from 'react'
 import SeemLessSection from '../../components/Blog/SeemLessSection';
 import BlogCard from '../../components/common/BlogCard';
 import styles from "@/styles/blog/BlogContent.module.css"
@@ -22,14 +21,18 @@ const cardData = [
 ]
 
 const BlogContent = () => {
+    const [show, setShow] = useState(false);
+    const [toggle, setToggle] = useState(false)
     return (
         <>
-            <NavBar />
+            <NavBar show={show} setShow={setShow} />
             <div className='container bg-black'>
                 <div className={styles.cardDetails} style={{}}>
                     <div>
-                        <div>
+                        <div className='d-flex justify-content-between'>
                             <div className={styles.badge}>Technology</div>
+                            {toggle ?
+                                <img src='/assets/images/blog/switch.svg' style={{ cursor: "pointer" }} onClick={() => setToggle(!toggle)} /> : <img src='/assets/images/blog/clock.svg' onClick={() => setToggle(!toggle)} style={{ cursor: "pointer" }} />}
                         </div>
                         <h1 className={styles.topHeading}>Plena Wallet and Onmeta Join forces to empower its users With Easy Access to Crypto</h1>
                         <span style={{ color: "#696A75" }}>August 20, 2023</span>

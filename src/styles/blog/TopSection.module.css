@@ -12,13 +12,22 @@
 }
 
 .search {
-    width: 60%;
+    width: 50%;
     margin: 50px auto;
+}
+
+.searchBar {
+    background: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    height: 50px
 }
 
 .topImg {
     height: auto;
     width: 100%;
+    cursor: pointer;
 }
 
 .input:focus {
@@ -26,15 +35,34 @@
     outline: none !important;
 }
 
-.form-control:focus {
-    border: none !important;
-    outline: none !important;
-    box-shadow: none !important;
-}
 
 @media screen and (max-width:640px) {
     .search {
         width: 60%;
+        margin: auto;
+    }
+
+    .heading {
+        color: white;
+        font-size: 40px;
+        line-height: 60px;
+        text-align: center;
+        font-family: 'ClashGrotesk-Semibold';
+    }
+
+    .searchBar {
+        background: transparent;
+        color: white;
+        outline: none;
+        border: none;
+        height: 30px
+    }
+}
+
+
+@media screen and (max-width:400px) {
+    .search {
+        width: 80%;
         margin: auto;
     }
 

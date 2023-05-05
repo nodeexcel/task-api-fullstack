@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import { FiMenu } from "react-icons/fi";
@@ -12,6 +12,54 @@ import { gsap } from "gsap";
 import { AiOutlineClose } from "react-icons/ai";
 
 gsap.registerPlugin(ScrollTrigger)
+
+const desktopNav = [
+  {
+    href: "#feature",
+    text: "Earn"
+  },
+  {
+    href: "#partners",
+    text: "DeFi"
+  },
+  {
+    href: "#teamSection",
+    text: "Features"
+  },
+  {
+    href: "/blog",
+    text: "Blog"
+  }
+]
+
+const mobileNav = [
+  {
+    href: "#feature",
+    text: "Features"
+  },
+  {
+    href: "#partners",
+    text: "Partners"
+  },
+  {
+    href: "#teamSection",
+    text: "Team"
+  },
+  {
+    href: "#review",
+    text: "Reviews"
+  },
+  {
+    href: "#faq",
+    text: "FAQs"
+  },
+  {
+    href: "#blog",
+    text: "Blog"
+  },
+
+]
+
 const NavBar = ({ show, setShow }) => {
   const route = useRouter();
   const ref = useRef(null)
@@ -33,6 +81,7 @@ const NavBar = ({ show, setShow }) => {
     () => animation.kill()
   }, []);
 
+
   return (
     <div>
       <AnnoucementSection />
@@ -45,7 +94,7 @@ const NavBar = ({ show, setShow }) => {
         ref={ref}
       >
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="">
             <img
               src={"/assets/images/home/logo.svg"}
               height={50}
@@ -63,39 +112,17 @@ const NavBar = ({ show, setShow }) => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="color-white text-sm-center" >
               <div className={styles.liBox} style={{ height: "auto" }}>
-                <Nav.Link
-                  href="#feature"
-                  className={`text-white ${styles.liText}`}
-                >
-                  Features
-                </Nav.Link>
-                <Nav.Link
-                  href="#partners"
-                  className={`text-white ${styles.liText}`}
-                >
-                  Partners
-                </Nav.Link>
-                <Nav.Link
-                  href="#teamSection"
-                  className={`text-white ${styles.liText}`}
-                >
-                  Team
-                </Nav.Link>
-                <Nav.Link
-                  href="#review"
-                  className={`text-white ${styles.liText}`}
-                >
-                  Reviews
-                </Nav.Link>
-                <Nav.Link href="#faq" className={`text-white ${styles.liText}`}>
-                  FAQs
-                </Nav.Link>
-                <Nav.Link
-                  href="#blog"
-                  className={`text-white ${styles.liText}`}
-                >
-                  Blog
-                </Nav.Link>
+                {mobileNav.map((nav) => {
+                  return (
+                    <Nav.Link
+                      href={nav.href}
+                      className={`text-white ${styles.liText}`}
+                    >
+                      {nav.text}
+                    </Nav.Link>
+                  )
+                })}
+
                 <Navbar.Toggle style={{ border: "none" }}>
                   <button className={`text-white ${styles.NavBtn}`} style={{ border: "none" }}>Close</button>
                 </Navbar.Toggle>
@@ -104,41 +131,34 @@ const NavBar = ({ show, setShow }) => {
                 </button>
                 <p className={styles.btntext}>*Availiable for iOS & Android</p>
               </div>
-              <div className={`color-white ${styles.DesktopliBox}`}>
-                <Nav.Link
-                  href="#feature"
-                  className={`text-white  px-3 ${styles.liText}`}
-                >
-                  Earn
-                </Nav.Link>
-                <Nav.Link
-                  href="#partners"
-                  className={`  text-white ${styles.liText}`}
-                >
-                  DeFi
-                </Nav.Link>
-                <Nav.Link
-                  href="#teamSection"
-                  className={`text-white px-3 ${styles.liText}`}
-                >
-                  Features
-                </Nav.Link>
-                <Nav.Link
-                  href="/blog"
-                  className={`text-white px-3 ${styles.liText}`}
-                >
-                  Blog
-                </Nav.Link>
+              <div className={`color-white ${styles.DesktopliBox}`} style={{ paddingTop: 10 }}>
+                {desktopNav.map((nav) => {
+                  return (
+                    <div>
+                      <Nav.Link
+                        href={nav.href}
+                        className={`text-white  px-3 ${styles.liText}`}
+                      >
+                        {nav.text}
+                      </Nav.Link>
+                      {(route.pathname === nav.href) &&
+                        <img src="/assets/images/home/navStar.svg" style={{ marginTop: -14, marginLeft: "38%" }} />}
+                    </div>
+                  )
+                })}
+
               </div>
             </Nav>
-            {route.pathname === "/blog" ?
-              <Nav>
-                <GradiantButton text="Download App" />
-              </Nav> :
-              <Nav className={styles.getButton}>
-                <GradiantButton text="Get the App" />
-              </Nav>
-            }
+            <div className={styles.desktopButton}>
+              {route.pathname === "/blog" ?
+                <Nav>
+                  <GradiantButton text="Download App" />
+                </Nav> :
+                <Nav className={styles.getButton}>
+                  <GradiantButton text="Get the App" />
+                </Nav>
+              }
+            </div>
           </Navbar.Collapse>
         </Container>
       </Navbar>

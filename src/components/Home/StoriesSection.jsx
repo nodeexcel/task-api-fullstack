@@ -2,6 +2,8 @@ import React from "react";
 import Card from "../common/Card";
 import { GradiantButton } from "../common/Button";
 import styles from "../../styles/home/StoriesSection.module.css";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 const storyData = [
   {
@@ -25,6 +27,7 @@ const storyData = [
 ];
 
 const StoriesSection = () => {
+  const router = useRouter()
   return (
     <section className="bg-black text-white" style={{ paddingTop: 40 }}>
       <div className="container my-3">
@@ -41,6 +44,7 @@ const StoriesSection = () => {
             </div>
             <div className="col-md-1 col-sm-0"></div>
             <div
+              onClick={() => router.push('/blog')}
               className={`col-md-3 col-sm-0 d-flex justify-content-center ${styles.RightDiv}`}
             >
               <GradiantButton text={"More stories"} className={styles.button} />

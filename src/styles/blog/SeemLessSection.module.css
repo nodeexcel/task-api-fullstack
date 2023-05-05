@@ -63,7 +63,7 @@
 
 @media screen and (max-width: 640px) {
   .mainDiv {
-    padding: 0px;
+    padding: 0px !important;
     border-radius: 40px;
     background-color: blue;
     position: relative;

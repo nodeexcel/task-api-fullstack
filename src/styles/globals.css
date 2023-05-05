@@ -522,3 +522,21 @@ h6 {
   background: transparent;
   color: #000000;
 }
+
+.form-control:focus {
+  box-shadow: none !important;
+  color: white !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  outline: 0;
+}
+
+.nav-link:hover {
+  color: white !important;
+  font-weight: 700;
+}
+
+.nav-link{
+  padding: 0px !important;
+  margin: 0px 40px;
+}

@@ -26,7 +26,7 @@ export const StoreButton = ({ src, subText }) => {
 
 export const GradiantButton = ({ text }) => {
   return (
-    <div class="btn" href="#">
+    <div class="btn">
       <span>{text}</span>
     </div>
   )

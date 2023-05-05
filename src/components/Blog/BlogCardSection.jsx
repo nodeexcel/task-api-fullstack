@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import BlogCard from '../common/BlogCard'
 import styles from "@/styles/blog/BlogCardSection.module.css"
 import { useRouter } from 'next/router'
+import Link from 'next/link'
 
 const cardData = [
     {
@@ -60,18 +61,43 @@ const cardData = [
     },
 ]
 
+const navLink = [
+    {
+        href: "all",
+        text: 'All'
+    },
+    {
+        href: "product-updates",
+        text: 'Product updates'
+    },
+    {
+        href: "announcements",
+        text: 'Announcements'
+    },
+    {
+        href: "collaborations",
+        text: 'Collaborations'
+    },
+]
+
 const BlogCardSection = () => {
-    const router = useRouter()
+    const router = useRouter();
+    const [navItem, setNavItem] = useState(0);
+    const style1 = { border: "2px solid #E0EB77", padding: "7px 15px", borderRadius: 6 }
+
     return (
         <div className='container'>
-            <div className={`container ${styles.cardTopSection}`} style={{ width: "100%", padding: "20px 30px" }}>
+            <div className={`container ${styles.cardTopSection}`}>
                 <div className={`${styles.latestPost}`} >Latest Post</div>
-                <div className={`text-white ${styles.rightNav}`} style={{}}>
+                <div className={`text-white ${styles.rightNav}`}>
                     <ul className='d-flex justify-content-between flex-wrap' style={{ listStyleType: "none" }} >
-                        <li className='mx-2'>All</li>
-                        <li className='mx-2'>Product updates</li>
-                        <li className='mx-2'>Announcements</li>
-                        <li className='mx-2'>Collaborations</li>
+                        {
+                            navLink.map((navlink, index) => {
+                                return (
+                                    <li><Link href={`/blog#${navlink.href}`} style={index === navItem ? style1 : {}} className={`mx-2 ${styles.liText}`} onClick={() => setNavItem(index)}>{navlink.text}</Link></li>
+                                )
+                            })
+                        }
                     </ul>
                 </div>
             </div>

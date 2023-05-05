@@ -15,7 +15,7 @@ const Footer = () => {
             <div className='d-flex justify-content-md-start justify-content-center'>
               <img src='/assets/images/home/footerLogo.svg' height={80} width={80} alt='logo' />
             </div>
-            <div className='d-flex flex-wrap justify-content-md-start justify-content-center pt-sm-1'>
+            <div className={`d-flex flex-wrap justify-content-md-start justify-content-center ${styles.socialDiv}`}>
               {socialData.map((data) => {
                 return (
                   <div className={styles.SocialMedia}>
