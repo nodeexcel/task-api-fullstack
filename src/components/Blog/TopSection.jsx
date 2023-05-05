@@ -17,13 +17,8 @@ const TopSection = () => {
             </div>
             <div className='m-4 m-sm-2' style={{
                 position: 'relative',
-                // backgroundImage: "url(../../../public/assets/images/blog/topImg.svg)",
-                // backgroundPosition: "center",
-                // backgroundSize: "cover",
             }}>
-                {/* <img src="/assets/images/blog/topImg.svg" className={styles.topImg} onClick={()=>router.push("/blog/1")}/> */}
-
-                <img src='/assets/images/blog/topImg.svg' style={{ width: "100%",opacity:0.6, marginBottom: 5, position: "relative" }} />
+                <img src='/assets/images/blog/topImg.svg' style={{ width: "100%", marginBottom: 5, position: "relative" }} />
                 <div className={styles.overlayDiv}>
                     <img src='/assets/images/blog/featureBtn.svg' className={styles.featureBtn} onClick={() => router.push("/blog/1")} />
                     <div className={`${styles.overlayText}`}>Join  Plena Smart Wallet Referral Program<br /> & Win Big with $1m PLENA Tokens</div>

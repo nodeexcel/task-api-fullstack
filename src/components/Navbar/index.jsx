@@ -54,7 +54,7 @@ const mobileNav = [
     text: "FAQs"
   },
   {
-    href: "#blog",
+    href: "/blog",
     text: "Blog"
   },
 

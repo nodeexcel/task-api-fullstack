@@ -134,7 +134,7 @@
         margin-bottom: 5px;
         position: absolute;
         left: 3%;
-        top: 45%
+        top: 25%
     }
 
     .overlayDate {
@@ -149,7 +149,7 @@
 
 @media screen and (min-width:640px) and (max-width:768px) {
     .overlayText {
-        font-size: 30px;
+        font-size: 24px;
         font-weight: 600;
         line-height: 32px;
         margin: 16px 0px
@@ -162,7 +162,7 @@
         margin-bottom: 5px;
         position: absolute;
         left: 7%;
-        top: 40%
+        top: 20%
     }
 
     .overlayDate {
@@ -170,7 +170,7 @@
     }
 
     .featureBtn {
-        width: 14%;
+        width: 12%;
         cursor: pointer;
     }
 }
@@ -183,14 +183,14 @@
         margin-bottom: 5px;
         position: absolute;
         left: 7%;
-        top: 50%
+        top: 30%
     }
 
     .overlayText {
-        font-size: 38px;
+        font-size: 30px;
         font-weight: 600;
         line-height: 44px;
-        margin: 30px 0px
+        margin: 10px 0px
     }
 
     .featureBtn {
@@ -206,7 +206,7 @@
         margin-bottom: 5px;
         position: absolute;
         left: 7%;
-        top: 50%
+        top: 40%
     }
 
     .overlayText {
