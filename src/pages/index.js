@@ -13,7 +13,6 @@ export default function Home() {
   return (
     <>
       <NavBar setShow={setShow} show={show} />
-      {/* {!show && <LandingPage />} */}
       <LandingPage />
     </>
   );

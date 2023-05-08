@@ -2,11 +2,14 @@ import React from 'react';
 import styles from '../../styles/Footer.module.css';
 
 const Footer = () => {
+
   const socialData = ['Instagram', 'Twitter', 'Facebook', 'LinkedIn', 'Tiktok', 'Youtube', 'Medium']
+  
   const rightSection = {
     first: ['Terms of use', 'Privacy notice', 'Security notice', 'Contact us'],
     second: ['Press', 'Blog', 'FAQs', 'Support']
   }
+
   return (
     <section className={`text-white p-3 ${styles.mainDiv}`}>
       <div className='container p-md-5 p-sm-1'>

@@ -1,5 +1,5 @@
 .userDiv {
-    display: "inline-block";
+    display: inline-block;
     width: 150%;
     height: fit-content;
     display: flex;
@@ -39,7 +39,7 @@
     border-radius: 20px;
     padding: 30px;
     margin: 30px;
-    width: 600px
+    width: 600px;
 }
 
 .userSayCard:hover {
@@ -52,6 +52,7 @@
 }
 
 @media screen and (min-width:769px) and (max-width:1024px) {
+
     .userDiv {
         width: 200%;
     }
@@ -68,6 +69,7 @@
 }
 
 @media screen and (min-width:640px) and (max-width:768px) {
+
     .userDiv {
         width: 250%;
     }

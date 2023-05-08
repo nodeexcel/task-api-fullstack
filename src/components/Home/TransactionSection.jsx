@@ -70,7 +70,8 @@ export default function DesignSection() {
         />
       </section>
       <div
-        style={{ height: "100vh", width: "100vw", background: "transparent", position: "relative" }}
+        className={styles.transDiv}
+        // style={{ height: "100vh", width: "100vw", background: "transparent", position: "relative" }}
         ref={sectionRef}
       />
     </>

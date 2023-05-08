@@ -81,7 +81,6 @@
       sans-serif !important;
     font-size: 1rem;
     display: flex;
-    width: 39%;
     margin: auto;
     word-wrap: break-word;
   }
@@ -148,7 +147,6 @@
       sans-serif !important;
     font-size: 1rem;
     display: flex;
-    width: 39%;
     margin: auto;
     word-wrap: break-word;
   }
@@ -247,12 +245,13 @@
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1025px) {
   .Appstore {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 5%;
   }
 
   .cryptoDiv {
@@ -290,12 +289,13 @@
     font-size: 1rem;
     display: flex;
     width: 100%;
+    justify-content: center;
     margin: auto;
     word-wrap: break-word;
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1400px) {
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
   .Appstore {
     display: flex;
   }
@@ -359,6 +359,15 @@
     display: flex !important;
   }
 
+  .cryptoDiv {
+    background-image: linear-gradient(226.73deg, #c196c8 1.98%, #425991 97.5%);
+    display: flex !important;
+    justify-content: center !important;
+    padding: 0px 15%;
+    width: 100%;
+    color: white;
+  }
+
   .heading {
     font-family: "ClashGrotesk-Semibold", "Courier New", system-ui, -apple-system, BlinkMacSystemFont,
       "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
@@ -384,49 +393,25 @@
   }
 }
 
-@media screen and (min-width: 2000px) and (max-width: 2300px) {
+@media screen and (min-width: 2000px) {
   .Appstore {
     display: flex !important;
-    flex-direction: inherit !important;
-    align-items: center;
   }
 
-  .heading {
-    font-family: "ClashGrotesk-Semibold", "Courier New", system-ui, -apple-system, BlinkMacSystemFont,
-      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif !important;
-    padding-top: 40px;
-    font-size: 40px;
-    line-height: 38px;
-    font-weight: 500;
-    text-align: left;
-    font-style: normal;
-  }
-
-  .paragrapgh {
-    font-family: "ClashGrotesk-Regular", system-ui, -apple-system, BlinkMacSystemFont,
-      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif !important;
-    font-size: 1.5rem;
-    display: flex;
+  .cryptoDiv {
+    background-image: linear-gradient(226.73deg, #c196c8 1.98%, #425991 97.5%);
+    display: flex !important;
+    justify-content: center !important;
+    padding: 0px 25%;
     width: 100%;
-    margin: auto;
-    word-wrap: break-word;
+    color: white;
   }
-}
-
-@media screen and (min-width: 2300px) and (max-width: 2560px) {
-  .Appstore {
-    display: flex !important;
-    flex-direction: inherit !important;
-    align-items: center;
-  }
-
   .heading {
     font-family: "ClashGrotesk-Semibold", "Courier New", system-ui, -apple-system, BlinkMacSystemFont,
       "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif !important;
     padding-top: 40px;
+    width: 100%;
     font-size: 40px;
     line-height: 38px;
     font-weight: 500;

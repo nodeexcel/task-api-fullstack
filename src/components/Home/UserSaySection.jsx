@@ -195,15 +195,14 @@ const UserSaySection = () => {
               <div
                 key={index}
                 className={`d-flex flex-column justify-content-between ${styles.userSayCard}`}
+                
                 style={{ flexShrink: 0 }}
               >
                 <div className="row text-white mb-3">{data?.text}</div>
-                <div
-                  className={`row d-flex  justify-content-between w-full ${styles.starDiv}`}
-                >
+                <div className={`row d-flex justify-content-between w-full ${styles.starDiv}`}>
                   <div className="col-6">
                     <img
-                      src="/assets/images/home/playStoreIcon.svg"
+                      src="/assets/images/home/playstoreIcon.svg"
                       alt="playstore"
                       className={`me-2 ${styles.playstoreImg}`}
                     />
