@@ -50,7 +50,6 @@ const OwnBank = () => {
         backgroundColor: "black",
       }}
       className={`container ${styles.mainDiv}`}
-      id="home"
     >
       <div className="container">
         <div className={`row ${styles.div}`}>
