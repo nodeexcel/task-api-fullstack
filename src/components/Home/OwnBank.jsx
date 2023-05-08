@@ -118,13 +118,14 @@ const OwnBank = () => {
         </div>
 
         <div className={styles.mobilebtn} ref={ref}>
-          <div style={{ background: "transparent", marginLeft: "-25px", backdropFilter: "blur(37px)", height: 100, width: "120%" }}>
+          <div className={styles.glassDiv}>
           </div>
           <div style={{ position: "absolute", top: -30, margin: "auto", width: "100%" }}>
             <button className={`my-3 ${styles.DownloadApp}`}>
               Download App
             </button>
-            <p className={styles.btntext}> *Availiable for iOS & Android</p></div>
+            <p className={styles.btntext}> *Availiable for iOS & Android</p>
+          </div>
         </div>
 
         <div className={`row ${styles.bottomSection}`}>

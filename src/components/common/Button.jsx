@@ -12,7 +12,7 @@ const Button = ({ text, buttonName, style }) => {
 
 export const StoreButton = ({ src, subText }) => {
   return (
-    <button className={storeStyles.storeBtn}>
+    <button className={storeStyles.storeBtn} >
       <div className={storeStyles.leftDiv}>
         <img src={src} alt='icon' className={styles.apple} />
       </div>

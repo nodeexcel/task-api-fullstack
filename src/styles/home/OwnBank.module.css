@@ -317,6 +317,16 @@
     z-index: 4;
     bottom: -150px;
   }
+
+  .glassDiv {
+    background: transparent;
+    -webkit-background-color: transparent;
+    margin-left: -25px;
+    -webkit-backdrop-filter: blur(37px);
+    backdrop-filter: blur(37px);
+    height: 100px;
+    width: 120%;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 640px) {
@@ -334,7 +344,15 @@
     border-radius: 16.2667px;
     justify-content: center;
   }
-
+  .glassDiv {
+    background: transparent;
+    -webkit-background-color: transparent;
+    margin-left: -25px;
+    -webkit-backdrop-filter: blur(37px);
+    backdrop-filter: blur(37px);
+    height: 100px;
+    width: 120%;
+  }
   .QrContainer {
     display: none;
   }

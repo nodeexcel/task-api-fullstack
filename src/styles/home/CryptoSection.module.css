@@ -5,14 +5,18 @@
   background-image: linear-gradient(226.73deg, #c196c8 1.98%, #425991 97.5%);
   display: flex !important;
   justify-content: center !important;
-  padding-left: 65px;
+  padding: 0px 13%;
   width: 100%;
   color: white;
 }
 
-.cryptoInnerDiv {
-  padding: 0px 35rem;
-  display: contents;
+.leftDiv {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin:auto;
 }
 
 .rightDiv {
@@ -33,6 +37,8 @@
 }
 
 .Appstore {
+  display: flex;
+  width: 100%;
   margin-top: 10%;
 }
 
@@ -54,9 +60,7 @@
   display: none;
 }
 
-.leftDiv {
-  padding-left: 50px;
-}
+
 
 @media screen and (max-width: 375px) {
   .cryptoDiv {
@@ -65,7 +69,10 @@
     align-items: center;
     text-align: center;
     word-wrap: break-word;
-    padding: 10px;
+  }
+
+  .leftDiv{
+    width: 100%;
   }
 
   .paragrapgh {
@@ -120,10 +127,6 @@
     display: none;
   }
 
-  .leftDiv {
-    margin-left: 3%;
-    padding-left: 0px;
-  }
 }
 
 @media screen and (min-width:375px) and (max-width: 640px) {
@@ -133,12 +136,10 @@
     align-items: center;
     text-align: center;
     word-wrap: break-word;
-    padding: 10px;
   }
 
-  .leftDiv {
-    margin-left: 3%;
-    padding-left: 0px;
+  .leftDiv{
+    width: 100%;
   }
 
   .paragrapgh {
@@ -194,13 +195,34 @@
   }
 }
 
-@media screen and (min-width:640px) and (max-width: 768px) {
+@media screen and (min-width:640px) and (max-width: 769px) {
   .Appstore {
-    display: flex;
-    flex-direction: inherit;
+    display: flex !important;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
   }
 
+  .cryptoDiv {
+    background-image: linear-gradient(226.73deg, #c196c8 1.98%, #425991 97.5%);
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center !important;
+    padding: 0px 10%;
+    width: 100%;
+    color: white;
+  }
+
+  .leftDiv{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rightDiv{
+    width: 90%;
+    margin: auto;
+  }
   .heading {
     font-family: "ClashGrotesk-Semibold", "Courier New", system-ui, -apple-system, BlinkMacSystemFont, Courier, monospace "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif !important;
@@ -218,19 +240,37 @@
       sans-serif !important;
     font-size: 1rem;
     display: flex;
+    text-align: center;
     width: 100%;
     margin: auto;
     word-wrap: break-word;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .Appstore {
     display: flex;
-    flex-direction: inherit;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
   }
 
+  .cryptoDiv {
+    background-image: linear-gradient(226.73deg, #c196c8 1.98%, #425991 97.5%);
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center !important;
+    padding: 0px 10%;
+    width: 100%;
+    color: white;
+  }
+  .leftDiv{
+    width: 80%;
+  }
+  .rightDiv{
+    width: 90%;
+    margin: auto;
+  }
   .heading {
     font-family: "ClashGrotesk-Semibold", "Courier New", system-ui, -apple-system, BlinkMacSystemFont,
       "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
@@ -258,8 +298,6 @@
 @media screen and (min-width: 1024px) and (max-width: 1400px) {
   .Appstore {
     display: flex;
-    flex-direction: inherit;
-    align-items: center;
   }
 
   .heading {
@@ -267,6 +305,7 @@
       "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif !important;
     padding-top: 40px;
+    width: 100%;
     font-size: 30px;
     line-height: 38px;
     font-weight: 500;
@@ -289,11 +328,10 @@
 @media screen and (min-width: 1400px) and (max-width: 1600px) {
   .Appstore {
     display: flex !important;
-    flex-direction: inherit !important;
-    align-items: center;
   }
 
   .heading {
+    width: 100%;
     font-family: "ClashGrotesk-Semibold", "Courier New", system-ui, -apple-system, BlinkMacSystemFont,
       "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif !important;
@@ -319,12 +357,6 @@
 @media screen and (min-width: 1600px) and (max-width: 2000px) {
   .Appstore {
     display: flex !important;
-    flex-direction: inherit !important;
-    align-items: center;
-  }
-
-  .cryptoInnerDiv {
-    padding: 0px 13%;
   }
 
   .heading {
@@ -332,6 +364,7 @@
       "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif !important;
     padding-top: 40px;
+    width: 100%;
     font-size: 40px;
     line-height: 38px;
     font-weight: 500;
@@ -356,10 +389,6 @@
     display: flex !important;
     flex-direction: inherit !important;
     align-items: center;
-  }
-
-  .cryptoInnerDiv {
-    padding: 0px 24rem;
   }
 
   .heading {
@@ -391,10 +420,6 @@
     display: flex !important;
     flex-direction: inherit !important;
     align-items: center;
-  }
-
-  .cryptoInnerDiv {
-    padding: 0px 32rem;
   }
 
   .heading {
