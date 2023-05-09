@@ -80,7 +80,7 @@ const LeftScroll = () => {
               >
                 <div className="col-6">
                   <img
-                    src="/assets/images/home/playStoreIcon.svg"
+                    src="/assets/images/home/playstoreIcon.svg"
                     height={30}
                     width={30}
                     alt="playstore"
@@ -131,7 +131,7 @@ const RightScroll = () => {
               >
                 <div className="col-6">
                   <img
-                    src="/assets/images/home/playStoreIcon.svg"
+                    src="/assets/images/home/playstoreIcon.svg"
                     alt="playstore"
                     className={`me-2 ${styles.playstoreImg}`}
                   />
